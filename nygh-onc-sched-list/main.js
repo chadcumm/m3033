@@ -6065,17 +6065,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-GWSDZ4FL.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-X2RPW225.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-4IBFBV3C.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-NRMQASJK.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-PLIHGK77.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-AKZVQ5ZR.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6112,8 +6112,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.18-master";
-var packageVersion = "0.0.18";
+var buildVersion = "v0.0.19-master";
+var packageVersion = "0.0.19";
 var gitBranch = "master";
 
 // src/app/app-version/app-version.ts
