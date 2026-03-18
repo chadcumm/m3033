@@ -6065,7 +6065,7 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-VI6IPWR5.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-GWSDZ4FL.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6075,7 +6075,7 @@ var routes = [
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-X2GEFGM5.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-NZUEUF5L.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6112,8 +6112,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.15-master";
-var packageVersion = "0.0.15";
+var buildVersion = "v0.0.16-master";
+var packageVersion = "0.0.16";
 var gitBranch = "master";
 
 // src/app/app-version/app-version.ts
