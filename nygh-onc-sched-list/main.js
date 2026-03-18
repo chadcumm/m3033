@@ -6075,7 +6075,7 @@ var routes = [
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-XVUDPUUV.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-X2GEFGM5.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6112,8 +6112,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.14-master";
-var packageVersion = "0.0.14";
+var buildVersion = "v0.0.15-master";
+var packageVersion = "0.0.15";
 var gitBranch = "master";
 
 // src/app/app-version/app-version.ts
