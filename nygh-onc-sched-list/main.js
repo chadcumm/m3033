@@ -6070,12 +6070,12 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-2YO6XYXS.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-4IBFBV3C.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-NZUEUF5L.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-PLIHGK77.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6112,8 +6112,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.17-master";
-var packageVersion = "0.0.17";
+var buildVersion = "v0.0.18-master";
+var packageVersion = "0.0.18";
 var gitBranch = "master";
 
 // src/app/app-version/app-version.ts
