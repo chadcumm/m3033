@@ -6070,7 +6070,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-C4XZS2TW.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-2YO6XYXS.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6112,8 +6112,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.16-master";
-var packageVersion = "0.0.16";
+var buildVersion = "v0.0.17-master";
+var packageVersion = "0.0.17";
 var gitBranch = "master";
 
 // src/app/app-version/app-version.ts
