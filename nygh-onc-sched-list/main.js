@@ -1,9 +1,9 @@
 import {
   PreferencesService
-} from "./chunk-W7ORADGJ.js";
+} from "./chunk-CZ5MHYL2.js";
 import {
   AccessControlService
-} from "./chunk-PJJEHCPZ.js";
+} from "./chunk-QHMSTCWO.js";
 import "./chunk-YU6WF6BO.js";
 import {
   APP_BOOTSTRAP_LISTENER,
@@ -143,7 +143,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-ENBRBLXP.js";
+} from "./chunk-AJ3JIOTX.js";
 
 // node_modules/@angular/router/fesm2022/router2.mjs
 var PRIMARY_OUTLET = "primary";
@@ -6065,17 +6065,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-6MPMJUNO.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-THUVNCJF.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-IFGO2LIN.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-4VHB6Z3G.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-Y4CDDW7W.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-ZJKOBCIN.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6112,8 +6112,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.23-develop";
-var packageVersion = "0.0.23";
+var buildVersion = "v0.0.24-develop";
+var packageVersion = "0.0.24";
 var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
