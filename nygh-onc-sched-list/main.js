@@ -1,7 +1,7 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-ESJU7IIO.js";
+} from "./chunk-6FDTD75A.js";
 import {
   AccessControlService
 } from "./chunk-SGNVN5NZ.js";
@@ -6164,7 +6164,7 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-XRUU7PDZ.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-GFWI5Z4C.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6223,8 +6223,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.35-develop";
-var packageVersion = "0.0.35";
+var buildVersion = "v0.0.36-develop";
+var packageVersion = "0.0.36";
 var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
