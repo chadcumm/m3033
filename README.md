@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.33
+**Version:** v0.0.34
 **Branch:** develop
-**Last Deployed:** 03/18/2026, 20:47:28
+**Last Deployed:** 03/18/2026, 21:20:01
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.34** | Branch: `develop` | Deployed: 03/18/2026, 21:20:01
 - **v0.0.33** | Branch: `develop` | Deployed: 03/18/2026, 20:47:28
 - **v0.0.32** | Branch: `develop` | Deployed: 03/18/2026, 20:42:11
 - **v0.0.31** | Branch: `develop` | Deployed: 03/18/2026, 20:39:46
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.26** | Branch: `develop` | Deployed: 03/18/2026, 20:25:57
 - **v0.0.25** | Branch: `develop` | Deployed: 03/18/2026, 20:16:45
 - **v0.0.24** | Branch: `develop` | Deployed: 03/18/2026, 20:09:24
-- **v0.0.25** | Branch: `develop` | Deployed: 03/18/2026, 20:04:21
 
 ---
 
