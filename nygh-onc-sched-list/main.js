@@ -6088,15 +6088,15 @@ var NoAccessComponent = class _NoAccessComponent {
   static \u0275fac = function NoAccessComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _NoAccessComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _NoAccessComponent, selectors: [["app-no-access"]], decls: 7, vars: 1, consts: [[2, "display", "flex", "align-items", "center", "justify-content", "center", "min-height", "60vh", "flex-direction", "column", "color", "#555"], [2, "font-size", "12px", "color", "#999"]], template: function NoAccessComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _NoAccessComponent, selectors: [["app-no-access"]], decls: 7, vars: 1, consts: [[2, "display", "flex", "align-items", "center", "justify-content", "center", "min-height", "60vh", "flex-direction", "column", "color", "var(--fusion-text-muted)"], [2, "margin-bottom", "0.5rem", "color", "var(--fusion-text)"], [2, "font-size", "0.75rem", "color", "var(--fusion-text-light)", "margin-top", "0.5rem"]], template: function NoAccessComponent_Template(rf, ctx) {
     if (rf & 1) {
-      \u0275\u0275domElementStart(0, "div", 0)(1, "h2");
+      \u0275\u0275domElementStart(0, "div", 0)(1, "h2", 1);
       \u0275\u0275text(2, "Access Denied");
       \u0275\u0275domElementEnd();
       \u0275\u0275domElementStart(3, "p");
       \u0275\u0275text(4, "You do not have permission to view this page.");
       \u0275\u0275domElementEnd();
-      \u0275\u0275domElementStart(5, "p", 1);
+      \u0275\u0275domElementStart(5, "p", 2);
       \u0275\u0275text(6);
       \u0275\u0275domElementEnd()();
     }
@@ -6109,7 +6109,7 @@ var NoAccessComponent = class _NoAccessComponent {
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NoAccessComponent, [{
     type: Component,
-    args: [{ selector: "app-no-access", standalone: true, changeDetection: ChangeDetectionStrategy.OnPush, template: '<div style="display: flex; align-items: center; justify-content: center; min-height: 60vh; flex-direction: column; color: #555;">\n  <h2>Access Denied</h2>\n  <p>You do not have permission to view this page.</p>\n  <p style="font-size: 12px; color: #999;">Your position: {{ accessControl.userPosition() }}</p>\n</div>\n' }]
+    args: [{ selector: "app-no-access", standalone: true, changeDetection: ChangeDetectionStrategy.OnPush, template: '<div style="display: flex; align-items: center; justify-content: center; min-height: 60vh; flex-direction: column; color: var(--fusion-text-muted);">\n  <h2 style="margin-bottom: 0.5rem; color: var(--fusion-text);">Access Denied</h2>\n  <p>You do not have permission to view this page.</p>\n  <p style="font-size: 0.75rem; color: var(--fusion-text-light); margin-top: 0.5rem;">Your position: {{ accessControl.userPosition() }}</p>\n</div>\n' }]
   }], null, null);
 })();
 (() => {
@@ -6164,17 +6164,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-GFWI5Z4C.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-3YXNVLKK.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-WYUY4YWZ.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-DIKXSHX6.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-MO4FRABE.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-FRCCOIKS.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6223,9 +6223,9 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.38-develop";
-var packageVersion = "0.0.38";
-var gitBranch = "develop";
+var buildVersion = "v0.0.39-feature/fusion-styling";
+var packageVersion = "0.0.39";
+var gitBranch = "feature/fusion-styling";
 
 // src/app/app-version/app-version.ts
 var AppVersion = class _AppVersion {
@@ -6329,9 +6329,9 @@ var App = class _App {
     ConfigurationService,
     PreferencesService,
     ScheduleService
-  ])], decls: 9, vars: 0, consts: [[1, "app-nav"], [1, "nav-links"], ["routerLinkActive", "active", 1, "nav-link", 3, "routerLink"], [1, "app-content"], [2, "position", "fixed", "bottom", "10px", "right", "10px"]], template: function App_Template(rf, ctx) {
+  ])], decls: 9, vars: 0, consts: [[1, "mpage-header"], [1, "nav-links"], ["routerLinkActive", "active", 1, "nav-link", 3, "routerLink"], [1, "app-content"], [2, "position", "fixed", "bottom", "10px", "right", "10px"]], template: function App_Template(rf, ctx) {
     if (rf & 1) {
-      \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1);
+      \u0275\u0275elementStart(0, "header", 0)(1, "div", 1);
       \u0275\u0275repeaterCreate(2, App_For_3_Template, 2, 2, "a", 2, _forTrack0);
       \u0275\u0275elementEnd()();
       \u0275\u0275elementStart(4, "main", 3);
@@ -6370,13 +6370,13 @@ var App = class _App {
       ConfigurationService,
       PreferencesService,
       ScheduleService
-    ], template: `<nav class="app-nav">
+    ], template: `<header class="mpage-header">
   <div class="nav-links">
     @for (tab of accessControl.allowedTabs(); track tab.key) {
       <a [routerLink]="'/' + tab.key" routerLinkActive="active" class="nav-link">{{ tab.label }}</a>
     }
   </div>
-</nav>
+</header>
 
 <main class="app-content">
   <router-outlet />

@@ -17,9 +17,9 @@
   --default-color: white;
   --default-color-content: black;
   --default-color-alternate: grey;
-  --primary-color: #5783db;
+  --primary-color: #005eb8;
   --primary-color-content: white;
-  --primary-color-alternate: darkblue;
+  --primary-color-alternate: #004a94;
   --accent-color: #55c2da;
   --accent-color-content: darkblue;
   --accent-color-alternate: #46697a;
@@ -106,35 +106,308 @@
   padding: 0;
   margin: 0;
 }
-.app-nav {
-  background: #fff;
-  border-bottom: 1px solid #dee2e6;
-  padding: 0 16px;
+:root {
+  --fusion-primary: #005eb8;
+  --fusion-primary-hover: #004a94;
+  --fusion-primary-pressed: #003a73;
+  --fusion-success: #28a745;
+  --fusion-success-bg: #d4edda;
+  --fusion-success-text: #155724;
+  --fusion-info-bg: #d1ecf1;
+  --fusion-info-text: #0c5460;
+  --fusion-warning-bg: #fff3cd;
+  --fusion-warning-text: #856404;
+  --fusion-danger: #dc3545;
+  --fusion-danger-bg: #fed7d7;
+  --fusion-danger-text: #9b2c2c;
+  --fusion-text: #333;
+  --fusion-text-muted: #495057;
+  --fusion-text-light: #6c757d;
+  --fusion-bg-page: #f5f5f5;
+  --fusion-bg-panel: #ffffff;
+  --fusion-bg-header: #f8f9fa;
+  --fusion-bg-row-alt: #fafafa;
+  --fusion-bg-selected: #e7f3ff;
+  --fusion-border: #dee2e6;
+  --fusion-border-dark: #c6cbd1;
+  --fusion-radius: 4px;
+  --fusion-radius-card: 4px;
+  --fusion-radius-badge: 12px;
+  --fusion-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --fusion-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --fusion-font-family:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
 }
-.nav-links {
+.fusion-panel {
+  background: var(--fusion-bg-panel);
+  border: 1px solid var(--fusion-border);
+  border-radius: var(--fusion-radius-card);
+  box-shadow: var(--fusion-shadow);
+  margin-bottom: 1rem;
+}
+.fusion-panel-header {
+  background: var(--fusion-bg-header);
+  border-bottom: 1px solid var(--fusion-border);
+  padding: 0.75rem 1.25rem;
+}
+.fusion-panel-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--fusion-text);
+  font-weight: 600;
+}
+.fusion-panel-header p {
+  margin: 4px 0 0;
+  font-size: 0.8rem;
+  color: var(--fusion-text-light);
+}
+.fusion-panel-body {
+  padding: 1rem 1.25rem;
+}
+.fusion-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.fusion-grid thead {
+  background: var(--fusion-bg-header);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.fusion-grid th {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: var(--fusion-text-muted);
+  text-align: left;
+  border-bottom: 2px solid var(--fusion-border);
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.fusion-grid td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--fusion-border);
+  color: var(--fusion-text);
+}
+.fusion-grid tbody tr {
+  cursor: default;
+}
+.fusion-grid tbody tr:hover {
+  background: var(--fusion-bg-header);
+}
+.fusion-grid tbody tr.even {
+  background: var(--fusion-bg-panel);
+}
+.fusion-grid tbody tr.odd {
+  background: var(--fusion-bg-row-alt);
+}
+.fusion-grid tbody tr:nth-child(even) {
+  background: var(--fusion-bg-row-alt);
+}
+.fusion-grid tbody tr.selected {
+  background: var(--fusion-bg-selected);
+}
+.fusion-grid tbody tr.selected td {
+  font-weight: 600;
+}
+.fusion-grid.compact th,
+.fusion-grid.compact td {
+  padding: 0.5rem 0.75rem;
+}
+.fusion-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--fusion-radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+  background: var(--fusion-primary);
+  color: #fff;
+}
+.fusion-button:hover:not(:disabled) {
+  background: var(--fusion-primary-hover);
+}
+.fusion-button:active:not(:disabled) {
+  background: var(--fusion-primary-pressed);
+}
+.fusion-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.fusion-button.fusion-secondary {
+  background: var(--fusion-text-light);
+}
+.fusion-button.fusion-secondary:hover:not(:disabled) {
+  background: var(--fusion-text-muted);
+}
+.fusion-button.fusion-success {
+  background: var(--fusion-success);
+}
+.fusion-button.fusion-success:hover:not(:disabled) {
+  background: #218838;
+}
+.fusion-button.fusion-danger {
+  background: var(--fusion-danger);
+}
+.fusion-button.fusion-danger:hover:not(:disabled) {
+  background: #c82333;
+}
+.fusion-button.fusion-outline {
+  background: transparent;
+  border: 1px solid var(--fusion-border-dark);
+  color: var(--fusion-text);
+}
+.fusion-button.fusion-outline:hover:not(:disabled) {
+  background: var(--fusion-bg-header);
+}
+.fusion-button.fusion-small {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+}
+.fusion-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--fusion-radius-badge);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.fusion-badge.badge-success,
+.fusion-badge.badge-admitted,
+.fusion-badge.badge-confirmed,
+.fusion-badge.badge-active {
+  background: var(--fusion-success-bg);
+  color: var(--fusion-success-text);
+}
+.fusion-badge.badge-info,
+.fusion-badge.badge-discharged,
+.fusion-badge.badge-checked-in {
+  background: var(--fusion-info-bg);
+  color: var(--fusion-info-text);
+}
+.fusion-badge.badge-warning,
+.fusion-badge.badge-pending {
+  background: var(--fusion-warning-bg);
+  color: var(--fusion-warning-text);
+}
+.fusion-badge.badge-danger,
+.fusion-badge.badge-cancelled {
+  background: var(--fusion-danger-bg);
+  color: var(--fusion-danger-text);
+}
+.fusion-badge.badge-muted,
+.fusion-badge.badge-no-show {
+  background: #e9ecef;
+  color: var(--fusion-text-light);
+}
+.fusion-input {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--fusion-border-dark);
+  border-radius: var(--fusion-radius);
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: var(--fusion-text);
+  background: var(--fusion-bg-panel);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.fusion-input:focus {
+  outline: none;
+  border-color: var(--fusion-primary);
+  box-shadow: 0 0 0 2px rgba(0, 94, 184, 0.15);
+}
+.fusion-input:disabled {
+  background: var(--fusion-bg-header);
+  cursor: not-allowed;
+}
+select.fusion-input {
+  appearance: auto;
+  cursor: pointer;
+}
+.mpage-header {
+  display: flex;
+  align-items: center;
+  background: var(--fusion-primary);
+  color: #fff;
+  padding: 0 1rem;
+  min-height: 42px;
+  box-shadow: var(--fusion-shadow);
+  z-index: 100;
+}
+.mpage-header .nav-links {
   display: flex;
   gap: 0;
+  flex: 1;
 }
-.nav-link {
-  display: inline-block;
-  padding: 10px 16px;
-  color: #555;
+.mpage-header .nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 14px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-.nav-link:hover {
-  color: #2563eb;
-}
-.nav-link.active {
-  color: #2563eb;
-  border-bottom-color: #2563eb;
+  font-size: 0.875rem;
   font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    background 0.15s;
+}
+.mpage-header .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.mpage-header .nav-link.active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.mpage-content {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--fusion-bg-page);
+}
+.mpage-footer {
+  background: var(--fusion-bg-header);
+  border-top: 1px solid var(--fusion-border);
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+  color: var(--fusion-text-light);
+}
+.mpage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--fusion-font-family);
 }
 .app-content {
-  height: calc(100vh - 43px);
+  height: calc(100vh - 42px);
   overflow: auto;
+  background: var(--fusion-bg-page);
+}
+@media (max-width: 768px) {
+  .mpage-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mpage-header .nav-links {
+    width: 100%;
+  }
+  .fusion-grid {
+    font-size: 0.75rem;
+  }
+  .fusion-grid th,
+  .fusion-grid td {
+    padding: 0.5rem;
+  }
 }
 
 /* src/clinical-office-styles.scss */
