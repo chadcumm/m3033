@@ -107,71 +107,91 @@
   margin: 0;
 }
 :root {
-  --fusion-primary: #005eb8;
-  --fusion-primary-hover: #004a94;
-  --fusion-primary-pressed: #003a73;
-  --fusion-success: #28a745;
-  --fusion-success-bg: #d4edda;
-  --fusion-success-text: #155724;
-  --fusion-info-bg: #d1ecf1;
-  --fusion-info-text: #0c5460;
-  --fusion-warning-bg: #fff3cd;
-  --fusion-warning-text: #856404;
-  --fusion-danger: #dc3545;
-  --fusion-danger-bg: #fed7d7;
+  --fusion-primary: #0079be;
+  --fusion-primary-hover: #006aa8;
+  --fusion-primary-pressed: #005a91;
+  --fusion-primary-dark: #0a5e7d;
+  --fusion-success: #1a7742;
+  --fusion-success-bg: #e8f5e9;
+  --fusion-success-text: #1a7742;
+  --fusion-info: #0079be;
+  --fusion-info-bg: #e0f2f8;
+  --fusion-info-text: #0a5e7d;
+  --fusion-warning: #c36d15;
+  --fusion-warning-bg: #fff8e1;
+  --fusion-warning-text: #8d4e0f;
+  --fusion-danger: #c23934;
+  --fusion-danger-bg: #fde7e7;
   --fusion-danger-text: #9b2c2c;
-  --fusion-text: #333;
-  --fusion-text-muted: #495057;
-  --fusion-text-light: #6c757d;
-  --fusion-bg-page: #f5f5f5;
+  --fusion-text: #1c1f21;
+  --fusion-text-muted: #4c5259;
+  --fusion-text-light: #6f777d;
+  --fusion-text-link: #0079be;
+  --fusion-bg-page: #f4f4f4;
   --fusion-bg-panel: #ffffff;
-  --fusion-bg-header: #f8f9fa;
-  --fusion-bg-row-alt: #fafafa;
-  --fusion-bg-selected: #e7f3ff;
-  --fusion-border: #dee2e6;
-  --fusion-border-dark: #c6cbd1;
-  --fusion-radius: 4px;
-  --fusion-radius-card: 4px;
-  --fusion-radius-badge: 12px;
-  --fusion-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --fusion-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --fusion-bg-header: #f0f2f4;
+  --fusion-bg-row-alt: #f8f9fa;
+  --fusion-bg-row-hover: #edf2f7;
+  --fusion-bg-selected: #e0f2f8;
+  --fusion-border: #d4d9dd;
+  --fusion-border-dark: #b2b8bf;
+  --fusion-border-focus: #0079be;
+  --fusion-radius: 3px;
+  --fusion-radius-card: 2px;
+  --fusion-radius-badge: 3px;
+  --fusion-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --fusion-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.12);
+  --fusion-focus-shadow:
+    0 0 1px 1px rgba(255, 255, 255, 0.65),
+    0 0 2px 3px rgba(76, 178, 233, 0.5),
+    0 0 6px 4px rgba(76, 178, 233, 0.3);
   --fusion-font-family:
-    "Segoe UI",
     Tahoma,
     Geneva,
     Verdana,
+    "Trebuchet MS",
     sans-serif;
+  --fusion-font-size-xs: 0.6875rem;
+  --fusion-font-size-sm: 0.75rem;
+  --fusion-font-size-base: 0.8125rem;
+  --fusion-font-size-md: 0.875rem;
+  --fusion-font-size-lg: 1rem;
+  --fusion-font-size-xl: 1.125rem;
+  --fusion-space-xs: 0.25rem;
+  --fusion-space-sm: 0.5rem;
+  --fusion-space-base: 0.75rem;
+  --fusion-space-md: 1rem;
+  --fusion-space-lg: 1.25rem;
 }
 .fusion-panel {
   background: var(--fusion-bg-panel);
   border: 1px solid var(--fusion-border);
   border-radius: var(--fusion-radius-card);
-  box-shadow: var(--fusion-shadow);
-  margin-bottom: 1rem;
+  margin-bottom: var(--fusion-space-md);
 }
 .fusion-panel-header {
   background: var(--fusion-bg-header);
   border-bottom: 1px solid var(--fusion-border);
-  padding: 0.75rem 1.25rem;
+  padding: var(--fusion-space-sm) var(--fusion-space-md);
 }
 .fusion-panel-header h3 {
   margin: 0;
-  font-size: 1.1rem;
-  color: var(--fusion-text);
+  font-size: var(--fusion-font-size-md);
+  color: var(--fusion-text-link);
   font-weight: 600;
 }
 .fusion-panel-header p {
-  margin: 4px 0 0;
-  font-size: 0.8rem;
+  margin: 2px 0 0;
+  font-size: var(--fusion-font-size-sm);
   color: var(--fusion-text-light);
 }
 .fusion-panel-body {
-  padding: 1rem 1.25rem;
+  padding: var(--fusion-space-base) var(--fusion-space-md);
 }
 .fusion-grid {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.875rem;
+  font-size: var(--fusion-font-size-base);
 }
 .fusion-grid thead {
   background: var(--fusion-bg-header);
@@ -180,31 +200,29 @@
   z-index: 10;
 }
 .fusion-grid th {
-  padding: 0.75rem 1rem;
+  padding: var(--fusion-space-sm) var(--fusion-space-base);
   font-weight: 600;
   color: var(--fusion-text-muted);
   text-align: left;
-  border-bottom: 2px solid var(--fusion-border);
+  border-bottom: 1px solid var(--fusion-border-dark);
   white-space: nowrap;
   -webkit-user-select: none;
   user-select: none;
+  font-size: var(--fusion-font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
 }
 .fusion-grid td {
-  padding: 0.75rem 1rem;
+  padding: var(--fusion-space-sm) var(--fusion-space-base);
   border-bottom: 1px solid var(--fusion-border);
   color: var(--fusion-text);
+  vertical-align: top;
 }
 .fusion-grid tbody tr {
   cursor: default;
 }
 .fusion-grid tbody tr:hover {
-  background: var(--fusion-bg-header);
-}
-.fusion-grid tbody tr.even {
-  background: var(--fusion-bg-panel);
-}
-.fusion-grid tbody tr.odd {
-  background: var(--fusion-bg-row-alt);
+  background: var(--fusion-bg-row-hover);
 }
 .fusion-grid tbody tr:nth-child(even) {
   background: var(--fusion-bg-row-alt);
@@ -212,72 +230,98 @@
 .fusion-grid tbody tr.selected {
   background: var(--fusion-bg-selected);
 }
-.fusion-grid tbody tr.selected td {
-  font-weight: 600;
-}
 .fusion-grid.compact th,
 .fusion-grid.compact td {
-  padding: 0.5rem 0.75rem;
+  padding: var(--fusion-space-xs) var(--fusion-space-sm);
 }
 .fusion-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: var(--fusion-radius);
-  font-size: 0.875rem;
-  font-weight: 500;
+  min-height: 2.186116667rem;
+  padding: 0.25rem 0.83333rem;
+  border: 1px solid #6f7477;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 400;
   cursor: pointer;
-  transition: background 0.15s, box-shadow 0.15s;
-  background: var(--fusion-primary);
-  color: #fff;
+  font-family: inherit;
+  line-height: 1.5;
+  -webkit-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  background-color: #a6d9f4;
+  box-shadow: inset 0 3rem 1.5rem -2rem #ebf6fd;
+  color: #000;
 }
 .fusion-button:hover:not(:disabled) {
-  background: var(--fusion-primary-hover);
+  background-color: #4cb2e9;
 }
 .fusion-button:active:not(:disabled) {
-  background: var(--fusion-primary-pressed);
+  background-color: #26a2e5;
+}
+.fusion-button:focus {
+  box-shadow: inset 0 3rem 1.5rem -2rem #ebf6fd, var(--fusion-focus-shadow);
 }
 .fusion-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
 }
-.fusion-button.fusion-secondary {
-  background: var(--fusion-text-light);
+.fusion-button {
 }
-.fusion-button.fusion-secondary:hover:not(:disabled) {
-  background: var(--fusion-text-muted);
+.fusion-button.fusion-neutral {
+  background-color: #dedfe0;
+  box-shadow: inset 0 3rem 1.5rem -2rem #f4f4f4;
 }
-.fusion-button.fusion-success {
-  background: var(--fusion-success);
+.fusion-button.fusion-neutral:hover:not(:disabled) {
+  background-color: #b2b5b6;
 }
-.fusion-button.fusion-success:hover:not(:disabled) {
-  background: #218838;
+.fusion-button.fusion-neutral:active:not(:disabled) {
+  background-color: #9b9fa1;
 }
-.fusion-button.fusion-danger {
-  background: var(--fusion-danger);
-}
-.fusion-button.fusion-danger:hover:not(:disabled) {
-  background: #c82333;
+.fusion-button {
 }
 .fusion-button.fusion-outline {
-  background: transparent;
-  border: 1px solid var(--fusion-border-dark);
-  color: var(--fusion-text);
+  background-color: transparent;
+  box-shadow: none;
 }
 .fusion-button.fusion-outline:hover:not(:disabled) {
-  background: var(--fusion-bg-header);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.fusion-button.fusion-outline:active:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.fusion-button {
+}
+.fusion-button.fusion-link {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: #0065a3;
+}
+.fusion-button.fusion-link:hover:not(:disabled) {
+  color: #003f61;
+}
+.fusion-button {
+}
+.fusion-button.fusion-danger {
+  background-color: var(--fusion-danger);
+  border-color: var(--fusion-danger);
+  color: #fff;
+}
+.fusion-button {
 }
 .fusion-button.fusion-small {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
+  min-height: 1.666666667rem;
+  padding: 0 0.83333rem;
+  font-size: var(--fusion-font-size-sm);
 }
 .fusion-badge {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
+  padding: 2px var(--fusion-space-sm);
   border-radius: var(--fusion-radius-badge);
-  font-size: 0.75rem;
+  font-size: var(--fusion-font-size-xs);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
