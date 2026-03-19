@@ -1,10 +1,10 @@
 import {
   PreferencesService
-} from "./chunk-Q4ABHYI2.js";
+} from "./chunk-BB3W6X2W.js";
 import {
   AccessControlService
-} from "./chunk-PZXFKDFE.js";
-import "./chunk-JVTJN3IF.js";
+} from "./chunk-K4W2IBIX.js";
+import "./chunk-YU6WF6BO.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   ApplicationRef,
@@ -27,8 +27,6 @@ import {
   ElementRef,
   EmptyError,
   EnvironmentInjector,
-  ErrorHandler,
-  ErrorHandlerService,
   EventEmitter,
   HashLocationStrategy,
   HostAttributeToken,
@@ -143,7 +141,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-ENBRBLXP.js";
+} from "./chunk-CXMJVG4I.js";
 
 // node_modules/@angular/router/fesm2022/router2.mjs
 var PRIMARY_OUTLET = "primary";
@@ -6065,17 +6063,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-2NPBVNIX.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-2RAN6GEW.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-IFGO2LIN.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-YLPTUCX4.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-3EVHCJDK.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-EYTCH2M7.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6106,15 +6104,14 @@ var appConfig = {
     provideAppInitializer(() => {
       const configService = inject(ConfigService);
       return configService.loadConfig();
-    }),
-    { provide: ErrorHandler, useClass: ErrorHandlerService }
+    })
   ]
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.22-master";
-var packageVersion = "0.0.22";
-var gitBranch = "master";
+var buildVersion = "v0.0.23-develop";
+var packageVersion = "0.0.23";
+var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
 var AppVersion = class _AppVersion {
