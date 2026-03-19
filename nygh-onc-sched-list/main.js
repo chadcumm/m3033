@@ -1,11 +1,11 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-JXR2WPSD.js";
+} from "./chunk-ESJU7IIO.js";
 import {
   AccessControlService
-} from "./chunk-DMP2DTEV.js";
-import "./chunk-YU6WF6BO.js";
+} from "./chunk-SGNVN5NZ.js";
+import "./chunk-3DA3G6PL.js";
 import {
   AddressService,
   AllergyService,
@@ -6164,7 +6164,7 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-IAVCSX2Q.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-XRUU7PDZ.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6174,7 +6174,7 @@ var routes = [
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-P5GPWHXF.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-MO4FRABE.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6223,8 +6223,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.34-develop";
-var packageVersion = "0.0.34";
+var buildVersion = "v0.0.35-develop";
+var packageVersion = "0.0.35";
 var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
