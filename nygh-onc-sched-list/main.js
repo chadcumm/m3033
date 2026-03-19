@@ -1,33 +1,39 @@
 import {
-  PreferencesService
-} from "./chunk-4255CEF2.js";
+  PreferencesService,
+  ScheduleService
+} from "./chunk-VM262JPI.js";
 import {
   AccessControlService
-} from "./chunk-VH5JVB7A.js";
+} from "./chunk-GMBJRG7J.js";
 import "./chunk-YU6WF6BO.js";
 import {
   APP_BOOTSTRAP_LISTENER,
+  AddressService,
+  AllergyService,
   ApplicationRef,
   Attribute,
   BehaviorSubject,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
+  CodeValueService,
   Compiler,
   Component,
   ConfigService,
   ConfigurationService,
   Console,
   ContentChildren,
+  CustomService,
   DOCUMENT,
   DestroyRef,
+  DiagnosisService,
+  Dialog,
   Directive,
   EMPTY,
   ENVIRONMENT_INITIALIZER,
   ElementRef,
   EmptyError,
+  EncounterService,
   EnvironmentInjector,
-  ErrorHandler,
-  ErrorHandlerService,
   EventEmitter,
   HashLocationStrategy,
   HostAttributeToken,
@@ -47,12 +53,18 @@ import {
   NgModuleFactory$1,
   NgZone,
   Observable,
+  OrganizationService,
   Output,
   PRECOMMIT_HANDLER_SUPPORTED,
   PathLocationStrategy,
   PendingTasksInternal,
+  PersonService,
+  PhoneService,
   PlatformLocation,
   PlatformNavigation,
+  ProblemService,
+  PrsnlService,
+  ReferenceService,
   Renderer2,
   RuntimeError,
   Subject,
@@ -114,6 +126,7 @@ import {
   withFetch,
   ɵsetClassDebugInfo,
   ɵɵNgOnChangesFeature,
+  ɵɵProvidersFeature,
   ɵɵadvance,
   ɵɵattribute,
   ɵɵcontentQuery,
@@ -142,7 +155,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-YYIO5QBM.js";
+} from "./chunk-A67LQTG4.js";
 
 // node_modules/@angular/router/fesm2022/_router-chunk.mjs
 var PRIMARY_OUTLET = "primary";
@@ -5933,17 +5946,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-TRZCIGLH.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-YLN57PTM.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-ZIJGABJA.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-QW2X35TF.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-SN5P54VA.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-76GRXYNT.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -5974,14 +5987,13 @@ var appConfig = {
     provideAppInitializer(() => {
       const configService = inject(ConfigService);
       return configService.loadConfig();
-    }),
-    { provide: ErrorHandler, useClass: ErrorHandlerService }
+    })
   ]
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.26-develop";
-var packageVersion = "0.0.26";
+var buildVersion = "v0.0.27-develop";
+var packageVersion = "0.0.27";
 var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
@@ -6067,7 +6079,26 @@ var App = class _App {
   static \u0275fac = function App_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _App)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _App, selectors: [["app-root"]], decls: 9, vars: 0, consts: [[1, "app-nav"], [1, "nav-links"], ["routerLinkActive", "active", 1, "nav-link", 3, "routerLink"], [1, "app-content"], [2, "position", "fixed", "bottom", "10px", "right", "10px"]], template: function App_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _App, selectors: [["app-root"]], features: [\u0275\u0275ProvidersFeature([
+    MPageService,
+    Dialog,
+    AddressService,
+    AllergyService,
+    CodeValueService,
+    CustomService,
+    DiagnosisService,
+    EncounterService,
+    OrganizationService,
+    PersonService,
+    PhoneService,
+    ProblemService,
+    PrsnlService,
+    ReferenceService,
+    AccessControlService,
+    ConfigurationService,
+    PreferencesService,
+    ScheduleService
+  ])], decls: 9, vars: 0, consts: [[1, "app-nav"], [1, "nav-links"], ["routerLinkActive", "active", 1, "nav-link", 3, "routerLink"], [1, "app-content"], [2, "position", "fixed", "bottom", "10px", "right", "10px"]], template: function App_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1);
       \u0275\u0275repeaterCreate(2, App_For_3_Template, 2, 2, "a", 2, _forTrack0);
@@ -6089,7 +6120,26 @@ var App = class _App {
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(App, [{
     type: Component,
-    args: [{ selector: "app-root", imports: [MpageLogComponent, AppVersion, RouterOutlet, RouterLink, RouterLinkActive], standalone: true, template: `<nav class="app-nav">
+    args: [{ selector: "app-root", imports: [MpageLogComponent, AppVersion, RouterOutlet, RouterLink, RouterLinkActive], standalone: true, providers: [
+      MPageService,
+      Dialog,
+      AddressService,
+      AllergyService,
+      CodeValueService,
+      CustomService,
+      DiagnosisService,
+      EncounterService,
+      OrganizationService,
+      PersonService,
+      PhoneService,
+      ProblemService,
+      PrsnlService,
+      ReferenceService,
+      AccessControlService,
+      ConfigurationService,
+      PreferencesService,
+      ScheduleService
+    ], template: `<nav class="app-nav">
   <div class="nav-links">
     @for (tab of accessControl.allowedTabs(); track tab.key) {
       <a [routerLink]="'/' + tab.key" routerLinkActive="active" class="nav-link">{{ tab.label }}</a>
@@ -6110,7 +6160,7 @@ var App = class _App {
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App, { className: "App", filePath: "src/app/app.ts", lineNumber: 16 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App, { className: "App", filePath: "src/app/app.ts", lineNumber: 35 });
 })();
 
 // src/main.ts
