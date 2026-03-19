@@ -3514,8 +3514,8 @@ var CREATE_VIEW_TRANSITION = new InjectionToken(typeof ngDevMode !== "undefined"
 var VIEW_TRANSITION_OPTIONS = new InjectionToken(typeof ngDevMode !== "undefined" && ngDevMode ? "view transition options" : "");
 function createViewTransition(injector, from2, to) {
   const transitionOptions = injector.get(VIEW_TRANSITION_OPTIONS);
-  const document = injector.get(DOCUMENT);
-  if (!document.startViewTransition || transitionOptions.skipNextTransition) {
+  const document2 = injector.get(DOCUMENT);
+  if (!document2.startViewTransition || transitionOptions.skipNextTransition) {
     transitionOptions.skipNextTransition = false;
     return new Promise((resolve) => setTimeout(resolve));
   }
@@ -3523,7 +3523,7 @@ function createViewTransition(injector, from2, to) {
   const viewTransitionStarted = new Promise((resolve) => {
     resolveViewTransitionStarted = resolve;
   });
-  const transition = document.startViewTransition(() => {
+  const transition = document2.startViewTransition(() => {
     resolveViewTransitionStarted();
     return createRenderPromise(injector);
   });
@@ -6201,6 +6201,13 @@ var appConfig = {
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideAnimationsAsync(),
+    // mpage-developer v5.0.53 Dialog service injects ElementRef
+    // and Renderer2 at root level — provide stubs to prevent
+    // NG0201 errors (they get proper values in component context)
+    {
+      provide: ElementRef,
+      useValue: new ElementRef(document.body)
+    },
     {
       provide: Renderer2,
       useFactory: (factory) => factory.createRenderer(null, null),
@@ -6216,8 +6223,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.32-develop";
-var packageVersion = "0.0.32";
+var buildVersion = "v0.0.33-develop";
+var packageVersion = "0.0.33";
 var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
