@@ -1,9 +1,9 @@
 import {
   PreferencesService
-} from "./chunk-CZ5MHYL2.js";
+} from "./chunk-BB3W6X2W.js";
 import {
   AccessControlService
-} from "./chunk-QHMSTCWO.js";
+} from "./chunk-K4W2IBIX.js";
 import "./chunk-YU6WF6BO.js";
 import {
   APP_BOOTSTRAP_LISTENER,
@@ -27,8 +27,6 @@ import {
   ElementRef,
   EmptyError,
   EnvironmentInjector,
-  ErrorHandler,
-  ErrorHandlerService,
   EventEmitter,
   HashLocationStrategy,
   HostAttributeToken,
@@ -143,7 +141,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-AJ3JIOTX.js";
+} from "./chunk-CXMJVG4I.js";
 
 // node_modules/@angular/router/fesm2022/router2.mjs
 var PRIMARY_OUTLET = "primary";
@@ -6065,17 +6063,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-THUVNCJF.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-2RAN6GEW.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-4VHB6Z3G.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-YLPTUCX4.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-ZJKOBCIN.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-EYTCH2M7.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6106,14 +6104,13 @@ var appConfig = {
     provideAppInitializer(() => {
       const configService = inject(ConfigService);
       return configService.loadConfig();
-    }),
-    { provide: ErrorHandler, useClass: ErrorHandlerService }
+    })
   ]
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.24-develop";
-var packageVersion = "0.0.24";
+var buildVersion = "v0.0.25-develop";
+var packageVersion = "0.0.25";
 var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
