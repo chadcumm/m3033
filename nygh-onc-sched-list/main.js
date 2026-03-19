@@ -5933,7 +5933,7 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-U3XKTLQM.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-TRZCIGLH.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -5980,8 +5980,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.25-develop";
-var packageVersion = "0.0.25";
+var buildVersion = "v0.0.26-develop";
+var packageVersion = "0.0.26";
 var gitBranch = "develop";
 
 // src/app/app-version/app-version.ts
