@@ -1,10 +1,10 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-RNFU6RSL.js";
+} from "./chunk-R7PKQVXL.js";
 import {
   AccessControlService
-} from "./chunk-ERPHN4IU.js";
+} from "./chunk-IUMO36CF.js";
 import {
   AddressService,
   AllergyService,
@@ -6166,17 +6166,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-222EEJXU.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-WOCN7ZBL.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-QRKEIUAT.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-OJMPV6V7.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-2HLDAPH7.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-XHOZLTFW.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6225,8 +6225,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.52-feature/position-scoped-appt-types";
-var packageVersion = "0.0.52";
+var buildVersion = "v0.0.53-feature/position-scoped-appt-types";
+var packageVersion = "0.0.53";
 var gitBranch = "feature/position-scoped-appt-types";
 
 // src/app/app-version/app-version.ts
