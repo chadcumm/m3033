@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.48
-**Branch:** feature/fusion-styling
-**Last Deployed:** 05/05/2026, 16:26:26
+**Version:** v0.0.49
+**Branch:** feature/patient-encounter-style
+**Last Deployed:** 05/05/2026, 16:40:44
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.49** | Branch: `feature/patient-encounter-style` | Deployed: 05/05/2026, 16:40:44
 - **v0.0.48** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 16:26:26
 - **v0.0.48** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 16:26:24
 - **v0.0.47** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 16:10:53
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.45** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 16:01:37
 - **v0.0.45** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 16:01:35
 - **v0.0.44** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 15:52:15
-- **v0.0.44** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 15:52:13
 
 ---
 
