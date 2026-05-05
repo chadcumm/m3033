@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.53
+**Version:** v0.0.54
 **Branch:** feature/position-scoped-appt-types
-**Last Deployed:** 05/05/2026, 18:20:02
+**Last Deployed:** 05/05/2026, 18:20:53
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.54** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:20:53
 - **v0.0.53** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:20:02
 - **v0.0.53** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:20:00
 - **v0.0.52** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:03:55
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.50** | Branch: `feature/chart-icon-state` | Deployed: 05/05/2026, 16:43:42
 - **v0.0.50** | Branch: `feature/chart-icon-state` | Deployed: 05/05/2026, 16:43:40
 - **v0.0.49** | Branch: `feature/patient-encounter-style` | Deployed: 05/05/2026, 16:40:46
-- **v0.0.49** | Branch: `feature/patient-encounter-style` | Deployed: 05/05/2026, 16:40:44
 
 ---
 
