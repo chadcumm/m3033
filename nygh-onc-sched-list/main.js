@@ -6171,7 +6171,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-7LSP7DTB.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-QRKEIUAT.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6225,8 +6225,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.51-feature/position-scoped-appt-types";
-var packageVersion = "0.0.51";
+var buildVersion = "v0.0.52-feature/position-scoped-appt-types";
+var packageVersion = "0.0.52";
 var gitBranch = "feature/position-scoped-appt-types";
 
 // src/app/app-version/app-version.ts
