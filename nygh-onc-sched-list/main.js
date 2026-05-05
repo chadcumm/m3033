@@ -1,10 +1,10 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-HRQZ267R.js";
+} from "./chunk-VAEH2TG4.js";
 import {
   AccessControlService
-} from "./chunk-3KE6AJZC.js";
+} from "./chunk-63P6STIE.js";
 import {
   AddressService,
   AllergyService,
@@ -37,7 +37,7 @@ import {
   bootstrapApplication,
   provideHttpClient,
   withFetch
-} from "./chunk-NAEUAFJJ.js";
+} from "./chunk-GKQZLO56.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -163,7 +163,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-372MDVVW.js";
+} from "./chunk-UFO6LCQJ.js";
 
 // node_modules/@angular/router/fesm2022/_router-chunk.mjs
 var PRIMARY_OUTLET = "primary";
@@ -5886,7 +5886,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
     this._engine?.flush();
   }
   loadImpl() {
-    const loadFn = () => this.moduleImpl ?? import("./chunk-HVFKDEY2.js").then((m) => m);
+    const loadFn = () => this.moduleImpl ?? import("./chunk-RNXFWFOV.js").then((m) => m);
     let moduleImplPromise;
     if (this.loadingSchedulerFn) {
       moduleImplPromise = this.loadingSchedulerFn(loadFn);
@@ -6166,17 +6166,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-OFKKGRVA.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-36Q5WJBM.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-GEDNW4NG.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-NXM6JAA5.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-K7E3O2AF.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-BZODFA4H.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6225,8 +6225,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.43-feature/fusion-styling";
-var packageVersion = "0.0.43";
+var buildVersion = "v0.0.44-feature/fusion-styling";
+var packageVersion = "0.0.44";
 var gitBranch = "feature/fusion-styling";
 
 // src/app/app-version/app-version.ts
