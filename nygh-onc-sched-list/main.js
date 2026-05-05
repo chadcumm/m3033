@@ -6166,7 +6166,7 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-ITSPS7Y3.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-TLUAKMXA.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6225,9 +6225,9 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.49-feature/patient-encounter-style";
-var packageVersion = "0.0.49";
-var gitBranch = "feature/patient-encounter-style";
+var buildVersion = "v0.0.50-feature/chart-icon-state";
+var packageVersion = "0.0.50";
+var gitBranch = "feature/chart-icon-state";
 
 // src/app/app-version/app-version.ts
 function AppVersion_Conditional_0_Template(rf, ctx) {
