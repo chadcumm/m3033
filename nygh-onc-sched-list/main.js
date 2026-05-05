@@ -1,10 +1,10 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-MXGOLG3C.js";
+} from "./chunk-RNFU6RSL.js";
 import {
   AccessControlService
-} from "./chunk-WUJOWMUV.js";
+} from "./chunk-ERPHN4IU.js";
 import {
   AddressService,
   AllergyService,
@@ -37,7 +37,7 @@ import {
   bootstrapApplication,
   provideHttpClient,
   withFetch
-} from "./chunk-G6VFW7GC.js";
+} from "./chunk-LFPAF37O.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -163,7 +163,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-UFO6LCQJ.js";
+} from "./chunk-VLNXRP3P.js";
 
 // node_modules/@angular/router/fesm2022/_router-chunk.mjs
 var PRIMARY_OUTLET = "primary";
@@ -5886,7 +5886,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
     this._engine?.flush();
   }
   loadImpl() {
-    const loadFn = () => this.moduleImpl ?? import("./chunk-RNXFWFOV.js").then((m) => m);
+    const loadFn = () => this.moduleImpl ?? import("./chunk-HGDIJ24I.js").then((m) => m);
     let moduleImplPromise;
     if (this.loadingSchedulerFn) {
       moduleImplPromise = this.loadingSchedulerFn(loadFn);
@@ -6166,17 +6166,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-TLUAKMXA.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-222EEJXU.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-CB6D27RT.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-7LSP7DTB.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-WFLQG2XW.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-2HLDAPH7.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6225,9 +6225,9 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.50-feature/chart-icon-state";
-var packageVersion = "0.0.50";
-var gitBranch = "feature/chart-icon-state";
+var buildVersion = "v0.0.51-feature/position-scoped-appt-types";
+var packageVersion = "0.0.51";
+var gitBranch = "feature/position-scoped-appt-types";
 
 // src/app/app-version/app-version.ts
 function AppVersion_Conditional_0_Template(rf, ctx) {
