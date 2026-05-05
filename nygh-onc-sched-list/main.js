@@ -6166,7 +6166,7 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-36Q5WJBM.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-LKQIKEST.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6225,8 +6225,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.44-feature/fusion-styling";
-var packageVersion = "0.0.44";
+var buildVersion = "v0.0.45-feature/fusion-styling";
+var packageVersion = "0.0.45";
 var gitBranch = "feature/fusion-styling";
 
 // src/app/app-version/app-version.ts
