@@ -5,7 +5,7 @@
 **Environment:** M3033
 **Version:** v0.0.43
 **Branch:** feature/fusion-styling
-**Last Deployed:** 05/05/2026, 10:15:35
+**Last Deployed:** 05/05/2026, 10:15:38
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.43** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 10:15:38
 - **v0.0.43** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 10:15:35
 - **v0.0.42** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 10:12:33
 - **v0.0.42** | Branch: `feature/fusion-styling` | Deployed: 05/05/2026, 10:12:29
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.38** | Branch: `develop` | Deployed: 03/18/2026, 22:01:59
 - **v0.0.37** | Branch: `develop` | Deployed: 03/18/2026, 21:58:48
 - **v0.0.36** | Branch: `develop` | Deployed: 03/18/2026, 21:58:43
-- **v0.0.35** | Branch: `develop` | Deployed: 03/18/2026, 21:57:09
 
 ---
 
