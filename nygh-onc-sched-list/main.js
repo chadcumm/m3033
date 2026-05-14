@@ -1,10 +1,10 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-HZMXALAY.js";
+} from "./chunk-HYFXHIGU.js";
 import {
   AccessControlService
-} from "./chunk-TJCOCOI3.js";
+} from "./chunk-QS5NDPZV.js";
 import {
   AddressService,
   AllergyService,
@@ -37,7 +37,7 @@ import {
   bootstrapApplication,
   provideHttpClient,
   withFetch
-} from "./chunk-LFPAF37O.js";
+} from "./chunk-3XCD2TKZ.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -6166,17 +6166,17 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-EBP36U36.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-GF37ZIFX.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-OJMPV6V7.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-EDG3AUMA.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-L4SSGI6E.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-7GQV3X65.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6225,9 +6225,9 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.54-feature/position-scoped-appt-types";
-var packageVersion = "0.0.54";
-var gitBranch = "feature/position-scoped-appt-types";
+var buildVersion = "v0.0.55-feature/labs-column";
+var packageVersion = "0.0.55";
+var gitBranch = "feature/labs-column";
 
 // src/app/app-version/app-version.ts
 function AppVersion_Conditional_0_Template(rf, ctx) {
