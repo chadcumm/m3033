@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.57
+**Version:** v0.0.58
 **Branch:** feature/labs-column
-**Last Deployed:** 05/14/2026, 13:56:46
+**Last Deployed:** 05/14/2026, 14:33:09
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.58** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 14:33:09
 - **v0.0.57** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 13:56:46
 - **v0.0.57** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 13:56:44
 - **v0.0.56** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 13:48:55
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.54** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:20:55
 - **v0.0.54** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:20:53
 - **v0.0.53** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:20:02
-- **v0.0.53** | Branch: `feature/position-scoped-appt-types` | Deployed: 05/05/2026, 18:20:00
 
 ---
 

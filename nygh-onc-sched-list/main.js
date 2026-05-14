@@ -6225,8 +6225,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.57-feature/labs-column";
-var packageVersion = "0.0.57";
+var buildVersion = "v0.0.58-feature/labs-column";
+var packageVersion = "0.0.58";
 var gitBranch = "feature/labs-column";
 
 // src/app/app-version/app-version.ts

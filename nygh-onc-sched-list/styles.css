@@ -325,6 +325,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 .fusion-badge.badge-success,
 .fusion-badge.badge-admitted,
