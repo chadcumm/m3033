@@ -6171,7 +6171,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-EDG3AUMA.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-4J33EVG3.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6225,8 +6225,8 @@ var appConfig = {
 };
 
 // src/app/version.ts
-var buildVersion = "v0.0.56-feature/labs-column";
-var packageVersion = "0.0.56";
+var buildVersion = "v0.0.57-feature/labs-column";
+var packageVersion = "0.0.57";
 var gitBranch = "feature/labs-column";
 
 // src/app/app-version/app-version.ts
