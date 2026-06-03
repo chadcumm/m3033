@@ -3,6 +3,11 @@ import {
   ScheduleService
 } from "./chunk-UCJLM6V5.js";
 import {
+  buildVersion,
+  gitBranch,
+  packageVersion
+} from "./chunk-F6LIN7YV.js";
+import {
   AccessControlService
 } from "./chunk-HGO7EPPT.js";
 import {
@@ -6171,7 +6176,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-IBDH3RAM.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-WPPJOVFT.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6223,11 +6228,6 @@ var appConfig = {
     })
   ]
 };
-
-// src/app/version.ts
-var buildVersion = "v0.0.60-feature/labs-column";
-var packageVersion = "0.0.60";
-var gitBranch = "feature/labs-column";
 
 // src/app/app-version/app-version.ts
 function AppVersion_Conditional_0_Template(rf, ctx) {
