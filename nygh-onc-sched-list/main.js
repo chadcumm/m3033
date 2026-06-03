@@ -1,15 +1,16 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-UCJLM6V5.js";
+} from "./chunk-GDHLFR5E.js";
 import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-RJB5AMKG.js";
+} from "./chunk-K6M3M72U.js";
 import {
   AccessControlService
-} from "./chunk-HGO7EPPT.js";
+} from "./chunk-LHL6PXS4.js";
+import "./chunk-K3RSRB4Z.js";
 import {
   AddressService,
   AllergyService,
@@ -42,7 +43,7 @@ import {
   bootstrapApplication,
   provideHttpClient,
   withFetch
-} from "./chunk-AGZRZCWE.js";
+} from "./chunk-UYA6F2GL.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -85,8 +86,6 @@ import {
   Subject,
   Subscription,
   ViewContainerRef,
-  __spreadProps,
-  __spreadValues,
   afterNextRender,
   booleanAttribute,
   catchError,
@@ -165,7 +164,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-VLNXRP3P.js";
+} from "./chunk-6SA5OQCO.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-7WUTQBRG.js";
 
 // node_modules/@angular/router/fesm2022/_router-chunk.mjs
 var PRIMARY_OUTLET = "primary";
@@ -5888,7 +5891,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
     this._engine?.flush();
   }
   loadImpl() {
-    const loadFn = () => this.moduleImpl ?? import("./chunk-HGDIJ24I.js").then((m) => m);
+    const loadFn = () => this.moduleImpl ?? import("./chunk-RCDEGWDS.js").then((m) => m);
     let moduleImplPromise;
     if (this.loadingSchedulerFn) {
       moduleImplPromise = this.loadingSchedulerFn(loadFn);
@@ -6168,17 +6171,22 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-FNAMISVW.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-LXZW2G3R.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-4VVT6KRB.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-QV3BFUWV.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-KCMFMFTC.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-JKX4NVJD.js").then((m) => m.SecurityComponent),
+    canActivate: [tabAccessGuard]
+  },
+  {
+    path: "advanced",
+    loadComponent: () => import("./chunk-IJSN5FYK.js").then((m) => m.AdvancedComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },

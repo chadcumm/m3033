@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/advanced/vanilla-json-editor.ts"],
+  "sourcesContent": ["\n    .vanilla-editor-container {\n      height: 500px;\n\n      :host ::ng-deep {\n        .jse-main {\n          min-height: 500px;\n        }\n      }\n    }\n  "],
+  "mappings": ";AACI,CAAA;AACE,UAAA;;AAGE,CAJJ,yBAII,MAAA,UAAA,CAAA;AACE,cAAA;;",
+  "names": []
+}

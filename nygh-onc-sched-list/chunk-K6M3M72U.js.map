@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/version.ts"],
+  "sourcesContent": ["// Auto-generated build version file\n// Generated on: 2026-06-03T21:59:43.730Z\n\nexport const buildVersion = 'v0.0.63-feature/advanced-json-editor';\nexport const packageVersion = '0.0.63';\nexport const gitBranch = 'feature/advanced-json-editor';\n"],
+  "mappings": ";AAGO,IAAM,eAAe;AACrB,IAAM,iBAAiB;AACvB,IAAM,YAAY;",
+  "names": []
+}
