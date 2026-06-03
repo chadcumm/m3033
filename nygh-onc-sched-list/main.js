@@ -6,7 +6,7 @@ import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-F6LIN7YV.js";
+} from "./chunk-RJB5AMKG.js";
 import {
   AccessControlService
 } from "./chunk-HGO7EPPT.js";
@@ -139,8 +139,6 @@ import {
   ɵɵProvidersFeature,
   ɵɵadvance,
   ɵɵattribute,
-  ɵɵconditional,
-  ɵɵconditionalCreate,
   ɵɵcontentQuery,
   ɵɵdefineComponent,
   ɵɵdefineDirective,
@@ -159,7 +157,6 @@ import {
   ɵɵinvalidFactory,
   ɵɵlistener,
   ɵɵloadQuery,
-  ɵɵnextContext,
   ɵɵproperty,
   ɵɵqueryRefresh,
   ɵɵrepeater,
@@ -6176,7 +6173,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-WPPJOVFT.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-4VVT6KRB.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6230,47 +6227,33 @@ var appConfig = {
 };
 
 // src/app/app-version/app-version.ts
-function AppVersion_Conditional_0_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275domElementStart(0, "div", 0)(1, "span", 1);
-    \u0275\u0275text(2);
-    \u0275\u0275domElementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r0 = \u0275\u0275nextContext();
-    \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(ctx_r0.buildVersion);
-  }
-}
 var AppVersion = class _AppVersion {
   mPage = inject(MPageService);
   buildVersion = buildVersion;
   packageVersion = packageVersion;
   gitBranch = gitBranch;
-  visible = signal(true, ...ngDevMode ? [{ debugName: "visible" }] : (
-    /* istanbul ignore next */
-    []
-  ));
   ngOnInit() {
     this.mPage.putLog(`App version: ${buildVersion} (package ${packageVersion}, branch ${gitBranch})`);
-    setTimeout(() => this.visible.set(false), 3e3);
   }
   static \u0275fac = function AppVersion_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _AppVersion)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppVersion, selectors: [["app-app-version"]], decls: 1, vars: 1, consts: [[1, "app-version"], [1, "version-text"]], template: function AppVersion_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppVersion, selectors: [["app-app-version"]], decls: 3, vars: 1, consts: [[1, "app-version"], [1, "version-text"]], template: function AppVersion_Template(rf, ctx) {
     if (rf & 1) {
-      \u0275\u0275conditionalCreate(0, AppVersion_Conditional_0_Template, 3, 1, "div", 0);
+      \u0275\u0275domElementStart(0, "div", 0)(1, "span", 1);
+      \u0275\u0275text(2);
+      \u0275\u0275domElementEnd()();
     }
     if (rf & 2) {
-      \u0275\u0275conditional(ctx.visible() ? 0 : -1);
+      \u0275\u0275advance(2);
+      \u0275\u0275textInterpolate(ctx.buildVersion);
     }
   }, styles: ["\n\n.app-version[_ngcontent-%COMP%] {\n  display: inline-block;\n  padding: 4px 8px;\n  font-size: 0.75rem;\n  color: #666;\n  background-color: #f5f5f5;\n  border-radius: 4px;\n  font-family: monospace;\n}\n.app-version[_ngcontent-%COMP%]   .version-text[_ngcontent-%COMP%] {\n  font-weight: 500;\n}\n/*# sourceMappingURL=app-version.css.map */"], changeDetection: 0 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AppVersion, [{
     type: Component,
-    args: [{ selector: "app-app-version", imports: [], changeDetection: ChangeDetectionStrategy.OnPush, template: '@if (visible()) {\n  <div class="app-version">\n    <span class="version-text">{{ buildVersion }}</span>\n  </div>\n}\n', styles: ["/* src/app/app-version/app-version.scss */\n.app-version {\n  display: inline-block;\n  padding: 4px 8px;\n  font-size: 0.75rem;\n  color: #666;\n  background-color: #f5f5f5;\n  border-radius: 4px;\n  font-family: monospace;\n}\n.app-version .version-text {\n  font-weight: 500;\n}\n/*# sourceMappingURL=app-version.css.map */\n"] }]
+    args: [{ selector: "app-app-version", imports: [], changeDetection: ChangeDetectionStrategy.OnPush, template: '<div class="app-version">\n  <span class="version-text">{{ buildVersion }}</span>\n</div>\n', styles: ["/* src/app/app-version/app-version.scss */\n.app-version {\n  display: inline-block;\n  padding: 4px 8px;\n  font-size: 0.75rem;\n  color: #666;\n  background-color: #f5f5f5;\n  border-radius: 4px;\n  font-family: monospace;\n}\n.app-version .version-text {\n  font-weight: 500;\n}\n/*# sourceMappingURL=app-version.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
