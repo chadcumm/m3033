@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.64
-**Branch:** feature/advanced-json-editor
-**Last Deployed:** 06/03/2026, 17:04:20
+**Version:** v0.0.65
+**Branch:** feature/appt-list-enhancements
+**Last Deployed:** 07/03/2026, 07:04:54
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.65** | Branch: `feature/appt-list-enhancements` | Deployed: 07/03/2026, 07:04:54
 - **v0.0.64** | Branch: `feature/advanced-json-editor` | Deployed: 06/03/2026, 17:04:20
 - **v0.0.63** | Branch: `feature/advanced-json-editor` | Deployed: 06/03/2026, 16:59:48
 - **v0.0.62** | Branch: `master` | Deployed: 06/03/2026, 15:55:18
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.59** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 14:35:55
 - **v0.0.59** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 14:35:51
 - **v0.0.58** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 14:33:11
-- **v0.0.58** | Branch: `feature/labs-column` | Deployed: 05/14/2026, 14:33:09
 
 ---
 

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/version.ts"],
+  "sourcesContent": ["// Auto-generated build version file\n// Generated on: 2026-07-03T12:04:52.057Z\n\nexport const buildVersion = 'v0.0.65-feature/appt-list-enhancements';\nexport const packageVersion = '0.0.65';\nexport const gitBranch = 'feature/appt-list-enhancements';\n"],
+  "mappings": ";AAGO,IAAM,eAAe;AACrB,IAAM,iBAAiB;AACvB,IAAM,YAAY;",
+  "names": []
+}
