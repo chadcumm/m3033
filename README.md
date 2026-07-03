@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.70
-**Branch:** feature/appt-list-enhancements
-**Last Deployed:** 07/03/2026, 09:17:30
+**Version:** v0.0.71
+**Branch:** master
+**Last Deployed:** 07/03/2026, 10:36:13
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.71** | Branch: `master` | Deployed: 07/03/2026, 10:36:13
 - **v0.0.70** | Branch: `feature/appt-list-enhancements` | Deployed: 07/03/2026, 09:17:30
 - **v0.0.69** | Branch: `feature/appt-list-enhancements` | Deployed: 07/03/2026, 08:40:15
 - **v0.0.68** | Branch: `feature/appt-list-enhancements` | Deployed: 07/03/2026, 08:33:04
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.64** | Branch: `feature/advanced-json-editor` | Deployed: 06/03/2026, 17:04:20
 - **v0.0.63** | Branch: `feature/advanced-json-editor` | Deployed: 06/03/2026, 16:59:48
 - **v0.0.62** | Branch: `master` | Deployed: 06/03/2026, 15:55:18
-- **v0.0.61** | Branch: `master` | Deployed: 06/03/2026, 15:48:34
 
 ---
 

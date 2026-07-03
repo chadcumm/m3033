@@ -6,7 +6,7 @@ import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-TRGSJLJV.js";
+} from "./chunk-LWFHNCV6.js";
 import {
   AccessControlService
 } from "./chunk-GJRZGAZK.js";
@@ -6192,7 +6192,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-MIK43KRV.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-A5FL37P7.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
