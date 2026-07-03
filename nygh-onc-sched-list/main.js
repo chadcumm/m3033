@@ -1,16 +1,16 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-XRDYLTAF.js";
+} from "./chunk-2KIAP5MJ.js";
 import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-3DQWN2XV.js";
+} from "./chunk-IPY5O2RZ.js";
 import {
   AccessControlService
-} from "./chunk-B2ZDSSBQ.js";
-import "./chunk-EX4JLDUC.js";
+} from "./chunk-742GS7WA.js";
+import "./chunk-ROA77COV.js";
 import {
   AddressService,
   AllergyService,
@@ -43,7 +43,7 @@ import {
   bootstrapApplication,
   provideHttpClient,
   withFetch
-} from "./chunk-UYA6F2GL.js";
+} from "./chunk-6CCZYKTI.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -138,6 +138,7 @@ import {
   ɵɵProvidersFeature,
   ɵɵadvance,
   ɵɵattribute,
+  ɵɵclassProp,
   ɵɵconditional,
   ɵɵconditionalCreate,
   ɵɵcontentQuery,
@@ -147,27 +148,39 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
+  ɵɵdomElement,
   ɵɵdomElementEnd,
   ɵɵdomElementStart,
+  ɵɵdomListener,
+  ɵɵdomProperty,
   ɵɵelement,
   ɵɵelementEnd,
   ɵɵelementStart,
+  ɵɵgetCurrentView,
   ɵɵgetInheritedFactory,
   ɵɵinject,
   ɵɵinjectAttribute,
   ɵɵinvalidFactory,
   ɵɵlistener,
   ɵɵloadQuery,
+  ɵɵnamespaceHTML,
+  ɵɵnamespaceSVG,
   ɵɵnextContext,
   ɵɵproperty,
+  ɵɵpureFunction0,
   ɵɵqueryRefresh,
   ɵɵrepeater,
   ɵɵrepeaterCreate,
+  ɵɵrepeaterTrackByIdentity,
+  ɵɵresetView,
+  ɵɵresolveDocument,
+  ɵɵrestoreView,
+  ɵɵsanitizeUrl,
   ɵɵsanitizeUrlOrResourceUrl,
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-6SA5OQCO.js";
+} from "./chunk-EY5RH44I.js";
 import {
   __spreadProps,
   __spreadValues
@@ -5894,7 +5907,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
     this._engine?.flush();
   }
   loadImpl() {
-    const loadFn = () => this.moduleImpl ?? import("./chunk-RCDEGWDS.js").then((m) => m);
+    const loadFn = () => this.moduleImpl ?? import("./chunk-UJSMEXFY.js").then((m) => m);
     let moduleImplPromise;
     if (this.loadingSchedulerFn) {
       moduleImplPromise = this.loadingSchedulerFn(loadFn);
@@ -6174,22 +6187,22 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-EF2QNQVH.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-S7RMJHHV.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-HCXGC5AP.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-NYHG2DIN.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-R5DAKP7L.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-DMXZ3JL5.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "advanced",
-    loadComponent: () => import("./chunk-IJSN5FYK.js").then((m) => m.AdvancedComponent),
+    loadComponent: () => import("./chunk-73TM4W7G.js").then((m) => m.AdvancedComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },
@@ -6285,8 +6298,541 @@ var AppVersion = class _AppVersion {
   (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppVersion, { className: "AppVersion", filePath: "src/app/app-version/app-version.ts", lineNumber: 12 });
 })();
 
+// src/app/content/view-help.content.ts
+var HELP_SECTIONS = [
+  {
+    id: "overview",
+    title: "Overview \u2014 how the list is built",
+    body: [
+      "This view lists the oncology appointments for the selected date range. It refreshes automatically, and each row is one scheduled patient visit. What you can see is governed by your position (job role) and the appointment-type group(s) it belongs to.",
+      'The list includes every patient appointment whose type is in your group and whose status is one of the configured "states shown". Cancelled and deleted appointments are always excluded. Each appointment appears as exactly one row: when the Rescheduled state is enabled (it is by default), a moved appointment shows in its most recent vacated slot with a Rescheduled badge; removing Rescheduled from the states shown displays the live booking instead.'
+    ],
+    items: [
+      {
+        term: "Data source",
+        description: "Appointments come directly from the Cerner scheduling system.",
+        technical: "CCL nygh_onc_sched_service Q1: SCH_APPT (role PATIENT, active, current version) joined to SCH_EVENT (canceled/deleted excluded) and PERSON, filtered by beg_dt_tm range, appt_type_cd group membership, and the state_meaning whitelist. Q1b keeps one row per sch_event_id \u2014 the latest vacated (RESCHEDULED) instance wins when the Rescheduled state is enabled, otherwise the live instance."
+      }
+    ]
+  },
+  {
+    id: "filters",
+    title: "Filters & top controls",
+    items: [
+      {
+        term: "Date range / \xAB \xBB / Today",
+        description: "Pick the start and end date; the arrows step one day at a time and Today returns to the current date.",
+        technical: "Drives the scheduleStartDate/scheduleEndDate parameters of the CCL query."
+      },
+      {
+        term: "Group",
+        description: 'Shown only if you belong to more than one appointment-type group (superusers also get "All groups"). Choosing a group changes which appointment types \u2014 and which lab set \u2014 the list uses.',
+        technical: "AccessControlService.resolvedAppointmentTypes(); groups are configured on the Configuration tab and matched to your position (code set 88)."
+      },
+      {
+        term: "Physician",
+        description: "Narrows the list to one provider. The choices are the attending, ordering provider, and scheduling resource names present in the currently loaded rows.",
+        technical: "Client-side filter; not part of the CCL query."
+      },
+      {
+        term: "Showing N appointments",
+        description: "The number of rows after the physician filter is applied."
+      },
+      {
+        term: "Columns \u25BE",
+        description: "Show or hide columns, or reset to your role\u2019s defaults (see Personalization below)."
+      },
+      {
+        term: "Refresh \u21BB",
+        description: "Reloads the list immediately; the icon spins while loading."
+      }
+    ]
+  },
+  {
+    id: "columns",
+    title: "Columns \u2014 what each one shows and where it comes from",
+    items: [
+      {
+        term: "Actions",
+        description: "Row buttons for opening the chart, the appointment view, and order details (see Row actions below)."
+      },
+      {
+        term: "Time",
+        description: "The appointment\u2019s scheduled start time.",
+        technical: "SCH_APPT.beg_dt_tm (Q1)."
+      },
+      {
+        term: "Location",
+        description: "Where the patient is expected. Defaults to the appointment\u2019s booked location, but switches to the encounter\u2019s nursing unit once a visit has an attached encounter.",
+        technical: "SCH_APPT.appt_location_cd (Q1), overridden by ENCOUNTER.loc_nurse_unit_cd (Q2)."
+      },
+      {
+        term: "Patient Name",
+        description: "The patient\u2019s name. A small bed icon appears when the patient currently has an active inpatient or emergency encounter (see Badges & indicators).",
+        technical: "PERSON.name_full_formatted (Q1); indicator from Q9."
+      },
+      {
+        term: "Enc Type",
+        description: "The encounter type for the visit \u2014 shown only when an encounter is actually attached to the appointment.",
+        technical: "ENCOUNTER.encntr_type_cd (Q2). Blank for rows that only have a chart-link fallback encounter, by design."
+      },
+      {
+        term: "Attending",
+        description: "The encounter\u2019s attending physician \u2014 and nothing else. If the visit has no attending relationship the cell shows a dash; no other name is substituted.",
+        technical: "ENCNTR_PRSNL_RELTN with relation ATTENDDOC (code set 333), active and currently effective (Q3c). An experimental fallback (Q5b, getChartLinkAttending) fills it from the chart-link encounter when no encounter is attached."
+      },
+      {
+        term: "Appt Type",
+        description: "The scheduled appointment type. A chair chip appears beside it when a treatment chair is booked on the visit (see Badges & indicators).",
+        technical: "SCH_EVENT.appt_type_cd display (Q1)."
+      },
+      {
+        term: "Status",
+        description: "The appointment\u2019s scheduling state, shown as a coloured badge. A rescheduled-away instance reports its own Rescheduled state.",
+        technical: "SCH_APPT.sch_state_cd display (Q1), taken from the row itself rather than the event so moved instances label correctly."
+      },
+      {
+        term: "Reason",
+        description: "The reason for the visit.",
+        technical: '"Reason for Exam" order-entry field from SCH_EVENT_DETAIL (Q4), falling back to the attached order\u2019s ORDER_DETAIL (Q4c).'
+      },
+      {
+        term: "Requested Date",
+        description: "The requested start date for the visit.",
+        technical: '"Requested Start Date/Time" OE field from SCH_EVENT_DETAIL (Q4), falling back to ORDER_DETAIL (Q4c), then the order\u2019s current_start_dt_tm (Q4b).'
+      },
+      {
+        term: "Day of Tx",
+        description: 'The treatment day or phase label from the ordered protocol (e.g. "Day 8").',
+        technical: '"PowerPlan Scheduled Phase" OE field from the attached order\u2019s ORDER_DETAIL (Q4c); not stored on the scheduling event at this site.'
+      },
+      {
+        term: "Ordered Treatment",
+        description: "The ordered treatment or protocol activity for the visit.",
+        technical: '"PowerPlan Activity" OE field from ORDER_DETAIL (Q4c).'
+      },
+      {
+        term: "Special Instructions",
+        description: "Free-text scheduling instructions. Long text is truncated \u2014 hover to see the full note.",
+        technical: '"Special Instructions" OE field from SCH_EVENT_DETAIL (Q4) or ORDER_DETAIL (Q4c).'
+      },
+      {
+        term: "Labs",
+        description: "A flask button that opens the labs panel for the patient (see Labs below)."
+      }
+    ]
+  },
+  {
+    id: "enrichment",
+    title: "How data gets attached to a row (for administrators)",
+    body: [
+      "The appointment row is loaded first, then enriched step by step. If a cell is blank, the step that fills it found nothing for that visit.",
+      "Order of enrichment: the appointment itself (Q1) \u2192 attached encounter (Q2) \u2192 scheduling resource (Q3) \u2192 chair (Q3d) \u2192 attached order (Q3b) \u2192 ordering provider (Q3b2) \u2192 attending (Q3c) \u2192 order-entry fields such as reason and instructions (Q4/Q4b/Q4c) \u2192 chart-link fallback encounter (Q5) \u2192 attending fallback via chart-link (Q5b, experimental) \u2192 labs (Q6\u2013Q8b) \u2192 inpatient/ED indicator (Q9)."
+    ]
+  },
+  {
+    id: "actions",
+    title: "Row actions",
+    items: [
+      {
+        term: "Open patient chart (person icon)",
+        description: "Opens PowerChart for the patient. Uses the visit\u2019s attached encounter when there is one; otherwise the chart-link fallback encounter; otherwise the chart opens person-only (the button appears dimmed).",
+        technical: "openChart(person_id, encntr_id or chart_link_encntr_id); person-only launches APPLINK Powerchart.exe /PERSONID."
+      },
+      {
+        term: "Open appointment view (calendar icon)",
+        description: "Opens the Cerner scheduling appointment view for the visit, including its booking and action history.",
+        technical: 'DiscernObjectFactory("PEXSCHEDULINGACTIONS").ShowView(sch_event_id).'
+      },
+      {
+        term: "Open order details (clipboard icon)",
+        description: "Shown only when an order is attached to the appointment; opens the order information viewer.",
+        technical: 'DiscernObjectFactory("PVVIEWERMPAGE").LaunchOrderInfoViewer(order_id); order linked via SCH_EVENT_ATTACH (Q3b).'
+      }
+    ]
+  },
+  {
+    id: "indicators",
+    title: "Badges, chips & indicators",
+    items: [
+      {
+        term: "Status badge",
+        description: "Colour-coded appointment status: Confirmed, Checked-in, Pending, Rescheduled, Cancelled, and No-show each have a distinct colour; anything else is neutral grey."
+      },
+      {
+        term: "Chair chip (beside Appt Type)",
+        description: "The treatment chair booked for the visit. Hover shows the full resource name.",
+        technical: 'Resource-role SCH_APPT rows whose CODE_VALUE display key contains the configured chair name pattern (default "Chair") \u2014 NYGH chairs carry no resource typing, so matching is by naming convention (Q3d).'
+      },
+      {
+        term: "Inpatient/ED indicator (bed icon by the patient name)",
+        description: "The patient currently has an active, not-yet-discharged encounter of a watched type (typically Inpatient or Emergency). Hover shows which type.",
+        technical: "ENCOUNTER rows that are active with no discharge date and a type in the configured indicator list (code set 71), currently effective (Q9)."
+      }
+    ]
+  },
+  {
+    id: "labs",
+    title: "Labs",
+    body: [
+      "The flask button opens a panel with two sections covering the group\u2019s configured lookback window (72 hours unless configured otherwise)."
+    ],
+    items: [
+      {
+        term: "Results",
+        description: "Verified results for the group\u2019s lab set within the window: name, time, value with units, status, and who verified it. Abnormal and critical values are highlighted.",
+        technical: "The configured event set is expanded via V500_EVENT_SET_EXPLODE (Q6); matching CLINICAL_EVENT rows must be active, published, and still valid (Q7/Q7b)."
+      },
+      {
+        term: "Lab Orders",
+        description: "Outstanding lab orders in the window \u2014 order name, time, order and department status, and the ordering user.",
+        technical: "ORDERS with lab activity type, excluding completed/deleted/cancelled (Q8); ordering provider resolved via ORDER_ACTION (Q8b)."
+      },
+      {
+        term: "Whether the flask appears",
+        description: "Governed by the group\u2019s lab configuration on the Configuration tab; groups without a lab event set show no lab data."
+      }
+    ]
+  },
+  {
+    id: "footer",
+    title: "Footer bar",
+    items: [
+      {
+        term: "Auto-refresh",
+        description: "How often the list reloads (or that auto-refresh is disabled). Configured on the Configuration tab."
+      },
+      {
+        term: "Group & Labs summary",
+        description: "The active group and the lab set name with its lookback window."
+      },
+      {
+        term: '"N appointment types \u25B2" popover',
+        description: "Click to see exactly which appointment types are included, the appointment states shown, the inpatient/ED indicator types, the chair pattern, and any active physician filter \u2014 the live values behind the current list."
+      },
+      {
+        term: "Last updated",
+        description: "The time of the most recent successful load."
+      }
+    ]
+  },
+  {
+    id: "personalization",
+    title: "Personalization \u2014 columns, sorting, and saved preferences",
+    items: [
+      {
+        term: "Columns menu",
+        description: 'Check or uncheck columns to show or hide them; "Reset to defaults" returns to your role\u2019s default set.'
+      },
+      {
+        term: "Sorting",
+        description: "Click a column header to sort ascending, again for descending, and a third time to clear. Some columns (Actions, Labs) are not sortable."
+      },
+      {
+        term: "Reorder & resize",
+        description: "Drag a column header to move the column; drag its right edge to resize it."
+      },
+      {
+        term: "Saved per user",
+        description: "Your column order, visibility, widths, sort, and physician filter are saved to your profile and restored the next time you open the page.",
+        technical: "Persisted per user via Clinical Office DM_INFO (domain ONC_SCHED / USER_PREFS) with a localStorage fast path."
+      },
+      {
+        term: "Role defaults",
+        description: "Administrators can hide specific columns by default for specific positions. Your own show/hide choices always win over the role default.",
+        technical: "COLUMN_ROLE_DEFAULTS in the app configuration, editable on the Configuration tab."
+      }
+    ]
+  }
+];
+
+// src/app/components/view-help/view-help.ts
+var _c0 = () => [];
+var _forTrack0 = ($index, $item) => $item.id;
+var _forTrack1 = ($index, $item) => $item.src;
+var _forTrack2 = ($index, $item) => $item.term;
+function ViewHelpComponent_For_14_Conditional_7_For_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275domElementStart(0, "p", 14);
+    \u0275\u0275text(1);
+    \u0275\u0275domElementEnd();
+  }
+  if (rf & 2) {
+    const p_r4 = ctx.$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(p_r4);
+  }
+}
+function ViewHelpComponent_For_14_Conditional_7_Conditional_3_For_2_Conditional_5_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275domElementStart(0, "div", 20);
+    \u0275\u0275text(1);
+    \u0275\u0275domElementEnd();
+  }
+  if (rf & 2) {
+    const item_r5 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate1("Technical: ", item_r5.technical);
+  }
+}
+function ViewHelpComponent_For_14_Conditional_7_Conditional_3_For_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275domElementStart(0, "div", 17)(1, "dt", 18);
+    \u0275\u0275text(2);
+    \u0275\u0275domElementEnd();
+    \u0275\u0275domElementStart(3, "dd", 19);
+    \u0275\u0275text(4);
+    \u0275\u0275conditionalCreate(5, ViewHelpComponent_For_14_Conditional_7_Conditional_3_For_2_Conditional_5_Template, 2, 1, "div", 20);
+    \u0275\u0275domElementEnd()();
+  }
+  if (rf & 2) {
+    const item_r5 = ctx.$implicit;
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(item_r5.term);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1(" ", item_r5.description, " ");
+    \u0275\u0275advance();
+    \u0275\u0275conditional(item_r5.technical ? 5 : -1);
+  }
+}
+function ViewHelpComponent_For_14_Conditional_7_Conditional_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275domElementStart(0, "dl", 15);
+    \u0275\u0275repeaterCreate(1, ViewHelpComponent_For_14_Conditional_7_Conditional_3_For_2_Template, 6, 3, "div", 17, _forTrack2);
+    \u0275\u0275domElementEnd();
+  }
+  if (rf & 2) {
+    const s_r2 = \u0275\u0275nextContext(2).$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275repeater(s_r2.items);
+  }
+}
+function ViewHelpComponent_For_14_Conditional_7_For_5_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275domElementStart(0, "figure", 16);
+    \u0275\u0275domElement(1, "img", 21);
+    \u0275\u0275domElementStart(2, "figcaption");
+    \u0275\u0275text(3);
+    \u0275\u0275domElementEnd()();
+  }
+  if (rf & 2) {
+    const m_r6 = ctx.$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275domProperty("src", m_r6.src, \u0275\u0275sanitizeUrl)("alt", m_r6.caption ?? "");
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(m_r6.caption);
+  }
+}
+function ViewHelpComponent_For_14_Conditional_7_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275domElementStart(0, "div", 13);
+    \u0275\u0275repeaterCreate(1, ViewHelpComponent_For_14_Conditional_7_For_2_Template, 2, 1, "p", 14, \u0275\u0275repeaterTrackByIdentity);
+    \u0275\u0275conditionalCreate(3, ViewHelpComponent_For_14_Conditional_7_Conditional_3_Template, 3, 0, "dl", 15);
+    \u0275\u0275repeaterCreate(4, ViewHelpComponent_For_14_Conditional_7_For_5_Template, 4, 3, "figure", 16, _forTrack1);
+    \u0275\u0275domElementEnd();
+  }
+  if (rf & 2) {
+    const s_r2 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275repeater(s_r2.body ?? \u0275\u0275pureFunction0(1, _c0));
+    \u0275\u0275advance(2);
+    \u0275\u0275conditional((s_r2.items == null ? null : s_r2.items.length) ? 3 : -1);
+    \u0275\u0275advance();
+    \u0275\u0275repeater(s_r2.media ?? \u0275\u0275pureFunction0(2, _c0));
+  }
+}
+function ViewHelpComponent_For_14_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275domElementStart(0, "section", 8)(1, "header", 9)(2, "button", 10);
+    \u0275\u0275domListener("click", function ViewHelpComponent_For_14_Template_button_click_2_listener() {
+      const s_r2 = \u0275\u0275restoreView(_r1).$implicit;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.toggle(s_r2.id));
+    });
+    \u0275\u0275domElementStart(3, "span", 11);
+    \u0275\u0275text(4, "\u25B6");
+    \u0275\u0275domElementEnd();
+    \u0275\u0275domElementStart(5, "span", 12);
+    \u0275\u0275text(6);
+    \u0275\u0275domElementEnd()()();
+    \u0275\u0275conditionalCreate(7, ViewHelpComponent_For_14_Conditional_7_Template, 6, 3, "div", 13);
+    \u0275\u0275domElementEnd();
+  }
+  if (rf & 2) {
+    const s_r2 = ctx.$implicit;
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275advance(2);
+    \u0275\u0275attribute("aria-expanded", ctx_r2.isOpen(s_r2.id));
+    \u0275\u0275advance();
+    \u0275\u0275classProp("expanded", ctx_r2.isOpen(s_r2.id));
+    \u0275\u0275advance(3);
+    \u0275\u0275textInterpolate(s_r2.title);
+    \u0275\u0275advance();
+    \u0275\u0275conditional(ctx_r2.isOpen(s_r2.id) ? 7 : -1);
+  }
+}
+var ViewHelpComponent = class _ViewHelpComponent {
+  close = new EventEmitter();
+  sections = HELP_SECTIONS;
+  openIds = signal(/* @__PURE__ */ new Set(), ...ngDevMode ? [{ debugName: "openIds" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  onBackdropClick() {
+    this.close.emit();
+  }
+  onDialogClick(event) {
+    event.stopPropagation();
+  }
+  onEscape() {
+    this.close.emit();
+  }
+  toggle(id) {
+    this.openIds.update((ids) => {
+      const next = new Set(ids);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  }
+  expandAll() {
+    this.openIds.set(new Set(this.sections.map((s) => s.id)));
+  }
+  collapseAll() {
+    this.openIds.set(/* @__PURE__ */ new Set());
+  }
+  isOpen(id) {
+    return this.openIds().has(id);
+  }
+  static \u0275fac = function ViewHelpComponent_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _ViewHelpComponent)();
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ViewHelpComponent, selectors: [["app-view-help"]], hostBindings: function ViewHelpComponent_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      \u0275\u0275listener("keydown.escape", function ViewHelpComponent_keydown_escape_HostBindingHandler() {
+        return ctx.onEscape();
+      }, \u0275\u0275resolveDocument);
+    }
+  }, outputs: { close: "close" }, decls: 15, vars: 0, consts: [[1, "view-help-backdrop", 3, "click"], ["role", "dialog", "aria-modal", "true", "aria-labelledby", "viewHelpTitle", 1, "view-help-dialog", 3, "click"], [1, "view-help-header"], ["id", "viewHelpTitle"], [1, "view-help-header-actions"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Close", 1, "view-help-close", 3, "click"], [1, "view-help-body"], [1, "view-help-section"], [1, "view-help-section-header"], ["type", "button", 1, "view-help-section-toggle", 3, "click"], [1, "chevron"], [1, "view-help-section-title"], [1, "view-help-section-body"], [1, "view-help-paragraph"], [1, "view-help-items"], [1, "view-help-media"], [1, "view-help-item"], [1, "view-help-item-term"], [1, "view-help-item-description"], [1, "view-help-item-technical"], [3, "src", "alt"]], template: function ViewHelpComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      \u0275\u0275domElementStart(0, "div", 0);
+      \u0275\u0275domListener("click", function ViewHelpComponent_Template_div_click_0_listener() {
+        return ctx.onBackdropClick();
+      });
+      \u0275\u0275domElementStart(1, "div", 1);
+      \u0275\u0275domListener("click", function ViewHelpComponent_Template_div_click_1_listener($event) {
+        return ctx.onDialogClick($event);
+      });
+      \u0275\u0275domElementStart(2, "header", 2)(3, "h2", 3);
+      \u0275\u0275text(4, "About this view");
+      \u0275\u0275domElementEnd();
+      \u0275\u0275domElementStart(5, "div", 4)(6, "button", 5);
+      \u0275\u0275domListener("click", function ViewHelpComponent_Template_button_click_6_listener() {
+        return ctx.expandAll();
+      });
+      \u0275\u0275text(7, "Expand all");
+      \u0275\u0275domElementEnd();
+      \u0275\u0275domElementStart(8, "button", 5);
+      \u0275\u0275domListener("click", function ViewHelpComponent_Template_button_click_8_listener() {
+        return ctx.collapseAll();
+      });
+      \u0275\u0275text(9, "Collapse all");
+      \u0275\u0275domElementEnd();
+      \u0275\u0275domElementStart(10, "button", 6);
+      \u0275\u0275domListener("click", function ViewHelpComponent_Template_button_click_10_listener() {
+        return ctx.close.emit();
+      });
+      \u0275\u0275text(11, "\xD7");
+      \u0275\u0275domElementEnd()()();
+      \u0275\u0275domElementStart(12, "div", 7);
+      \u0275\u0275repeaterCreate(13, ViewHelpComponent_For_14_Template, 8, 5, "section", 8, _forTrack0);
+      \u0275\u0275domElementEnd()()();
+    }
+    if (rf & 2) {
+      \u0275\u0275advance(13);
+      \u0275\u0275repeater(ctx.sections);
+    }
+  }, styles: ["\n\n[_nghost-%COMP%] {\n  display: contents;\n}\n.view-help-backdrop[_ngcontent-%COMP%] {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.45);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 1000;\n  padding: 1rem;\n}\n.view-help-dialog[_ngcontent-%COMP%] {\n  background: #fff;\n  border-radius: var(--fusion-radius, 6px);\n  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);\n  width: min(860px, 100%);\n  max-height: 90vh;\n  display: flex;\n  flex-direction: column;\n}\n.view-help-header[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 1rem;\n  padding: 1rem 1.25rem;\n  border-bottom: 1px solid var(--fusion-border);\n}\n.view-help-header[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  margin: 0;\n  font-size: 1.05rem;\n  color: var(--fusion-text);\n}\n.view-help-header-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.view-help-close[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 1.5rem;\n  line-height: 1;\n  padding: 2px 8px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.view-help-close[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-text);\n}\n.view-help-body[_ngcontent-%COMP%] {\n  overflow-y: auto;\n  max-height: 90vh;\n  padding: 0;\n}\n.view-help-section[_ngcontent-%COMP%] {\n  border-bottom: 1px solid var(--fusion-border);\n}\n.view-help-section[_ngcontent-%COMP%]:last-child {\n  border-bottom: none;\n}\n.view-help-section-header[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  padding: 0.5rem 1rem;\n  background: var(--fusion-bg-header);\n  border-bottom: 1px solid var(--fusion-border);\n}\n.view-help-section-toggle[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  background: transparent;\n  border: 1px solid transparent;\n  padding: 4px 8px;\n  border-radius: 4px;\n  cursor: pointer;\n  color: var(--fusion-text);\n  font-weight: 600;\n  font-size: 0.9rem;\n  width: 100%;\n  text-align: left;\n}\n.view-help-section-toggle[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-selected);\n}\n.view-help-section-toggle[_ngcontent-%COMP%]:focus-visible {\n  outline: 2px solid var(--fusion-primary);\n}\n.chevron[_ngcontent-%COMP%] {\n  display: inline-block;\n  font-size: 0.7rem;\n  transition: transform 0.15s ease;\n}\n.chevron.expanded[_ngcontent-%COMP%] {\n  transform: rotate(90deg);\n}\n.view-help-section-body[_ngcontent-%COMP%] {\n  padding: 0.75rem 1.25rem 1.25rem;\n}\n.view-help-paragraph[_ngcontent-%COMP%] {\n  margin: 0 0 0.75rem 0;\n  font-size: 0.9rem;\n  color: var(--fusion-text);\n  line-height: 1.5;\n}\n.view-help-paragraph[_ngcontent-%COMP%]:last-child {\n  margin-bottom: 0;\n}\n.view-help-items[_ngcontent-%COMP%] {\n  margin: 0;\n}\n.view-help-item[_ngcontent-%COMP%] {\n  padding: 0.5rem 0;\n  border-bottom: 1px solid #f0f0f0;\n}\n.view-help-item[_ngcontent-%COMP%]:last-child {\n  border-bottom: none;\n}\n.view-help-item-term[_ngcontent-%COMP%] {\n  font-weight: 600;\n  font-size: 0.9rem;\n  color: var(--fusion-text);\n}\n.view-help-item-description[_ngcontent-%COMP%] {\n  margin: 0.15rem 0 0 0;\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n  line-height: 1.5;\n}\n.view-help-item-technical[_ngcontent-%COMP%] {\n  margin-top: 0.25rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.view-help-media[_ngcontent-%COMP%] {\n  margin: 1rem 0 0 0;\n}\n.view-help-media[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 100%;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius, 6px);\n}\n.view-help-media[_ngcontent-%COMP%]   figcaption[_ngcontent-%COMP%] {\n  margin-top: 0.35rem;\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n}\n/*# sourceMappingURL=view-help.css.map */"], changeDetection: 0 });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ViewHelpComponent, [{
+    type: Component,
+    args: [{ selector: "app-view-help", standalone: true, changeDetection: ChangeDetectionStrategy.OnPush, template: `<div class="view-help-backdrop" (click)="onBackdropClick()">
+  <div class="view-help-dialog" role="dialog" aria-modal="true" aria-labelledby="viewHelpTitle" (click)="onDialogClick($event)">
+    <header class="view-help-header">
+      <h2 id="viewHelpTitle">About this view</h2>
+      <div class="view-help-header-actions">
+        <button class="fusion-button fusion-outline fusion-small" type="button" (click)="expandAll()">Expand all</button>
+        <button class="fusion-button fusion-outline fusion-small" type="button" (click)="collapseAll()">Collapse all</button>
+        <button class="view-help-close" type="button" aria-label="Close" (click)="close.emit()">\xD7</button>
+      </div>
+    </header>
+
+    <div class="view-help-body">
+      @for (s of sections; track s.id) {
+        <section class="view-help-section">
+          <header class="view-help-section-header">
+            <button
+              class="view-help-section-toggle"
+              type="button"
+              (click)="toggle(s.id)"
+              [attr.aria-expanded]="isOpen(s.id)"
+            >
+              <span class="chevron" [class.expanded]="isOpen(s.id)">\u25B6</span>
+              <span class="view-help-section-title">{{ s.title }}</span>
+            </button>
+          </header>
+          @if (isOpen(s.id)) {
+            <div class="view-help-section-body">
+              @for (p of s.body ?? []; track p) {
+                <p class="view-help-paragraph">{{ p }}</p>
+              }
+              @if (s.items?.length) {
+                <dl class="view-help-items">
+                  @for (item of s.items; track item.term) {
+                    <div class="view-help-item">
+                      <dt class="view-help-item-term">{{ item.term }}</dt>
+                      <dd class="view-help-item-description">
+                        {{ item.description }}
+                        @if (item.technical) {
+                          <div class="view-help-item-technical">Technical: {{ item.technical }}</div>
+                        }
+                      </dd>
+                    </div>
+                  }
+                </dl>
+              }
+              @for (m of s.media ?? []; track m.src) {
+                <figure class="view-help-media">
+                  <img [src]="m.src" [alt]="m.caption ?? ''" />
+                  <figcaption>{{ m.caption }}</figcaption>
+                </figure>
+              }
+            </div>
+          }
+        </section>
+      }
+    </div>
+  </div>
+</div>
+`, styles: ["/* src/app/components/view-help/view-help.scss */\n:host {\n  display: contents;\n}\n.view-help-backdrop {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.45);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 1000;\n  padding: 1rem;\n}\n.view-help-dialog {\n  background: #fff;\n  border-radius: var(--fusion-radius, 6px);\n  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);\n  width: min(860px, 100%);\n  max-height: 90vh;\n  display: flex;\n  flex-direction: column;\n}\n.view-help-header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 1rem;\n  padding: 1rem 1.25rem;\n  border-bottom: 1px solid var(--fusion-border);\n}\n.view-help-header h2 {\n  margin: 0;\n  font-size: 1.05rem;\n  color: var(--fusion-text);\n}\n.view-help-header-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.view-help-close {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 1.5rem;\n  line-height: 1;\n  padding: 2px 8px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.view-help-close:hover {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-text);\n}\n.view-help-body {\n  overflow-y: auto;\n  max-height: 90vh;\n  padding: 0;\n}\n.view-help-section {\n  border-bottom: 1px solid var(--fusion-border);\n}\n.view-help-section:last-child {\n  border-bottom: none;\n}\n.view-help-section-header {\n  display: flex;\n  align-items: center;\n  padding: 0.5rem 1rem;\n  background: var(--fusion-bg-header);\n  border-bottom: 1px solid var(--fusion-border);\n}\n.view-help-section-toggle {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  background: transparent;\n  border: 1px solid transparent;\n  padding: 4px 8px;\n  border-radius: 4px;\n  cursor: pointer;\n  color: var(--fusion-text);\n  font-weight: 600;\n  font-size: 0.9rem;\n  width: 100%;\n  text-align: left;\n}\n.view-help-section-toggle:hover {\n  background: var(--fusion-bg-selected);\n}\n.view-help-section-toggle:focus-visible {\n  outline: 2px solid var(--fusion-primary);\n}\n.chevron {\n  display: inline-block;\n  font-size: 0.7rem;\n  transition: transform 0.15s ease;\n}\n.chevron.expanded {\n  transform: rotate(90deg);\n}\n.view-help-section-body {\n  padding: 0.75rem 1.25rem 1.25rem;\n}\n.view-help-paragraph {\n  margin: 0 0 0.75rem 0;\n  font-size: 0.9rem;\n  color: var(--fusion-text);\n  line-height: 1.5;\n}\n.view-help-paragraph:last-child {\n  margin-bottom: 0;\n}\n.view-help-items {\n  margin: 0;\n}\n.view-help-item {\n  padding: 0.5rem 0;\n  border-bottom: 1px solid #f0f0f0;\n}\n.view-help-item:last-child {\n  border-bottom: none;\n}\n.view-help-item-term {\n  font-weight: 600;\n  font-size: 0.9rem;\n  color: var(--fusion-text);\n}\n.view-help-item-description {\n  margin: 0.15rem 0 0 0;\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n  line-height: 1.5;\n}\n.view-help-item-technical {\n  margin-top: 0.25rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.view-help-media {\n  margin: 1rem 0 0 0;\n}\n.view-help-media img {\n  max-width: 100%;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius, 6px);\n}\n.view-help-media figcaption {\n  margin-top: 0.35rem;\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n}\n/*# sourceMappingURL=view-help.css.map */\n"] }]
+  }], null, { close: [{
+    type: Output
+  }], onEscape: [{
+    type: HostListener,
+    args: ["document:keydown.escape"]
+  }] });
+})();
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ViewHelpComponent, { className: "ViewHelpComponent", filePath: "src/app/components/view-help/view-help.ts", lineNumber: 11 });
+})();
+
 // src/app/app.ts
-var _forTrack0 = ($index, $item) => $item.key;
+var _forTrack02 = ($index, $item) => $item.key;
 function App_For_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "a", 2);
@@ -6300,11 +6846,27 @@ function App_For_3_Template(rf, ctx) {
     \u0275\u0275textInterpolate(tab_r1.label);
   }
 }
+function App_Conditional_12_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r2 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "app-view-help", 8);
+    \u0275\u0275listener("close", function App_Conditional_12_Template_app_view_help_close_0_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.helpOpen.set(false));
+    });
+    \u0275\u0275elementEnd();
+  }
+}
 var App = class _App {
   mPage = inject(MPageService);
   accessControl = inject(AccessControlService);
   configService = inject(ConfigurationService);
   preferencesService = inject(PreferencesService);
+  helpOpen = signal(false, ...ngDevMode ? [{ debugName: "helpOpen" }] : (
+    /* istanbul ignore next */
+    []
+  ));
   ngOnInit() {
     this.mPage.setMaxInstances(2, true, "ORGANIZER", false);
     this.mPage.defaultDateFormats = CUSTOM_DATE_FORMATS;
@@ -6347,29 +6909,41 @@ var App = class _App {
     ConfigurationService,
     PreferencesService,
     ScheduleService
-  ])], decls: 9, vars: 0, consts: [[1, "mpage-header"], [1, "nav-links"], ["routerLinkActive", "active", 1, "nav-link", 3, "routerLink"], [1, "app-content"], [2, "position", "fixed", "bottom", "10px", "right", "10px"]], template: function App_Template(rf, ctx) {
+  ])], decls: 13, vars: 1, consts: [[1, "mpage-header"], [1, "nav-links"], ["routerLinkActive", "active", 1, "nav-link", 3, "routerLink"], ["type", "button", "title", "About this view", "aria-label", "About this view", 1, "help-icon", 3, "click"], ["viewBox", "0 0 16 16", "width", "16", "height", "16", "aria-hidden", "true"], ["fill", "currentColor", "d", "M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"], [1, "app-content"], [2, "position", "fixed", "bottom", "10px", "right", "10px"], [3, "close"]], template: function App_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "header", 0)(1, "div", 1);
-      \u0275\u0275repeaterCreate(2, App_For_3_Template, 2, 2, "a", 2, _forTrack0);
-      \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(4, "main", 3);
-      \u0275\u0275element(5, "router-outlet");
+      \u0275\u0275repeaterCreate(2, App_For_3_Template, 2, 2, "a", 2, _forTrack02);
       \u0275\u0275elementEnd();
-      \u0275\u0275element(6, "mpage-log-component");
-      \u0275\u0275elementStart(7, "footer", 4);
-      \u0275\u0275element(8, "app-app-version");
+      \u0275\u0275elementStart(4, "button", 3);
+      \u0275\u0275listener("click", function App_Template_button_click_4_listener() {
+        return ctx.helpOpen.set(true);
+      });
+      \u0275\u0275namespaceSVG();
+      \u0275\u0275elementStart(5, "svg", 4);
+      \u0275\u0275element(6, "path", 5);
+      \u0275\u0275elementEnd()()();
+      \u0275\u0275namespaceHTML();
+      \u0275\u0275elementStart(7, "main", 6);
+      \u0275\u0275element(8, "router-outlet");
       \u0275\u0275elementEnd();
+      \u0275\u0275element(9, "mpage-log-component");
+      \u0275\u0275elementStart(10, "footer", 7);
+      \u0275\u0275element(11, "app-app-version");
+      \u0275\u0275elementEnd();
+      \u0275\u0275conditionalCreate(12, App_Conditional_12_Template, 1, 0, "app-view-help");
     }
     if (rf & 2) {
       \u0275\u0275advance(2);
       \u0275\u0275repeater(ctx.accessControl.allowedTabs());
+      \u0275\u0275advance(10);
+      \u0275\u0275conditional(ctx.helpOpen() ? 12 : -1);
     }
-  }, dependencies: [MpageLogComponent, AppVersion, RouterOutlet, RouterLink, RouterLinkActive], encapsulation: 2 });
+  }, dependencies: [MpageLogComponent, AppVersion, RouterOutlet, RouterLink, RouterLinkActive, ViewHelpComponent], encapsulation: 2 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(App, [{
     type: Component,
-    args: [{ selector: "app-root", imports: [MpageLogComponent, AppVersion, RouterOutlet, RouterLink, RouterLinkActive], standalone: true, providers: [
+    args: [{ selector: "app-root", imports: [MpageLogComponent, AppVersion, RouterOutlet, RouterLink, RouterLinkActive, ViewHelpComponent], standalone: true, providers: [
       MPageService,
       Dialog,
       AddressService,
@@ -6394,6 +6968,15 @@ var App = class _App {
       <a [routerLink]="'/' + tab.key" routerLinkActive="active" class="nav-link">{{ tab.label }}</a>
     }
   </div>
+  <button
+    class="help-icon"
+    type="button"
+    title="About this view"
+    aria-label="About this view"
+    (click)="helpOpen.set(true)"
+  >
+    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+  </button>
 </header>
 
 <main class="app-content">
@@ -6405,11 +6988,15 @@ var App = class _App {
 <footer style="position: fixed; bottom: 10px; right: 10px;">
   <app-app-version />
 </footer>
+
+@if (helpOpen()) {
+  <app-view-help (close)="helpOpen.set(false)" />
+}
 ` }]
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App, { className: "App", filePath: "src/app/app.ts", lineNumber: 35 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App, { className: "App", filePath: "src/app/app.ts", lineNumber: 36 });
 })();
 
 // src/main.ts

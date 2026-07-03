@@ -422,6 +422,20 @@ select.fusion-input {
   color: #fff;
   border-bottom-color: #fff;
 }
+.help-icon {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: 6px 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+.help-icon:hover {
+  opacity: 1;
+}
 .mpage-content {
   flex: 1;
   overflow-y: auto;
