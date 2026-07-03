@@ -6,7 +6,7 @@ import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-MDK4NR2P.js";
+} from "./chunk-3DQWN2XV.js";
 import {
   AccessControlService
 } from "./chunk-B2ZDSSBQ.js";
@@ -6174,12 +6174,12 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-FSC7YPEK.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-EF2QNQVH.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-LPPWVHM3.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-HCXGC5AP.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
