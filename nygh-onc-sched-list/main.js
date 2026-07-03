@@ -6,7 +6,7 @@ import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-SIQNUBVM.js";
+} from "./chunk-MWEI5TNS.js";
 import {
   HelpContentService
 } from "./chunk-MSNOXRPG.js";
@@ -6194,22 +6194,22 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-KJT5QTKH.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-7SSDUWEN.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-FIU2DMTY.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-MTKI3UJI.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "help-editor",
-    loadComponent: () => import("./chunk-HSPHWQCV.js").then((m) => m.HelpEditorComponent),
+    loadComponent: () => import("./chunk-3RXJMO47.js").then((m) => m.HelpEditorComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "advanced",
-    loadComponent: () => import("./chunk-ZPYEQJRQ.js").then((m) => m.AdvancedComponent),
+    loadComponent: () => import("./chunk-AY5N4I2K.js").then((m) => m.AdvancedComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },

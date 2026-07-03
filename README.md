@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.72
+**Version:** v0.0.73
 **Branch:** feature/help-content-editor
-**Last Deployed:** 07/03/2026, 14:06:53
+**Last Deployed:** 07/03/2026, 18:48:40
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.73** | Branch: `feature/help-content-editor` | Deployed: 07/03/2026, 18:48:40
 - **v0.0.72** | Branch: `feature/help-content-editor` | Deployed: 07/03/2026, 14:06:53
 - **v0.0.71** | Branch: `master` | Deployed: 07/03/2026, 10:36:13
 - **v0.0.70** | Branch: `feature/appt-list-enhancements` | Deployed: 07/03/2026, 09:17:30
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.66** | Branch: `feature/appt-list-enhancements` | Deployed: 07/03/2026, 07:35:57
 - **v0.0.65** | Branch: `feature/appt-list-enhancements` | Deployed: 07/03/2026, 07:04:54
 - **v0.0.64** | Branch: `feature/advanced-json-editor` | Deployed: 06/03/2026, 17:04:20
-- **v0.0.63** | Branch: `feature/advanced-json-editor` | Deployed: 06/03/2026, 16:59:48
 
 ---
 

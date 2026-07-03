@@ -2715,21 +2715,30 @@ var AdvancedComponent = class _AdvancedComponent {
     []
   ));
   /**
-   * Seed the help editor once the service finishes loading, provided the user hasn't
-   * already staged (helpWorkingSections set) or started typing (hasEditorChanges) something.
-   * loadContent() is async, so switching to 'help' before it resolves relies on this effect
-   * to perform the seed once `loaded()` flips true.
+   * Seed the help editor once the service finishes loading, provided nothing has
+   * already staged a working copy (helpWorkingSections set - e.g. by
+   * onDocumentChange's synchronous seed, or a prior Apply). loadContent() is
+   * async, so switching to 'help' before it resolves relies on this effect to
+   * perform the seed once `loaded()` flips true.
+   *
+   * `helpWorkingSections` is read as a tracked dependency (not inside
+   * untracked()) so the effect keeps its ability to seed even if that signal
+   * changes across re-runs. Earlier this also gated on `!hasEditorChanges()`
+   * read via untracked(): since that read established no dependency, a
+   * transient true value at the exact moment `loaded()` flipped could
+   * permanently skip the seed - the effect's only tracked deps (documentKind,
+   * loaded) never change again once settled on 'help'/true, so it would never
+   * get a second chance and the help document would stay unseeded forever.
+   * onDocumentChange already resets hasEditorChanges synchronously before
+   * relying on this effect, so that guard was redundant as well as unsafe.
    */
   helpSeedEffect = effect(() => {
     const kind = this.documentKind();
     const loaded = this.helpService.loaded();
-    if (kind !== "help" || !loaded)
+    const alreadyStaged = this.helpWorkingSections() !== null;
+    if (kind !== "help" || !loaded || alreadyStaged)
       return;
-    untracked(() => {
-      if (this.helpWorkingSections() === null && !this.hasEditorChanges()) {
-        this.seedHelpEditor();
-      }
-    });
+    untracked(() => this.seedHelpEditor());
   }, ...ngDevMode ? [{ debugName: "helpSeedEffect" }] : (
     /* istanbul ignore next */
     []
@@ -3192,4 +3201,4 @@ var AdvancedComponent = class _AdvancedComponent {
 export {
   AdvancedComponent
 };
-//# sourceMappingURL=chunk-ZPYEQJRQ.js.map
+//# sourceMappingURL=chunk-AY5N4I2K.js.map

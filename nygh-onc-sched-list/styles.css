@@ -385,6 +385,99 @@ select.fusion-input {
   appearance: auto;
   cursor: pointer;
 }
+.groups-master-detail {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+.groups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border: 1px solid var(--fusion-border);
+  border-radius: var(--fusion-radius);
+  padding: 0.5rem;
+  background: var(--fusion-bg-header);
+  max-height: 540px;
+  overflow-y: auto;
+}
+.groups-list-empty {
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--fusion-text-light);
+  text-align: center;
+}
+.group-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.625rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+}
+.group-row:hover {
+  background: var(--fusion-bg-selected);
+}
+.group-row.selected {
+  background: var(--fusion-bg-selected);
+  border-color: var(--fusion-primary);
+}
+.group-row-main {
+  flex: 1;
+  min-width: 0;
+}
+.group-row-label {
+  font-size: 0.875rem;
+  color: var(--fusion-text);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.group-row-meta {
+  font-size: 0.7rem;
+  color: var(--fusion-text-light);
+}
+.group-row-delete {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--fusion-text-light);
+  font-size: 1rem;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.group-row-delete:hover {
+  background: var(--fusion-bg-header);
+  color: var(--fusion-danger-text, #b00020);
+}
+.group-row-delete-confirm {
+  display: flex;
+  gap: 4px;
+}
+.new-group-btn {
+  margin-top: 0.5rem;
+  align-self: stretch;
+}
+.group-editor {
+  border: 1px solid var(--fusion-border);
+  border-radius: var(--fusion-radius);
+  padding: 1rem;
+  min-height: 200px;
+}
+.group-editor-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 180px;
+  color: var(--fusion-text-light);
+  font-size: 0.875rem;
+}
 .mpage-header {
   display: flex;
   align-items: center;
