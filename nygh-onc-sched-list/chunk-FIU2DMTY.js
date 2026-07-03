@@ -1,9 +1,9 @@
 import {
   AccessControlService
-} from "./chunk-GJRZGAZK.js";
+} from "./chunk-5YTREYET.js";
 import {
   ALL_TABS
-} from "./chunk-YNIUKNSL.js";
+} from "./chunk-AQNK5JSS.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -15,7 +15,7 @@ import {
   NgSelectOption,
   PrsnlService,
   ɵNgSelectMultipleOption
-} from "./chunk-6CCZYKTI.js";
+} from "./chunk-UOIJNSGV.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -47,7 +47,7 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-EY5RH44I.js";
+} from "./chunk-VK25UXFS.js";
 import {
   __spreadProps,
   __spreadValues
@@ -58,7 +58,7 @@ var _forTrack0 = ($index, $item) => $item.codeValue;
 var _forTrack1 = ($index, $item) => $item.key;
 function SecurityComponent_Conditional_7_For_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 18);
+    \u0275\u0275elementStart(0, "option", 17);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -72,18 +72,18 @@ function SecurityComponent_Conditional_7_For_4_Template(rf, ctx) {
 function SecurityComponent_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "select", 16);
+    \u0275\u0275elementStart(0, "select", 15);
     \u0275\u0275listener("change", function SecurityComponent_Conditional_7_Template_select_change_0_listener($event) {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onPositionSelect($event));
     });
-    \u0275\u0275elementStart(1, "option", 17);
+    \u0275\u0275elementStart(1, "option", 16);
     \u0275\u0275text(2, "Select position...");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(3, SecurityComponent_Conditional_7_For_4_Template, 2, 2, "option", 18, _forTrack0);
+    \u0275\u0275repeaterCreate(3, SecurityComponent_Conditional_7_For_4_Template, 2, 2, "option", 17, _forTrack0);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "button", 19);
+    \u0275\u0275elementStart(5, "button", 18);
     \u0275\u0275listener("click", function SecurityComponent_Conditional_7_Template_button_click_5_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -116,21 +116,21 @@ function SecurityComponent_Conditional_18_Template(rf, ctx) {
 }
 function SecurityComponent_Conditional_19_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 23);
+    \u0275\u0275elementStart(0, "span", 22);
     \u0275\u0275text(1, "Added to matrix");
     \u0275\u0275elementEnd();
   }
 }
 function SecurityComponent_Conditional_19_Conditional_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 24);
+    \u0275\u0275elementStart(0, "span", 23);
     \u0275\u0275text(1, "Already configured");
     \u0275\u0275elementEnd();
   }
 }
 function SecurityComponent_Conditional_19_Conditional_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 25);
+    \u0275\u0275elementStart(0, "span", 24);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -142,15 +142,15 @@ function SecurityComponent_Conditional_19_Conditional_9_Template(rf, ctx) {
 }
 function SecurityComponent_Conditional_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 20)(1, "span", 21);
+    \u0275\u0275elementStart(0, "div", 19)(1, "span", 20);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "span", 22);
+    \u0275\u0275elementStart(3, "span", 21);
     \u0275\u0275text(4, "Position: ");
     \u0275\u0275elementStart(5, "strong");
     \u0275\u0275text(6);
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(7, SecurityComponent_Conditional_19_Conditional_7_Template, 2, 0, "span", 23)(8, SecurityComponent_Conditional_19_Conditional_8_Template, 2, 0, "span", 24)(9, SecurityComponent_Conditional_19_Conditional_9_Template, 2, 1, "span", 25);
+    \u0275\u0275conditionalCreate(7, SecurityComponent_Conditional_19_Conditional_7_Template, 2, 0, "span", 22)(8, SecurityComponent_Conditional_19_Conditional_8_Template, 2, 0, "span", 23)(9, SecurityComponent_Conditional_19_Conditional_9_Template, 2, 1, "span", 24);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -183,11 +183,11 @@ function SecurityComponent_Conditional_26_For_9_Template(rf, ctx) {
     \u0275\u0275textInterpolate(tab_r4.label);
   }
 }
-function SecurityComponent_Conditional_26_For_13_For_6_Template(rf, ctx) {
+function SecurityComponent_Conditional_26_For_15_For_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "td", 28)(1, "input", 32);
-    \u0275\u0275listener("change", function SecurityComponent_Conditional_26_For_13_For_6_Template_input_change_1_listener() {
+    \u0275\u0275elementStart(0, "td", 30)(1, "input", 34);
+    \u0275\u0275listener("change", function SecurityComponent_Conditional_26_For_15_For_6_Template_input_change_1_listener() {
       const tab_r8 = \u0275\u0275restoreView(_r7).$implicit;
       const position_r6 = \u0275\u0275nextContext().$implicit;
       const ctx_r1 = \u0275\u0275nextContext(2);
@@ -203,27 +203,34 @@ function SecurityComponent_Conditional_26_For_13_For_6_Template(rf, ctx) {
     \u0275\u0275property("checked", ctx_r1.isSuperuser(position_r6) || ctx_r1.hasTabAccess(position_r6, tab_r8.key))("disabled", ctx_r1.isSuperuser(position_r6));
   }
 }
-function SecurityComponent_Conditional_26_For_13_Template(rf, ctx) {
+function SecurityComponent_Conditional_26_For_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "tr")(1, "td", 27);
+    \u0275\u0275elementStart(0, "tr")(1, "td", 29);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "td", 28)(4, "input", 29);
-    \u0275\u0275listener("change", function SecurityComponent_Conditional_26_For_13_Template_input_change_4_listener() {
+    \u0275\u0275elementStart(3, "td", 30)(4, "input", 31);
+    \u0275\u0275listener("change", function SecurityComponent_Conditional_26_For_15_Template_input_change_4_listener() {
       const position_r6 = \u0275\u0275restoreView(_r5).$implicit;
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.toggleSuperuser(position_r6));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275repeaterCreate(5, SecurityComponent_Conditional_26_For_13_For_6_Template, 2, 2, "td", 28, _forTrack1);
-    \u0275\u0275elementStart(7, "td", 30)(8, "button", 31);
-    \u0275\u0275listener("click", function SecurityComponent_Conditional_26_For_13_Template_button_click_8_listener() {
+    \u0275\u0275repeaterCreate(5, SecurityComponent_Conditional_26_For_15_For_6_Template, 2, 2, "td", 30, _forTrack1);
+    \u0275\u0275elementStart(7, "td", 30)(8, "input", 31);
+    \u0275\u0275listener("change", function SecurityComponent_Conditional_26_For_15_Template_input_change_8_listener() {
+      const position_r6 = \u0275\u0275restoreView(_r5).$implicit;
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.toggleTechnicalHelp(position_r6));
+    });
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(9, "td", 32)(10, "button", 33);
+    \u0275\u0275listener("click", function SecurityComponent_Conditional_26_For_15_Template_button_click_10_listener() {
       const position_r6 = \u0275\u0275restoreView(_r5).$implicit;
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.removePosition(position_r6));
     });
-    \u0275\u0275text(9, "\xD7");
+    \u0275\u0275text(11, "\xD7");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -235,34 +242,42 @@ function SecurityComponent_Conditional_26_For_13_Template(rf, ctx) {
     \u0275\u0275property("checked", ctx_r1.isSuperuser(position_r6));
     \u0275\u0275advance();
     \u0275\u0275repeater(ctx_r1.tabs);
+    \u0275\u0275advance(3);
+    \u0275\u0275property("checked", ctx_r1.hasTechnicalHelp(position_r6));
   }
 }
 function SecurityComponent_Conditional_26_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 11)(1, "table", 26)(2, "thead")(3, "tr")(4, "th");
+    \u0275\u0275elementStart(0, "div", 25)(1, "table", 26)(2, "thead")(3, "tr")(4, "th");
     \u0275\u0275text(5, "Position");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(6, "th");
     \u0275\u0275text(7, "Superuser");
     \u0275\u0275elementEnd();
     \u0275\u0275repeaterCreate(8, SecurityComponent_Conditional_26_For_9_Template, 2, 1, "th", null, _forTrack1);
-    \u0275\u0275element(10, "th");
+    \u0275\u0275elementStart(10, "th", 27);
+    \u0275\u0275text(11, "Technical Help");
+    \u0275\u0275elementEnd();
+    \u0275\u0275element(12, "th");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(11, "tbody");
-    \u0275\u0275repeaterCreate(12, SecurityComponent_Conditional_26_For_13_Template, 10, 2, "tr", null, \u0275\u0275repeaterTrackByIdentity);
+    \u0275\u0275elementStart(13, "tbody");
+    \u0275\u0275repeaterCreate(14, SecurityComponent_Conditional_26_For_15_Template, 12, 3, "tr", null, \u0275\u0275repeaterTrackByIdentity);
     \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(16, "p", 28);
+    \u0275\u0275text(17, "Technical Help controls whether the position sees the technical detail lines in the About modal. Superusers always see them.");
+    \u0275\u0275elementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(8);
     \u0275\u0275repeater(ctx_r1.tabs);
-    \u0275\u0275advance(4);
+    \u0275\u0275advance(6);
     \u0275\u0275repeater(ctx_r1.configuredPositions());
   }
 }
 function SecurityComponent_Conditional_32_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 15);
+    \u0275\u0275elementStart(0, "span", 14);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -405,6 +420,19 @@ var SecurityComponent = class _SecurityComponent {
       return updated;
     });
   }
+  hasTechnicalHelp(position) {
+    return this.editableConfig()?.technical_help_positions?.includes(position) ?? false;
+  }
+  toggleTechnicalHelp(position) {
+    this.editableConfig.update((config) => {
+      if (!config)
+        return config;
+      const current = config.technical_help_positions ?? [];
+      return __spreadProps(__spreadValues({}, config), {
+        technical_help_positions: current.includes(position) ? current.filter((p) => p !== position) : [...current, position]
+      });
+    });
+  }
   addPosition() {
     const pos = this.newPosition().trim();
     if (!pos)
@@ -429,10 +457,11 @@ var SecurityComponent = class _SecurityComponent {
     this.editableConfig.update((config) => {
       if (!config)
         return config;
-      const updated = {
+      const updated = __spreadProps(__spreadValues({}, config), {
         superusers: config.superusers.filter((p) => p !== position),
-        tabs: __spreadValues({}, config.tabs)
-      };
+        tabs: __spreadValues({}, config.tabs),
+        technical_help_positions: config.technical_help_positions?.filter((p) => p !== position)
+      });
       for (const [key, tab] of Object.entries(updated.tabs)) {
         updated.tabs[key] = __spreadProps(__spreadValues({}, tab), { positions: tab.positions.filter((p) => p !== position) });
       }
@@ -524,7 +553,7 @@ var SecurityComponent = class _SecurityComponent {
   static \u0275fac = function SecurityComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _SecurityComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _SecurityComponent, selectors: [["app-security"]], decls: 33, vars: 10, consts: [[1, "security-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "add-position"], [1, "loading-msg"], [1, "lookup-row"], ["label", "Search by name", 1, "lookup-select", 3, "ngModelChange", "ngModel", "searchable", "searchLimit"], [1, "lookup-result", 3, "lookup-added", "lookup-exists"], [1, "fusion-panel-body", 2, "padding", "0"], [1, "empty-msg"], [1, "matrix-container"], [1, "security-actions"], [1, "fusion-button", 3, "click", "disabled"], [1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "fusion-input", 3, "change"], ["value", ""], [3, "value"], [1, "fusion-button", "fusion-small", 3, "click", "disabled"], [1, "lookup-result"], [1, "lookup-name"], [1, "lookup-position"], [1, "fusion-badge", "badge-success"], [1, "fusion-badge", "badge-muted"], [1, "fusion-badge", "badge-danger"], [1, "fusion-grid", "compact"], [1, "position-name"], [1, "checkbox-cell"], ["type", "checkbox", 3, "change", "checked"], [1, "remove-cell"], ["title", "Remove position", 1, "remove-btn", 3, "click"], ["type", "checkbox", 3, "change", "checked", "disabled"]], template: function SecurityComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _SecurityComponent, selectors: [["app-security"]], decls: 33, vars: 10, consts: [[1, "security-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "add-position"], [1, "loading-msg"], [1, "lookup-row"], ["label", "Search by name", 1, "lookup-select", 3, "ngModelChange", "ngModel", "searchable", "searchLimit"], [1, "lookup-result", 3, "lookup-added", "lookup-exists"], [1, "fusion-panel-body", 2, "padding", "0"], [1, "empty-msg"], [1, "security-actions"], [1, "fusion-button", 3, "click", "disabled"], [1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "fusion-input", 3, "change"], ["value", ""], [3, "value"], [1, "fusion-button", "fusion-small", 3, "click", "disabled"], [1, "lookup-result"], [1, "lookup-name"], [1, "lookup-position"], [1, "fusion-badge", "badge-success"], [1, "fusion-badge", "badge-muted"], [1, "fusion-badge", "badge-danger"], [1, "matrix-container"], [1, "fusion-grid", "compact"], ["title", "Position can see technical detail lines in the About modal"], [1, "help-line"], [1, "position-name"], [1, "checkbox-cell"], ["type", "checkbox", 3, "change", "checked"], [1, "remove-cell"], ["title", "Remove position", 1, "remove-btn", 3, "click"], ["type", "checkbox", 3, "change", "checked", "disabled"]], template: function SecurityComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h3");
       \u0275\u0275text(4, "Add Position");
@@ -555,21 +584,21 @@ var SecurityComponent = class _SecurityComponent {
       \u0275\u0275text(23, "Position Access Matrix");
       \u0275\u0275elementEnd()();
       \u0275\u0275elementStart(24, "div", 9);
-      \u0275\u0275conditionalCreate(25, SecurityComponent_Conditional_25_Template, 2, 0, "p", 10)(26, SecurityComponent_Conditional_26_Template, 14, 0, "div", 11);
+      \u0275\u0275conditionalCreate(25, SecurityComponent_Conditional_25_Template, 2, 0, "p", 10)(26, SecurityComponent_Conditional_26_Template, 18, 0);
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(27, "div", 12)(28, "button", 13);
+      \u0275\u0275elementStart(27, "div", 11)(28, "button", 12);
       \u0275\u0275listener("click", function SecurityComponent_Template_button_click_28_listener() {
         return ctx.save();
       });
       \u0275\u0275text(29, "Save");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(30, "button", 14);
+      \u0275\u0275elementStart(30, "button", 13);
       \u0275\u0275listener("click", function SecurityComponent_Template_button_click_30_listener() {
         return ctx.discard();
       });
       \u0275\u0275text(31, "Discard");
       \u0275\u0275elementEnd();
-      \u0275\u0275conditionalCreate(32, SecurityComponent_Conditional_32_Template, 2, 1, "span", 15);
+      \u0275\u0275conditionalCreate(32, SecurityComponent_Conditional_32_Template, 2, 1, "span", 14);
       \u0275\u0275elementEnd()();
     }
     if (rf & 2) {
@@ -591,12 +620,12 @@ var SecurityComponent = class _SecurityComponent {
       \u0275\u0275advance(2);
       \u0275\u0275conditional(ctx.statusMessage() ? 32 : -1);
     }
-  }, dependencies: [FormsModule, NgSelectOption, \u0275NgSelectMultipleOption, NgControlStatus, NgModel, MpageSelectComponent], styles: ["\n\n.security-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 900px;\n}\n.add-position[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 0.5rem;\n  align-items: center;\n}\n.add-position[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  min-width: 250px;\n}\n.matrix-container[_ngcontent-%COMP%] {\n  overflow-x: auto;\n}\n.fusion-grid[_ngcontent-%COMP%]   .position-name[_ngcontent-%COMP%] {\n  text-align: left;\n  font-weight: 500;\n  white-space: nowrap;\n}\n.fusion-grid[_ngcontent-%COMP%]   .checkbox-cell[_ngcontent-%COMP%] {\n  text-align: center;\n}\n.fusion-grid[_ngcontent-%COMP%]   .checkbox-cell[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.fusion-grid[_ngcontent-%COMP%]   .checkbox-cell[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:disabled {\n  cursor: default;\n  opacity: 0.5;\n}\n.remove-cell[_ngcontent-%COMP%] {\n  text-align: center;\n}\n.remove-btn[_ngcontent-%COMP%] {\n  background: none;\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  color: var(--fusion-text-muted);\n  font-size: 1rem;\n  line-height: 1;\n  width: 1.5rem;\n  height: 1.5rem;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n.remove-btn[_ngcontent-%COMP%]:hover {\n  color: var(--fusion-danger);\n  border-color: var(--fusion-danger);\n}\n.security-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.empty-msg[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n  padding: 1rem 1.25rem;\n}\n.lookup-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.lookup-select[_ngcontent-%COMP%] {\n  min-width: 300px;\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-option:first-child, \n.lookup-select[_ngcontent-%COMP%]     .select-option:first-child {\n  display: none;\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-input, \n.lookup-select[_ngcontent-%COMP%]     .select-input, \n.lookup-select[_ngcontent-%COMP%]     input[type=text] {\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  font-size: 0.875rem;\n  padding: 0.375rem 0.75rem;\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-input:focus-within, \n.lookup-select[_ngcontent-%COMP%]     .select-input:focus-within, \n.lookup-select[_ngcontent-%COMP%]     input[type=text]:focus {\n  outline: none;\n  border-color: var(--fusion-primary);\n  box-shadow: 0 0 0 2px rgba(0, 94, 184, 0.15);\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-dropdown, \n.lookup-select[_ngcontent-%COMP%]     .select-dropdown {\n  max-width: 350px;\n}\n.lookup-result[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  padding: 0.625rem 0.875rem;\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n  border: 1px solid var(--fusion-border);\n  font-size: 0.875rem;\n}\n.lookup-result.lookup-added[_ngcontent-%COMP%] {\n  background: var(--fusion-success-bg);\n  border-color: #c6f6d5;\n}\n.lookup-result.lookup-exists[_ngcontent-%COMP%] {\n  background: var(--fusion-warning-bg);\n  border-color: #fef3c7;\n}\n.lookup-name[_ngcontent-%COMP%] {\n  font-weight: 500;\n  color: var(--fusion-text);\n}\n.lookup-position[_ngcontent-%COMP%] {\n  color: var(--fusion-text-muted);\n}\n.lookup-result[_ngcontent-%COMP%]   .fusion-badge[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n/*# sourceMappingURL=security.css.map */"], changeDetection: 0 });
+  }, dependencies: [FormsModule, NgSelectOption, \u0275NgSelectMultipleOption, NgControlStatus, NgModel, MpageSelectComponent], styles: ["\n\n.security-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 900px;\n}\n.add-position[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 0.5rem;\n  align-items: center;\n}\n.add-position[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  min-width: 250px;\n}\n.matrix-container[_ngcontent-%COMP%] {\n  overflow-x: auto;\n}\n.fusion-grid[_ngcontent-%COMP%]   .position-name[_ngcontent-%COMP%] {\n  text-align: left;\n  font-weight: 500;\n  white-space: nowrap;\n}\n.fusion-grid[_ngcontent-%COMP%]   .checkbox-cell[_ngcontent-%COMP%] {\n  text-align: center;\n}\n.fusion-grid[_ngcontent-%COMP%]   .checkbox-cell[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.fusion-grid[_ngcontent-%COMP%]   .checkbox-cell[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:disabled {\n  cursor: default;\n  opacity: 0.5;\n}\n.remove-cell[_ngcontent-%COMP%] {\n  text-align: center;\n}\n.remove-btn[_ngcontent-%COMP%] {\n  background: none;\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  color: var(--fusion-text-muted);\n  font-size: 1rem;\n  line-height: 1;\n  width: 1.5rem;\n  height: 1.5rem;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n.remove-btn[_ngcontent-%COMP%]:hover {\n  color: var(--fusion-danger);\n  border-color: var(--fusion-danger);\n}\n.security-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.empty-msg[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n  padding: 1rem 1.25rem;\n}\n.help-line[_ngcontent-%COMP%] {\n  font-size: 0.8125rem;\n  color: var(--fusion-text-muted);\n  padding: 0.75rem 1.25rem 0;\n  margin: 0;\n}\n.lookup-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.lookup-select[_ngcontent-%COMP%] {\n  min-width: 300px;\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-option:first-child, \n.lookup-select[_ngcontent-%COMP%]     .select-option:first-child {\n  display: none;\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-input, \n.lookup-select[_ngcontent-%COMP%]     .select-input, \n.lookup-select[_ngcontent-%COMP%]     input[type=text] {\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  font-size: 0.875rem;\n  padding: 0.375rem 0.75rem;\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-input:focus-within, \n.lookup-select[_ngcontent-%COMP%]     .select-input:focus-within, \n.lookup-select[_ngcontent-%COMP%]     input[type=text]:focus {\n  outline: none;\n  border-color: var(--fusion-primary);\n  box-shadow: 0 0 0 2px rgba(0, 94, 184, 0.15);\n}\n.lookup-select[_ngcontent-%COMP%]     .mpage-select-dropdown, \n.lookup-select[_ngcontent-%COMP%]     .select-dropdown {\n  max-width: 350px;\n}\n.lookup-result[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  padding: 0.625rem 0.875rem;\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n  border: 1px solid var(--fusion-border);\n  font-size: 0.875rem;\n}\n.lookup-result.lookup-added[_ngcontent-%COMP%] {\n  background: var(--fusion-success-bg);\n  border-color: #c6f6d5;\n}\n.lookup-result.lookup-exists[_ngcontent-%COMP%] {\n  background: var(--fusion-warning-bg);\n  border-color: #fef3c7;\n}\n.lookup-name[_ngcontent-%COMP%] {\n  font-weight: 500;\n  color: var(--fusion-text);\n}\n.lookup-position[_ngcontent-%COMP%] {\n  color: var(--fusion-text-muted);\n}\n.lookup-result[_ngcontent-%COMP%]   .fusion-badge[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n/*# sourceMappingURL=security.css.map */"], changeDetection: 0 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SecurityComponent, [{
     type: Component,
-    args: [{ selector: "app-security", standalone: true, imports: [FormsModule, MpageSelectComponent], changeDetection: ChangeDetectionStrategy.OnPush, template: '<div class="security-container">\n  <!-- Add Position -->\n  <div class="fusion-panel">\n    <div class="fusion-panel-header">\n      <h3>Add Position</h3>\n    </div>\n    <div class="fusion-panel-body">\n      <div class="add-position">\n        @if (positionsLoaded()) {\n          <select class="fusion-input" (change)="onPositionSelect($event)">\n            <option value="">Select position...</option>\n            @for (pos of allPositions(); track pos.codeValue) {\n              <option [value]="pos.display">{{ pos.display }}</option>\n            }\n          </select>\n          <button class="fusion-button fusion-small" [disabled]="!newPosition()" (click)="addPosition()">Add</button>\n        } @else {\n          <span class="loading-msg">Loading positions...</span>\n        }\n      </div>\n    </div>\n  </div>\n\n  <!-- Lookup Position by User -->\n  <div class="fusion-panel">\n    <div class="fusion-panel-header">\n      <h3>Lookup Position by User</h3>\n      <p>Search for a user to find their position and add it to the matrix.</p>\n    </div>\n    <div class="fusion-panel-body">\n      <div class="lookup-row">\n        <mpage-select\n          [(ngModel)]="selectedPersonnelId"\n          label="Search by name"\n          [searchable]="true"\n          [searchLimit]="50"\n          class="lookup-select"\n          (ngModelChange)="onPersonnelSelected()" />\n        @if (lookupLoading()) {\n          <span class="loading-msg">Looking up position...</span>\n        }\n      </div>\n      @if (lookupResult()) {\n        <div class="lookup-result" [class.lookup-added]="lookupResult()!.added" [class.lookup-exists]="lookupResult()!.alreadyExists">\n          <span class="lookup-name">{{ lookupResult()!.name }}</span>\n          <span class="lookup-position">Position: <strong>{{ lookupResult()!.position }}</strong></span>\n          @if (lookupResult()!.added) {\n            <span class="fusion-badge badge-success">Added to matrix</span>\n          } @else if (lookupResult()!.alreadyExists) {\n            <span class="fusion-badge badge-muted">Already configured</span>\n          } @else {\n            <span class="fusion-badge badge-danger">{{ lookupResult()!.position }}</span>\n          }\n        </div>\n      }\n    </div>\n  </div>\n\n  <!-- Position Access Matrix -->\n  <div class="fusion-panel">\n    <div class="fusion-panel-header">\n      <h3>Position Access Matrix</h3>\n    </div>\n    <div class="fusion-panel-body" style="padding: 0;">\n      @if (configuredPositions().length === 0) {\n        <p class="empty-msg">No positions configured. Add a position above to get started.</p>\n      } @else {\n        <div class="matrix-container">\n          <table class="fusion-grid compact">\n            <thead>\n              <tr>\n                <th>Position</th>\n                <th>Superuser</th>\n                @for (tab of tabs; track tab.key) {\n                  <th>{{ tab.label }}</th>\n                }\n                <th></th>\n              </tr>\n            </thead>\n            <tbody>\n              @for (position of configuredPositions(); track position) {\n                <tr>\n                  <td class="position-name">{{ position }}</td>\n                  <td class="checkbox-cell"><input type="checkbox" [checked]="isSuperuser(position)" (change)="toggleSuperuser(position)" /></td>\n                  @for (tab of tabs; track tab.key) {\n                    <td class="checkbox-cell"><input type="checkbox" [checked]="isSuperuser(position) || hasTabAccess(position, tab.key)" [disabled]="isSuperuser(position)" (change)="toggleTabAccess(position, tab.key)" /></td>\n                  }\n                  <td class="remove-cell"><button class="remove-btn" (click)="removePosition(position)" title="Remove position">&times;</button></td>\n                </tr>\n              }\n            </tbody>\n          </table>\n        </div>\n      }\n    </div>\n  </div>\n\n  <div class="security-actions">\n    <button class="fusion-button" [disabled]="!hasUnsavedChanges() || saving()" (click)="save()">Save</button>\n    <button class="fusion-button fusion-outline" [disabled]="!hasUnsavedChanges()" (click)="discard()">Discard</button>\n    @if (statusMessage()) {\n      <span class="status-message">{{ statusMessage() }}</span>\n    }\n  </div>\n</div>\n', styles: ["/* src/app/components/security/security.scss */\n.security-container {\n  padding: 1.5rem;\n  max-width: 900px;\n}\n.add-position {\n  display: flex;\n  gap: 0.5rem;\n  align-items: center;\n}\n.add-position select {\n  min-width: 250px;\n}\n.matrix-container {\n  overflow-x: auto;\n}\n.fusion-grid .position-name {\n  text-align: left;\n  font-weight: 500;\n  white-space: nowrap;\n}\n.fusion-grid .checkbox-cell {\n  text-align: center;\n}\n.fusion-grid .checkbox-cell input {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.fusion-grid .checkbox-cell input:disabled {\n  cursor: default;\n  opacity: 0.5;\n}\n.remove-cell {\n  text-align: center;\n}\n.remove-btn {\n  background: none;\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  color: var(--fusion-text-muted);\n  font-size: 1rem;\n  line-height: 1;\n  width: 1.5rem;\n  height: 1.5rem;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n.remove-btn:hover {\n  color: var(--fusion-danger);\n  border-color: var(--fusion-danger);\n}\n.security-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.empty-msg {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n  padding: 1rem 1.25rem;\n}\n.lookup-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.lookup-select {\n  min-width: 300px;\n}\n.lookup-select ::ng-deep .mpage-select-option:first-child,\n.lookup-select ::ng-deep .select-option:first-child {\n  display: none;\n}\n.lookup-select ::ng-deep .mpage-select-input,\n.lookup-select ::ng-deep .select-input,\n.lookup-select ::ng-deep input[type=text] {\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  font-size: 0.875rem;\n  padding: 0.375rem 0.75rem;\n}\n.lookup-select ::ng-deep .mpage-select-input:focus-within,\n.lookup-select ::ng-deep .select-input:focus-within,\n.lookup-select ::ng-deep input[type=text]:focus {\n  outline: none;\n  border-color: var(--fusion-primary);\n  box-shadow: 0 0 0 2px rgba(0, 94, 184, 0.15);\n}\n.lookup-select ::ng-deep .mpage-select-dropdown,\n.lookup-select ::ng-deep .select-dropdown {\n  max-width: 350px;\n}\n.lookup-result {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  padding: 0.625rem 0.875rem;\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n  border: 1px solid var(--fusion-border);\n  font-size: 0.875rem;\n}\n.lookup-result.lookup-added {\n  background: var(--fusion-success-bg);\n  border-color: #c6f6d5;\n}\n.lookup-result.lookup-exists {\n  background: var(--fusion-warning-bg);\n  border-color: #fef3c7;\n}\n.lookup-name {\n  font-weight: 500;\n  color: var(--fusion-text);\n}\n.lookup-position {\n  color: var(--fusion-text-muted);\n}\n.lookup-result .fusion-badge {\n  margin-left: auto;\n}\n/*# sourceMappingURL=security.css.map */\n"] }]
+    args: [{ selector: "app-security", standalone: true, imports: [FormsModule, MpageSelectComponent], changeDetection: ChangeDetectionStrategy.OnPush, template: '<div class="security-container">\n  <!-- Add Position -->\n  <div class="fusion-panel">\n    <div class="fusion-panel-header">\n      <h3>Add Position</h3>\n    </div>\n    <div class="fusion-panel-body">\n      <div class="add-position">\n        @if (positionsLoaded()) {\n          <select class="fusion-input" (change)="onPositionSelect($event)">\n            <option value="">Select position...</option>\n            @for (pos of allPositions(); track pos.codeValue) {\n              <option [value]="pos.display">{{ pos.display }}</option>\n            }\n          </select>\n          <button class="fusion-button fusion-small" [disabled]="!newPosition()" (click)="addPosition()">Add</button>\n        } @else {\n          <span class="loading-msg">Loading positions...</span>\n        }\n      </div>\n    </div>\n  </div>\n\n  <!-- Lookup Position by User -->\n  <div class="fusion-panel">\n    <div class="fusion-panel-header">\n      <h3>Lookup Position by User</h3>\n      <p>Search for a user to find their position and add it to the matrix.</p>\n    </div>\n    <div class="fusion-panel-body">\n      <div class="lookup-row">\n        <mpage-select\n          [(ngModel)]="selectedPersonnelId"\n          label="Search by name"\n          [searchable]="true"\n          [searchLimit]="50"\n          class="lookup-select"\n          (ngModelChange)="onPersonnelSelected()" />\n        @if (lookupLoading()) {\n          <span class="loading-msg">Looking up position...</span>\n        }\n      </div>\n      @if (lookupResult()) {\n        <div class="lookup-result" [class.lookup-added]="lookupResult()!.added" [class.lookup-exists]="lookupResult()!.alreadyExists">\n          <span class="lookup-name">{{ lookupResult()!.name }}</span>\n          <span class="lookup-position">Position: <strong>{{ lookupResult()!.position }}</strong></span>\n          @if (lookupResult()!.added) {\n            <span class="fusion-badge badge-success">Added to matrix</span>\n          } @else if (lookupResult()!.alreadyExists) {\n            <span class="fusion-badge badge-muted">Already configured</span>\n          } @else {\n            <span class="fusion-badge badge-danger">{{ lookupResult()!.position }}</span>\n          }\n        </div>\n      }\n    </div>\n  </div>\n\n  <!-- Position Access Matrix -->\n  <div class="fusion-panel">\n    <div class="fusion-panel-header">\n      <h3>Position Access Matrix</h3>\n    </div>\n    <div class="fusion-panel-body" style="padding: 0;">\n      @if (configuredPositions().length === 0) {\n        <p class="empty-msg">No positions configured. Add a position above to get started.</p>\n      } @else {\n        <div class="matrix-container">\n          <table class="fusion-grid compact">\n            <thead>\n              <tr>\n                <th>Position</th>\n                <th>Superuser</th>\n                @for (tab of tabs; track tab.key) {\n                  <th>{{ tab.label }}</th>\n                }\n                <th title="Position can see technical detail lines in the About modal">Technical Help</th>\n                <th></th>\n              </tr>\n            </thead>\n            <tbody>\n              @for (position of configuredPositions(); track position) {\n                <tr>\n                  <td class="position-name">{{ position }}</td>\n                  <td class="checkbox-cell"><input type="checkbox" [checked]="isSuperuser(position)" (change)="toggleSuperuser(position)" /></td>\n                  @for (tab of tabs; track tab.key) {\n                    <td class="checkbox-cell"><input type="checkbox" [checked]="isSuperuser(position) || hasTabAccess(position, tab.key)" [disabled]="isSuperuser(position)" (change)="toggleTabAccess(position, tab.key)" /></td>\n                  }\n                  <td class="checkbox-cell"><input type="checkbox" [checked]="hasTechnicalHelp(position)" (change)="toggleTechnicalHelp(position)" /></td>\n                  <td class="remove-cell"><button class="remove-btn" (click)="removePosition(position)" title="Remove position">&times;</button></td>\n                </tr>\n              }\n            </tbody>\n          </table>\n        </div>\n        <p class="help-line">Technical Help controls whether the position sees the technical detail lines in the About modal. Superusers always see them.</p>\n      }\n    </div>\n  </div>\n\n  <div class="security-actions">\n    <button class="fusion-button" [disabled]="!hasUnsavedChanges() || saving()" (click)="save()">Save</button>\n    <button class="fusion-button fusion-outline" [disabled]="!hasUnsavedChanges()" (click)="discard()">Discard</button>\n    @if (statusMessage()) {\n      <span class="status-message">{{ statusMessage() }}</span>\n    }\n  </div>\n</div>\n', styles: ["/* src/app/components/security/security.scss */\n.security-container {\n  padding: 1.5rem;\n  max-width: 900px;\n}\n.add-position {\n  display: flex;\n  gap: 0.5rem;\n  align-items: center;\n}\n.add-position select {\n  min-width: 250px;\n}\n.matrix-container {\n  overflow-x: auto;\n}\n.fusion-grid .position-name {\n  text-align: left;\n  font-weight: 500;\n  white-space: nowrap;\n}\n.fusion-grid .checkbox-cell {\n  text-align: center;\n}\n.fusion-grid .checkbox-cell input {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.fusion-grid .checkbox-cell input:disabled {\n  cursor: default;\n  opacity: 0.5;\n}\n.remove-cell {\n  text-align: center;\n}\n.remove-btn {\n  background: none;\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  color: var(--fusion-text-muted);\n  font-size: 1rem;\n  line-height: 1;\n  width: 1.5rem;\n  height: 1.5rem;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n.remove-btn:hover {\n  color: var(--fusion-danger);\n  border-color: var(--fusion-danger);\n}\n.security-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.empty-msg {\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n  padding: 1rem 1.25rem;\n}\n.help-line {\n  font-size: 0.8125rem;\n  color: var(--fusion-text-muted);\n  padding: 0.75rem 1.25rem 0;\n  margin: 0;\n}\n.lookup-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.lookup-select {\n  min-width: 300px;\n}\n.lookup-select ::ng-deep .mpage-select-option:first-child,\n.lookup-select ::ng-deep .select-option:first-child {\n  display: none;\n}\n.lookup-select ::ng-deep .mpage-select-input,\n.lookup-select ::ng-deep .select-input,\n.lookup-select ::ng-deep input[type=text] {\n  border: 1px solid var(--fusion-border-dark);\n  border-radius: var(--fusion-radius);\n  font-size: 0.875rem;\n  padding: 0.375rem 0.75rem;\n}\n.lookup-select ::ng-deep .mpage-select-input:focus-within,\n.lookup-select ::ng-deep .select-input:focus-within,\n.lookup-select ::ng-deep input[type=text]:focus {\n  outline: none;\n  border-color: var(--fusion-primary);\n  box-shadow: 0 0 0 2px rgba(0, 94, 184, 0.15);\n}\n.lookup-select ::ng-deep .mpage-select-dropdown,\n.lookup-select ::ng-deep .select-dropdown {\n  max-width: 350px;\n}\n.lookup-result {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  padding: 0.625rem 0.875rem;\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n  border: 1px solid var(--fusion-border);\n  font-size: 0.875rem;\n}\n.lookup-result.lookup-added {\n  background: var(--fusion-success-bg);\n  border-color: #c6f6d5;\n}\n.lookup-result.lookup-exists {\n  background: var(--fusion-warning-bg);\n  border-color: #fef3c7;\n}\n.lookup-name {\n  font-weight: 500;\n  color: var(--fusion-text);\n}\n.lookup-position {\n  color: var(--fusion-text-muted);\n}\n.lookup-result .fusion-badge {\n  margin-left: auto;\n}\n/*# sourceMappingURL=security.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
@@ -605,4 +634,4 @@ var SecurityComponent = class _SecurityComponent {
 export {
   SecurityComponent
 };
-//# sourceMappingURL=chunk-FC66XGRU.js.map
+//# sourceMappingURL=chunk-FIU2DMTY.js.map

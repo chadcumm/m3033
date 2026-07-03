@@ -51,7 +51,8 @@ import {
   tags,
   unfoldAll,
   unfoldCode
-} from "./chunk-YNT6HKVN.js";
+} from "./chunk-LRT5K7PP.js";
+import "./chunk-COG2N4FA.js";
 import {
   __commonJS,
   __export,
@@ -32369,4 +32370,4 @@ lodash-es/lodash.js:
    * Copyright 2026 Fonticons, Inc.
    *)
 */
-//# sourceMappingURL=chunk-JIS3QWZ4.js.map
+//# sourceMappingURL=chunk-UCWNXCSO.js.map

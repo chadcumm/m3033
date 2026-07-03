@@ -2,11 +2,11 @@ import {
   ALL_TABS,
   DEFAULT_LAB_LOOKBACK_HOURS,
   SUPERUSER_OVERRIDE_ALL
-} from "./chunk-YNIUKNSL.js";
+} from "./chunk-AQNK5JSS.js";
 import {
   ConfigurationService,
   MPageService
-} from "./chunk-6CCZYKTI.js";
+} from "./chunk-UOIJNSGV.js";
 import {
   Injectable,
   computed,
@@ -14,7 +14,7 @@ import {
   setClassMetadata,
   signal,
   ɵɵdefineInjectable
-} from "./chunk-EY5RH44I.js";
+} from "./chunk-VK25UXFS.js";
 
 // src/app/services/access-control.service.ts
 var AccessControlService = class _AccessControlService {
@@ -87,6 +87,17 @@ var AccessControlService = class _AccessControlService {
     }
     return hidden;
   }, ...ngDevMode ? [{ debugName: "roleHiddenColumns" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  /** Technical help lines: superusers always; otherwise position must be listed.
+   *  Unconfigured (key absent) = superusers only (spec 2026-07-03). */
+  canSeeTechnicalHelp = computed(() => {
+    if (this.isSuperuser())
+      return true;
+    const listed = this.configService.configuration()?.ACCESS_CONTROL?.technical_help_positions ?? [];
+    return listed.includes(this.userPosition());
+  }, ...ngDevMode ? [{ debugName: "canSeeTechnicalHelp" }] : (
     /* istanbul ignore next */
     []
   ));
@@ -217,4 +228,4 @@ var AccessControlService = class _AccessControlService {
 export {
   AccessControlService
 };
-//# sourceMappingURL=chunk-GJRZGAZK.js.map
+//# sourceMappingURL=chunk-5YTREYET.js.map

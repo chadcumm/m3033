@@ -49,6 +49,7 @@ var ALL_TABS = [
   { key: "schedule", label: "Schedule" },
   { key: "config", label: "Configuration" },
   { key: "security", label: "Security" },
+  { key: "help-editor", label: "Help Editor" },
   { key: "advanced", label: "Advanced", superuserOnly: true }
 ];
 var COLUMN_DEFINITIONS = [
@@ -83,4 +84,4 @@ export {
   ALL_TABS,
   COLUMN_DEFINITIONS
 };
-//# sourceMappingURL=chunk-YNIUKNSL.js.map
+//# sourceMappingURL=chunk-AQNK5JSS.js.map

@@ -1,4 +1,7 @@
 import {
+  HelpContentService
+} from "./chunk-MSNOXRPG.js";
+import {
   ConfigurationService,
   DecimalPipe,
   FormsModule,
@@ -8,7 +11,7 @@ import {
   NgSelectOption,
   SelectControlValueAccessor,
   ɵNgSelectMultipleOption
-} from "./chunk-6CCZYKTI.js";
+} from "./chunk-UOIJNSGV.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -57,7 +60,7 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-EY5RH44I.js";
+} from "./chunk-VK25UXFS.js";
 import {
   Annotation,
   ChangeSet,
@@ -109,7 +112,8 @@ import {
   searchKeymap,
   syntaxHighlighting,
   tags
-} from "./chunk-YNT6HKVN.js";
+} from "./chunk-LRT5K7PP.js";
+import "./chunk-COG2N4FA.js";
 import {
   __objRest,
   __spreadProps,
@@ -2228,7 +2232,7 @@ var VanillaJsonEditorComponent = class _VanillaJsonEditorComponent {
   initialized = false;
   suppressChange = false;
   async ngAfterViewInit() {
-    const { createJSONEditor } = await import("./chunk-JIS3QWZ4.js");
+    const { createJSONEditor } = await import("./chunk-UCWNXCSO.js");
     this.editor = createJSONEditor({
       target: this.editorContainer.nativeElement,
       props: {
@@ -2301,32 +2305,75 @@ var VanillaJsonEditorComponent = class _VanillaJsonEditorComponent {
 
 // src/app/components/advanced/advanced.ts
 var _forTrack0 = ($index, $item) => $item.value;
-function AdvancedComponent_Conditional_6_Template(rf, ctx) {
+function AdvancedComponent_For_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 2);
-    \u0275\u0275text(1, "Loading configuration...");
-    \u0275\u0275elementEnd();
-  }
-}
-function AdvancedComponent_Conditional_7_For_7_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 8);
+    \u0275\u0275elementStart(0, "option", 5);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const option_r3 = ctx.$implicit;
-    \u0275\u0275property("value", option_r3.value);
+    const option_r1 = ctx.$implicit;
+    \u0275\u0275property("value", option_r1.value);
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate(option_r3.label);
+    \u0275\u0275textInterpolate(option_r1.label);
   }
 }
-function AdvancedComponent_Conditional_7_Conditional_22_Template(rf, ctx) {
+function AdvancedComponent_Conditional_12_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 17)(1, "span", 28);
+    \u0275\u0275elementStart(0, "div", 6);
+    \u0275\u0275text(1, "Loading configuration...");
+    \u0275\u0275elementEnd();
+  }
+}
+function AdvancedComponent_Conditional_13_Conditional_3_For_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "option", 5);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const option_r5 = ctx.$implicit;
+    \u0275\u0275property("value", option_r5.value);
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(option_r5.label);
+  }
+}
+function AdvancedComponent_Conditional_13_Conditional_3_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r3 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "label", 22);
+    \u0275\u0275text(1, "Section:");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(2, "select", 23);
+    \u0275\u0275listener("ngModelChange", function AdvancedComponent_Conditional_13_Conditional_3_Template_select_ngModelChange_2_listener($event) {
+      \u0275\u0275restoreView(_r3);
+      const ctx_r3 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r3.onSectionChange($event));
+    });
+    \u0275\u0275repeaterCreate(3, AdvancedComponent_Conditional_13_Conditional_3_For_4_Template, 2, 2, "option", 5, _forTrack0);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r3 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngModel", ctx_r3.selectedSection());
+    \u0275\u0275advance();
+    \u0275\u0275repeater(ctx_r3.sectionOptions());
+  }
+}
+function AdvancedComponent_Conditional_13_Conditional_18_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 6);
+    \u0275\u0275text(1, "Loading help content...");
+    \u0275\u0275elementEnd();
+  }
+}
+function AdvancedComponent_Conditional_13_Conditional_19_Conditional_0_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 24)(1, "span", 31);
     \u0275\u0275text(2, "!");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "span", 29);
+    \u0275\u0275elementStart(3, "span", 32);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd()();
   }
@@ -2335,202 +2382,205 @@ function AdvancedComponent_Conditional_7_Conditional_22_Template(rf, ctx) {
     \u0275\u0275textInterpolate(ctx);
   }
 }
-function AdvancedComponent_Conditional_7_Conditional_23_Template(rf, ctx) {
+function AdvancedComponent_Conditional_13_Conditional_19_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
-    const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 18)(1, "code-editor", 30);
-    \u0275\u0275listener("ngModelChange", function AdvancedComponent_Conditional_7_Conditional_23_Template_code_editor_ngModelChange_1_listener($event) {
-      \u0275\u0275restoreView(_r4);
-      const ctx_r1 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r1.onCodeChange($event));
+    const _r6 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 25)(1, "code-editor", 33);
+    \u0275\u0275listener("ngModelChange", function AdvancedComponent_Conditional_13_Conditional_19_Conditional_1_Template_code_editor_ngModelChange_1_listener($event) {
+      \u0275\u0275restoreView(_r6);
+      const ctx_r3 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r3.onCodeChange($event));
     });
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const ctx_r1 = \u0275\u0275nextContext(2);
+    const ctx_r3 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
-    \u0275\u0275property("ngModel", ctx_r1.editorContent())("extensions", ctx_r1.extensions);
+    \u0275\u0275property("ngModel", ctx_r3.editorContent())("extensions", ctx_r3.extensions);
   }
 }
-function AdvancedComponent_Conditional_7_Conditional_24_Template(rf, ctx) {
+function AdvancedComponent_Conditional_13_Conditional_19_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 19)(1, "app-vanilla-json-editor", 31);
-    \u0275\u0275listener("contentChange", function AdvancedComponent_Conditional_7_Conditional_24_Template_app_vanilla_json_editor_contentChange_1_listener($event) {
-      \u0275\u0275restoreView(_r5);
-      const ctx_r1 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r1.onTreeChange($event));
+    const _r7 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 26)(1, "app-vanilla-json-editor", 34);
+    \u0275\u0275listener("contentChange", function AdvancedComponent_Conditional_13_Conditional_19_Conditional_2_Template_app_vanilla_json_editor_contentChange_1_listener($event) {
+      \u0275\u0275restoreView(_r7);
+      const ctx_r3 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r3.onTreeChange($event));
     });
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const ctx_r1 = \u0275\u0275nextContext(2);
+    const ctx_r3 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
-    \u0275\u0275property("content", ctx_r1.treeContent());
+    \u0275\u0275property("content", ctx_r3.treeContent());
   }
 }
-function AdvancedComponent_Conditional_7_Conditional_28_Template(rf, ctx) {
+function AdvancedComponent_Conditional_13_Conditional_19_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 22);
+    \u0275\u0275elementStart(0, "span", 29);
     \u0275\u0275text(1, "Modified");
     \u0275\u0275elementEnd();
   }
 }
-function AdvancedComponent_Conditional_7_Conditional_29_Template(rf, ctx) {
+function AdvancedComponent_Conditional_13_Conditional_19_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 22);
+    \u0275\u0275elementStart(0, "span", 29);
     \u0275\u0275text(1, "Applied \u2014 not saved");
     \u0275\u0275elementEnd();
   }
 }
-function AdvancedComponent_Conditional_7_Conditional_31_Template(rf, ctx) {
+function AdvancedComponent_Conditional_13_Conditional_19_Conditional_9_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0);
     \u0275\u0275pipe(1, "number");
   }
   if (rf & 2) {
-    const ctx_r1 = \u0275\u0275nextContext(2);
-    \u0275\u0275textInterpolate1(" ", \u0275\u0275pipeBind1(1, 1, ctx_r1.editorContent().length), " chars ");
+    const ctx_r3 = \u0275\u0275nextContext(3);
+    \u0275\u0275textInterpolate1(" ", \u0275\u0275pipeBind1(1, 1, ctx_r3.editorContent().length), " chars ");
   }
 }
-function AdvancedComponent_Conditional_7_Conditional_37_Template(rf, ctx) {
+function AdvancedComponent_Conditional_13_Conditional_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 27);
+    \u0275\u0275conditionalCreate(0, AdvancedComponent_Conditional_13_Conditional_19_Conditional_0_Template, 5, 1, "div", 24);
+    \u0275\u0275conditionalCreate(1, AdvancedComponent_Conditional_13_Conditional_19_Conditional_1_Template, 2, 2, "div", 25)(2, AdvancedComponent_Conditional_13_Conditional_19_Conditional_2_Template, 2, 1, "div", 26);
+    \u0275\u0275elementStart(3, "div", 27)(4, "span", 28);
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd();
+    \u0275\u0275conditionalCreate(6, AdvancedComponent_Conditional_13_Conditional_19_Conditional_6_Template, 2, 0, "span", 29)(7, AdvancedComponent_Conditional_13_Conditional_19_Conditional_7_Template, 2, 0, "span", 29);
+    \u0275\u0275elementStart(8, "span", 30);
+    \u0275\u0275conditionalCreate(9, AdvancedComponent_Conditional_13_Conditional_19_Conditional_9_Template, 2, 3);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r3 = \u0275\u0275nextContext(2);
+    \u0275\u0275conditional((tmp_2_0 = ctx_r3.parseError()) ? 0 : -1, tmp_2_0);
+    \u0275\u0275advance();
+    \u0275\u0275conditional(ctx_r3.viewMode() === "code" ? 1 : 2);
+    \u0275\u0275advance(4);
+    \u0275\u0275textInterpolate(ctx_r3.selectedSectionLabel);
+    \u0275\u0275advance();
+    \u0275\u0275conditional(ctx_r3.hasEditorChanges() ? 6 : ctx_r3.hasUnsavedChanges() ? 7 : -1);
+    \u0275\u0275advance(3);
+    \u0275\u0275conditional(ctx_r3.viewMode() === "code" ? 9 : -1);
+  }
+}
+function AdvancedComponent_Conditional_13_Conditional_25_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 21);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r1 = \u0275\u0275nextContext(2);
+    const ctx_r3 = \u0275\u0275nextContext(2);
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r1.statusMessage());
+    \u0275\u0275textInterpolate(ctx_r3.statusMessage());
   }
 }
-function AdvancedComponent_Conditional_7_Template(rf, ctx) {
+function AdvancedComponent_Conditional_13_Template(rf, ctx) {
   if (rf & 1) {
-    const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 3)(1, "div", 4)(2, "div", 5)(3, "label", 6);
-    \u0275\u0275text(4, "Section:");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "select", 7);
-    \u0275\u0275listener("ngModelChange", function AdvancedComponent_Conditional_7_Template_select_ngModelChange_5_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.onSectionChange($event));
+    const _r2 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 7)(1, "div", 8)(2, "div", 9);
+    \u0275\u0275conditionalCreate(3, AdvancedComponent_Conditional_13_Conditional_3_Template, 5, 1);
+    \u0275\u0275elementStart(4, "div", 10)(5, "button", 11);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_5_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.setViewMode("code"));
     });
-    \u0275\u0275repeaterCreate(6, AdvancedComponent_Conditional_7_For_7_Template, 2, 2, "option", 8, _forTrack0);
+    \u0275\u0275text(6, " Code ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "div", 9)(9, "button", 10);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_9_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.setViewMode("code"));
+    \u0275\u0275elementStart(7, "button", 12);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_7_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.setViewMode("tree"));
     });
-    \u0275\u0275text(10, " Code ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(11, "button", 11);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_11_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.setViewMode("tree"));
-    });
-    \u0275\u0275text(12, " Tree ");
+    \u0275\u0275text(8, " Tree ");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(13, "div", 12)(14, "button", 13);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_14_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.formatJson());
+    \u0275\u0275elementStart(9, "div", 13)(10, "button", 14);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_10_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.formatJson());
     });
-    \u0275\u0275text(15, " Format ");
+    \u0275\u0275text(11, " Format ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(16, "button", 14);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_16_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.copyToClipboard());
+    \u0275\u0275elementStart(12, "button", 15);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_12_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.copyToClipboard());
     });
-    \u0275\u0275text(17);
+    \u0275\u0275text(13);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(18, "button", 15);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_18_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.pasteFromClipboard());
+    \u0275\u0275elementStart(14, "button", 16);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_14_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.pasteFromClipboard());
     });
-    \u0275\u0275text(19, " Paste ");
+    \u0275\u0275text(15, " Paste ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(20, "button", 16);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_20_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.applyChanges());
+    \u0275\u0275elementStart(16, "button", 17);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_16_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.applyChanges());
     });
-    \u0275\u0275text(21, " Apply ");
+    \u0275\u0275text(17, " Apply ");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275conditionalCreate(22, AdvancedComponent_Conditional_7_Conditional_22_Template, 5, 1, "div", 17);
-    \u0275\u0275conditionalCreate(23, AdvancedComponent_Conditional_7_Conditional_23_Template, 2, 2, "div", 18)(24, AdvancedComponent_Conditional_7_Conditional_24_Template, 2, 1, "div", 19);
-    \u0275\u0275elementStart(25, "div", 20)(26, "span", 21);
-    \u0275\u0275text(27);
+    \u0275\u0275conditionalCreate(18, AdvancedComponent_Conditional_13_Conditional_18_Template, 2, 0, "div", 6)(19, AdvancedComponent_Conditional_13_Conditional_19_Template, 10, 5);
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(28, AdvancedComponent_Conditional_7_Conditional_28_Template, 2, 0, "span", 22)(29, AdvancedComponent_Conditional_7_Conditional_29_Template, 2, 0, "span", 22);
-    \u0275\u0275elementStart(30, "span", 23);
-    \u0275\u0275conditionalCreate(31, AdvancedComponent_Conditional_7_Conditional_31_Template, 2, 3);
-    \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(32, "div", 24)(33, "button", 25);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_33_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.save());
+    \u0275\u0275elementStart(20, "div", 18)(21, "button", 19);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_21_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.save());
     });
-    \u0275\u0275text(34, " Save ");
+    \u0275\u0275text(22, " Save ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(35, "button", 26);
-    \u0275\u0275listener("click", function AdvancedComponent_Conditional_7_Template_button_click_35_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.discard());
+    \u0275\u0275elementStart(23, "button", 20);
+    \u0275\u0275listener("click", function AdvancedComponent_Conditional_13_Template_button_click_23_listener() {
+      \u0275\u0275restoreView(_r2);
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.discard());
     });
-    \u0275\u0275text(36, " Discard ");
+    \u0275\u0275text(24, " Discard ");
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(37, AdvancedComponent_Conditional_7_Conditional_37_Template, 2, 1, "span", 27);
+    \u0275\u0275conditionalCreate(25, AdvancedComponent_Conditional_13_Conditional_25_Template, 2, 1, "span", 21);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    let tmp_11_0;
-    const ctx_r1 = \u0275\u0275nextContext();
-    \u0275\u0275advance(5);
-    \u0275\u0275property("ngModel", ctx_r1.selectedSection());
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance(3);
+    \u0275\u0275conditional(ctx_r3.documentKind() === "config" ? 3 : -1);
+    \u0275\u0275advance(2);
+    \u0275\u0275classProp("active", ctx_r3.viewMode() === "code");
+    \u0275\u0275attribute("aria-pressed", ctx_r3.viewMode() === "code");
+    \u0275\u0275advance(2);
+    \u0275\u0275classProp("active", ctx_r3.viewMode() === "tree");
+    \u0275\u0275property("disabled", !!ctx_r3.parseError() || ctx_r3.helpLoading());
+    \u0275\u0275attribute("aria-pressed", ctx_r3.viewMode() === "tree");
+    \u0275\u0275advance(3);
+    \u0275\u0275property("disabled", !!ctx_r3.parseError() || ctx_r3.viewMode() === "tree" || ctx_r3.helpLoading());
+    \u0275\u0275advance(2);
+    \u0275\u0275property("disabled", ctx_r3.helpLoading());
     \u0275\u0275advance();
-    \u0275\u0275repeater(ctx_r1.sectionOptions());
-    \u0275\u0275advance(3);
-    \u0275\u0275classProp("active", ctx_r1.viewMode() === "code");
-    \u0275\u0275attribute("aria-pressed", ctx_r1.viewMode() === "code");
-    \u0275\u0275advance(2);
-    \u0275\u0275classProp("active", ctx_r1.viewMode() === "tree");
-    \u0275\u0275property("disabled", !!ctx_r1.parseError());
-    \u0275\u0275attribute("aria-pressed", ctx_r1.viewMode() === "tree");
-    \u0275\u0275advance(3);
-    \u0275\u0275property("disabled", !!ctx_r1.parseError() || ctx_r1.viewMode() === "tree");
-    \u0275\u0275advance(3);
-    \u0275\u0275textInterpolate1(" ", ctx_r1.copyLabel(), " ");
-    \u0275\u0275advance(3);
-    \u0275\u0275property("disabled", !!ctx_r1.parseError() || !ctx_r1.hasEditorChanges());
-    \u0275\u0275advance(2);
-    \u0275\u0275conditional((tmp_11_0 = ctx_r1.parseError()) ? 22 : -1, tmp_11_0);
+    \u0275\u0275textInterpolate1(" ", ctx_r3.copyLabel(), " ");
     \u0275\u0275advance();
-    \u0275\u0275conditional(ctx_r1.viewMode() === "code" ? 23 : 24);
-    \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate(ctx_r1.selectedSectionLabel);
-    \u0275\u0275advance();
-    \u0275\u0275conditional(ctx_r1.hasEditorChanges() ? 28 : ctx_r1.hasUnsavedChanges() ? 29 : -1);
+    \u0275\u0275property("disabled", ctx_r3.helpLoading());
+    \u0275\u0275advance(2);
+    \u0275\u0275property("disabled", !!ctx_r3.parseError() || !ctx_r3.hasEditorChanges() || ctx_r3.helpLoading());
+    \u0275\u0275advance(2);
+    \u0275\u0275conditional(ctx_r3.helpLoading() ? 18 : 19);
     \u0275\u0275advance(3);
-    \u0275\u0275conditional(ctx_r1.viewMode() === "code" ? 31 : -1);
+    \u0275\u0275property("disabled", !ctx_r3.hasUnsavedChanges() && !ctx_r3.hasEditorChanges() || !!ctx_r3.parseError() || ctx_r3.loading());
     \u0275\u0275advance(2);
-    \u0275\u0275property("disabled", !ctx_r1.hasUnsavedChanges() && !ctx_r1.hasEditorChanges() || !!ctx_r1.parseError() || ctx_r1.loading());
+    \u0275\u0275property("disabled", !ctx_r3.hasUnsavedChanges() && !ctx_r3.hasEditorChanges());
     \u0275\u0275advance(2);
-    \u0275\u0275property("disabled", !ctx_r1.hasUnsavedChanges() && !ctx_r1.hasEditorChanges());
-    \u0275\u0275advance(2);
-    \u0275\u0275conditional(ctx_r1.statusMessage() ? 37 : -1);
+    \u0275\u0275conditional(ctx_r3.statusMessage() ? 25 : -1);
   }
 }
 var FULL_CONFIG = "FULL_CONFIG";
@@ -2550,8 +2600,23 @@ function stripTimestamp(config) {
 }
 var AdvancedComponent = class _AdvancedComponent {
   configService = inject(ConfigurationService);
+  helpService = inject(HelpContentService);
+  /** Which raw document is being edited: the app config, or the help content JSON */
+  documentKind = signal("config", ...ngDevMode ? [{ debugName: "documentKind" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  documentOptions = [
+    { value: "config", label: "App Configuration" },
+    { value: "help", label: "Help Content" }
+  ];
   /** Deep-cloned working copy of the live configuration; Apply stages into it */
   workingCopy = signal(null, ...ngDevMode ? [{ debugName: "workingCopy" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  /** Deep-cloned working copy of the help sections; Apply stages into it (help document only) */
+  helpWorkingSections = signal(null, ...ngDevMode ? [{ debugName: "helpWorkingSections" }] : (
     /* istanbul ignore next */
     []
   ));
@@ -2594,14 +2659,26 @@ var AdvancedComponent = class _AdvancedComponent {
     /* istanbul ignore next */
     []
   ));
-  /** Working copy differs from the live config (timestamp excluded) */
+  /** Working copy differs from the live config (timestamp excluded), or help sections differ from baseline */
   hasUnsavedChanges = computed(() => {
+    if (this.documentKind() === "help") {
+      const wc2 = this.helpWorkingSections();
+      if (!wc2)
+        return false;
+      const baseline = this.helpService.storedSections() ?? this.helpService.effectiveSections();
+      return JSON.stringify(wc2) !== JSON.stringify(baseline);
+    }
     const wc = this.workingCopy();
     const live = this.configService.configuration();
     if (!wc || !live)
       return false;
     return stripTimestamp(wc) !== stripTimestamp(live);
   }, ...ngDevMode ? [{ debugName: "hasUnsavedChanges" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  /** True while the help document is selected but its content hasn't arrived yet */
+  helpLoading = computed(() => this.documentKind() === "help" && !this.helpService.loaded(), ...ngDevMode ? [{ debugName: "helpLoading" }] : (
     /* istanbul ignore next */
     []
   ));
@@ -2628,14 +2705,38 @@ var AdvancedComponent = class _AdvancedComponent {
     untracked(() => {
       if (this.workingCopy() === null) {
         this.workingCopy.set(JSON.parse(JSON.stringify(live)));
-        this.loadSection(this.selectedSection());
+        if (this.documentKind() === "config") {
+          this.loadSection(this.selectedSection());
+        }
       }
     });
   }, ...ngDevMode ? [{ debugName: "initEffect" }] : (
     /* istanbul ignore next */
     []
   ));
+  /**
+   * Seed the help editor once the service finishes loading, provided the user hasn't
+   * already staged (helpWorkingSections set) or started typing (hasEditorChanges) something.
+   * loadContent() is async, so switching to 'help' before it resolves relies on this effect
+   * to perform the seed once `loaded()` flips true.
+   */
+  helpSeedEffect = effect(() => {
+    const kind = this.documentKind();
+    const loaded = this.helpService.loaded();
+    if (kind !== "help" || !loaded)
+      return;
+    untracked(() => {
+      if (this.helpWorkingSections() === null && !this.hasEditorChanges()) {
+        this.seedHelpEditor();
+      }
+    });
+  }, ...ngDevMode ? [{ debugName: "helpSeedEffect" }] : (
+    /* istanbul ignore next */
+    []
+  ));
   get selectedSectionLabel() {
+    if (this.documentKind() === "help")
+      return "Full Document";
     return this.sectionOptions().find((o) => o.value === this.selectedSection())?.label ?? "Full Configuration";
   }
   ngOnInit() {
@@ -2655,6 +2756,30 @@ var AdvancedComponent = class _AdvancedComponent {
     }
     this.selectedSection.set(section);
     this.loadSection(section);
+  }
+  onDocumentChange(kind) {
+    if (kind === this.documentKind())
+      return;
+    if (this.hasEditorChanges()) {
+      if (!confirm("You have unapplied changes. Switch section and discard them?")) {
+        return;
+      }
+    }
+    this.documentKind.set(kind);
+    if (kind === "help") {
+      if (this.helpWorkingSections() !== null) {
+        this.loadHelpDocument();
+      } else {
+        this.parseError.set(null);
+        this.hasEditorChanges.set(false);
+        this.helpService.loadContent();
+        if (this.helpService.loaded()) {
+          this.seedHelpEditor();
+        }
+      }
+    } else {
+      this.loadSection(this.selectedSection());
+    }
   }
   onEditorChange(value) {
     this.validateJson(value);
@@ -2722,6 +2847,9 @@ var AdvancedComponent = class _AdvancedComponent {
           return false;
         parsed = JSON.parse(this.editorContent());
       }
+      if (this.documentKind() === "help") {
+        return this.applyHelpChanges(parsed);
+      }
       const wc = this.workingCopy();
       if (!wc)
         return false;
@@ -2748,6 +2876,16 @@ var AdvancedComponent = class _AdvancedComponent {
   save() {
     if (this.hasEditorChanges() && !this.applyChanges())
       return;
+    if (this.documentKind() === "help") {
+      const sections = this.helpWorkingSections();
+      if (!sections)
+        return;
+      if (!confirm("Overwrite help content? This bypasses the Help Editor validation."))
+        return;
+      this.helpService.saveContent(JSON.parse(JSON.stringify(sections)));
+      this.setStatus("Help content saved");
+      return;
+    }
     const wc = this.workingCopy();
     if (!wc)
       return;
@@ -2761,6 +2899,11 @@ var AdvancedComponent = class _AdvancedComponent {
     this.setStatus("Configuration saved");
   }
   discard() {
+    if (this.documentKind() === "help") {
+      this.seedHelpEditor();
+      this.setStatus("Changes discarded");
+      return;
+    }
     const live = this.configService.configuration();
     if (!live)
       return;
@@ -2770,6 +2913,43 @@ var AdvancedComponent = class _AdvancedComponent {
     }
     this.loadSection(this.selectedSection());
     this.setStatus("Changes discarded");
+  }
+  /** Normalize the parsed editor value into help sections and stage them. Returns true on success. */
+  applyHelpChanges(parsed) {
+    let sections;
+    if (Array.isArray(parsed)) {
+      sections = parsed;
+    } else if (parsed !== null && typeof parsed === "object" && Array.isArray(parsed["sections"])) {
+      sections = parsed.sections;
+    } else {
+      this.parseError.set('Help content must be an array of sections, or an object with a "sections" array');
+      return false;
+    }
+    const normalized = sections;
+    this.helpWorkingSections.set(normalized);
+    const wrapped = { sections: normalized };
+    this.originalContent = JSON.stringify(wrapped, null, 2);
+    this.editorContent.set(this.originalContent);
+    this.treeContent.set(wrapped);
+    this.hasEditorChanges.set(false);
+    this.setStatus("Changes applied (not yet saved)");
+    return true;
+  }
+  /** Seed the help working copy from the service's current stored/effective baseline, then load it. */
+  seedHelpEditor() {
+    const baseline = this.helpService.storedSections() ?? this.helpService.effectiveSections();
+    this.helpWorkingSections.set(JSON.parse(JSON.stringify(baseline)));
+    this.loadHelpDocument();
+  }
+  /** Load the editor from the current help working copy (help analog of loadSection). */
+  loadHelpDocument() {
+    const wrapped = { sections: this.helpWorkingSections() ?? [] };
+    const content = JSON.stringify(wrapped, null, 2);
+    this.editorContent.set(content);
+    this.originalContent = content;
+    this.treeContent.set(wrapped);
+    this.parseError.set(null);
+    this.hasEditorChanges.set(false);
   }
   loadSection(section) {
     const data = this.extractSection(section);
@@ -2807,7 +2987,7 @@ var AdvancedComponent = class _AdvancedComponent {
   static \u0275fac = function AdvancedComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _AdvancedComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AdvancedComponent, selectors: [["app-advanced"]], decls: 8, vars: 1, consts: [[1, "advanced-container"], [1, "advanced-header"], [1, "loading-msg"], [1, "json-editor-container"], [1, "editor-toolbar"], [1, "toolbar-left"], ["for", "sectionSelect", 1, "toolbar-label"], ["id", "sectionSelect", 1, "toolbar-select", 3, "ngModelChange", "ngModel"], [3, "value"], [1, "view-toggle"], ["type", "button", 1, "toggle-btn", 3, "click"], ["type", "button", 1, "toggle-btn", 3, "click", "disabled"], [1, "toolbar-right"], ["type", "button", "title", "Format JSON", 1, "toolbar-btn", 3, "click", "disabled"], ["type", "button", "title", "Copy JSON to clipboard", 1, "toolbar-btn", 3, "click"], ["type", "button", "title", "Paste JSON from clipboard", 1, "toolbar-btn", 3, "click"], ["type", "button", "title", "Stage JSON changes into the working copy", 1, "toolbar-btn", "toolbar-btn-primary", 3, "click", "disabled"], ["role", "alert", 1, "parse-error"], [1, "editor-wrapper"], [1, "editor-wrapper", "tree-editor-wrapper"], [1, "editor-status-bar"], [1, "status-section"], [1, "status-modified"], [1, "status-size"], [1, "advanced-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "parse-error-icon"], [1, "parse-error-text"], [3, "ngModelChange", "ngModel", "extensions"], [3, "contentChange", "content"]], template: function AdvancedComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AdvancedComponent, selectors: [["app-advanced"]], decls: 14, vars: 2, consts: [[1, "advanced-container"], [1, "advanced-header"], [1, "document-picker"], ["for", "documentSelect", 1, "toolbar-label"], ["id", "documentSelect", 1, "toolbar-select", 3, "ngModelChange", "ngModel"], [3, "value"], [1, "loading-msg"], [1, "json-editor-container"], [1, "editor-toolbar"], [1, "toolbar-left"], [1, "view-toggle"], ["type", "button", 1, "toggle-btn", 3, "click"], ["type", "button", 1, "toggle-btn", 3, "click", "disabled"], [1, "toolbar-right"], ["type", "button", "title", "Format JSON", 1, "toolbar-btn", 3, "click", "disabled"], ["type", "button", "title", "Copy JSON to clipboard", 1, "toolbar-btn", 3, "click", "disabled"], ["type", "button", "title", "Paste JSON from clipboard", 1, "toolbar-btn", 3, "click", "disabled"], ["type", "button", "title", "Stage JSON changes into the working copy", 1, "toolbar-btn", "toolbar-btn-primary", 3, "click", "disabled"], [1, "advanced-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], ["for", "sectionSelect", 1, "toolbar-label"], ["id", "sectionSelect", 1, "toolbar-select", 3, "ngModelChange", "ngModel"], ["role", "alert", 1, "parse-error"], [1, "editor-wrapper"], [1, "editor-wrapper", "tree-editor-wrapper"], [1, "editor-status-bar"], [1, "status-section"], [1, "status-modified"], [1, "status-size"], [1, "parse-error-icon"], [1, "parse-error-text"], [3, "ngModelChange", "ngModel", "extensions"], [3, "contentChange", "content"]], template: function AdvancedComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "h2");
       \u0275\u0275text(3, "Advanced Configuration");
@@ -2815,14 +2995,27 @@ var AdvancedComponent = class _AdvancedComponent {
       \u0275\u0275elementStart(4, "p");
       \u0275\u0275text(5, "Direct access to the raw application configuration JSON. Changes here bypass the Config page's validation \u2014 use with care.");
       \u0275\u0275elementEnd()();
-      \u0275\u0275conditionalCreate(6, AdvancedComponent_Conditional_6_Template, 2, 0, "div", 2)(7, AdvancedComponent_Conditional_7_Template, 38, 19);
+      \u0275\u0275elementStart(6, "div", 2)(7, "label", 3);
+      \u0275\u0275text(8, "Document:");
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(9, "select", 4);
+      \u0275\u0275listener("ngModelChange", function AdvancedComponent_Template_select_ngModelChange_9_listener($event) {
+        return ctx.onDocumentChange($event);
+      });
+      \u0275\u0275repeaterCreate(10, AdvancedComponent_For_11_Template, 2, 2, "option", 5, _forTrack0);
+      \u0275\u0275elementEnd()();
+      \u0275\u0275conditionalCreate(12, AdvancedComponent_Conditional_12_Template, 2, 0, "div", 6)(13, AdvancedComponent_Conditional_13_Template, 26, 17);
       \u0275\u0275elementEnd();
     }
     if (rf & 2) {
-      \u0275\u0275advance(6);
-      \u0275\u0275conditional(!ctx.workingCopy() ? 6 : 7);
+      \u0275\u0275advance(9);
+      \u0275\u0275property("ngModel", ctx.documentKind());
+      \u0275\u0275advance();
+      \u0275\u0275repeater(ctx.documentOptions);
+      \u0275\u0275advance(2);
+      \u0275\u0275conditional(ctx.documentKind() === "config" && !ctx.workingCopy() ? 12 : 13);
     }
-  }, dependencies: [FormsModule, NgSelectOption, \u0275NgSelectMultipleOption, SelectControlValueAccessor, NgControlStatus, NgModel, CodeEditor, VanillaJsonEditorComponent, DecimalPipe], styles: ["\n\n.advanced-container[_ngcontent-%COMP%] {\n  padding: 1rem;\n  max-width: 1100px;\n}\n.advanced-header[_ngcontent-%COMP%] {\n  margin-bottom: 1rem;\n}\n.advanced-header[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  margin: 0 0 0.25rem;\n  font-size: 1.25rem;\n}\n.advanced-header[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin: 0;\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.loading-msg[_ngcontent-%COMP%] {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.json-editor-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  border: 1px solid #dee2e6;\n  border-radius: 6px;\n  overflow: hidden;\n}\n.editor-toolbar[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 12px;\n  padding: 8px 12px;\n  background: #f8f9fa;\n  border-bottom: 1px solid #dee2e6;\n  flex-wrap: wrap;\n}\n.toolbar-left[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.toolbar-label[_ngcontent-%COMP%] {\n  font-size: 13px;\n  font-weight: 500;\n  color: #495057;\n  white-space: nowrap;\n}\n.toolbar-select[_ngcontent-%COMP%] {\n  padding: 4px 8px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  background: white;\n  min-width: 200px;\n}\n.toolbar-select[_ngcontent-%COMP%]:focus {\n  outline: none;\n  border-color: #0078d4;\n  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.1);\n}\n.view-toggle[_ngcontent-%COMP%] {\n  display: inline-flex;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  overflow: hidden;\n  margin-left: 8px;\n}\n.toggle-btn[_ngcontent-%COMP%] {\n  padding: 4px 12px;\n  border: none;\n  border-right: 1px solid #ced4da;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toggle-btn[_ngcontent-%COMP%]:last-child {\n  border-right: none;\n}\n.toggle-btn[_ngcontent-%COMP%]:hover:not(:disabled):not(.active) {\n  background: #e9ecef;\n}\n.toggle-btn[_ngcontent-%COMP%]:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toggle-btn.active[_ngcontent-%COMP%] {\n  background: #0078d4;\n  color: white;\n}\n.toolbar-right[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 6px;\n}\n.toolbar-btn[_ngcontent-%COMP%] {\n  padding: 4px 12px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toolbar-btn[_ngcontent-%COMP%]:hover:not(:disabled) {\n  background: #e9ecef;\n  border-color: #adb5bd;\n}\n.toolbar-btn[_ngcontent-%COMP%]:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toolbar-btn.toolbar-btn-primary[_ngcontent-%COMP%] {\n  background: #0078d4;\n  color: white;\n  border-color: #0078d4;\n}\n.toolbar-btn.toolbar-btn-primary[_ngcontent-%COMP%]:hover:not(:disabled) {\n  background: #005a9e;\n  border-color: #005a9e;\n}\n.parse-error[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 12px;\n  background: #f8d7da;\n  border-bottom: 1px solid #f5c6cb;\n  color: #721c24;\n  font-size: 13px;\n}\n.parse-error-icon[_ngcontent-%COMP%] {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 18px;\n  height: 18px;\n  background: #721c24;\n  color: white;\n  border-radius: 50%;\n  font-size: 11px;\n  font-weight: bold;\n  flex-shrink: 0;\n}\n.parse-error-text[_ngcontent-%COMP%] {\n  font-family: monospace;\n}\n.editor-wrapper[_ngcontent-%COMP%] {\n  min-height: 500px;\n}\n.editor-wrapper   [_nghost-%COMP%]     .cm-editor {\n  height: 500px;\n  font-size: 13px;\n}\n.editor-wrapper   [_nghost-%COMP%]     .cm-scroller {\n  overflow: auto;\n}\n.tree-editor-wrapper   [_nghost-%COMP%]     .jse-main {\n  min-height: 500px;\n  max-height: 500px;\n  overflow: auto;\n}\n.editor-status-bar[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 16px;\n  padding: 4px 12px;\n  background: #f8f9fa;\n  border-top: 1px solid #dee2e6;\n  font-size: 12px;\n  color: #6c757d;\n}\n.status-modified[_ngcontent-%COMP%] {\n  color: #856404;\n  background: #fff3cd;\n  padding: 1px 8px;\n  border-radius: 3px;\n  font-weight: 500;\n}\n.status-size[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n.advanced-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n/*# sourceMappingURL=advanced.css.map */"], changeDetection: 0 });
+  }, dependencies: [FormsModule, NgSelectOption, \u0275NgSelectMultipleOption, SelectControlValueAccessor, NgControlStatus, NgModel, CodeEditor, VanillaJsonEditorComponent, DecimalPipe], styles: ["\n\n.advanced-container[_ngcontent-%COMP%] {\n  padding: 1rem;\n  max-width: 1100px;\n}\n.advanced-header[_ngcontent-%COMP%] {\n  margin-bottom: 1rem;\n}\n.advanced-header[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  margin: 0 0 0.25rem;\n  font-size: 1.25rem;\n}\n.advanced-header[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin: 0;\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.document-picker[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  margin-bottom: 0.75rem;\n}\n.loading-msg[_ngcontent-%COMP%] {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.json-editor-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  border: 1px solid #dee2e6;\n  border-radius: 6px;\n  overflow: hidden;\n}\n.editor-toolbar[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 12px;\n  padding: 8px 12px;\n  background: #f8f9fa;\n  border-bottom: 1px solid #dee2e6;\n  flex-wrap: wrap;\n}\n.toolbar-left[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.toolbar-label[_ngcontent-%COMP%] {\n  font-size: 13px;\n  font-weight: 500;\n  color: #495057;\n  white-space: nowrap;\n}\n.toolbar-select[_ngcontent-%COMP%] {\n  padding: 4px 8px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  background: white;\n  min-width: 200px;\n}\n.toolbar-select[_ngcontent-%COMP%]:focus {\n  outline: none;\n  border-color: #0078d4;\n  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.1);\n}\n.view-toggle[_ngcontent-%COMP%] {\n  display: inline-flex;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  overflow: hidden;\n  margin-left: 8px;\n}\n.toggle-btn[_ngcontent-%COMP%] {\n  padding: 4px 12px;\n  border: none;\n  border-right: 1px solid #ced4da;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toggle-btn[_ngcontent-%COMP%]:last-child {\n  border-right: none;\n}\n.toggle-btn[_ngcontent-%COMP%]:hover:not(:disabled):not(.active) {\n  background: #e9ecef;\n}\n.toggle-btn[_ngcontent-%COMP%]:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toggle-btn.active[_ngcontent-%COMP%] {\n  background: #0078d4;\n  color: white;\n}\n.toolbar-right[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 6px;\n}\n.toolbar-btn[_ngcontent-%COMP%] {\n  padding: 4px 12px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toolbar-btn[_ngcontent-%COMP%]:hover:not(:disabled) {\n  background: #e9ecef;\n  border-color: #adb5bd;\n}\n.toolbar-btn[_ngcontent-%COMP%]:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toolbar-btn.toolbar-btn-primary[_ngcontent-%COMP%] {\n  background: #0078d4;\n  color: white;\n  border-color: #0078d4;\n}\n.toolbar-btn.toolbar-btn-primary[_ngcontent-%COMP%]:hover:not(:disabled) {\n  background: #005a9e;\n  border-color: #005a9e;\n}\n.parse-error[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 12px;\n  background: #f8d7da;\n  border-bottom: 1px solid #f5c6cb;\n  color: #721c24;\n  font-size: 13px;\n}\n.parse-error-icon[_ngcontent-%COMP%] {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 18px;\n  height: 18px;\n  background: #721c24;\n  color: white;\n  border-radius: 50%;\n  font-size: 11px;\n  font-weight: bold;\n  flex-shrink: 0;\n}\n.parse-error-text[_ngcontent-%COMP%] {\n  font-family: monospace;\n}\n.editor-wrapper[_ngcontent-%COMP%] {\n  min-height: 500px;\n}\n.editor-wrapper   [_nghost-%COMP%]     .cm-editor {\n  height: 500px;\n  font-size: 13px;\n}\n.editor-wrapper   [_nghost-%COMP%]     .cm-scroller {\n  overflow: auto;\n}\n.tree-editor-wrapper   [_nghost-%COMP%]     .jse-main {\n  min-height: 500px;\n  max-height: 500px;\n  overflow: auto;\n}\n.editor-status-bar[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 16px;\n  padding: 4px 12px;\n  background: #f8f9fa;\n  border-top: 1px solid #dee2e6;\n  font-size: 12px;\n  color: #6c757d;\n}\n.status-modified[_ngcontent-%COMP%] {\n  color: #856404;\n  background: #fff3cd;\n  padding: 1px 8px;\n  border-radius: 3px;\n  font-weight: 500;\n}\n.status-size[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n.advanced-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n/*# sourceMappingURL=advanced.css.map */"], changeDetection: 0 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AdvancedComponent, [{
@@ -2833,23 +3026,40 @@ var AdvancedComponent = class _AdvancedComponent {
     <p>Direct access to the raw application configuration JSON. Changes here bypass the Config page's validation \u2014 use with care.</p>
   </div>
 
-  @if (!workingCopy()) {
+  <!-- Document picker: outside the config-load gate so Help Content stays reachable
+       even when the configuration is slow to load or fails -->
+  <div class="document-picker">
+    <label for="documentSelect" class="toolbar-label">Document:</label>
+    <select
+      id="documentSelect"
+      class="toolbar-select"
+      [ngModel]="documentKind()"
+      (ngModelChange)="onDocumentChange($event)">
+      @for (option of documentOptions; track option.value) {
+        <option [value]="option.value">{{ option.label }}</option>
+      }
+    </select>
+  </div>
+
+  @if (documentKind() === 'config' && !workingCopy()) {
     <div class="loading-msg">Loading configuration...</div>
   } @else {
     <div class="json-editor-container">
       <!-- Toolbar -->
       <div class="editor-toolbar">
         <div class="toolbar-left">
-          <label for="sectionSelect" class="toolbar-label">Section:</label>
-          <select
-            id="sectionSelect"
-            class="toolbar-select"
-            [ngModel]="selectedSection()"
-            (ngModelChange)="onSectionChange($event)">
-            @for (option of sectionOptions(); track option.value) {
-              <option [value]="option.value">{{ option.label }}</option>
-            }
-          </select>
+          @if (documentKind() === 'config') {
+            <label for="sectionSelect" class="toolbar-label">Section:</label>
+            <select
+              id="sectionSelect"
+              class="toolbar-select"
+              [ngModel]="selectedSection()"
+              (ngModelChange)="onSectionChange($event)">
+              @for (option of sectionOptions(); track option.value) {
+                <option [value]="option.value">{{ option.label }}</option>
+              }
+            </select>
+          }
 
           <div class="view-toggle">
             <button
@@ -2865,7 +3075,7 @@ var AdvancedComponent = class _AdvancedComponent {
               class="toggle-btn"
               [class.active]="viewMode() === 'tree'"
               [attr.aria-pressed]="viewMode() === 'tree'"
-              [disabled]="!!parseError()"
+              [disabled]="!!parseError() || helpLoading()"
               (click)="setViewMode('tree')">
               Tree
             </button>
@@ -2877,7 +3087,7 @@ var AdvancedComponent = class _AdvancedComponent {
             type="button"
             class="toolbar-btn"
             (click)="formatJson()"
-            [disabled]="!!parseError() || viewMode() === 'tree'"
+            [disabled]="!!parseError() || viewMode() === 'tree' || helpLoading()"
             title="Format JSON">
             Format
           </button>
@@ -2885,6 +3095,7 @@ var AdvancedComponent = class _AdvancedComponent {
             type="button"
             class="toolbar-btn"
             (click)="copyToClipboard()"
+            [disabled]="helpLoading()"
             title="Copy JSON to clipboard">
             {{ copyLabel() }}
           </button>
@@ -2892,6 +3103,7 @@ var AdvancedComponent = class _AdvancedComponent {
             type="button"
             class="toolbar-btn"
             (click)="pasteFromClipboard()"
+            [disabled]="helpLoading()"
             title="Paste JSON from clipboard">
             Paste
           </button>
@@ -2899,51 +3111,55 @@ var AdvancedComponent = class _AdvancedComponent {
             type="button"
             class="toolbar-btn toolbar-btn-primary"
             (click)="applyChanges()"
-            [disabled]="!!parseError() || !hasEditorChanges()"
+            [disabled]="!!parseError() || !hasEditorChanges() || helpLoading()"
             title="Stage JSON changes into the working copy">
             Apply
           </button>
         </div>
       </div>
 
-      <!-- Parse Error Banner -->
-      @if (parseError(); as error) {
-        <div class="parse-error" role="alert">
-          <span class="parse-error-icon">!</span>
-          <span class="parse-error-text">{{ error }}</span>
-        </div>
-      }
-
-      <!-- Editor -->
-      @if (viewMode() === 'code') {
-        <div class="editor-wrapper">
-          <code-editor
-            [ngModel]="editorContent()"
-            [extensions]="extensions"
-            (ngModelChange)="onCodeChange($event)" />
-        </div>
+      @if (helpLoading()) {
+        <div class="loading-msg">Loading help content...</div>
       } @else {
-        <div class="editor-wrapper tree-editor-wrapper">
-          <app-vanilla-json-editor
-            [content]="treeContent()"
-            (contentChange)="onTreeChange($event)" />
+        <!-- Parse Error Banner -->
+        @if (parseError(); as error) {
+          <div class="parse-error" role="alert">
+            <span class="parse-error-icon">!</span>
+            <span class="parse-error-text">{{ error }}</span>
+          </div>
+        }
+
+        <!-- Editor -->
+        @if (viewMode() === 'code') {
+          <div class="editor-wrapper">
+            <code-editor
+              [ngModel]="editorContent()"
+              [extensions]="extensions"
+              (ngModelChange)="onCodeChange($event)" />
+          </div>
+        } @else {
+          <div class="editor-wrapper tree-editor-wrapper">
+            <app-vanilla-json-editor
+              [content]="treeContent()"
+              (contentChange)="onTreeChange($event)" />
+          </div>
+        }
+
+        <!-- Status Bar -->
+        <div class="editor-status-bar">
+          <span class="status-section">{{ selectedSectionLabel }}</span>
+          @if (hasEditorChanges()) {
+            <span class="status-modified">Modified</span>
+          } @else if (hasUnsavedChanges()) {
+            <span class="status-modified">Applied \u2014 not saved</span>
+          }
+          <span class="status-size">
+            @if (viewMode() === 'code') {
+              {{ editorContent().length | number }} chars
+            }
+          </span>
         </div>
       }
-
-      <!-- Status Bar -->
-      <div class="editor-status-bar">
-        <span class="status-section">{{ selectedSectionLabel }}</span>
-        @if (hasEditorChanges()) {
-          <span class="status-modified">Modified</span>
-        } @else if (hasUnsavedChanges()) {
-          <span class="status-modified">Applied \u2014 not saved</span>
-        }
-        <span class="status-size">
-          @if (viewMode() === 'code') {
-            {{ editorContent().length | number }} chars
-          }
-        </span>
-      </div>
     </div>
 
     <div class="advanced-actions">
@@ -2967,13 +3183,13 @@ var AdvancedComponent = class _AdvancedComponent {
     </div>
   }
 </div>
-`, styles: ["/* src/app/components/advanced/advanced.scss */\n.advanced-container {\n  padding: 1rem;\n  max-width: 1100px;\n}\n.advanced-header {\n  margin-bottom: 1rem;\n}\n.advanced-header h2 {\n  margin: 0 0 0.25rem;\n  font-size: 1.25rem;\n}\n.advanced-header p {\n  margin: 0;\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.loading-msg {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.json-editor-container {\n  display: flex;\n  flex-direction: column;\n  border: 1px solid #dee2e6;\n  border-radius: 6px;\n  overflow: hidden;\n}\n.editor-toolbar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 12px;\n  padding: 8px 12px;\n  background: #f8f9fa;\n  border-bottom: 1px solid #dee2e6;\n  flex-wrap: wrap;\n}\n.toolbar-left {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.toolbar-label {\n  font-size: 13px;\n  font-weight: 500;\n  color: #495057;\n  white-space: nowrap;\n}\n.toolbar-select {\n  padding: 4px 8px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  background: white;\n  min-width: 200px;\n}\n.toolbar-select:focus {\n  outline: none;\n  border-color: #0078d4;\n  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.1);\n}\n.view-toggle {\n  display: inline-flex;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  overflow: hidden;\n  margin-left: 8px;\n}\n.toggle-btn {\n  padding: 4px 12px;\n  border: none;\n  border-right: 1px solid #ced4da;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toggle-btn:last-child {\n  border-right: none;\n}\n.toggle-btn:hover:not(:disabled):not(.active) {\n  background: #e9ecef;\n}\n.toggle-btn:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toggle-btn.active {\n  background: #0078d4;\n  color: white;\n}\n.toolbar-right {\n  display: flex;\n  gap: 6px;\n}\n.toolbar-btn {\n  padding: 4px 12px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toolbar-btn:hover:not(:disabled) {\n  background: #e9ecef;\n  border-color: #adb5bd;\n}\n.toolbar-btn:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toolbar-btn.toolbar-btn-primary {\n  background: #0078d4;\n  color: white;\n  border-color: #0078d4;\n}\n.toolbar-btn.toolbar-btn-primary:hover:not(:disabled) {\n  background: #005a9e;\n  border-color: #005a9e;\n}\n.parse-error {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 12px;\n  background: #f8d7da;\n  border-bottom: 1px solid #f5c6cb;\n  color: #721c24;\n  font-size: 13px;\n}\n.parse-error-icon {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 18px;\n  height: 18px;\n  background: #721c24;\n  color: white;\n  border-radius: 50%;\n  font-size: 11px;\n  font-weight: bold;\n  flex-shrink: 0;\n}\n.parse-error-text {\n  font-family: monospace;\n}\n.editor-wrapper {\n  min-height: 500px;\n}\n.editor-wrapper :host ::ng-deep .cm-editor {\n  height: 500px;\n  font-size: 13px;\n}\n.editor-wrapper :host ::ng-deep .cm-scroller {\n  overflow: auto;\n}\n.tree-editor-wrapper :host ::ng-deep .jse-main {\n  min-height: 500px;\n  max-height: 500px;\n  overflow: auto;\n}\n.editor-status-bar {\n  display: flex;\n  align-items: center;\n  gap: 16px;\n  padding: 4px 12px;\n  background: #f8f9fa;\n  border-top: 1px solid #dee2e6;\n  font-size: 12px;\n  color: #6c757d;\n}\n.status-modified {\n  color: #856404;\n  background: #fff3cd;\n  padding: 1px 8px;\n  border-radius: 3px;\n  font-weight: 500;\n}\n.status-size {\n  margin-left: auto;\n}\n.advanced-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n/*# sourceMappingURL=advanced.css.map */\n"] }]
+`, styles: ["/* src/app/components/advanced/advanced.scss */\n.advanced-container {\n  padding: 1rem;\n  max-width: 1100px;\n}\n.advanced-header {\n  margin-bottom: 1rem;\n}\n.advanced-header h2 {\n  margin: 0 0 0.25rem;\n  font-size: 1.25rem;\n}\n.advanced-header p {\n  margin: 0;\n  font-size: 0.875rem;\n  color: var(--fusion-text-light);\n}\n.document-picker {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  margin-bottom: 0.75rem;\n}\n.loading-msg {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.json-editor-container {\n  display: flex;\n  flex-direction: column;\n  border: 1px solid #dee2e6;\n  border-radius: 6px;\n  overflow: hidden;\n}\n.editor-toolbar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 12px;\n  padding: 8px 12px;\n  background: #f8f9fa;\n  border-bottom: 1px solid #dee2e6;\n  flex-wrap: wrap;\n}\n.toolbar-left {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.toolbar-label {\n  font-size: 13px;\n  font-weight: 500;\n  color: #495057;\n  white-space: nowrap;\n}\n.toolbar-select {\n  padding: 4px 8px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  background: white;\n  min-width: 200px;\n}\n.toolbar-select:focus {\n  outline: none;\n  border-color: #0078d4;\n  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.1);\n}\n.view-toggle {\n  display: inline-flex;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  overflow: hidden;\n  margin-left: 8px;\n}\n.toggle-btn {\n  padding: 4px 12px;\n  border: none;\n  border-right: 1px solid #ced4da;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toggle-btn:last-child {\n  border-right: none;\n}\n.toggle-btn:hover:not(:disabled):not(.active) {\n  background: #e9ecef;\n}\n.toggle-btn:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toggle-btn.active {\n  background: #0078d4;\n  color: white;\n}\n.toolbar-right {\n  display: flex;\n  gap: 6px;\n}\n.toolbar-btn {\n  padding: 4px 12px;\n  border: 1px solid #ced4da;\n  border-radius: 4px;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  background: white;\n  color: #495057;\n  transition: all 0.15s;\n}\n.toolbar-btn:hover:not(:disabled) {\n  background: #e9ecef;\n  border-color: #adb5bd;\n}\n.toolbar-btn:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.toolbar-btn.toolbar-btn-primary {\n  background: #0078d4;\n  color: white;\n  border-color: #0078d4;\n}\n.toolbar-btn.toolbar-btn-primary:hover:not(:disabled) {\n  background: #005a9e;\n  border-color: #005a9e;\n}\n.parse-error {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 12px;\n  background: #f8d7da;\n  border-bottom: 1px solid #f5c6cb;\n  color: #721c24;\n  font-size: 13px;\n}\n.parse-error-icon {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 18px;\n  height: 18px;\n  background: #721c24;\n  color: white;\n  border-radius: 50%;\n  font-size: 11px;\n  font-weight: bold;\n  flex-shrink: 0;\n}\n.parse-error-text {\n  font-family: monospace;\n}\n.editor-wrapper {\n  min-height: 500px;\n}\n.editor-wrapper :host ::ng-deep .cm-editor {\n  height: 500px;\n  font-size: 13px;\n}\n.editor-wrapper :host ::ng-deep .cm-scroller {\n  overflow: auto;\n}\n.tree-editor-wrapper :host ::ng-deep .jse-main {\n  min-height: 500px;\n  max-height: 500px;\n  overflow: auto;\n}\n.editor-status-bar {\n  display: flex;\n  align-items: center;\n  gap: 16px;\n  padding: 4px 12px;\n  background: #f8f9fa;\n  border-top: 1px solid #dee2e6;\n  font-size: 12px;\n  color: #6c757d;\n}\n.status-modified {\n  color: #856404;\n  background: #fff3cd;\n  padding: 1px 8px;\n  border-radius: 3px;\n  font-weight: 500;\n}\n.status-size {\n  margin-left: auto;\n}\n.advanced-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n/*# sourceMappingURL=advanced.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AdvancedComponent, { className: "AdvancedComponent", filePath: "src/app/components/advanced/advanced.ts", lineNumber: 50 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AdvancedComponent, { className: "AdvancedComponent", filePath: "src/app/components/advanced/advanced.ts", lineNumber: 52 });
 })();
 export {
   AdvancedComponent
 };
-//# sourceMappingURL=chunk-73TM4W7G.js.map
+//# sourceMappingURL=chunk-ZPYEQJRQ.js.map

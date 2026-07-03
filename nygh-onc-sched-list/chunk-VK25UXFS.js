@@ -24241,6 +24241,8 @@ export {
   ɵɵviewQuery,
   ɵɵqueryRefresh,
   ɵɵloadQuery,
+  ɵɵviewQuerySignal,
+  ɵɵqueryAdvance,
   ɵɵreference,
   ɵɵstyleProp,
   ɵɵclassProp,
@@ -24287,6 +24289,7 @@ export {
   HostAttributeToken,
   output,
   input,
+  viewChild,
   model,
   ContentChildren,
   ViewChild,
@@ -24319,4 +24322,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-EY5RH44I.js.map
+//# sourceMappingURL=chunk-VK25UXFS.js.map

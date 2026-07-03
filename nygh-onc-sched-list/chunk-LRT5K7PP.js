@@ -1,4 +1,9 @@
 import {
+  base,
+  keyName,
+  shift
+} from "./chunk-COG2N4FA.js";
+import {
   __spreadProps,
   __spreadValues
 } from "./chunk-7WUTQBRG.js";
@@ -3561,112 +3566,6 @@ var StyleSet = class {
   }
 };
 
-// node_modules/w3c-keyname/index.js
-var base = {
-  8: "Backspace",
-  9: "Tab",
-  10: "Enter",
-  12: "NumLock",
-  13: "Enter",
-  16: "Shift",
-  17: "Control",
-  18: "Alt",
-  20: "CapsLock",
-  27: "Escape",
-  32: " ",
-  33: "PageUp",
-  34: "PageDown",
-  35: "End",
-  36: "Home",
-  37: "ArrowLeft",
-  38: "ArrowUp",
-  39: "ArrowRight",
-  40: "ArrowDown",
-  44: "PrintScreen",
-  45: "Insert",
-  46: "Delete",
-  59: ";",
-  61: "=",
-  91: "Meta",
-  92: "Meta",
-  106: "*",
-  107: "+",
-  108: ",",
-  109: "-",
-  110: ".",
-  111: "/",
-  144: "NumLock",
-  145: "ScrollLock",
-  160: "Shift",
-  161: "Shift",
-  162: "Control",
-  163: "Control",
-  164: "Alt",
-  165: "Alt",
-  173: "-",
-  186: ";",
-  187: "=",
-  188: ",",
-  189: "-",
-  190: ".",
-  191: "/",
-  192: "`",
-  219: "[",
-  220: "\\",
-  221: "]",
-  222: "'"
-};
-var shift = {
-  48: ")",
-  49: "!",
-  50: "@",
-  51: "#",
-  52: "$",
-  53: "%",
-  54: "^",
-  55: "&",
-  56: "*",
-  57: "(",
-  59: ":",
-  61: "+",
-  173: "_",
-  186: ":",
-  187: "+",
-  188: "<",
-  189: "_",
-  190: ">",
-  191: "?",
-  192: "~",
-  219: "{",
-  220: "|",
-  221: "}",
-  222: '"'
-};
-var mac = typeof navigator != "undefined" && /Mac/.test(navigator.platform);
-var ie = typeof navigator != "undefined" && /MSIE \d|Trident\/(?:[7-9]|\d{2,})\..*rv:(\d+)/.exec(navigator.userAgent);
-for (i = 0; i < 10; i++) base[48 + i] = base[96 + i] = String(i);
-var i;
-for (i = 1; i <= 24; i++) base[i + 111] = "F" + i;
-var i;
-for (i = 65; i <= 90; i++) {
-  base[i] = String.fromCharCode(i + 32);
-  shift[i] = String.fromCharCode(i);
-}
-var i;
-for (code in base) if (!shift.hasOwnProperty(code)) shift[code] = base[code];
-var code;
-function keyName(event) {
-  var ignoreKey = mac && event.metaKey && event.shiftKey && !event.ctrlKey && !event.altKey || ie && event.shiftKey && event.key && event.key.length == 1 || event.key == "Unidentified";
-  var name2 = !ignoreKey && event.key || (event.shiftKey ? shift : base)[event.keyCode] || event.key || "Unidentified";
-  if (name2 == "Esc") name2 = "Escape";
-  if (name2 == "Del") name2 = "Delete";
-  if (name2 == "Left") name2 = "ArrowLeft";
-  if (name2 == "Up") name2 = "ArrowUp";
-  if (name2 == "Right") name2 = "ArrowRight";
-  if (name2 == "Down") name2 = "ArrowDown";
-  return name2;
-}
-
 // node_modules/crelt/index.js
 function crelt() {
   var elt = arguments[0];
@@ -3702,17 +3601,17 @@ var doc = typeof document != "undefined" ? document : { documentElement: { style
 var ie_edge = /* @__PURE__ */ /Edge\/(\d+)/.exec(nav.userAgent);
 var ie_upto10 = /* @__PURE__ */ /MSIE \d/.test(nav.userAgent);
 var ie_11up = /* @__PURE__ */ /Trident\/(?:[7-9]|\d{2,})\..*rv:(\d+)/.exec(nav.userAgent);
-var ie2 = !!(ie_upto10 || ie_11up || ie_edge);
-var gecko = !ie2 && /* @__PURE__ */ /gecko\/(\d+)/i.test(nav.userAgent);
-var chrome = !ie2 && /* @__PURE__ */ /Chrome\/(\d+)/.exec(nav.userAgent);
+var ie = !!(ie_upto10 || ie_11up || ie_edge);
+var gecko = !ie && /* @__PURE__ */ /gecko\/(\d+)/i.test(nav.userAgent);
+var chrome = !ie && /* @__PURE__ */ /Chrome\/(\d+)/.exec(nav.userAgent);
 var webkit = "webkitFontSmoothing" in doc.documentElement.style;
-var safari = !ie2 && /* @__PURE__ */ /Apple Computer/.test(nav.vendor);
+var safari = !ie && /* @__PURE__ */ /Apple Computer/.test(nav.vendor);
 var ios = safari && (/* @__PURE__ */ /Mobile\/\w+/.test(nav.userAgent) || nav.maxTouchPoints > 2);
 var browser = {
   mac: ios || /* @__PURE__ */ /Mac/.test(nav.platform),
   windows: /* @__PURE__ */ /Win/.test(nav.platform),
   linux: /* @__PURE__ */ /Linux|X11/.test(nav.platform),
-  ie: ie2,
+  ie,
   ie_version: ie_upto10 ? doc.documentMode || 6 : ie_11up ? +ie_11up[1] : ie_edge ? +ie_edge[1] : 0,
   gecko,
   gecko_version: gecko ? +(/* @__PURE__ */ /Firefox\/(\d+)/.exec(nav.userAgent) || [0, 0])[1] : 0,
@@ -24663,4 +24562,4 @@ export {
   lintGutter,
   json
 };
-//# sourceMappingURL=chunk-YNT6HKVN.js.map
+//# sourceMappingURL=chunk-LRT5K7PP.js.map
