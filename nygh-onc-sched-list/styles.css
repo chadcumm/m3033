@@ -123,6 +123,9 @@
   --fusion-danger: #c23934;
   --fusion-danger-bg: #fde7e7;
   --fusion-danger-text: #9b2c2c;
+  --fusion-rescheduled: #9a5b00;
+  --fusion-rescheduled-bg: #fdf0e0;
+  --fusion-rescheduled-text: #9a5b00;
   --fusion-text: #1c1f21;
   --fusion-text-muted: #4c5259;
   --fusion-text-light: #6f777d;
@@ -354,6 +357,10 @@
 .fusion-badge.badge-no-show {
   background: #e9ecef;
   color: var(--fusion-text-light);
+}
+.fusion-badge.badge-rescheduled {
+  background: var(--fusion-rescheduled-bg);
+  color: var(--fusion-rescheduled-text);
 }
 .fusion-input {
   padding: 0.375rem 0.75rem;
