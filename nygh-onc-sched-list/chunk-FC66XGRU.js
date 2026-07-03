@@ -1,9 +1,9 @@
 import {
   AccessControlService
-} from "./chunk-742GS7WA.js";
+} from "./chunk-GJRZGAZK.js";
 import {
   ALL_TABS
-} from "./chunk-ROA77COV.js";
+} from "./chunk-YNIUKNSL.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -605,4 +605,4 @@ var SecurityComponent = class _SecurityComponent {
 export {
   SecurityComponent
 };
-//# sourceMappingURL=chunk-DMXZ3JL5.js.map
+//# sourceMappingURL=chunk-FC66XGRU.js.map

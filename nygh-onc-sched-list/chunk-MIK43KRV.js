@@ -1,6 +1,6 @@
 import {
   buildVersion
-} from "./chunk-ZVTZCN35.js";
+} from "./chunk-TRGSJLJV.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_APPT_STATE_MEANINGS,
@@ -11,7 +11,7 @@ import {
   MAX_REFRESH_INTERVAL_SECONDS,
   MIN_LAB_LOOKBACK_HOURS,
   MIN_REFRESH_INTERVAL_SECONDS
-} from "./chunk-ROA77COV.js";
+} from "./chunk-YNIUKNSL.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -48,7 +48,6 @@ import {
   ɵɵrepeater,
   ɵɵrepeaterCreate,
   ɵɵrepeaterTrackByIdentity,
-  ɵɵrepeaterTrackByIndex,
   ɵɵresetView,
   ɵɵrestoreView,
   ɵɵtext,
@@ -665,11 +664,11 @@ function ConfigComponent_Conditional_10_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 36);
+    \u0275\u0275elementStart(0, "div", 34);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_6_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275elementStart(1, "button", 37);
+    \u0275\u0275elementStart(1, "button", 35);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_6_Template_button_click_1_listener() {
       \u0275\u0275restoreView(_r4);
       const g_r2 = \u0275\u0275nextContext().$implicit;
@@ -691,7 +690,7 @@ function ConfigComponent_Conditional_11_For_1_Conditional_6_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 38);
+    \u0275\u0275elementStart(0, "button", 36);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_7_Template_button_click_0_listener($event) {
       \u0275\u0275restoreView(_r5);
       const g_r2 = \u0275\u0275nextContext().$implicit;
@@ -706,19 +705,19 @@ function ConfigComponent_Conditional_11_For_1_Conditional_7_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 30);
+    \u0275\u0275elementStart(0, "div", 28);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Template_div_click_0_listener() {
       const g_r2 = \u0275\u0275restoreView(_r1).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.selectGroup(g_r2.id));
     });
-    \u0275\u0275elementStart(1, "div", 31)(2, "div", 32);
+    \u0275\u0275elementStart(1, "div", 29)(2, "div", 30);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 33);
+    \u0275\u0275elementStart(4, "div", 31);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_11_For_1_Conditional_6_Template, 5, 0, "div", 34)(7, ConfigComponent_Conditional_11_For_1_Conditional_7_Template, 2, 0, "button", 35);
+    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_11_For_1_Conditional_6_Template, 5, 0, "div", 32)(7, ConfigComponent_Conditional_11_For_1_Conditional_7_Template, 2, 0, "button", 33);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -735,7 +734,7 @@ function ConfigComponent_Conditional_11_For_1_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_11_For_1_Template, 8, 8, "div", 29, _forTrack12);
+    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_11_For_1_Template, 8, 8, "div", 27, _forTrack12);
   }
   if (rf & 2) {
     const ctx_r2 = \u0275\u0275nextContext();
@@ -745,7 +744,7 @@ function ConfigComponent_Conditional_11_Template(rf, ctx) {
 function ConfigComponent_Conditional_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "app-appt-type-group-editor", 39);
+    \u0275\u0275elementStart(0, "app-appt-type-group-editor", 37);
     \u0275\u0275listener("groupChange", function ConfigComponent_Conditional_15_Template_app_appt_type_group_editor_groupChange_0_listener($event) {
       \u0275\u0275restoreView(_r6);
       const ctx_r2 = \u0275\u0275nextContext();
@@ -788,7 +787,7 @@ function ConfigComponent_Conditional_40_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_41_For_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 42);
+    \u0275\u0275elementStart(0, "option", 40);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -803,19 +802,19 @@ function ConfigComponent_Conditional_41_For_7_Template(rf, ctx) {
 function ConfigComponent_Conditional_41_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 17)(1, "label", 40);
+    \u0275\u0275elementStart(0, "div", 17)(1, "label", 38);
     \u0275\u0275text(2, "Encounter type");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "select", 41);
+    \u0275\u0275elementStart(3, "select", 39);
     \u0275\u0275listener("change", function ConfigComponent_Conditional_41_Template_select_change_3_listener($event) {
       \u0275\u0275restoreView(_r7);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.onChartLinkEncntrTypeChange($event));
     });
-    \u0275\u0275elementStart(4, "option", 42);
+    \u0275\u0275elementStart(4, "option", 40);
     \u0275\u0275text(5, "\u2014 No fallback (link uses person only) \u2014");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(6, ConfigComponent_Conditional_41_For_7_Template, 2, 3, "option", 42, _forTrack02);
+    \u0275\u0275repeaterCreate(6, ConfigComponent_Conditional_41_For_7_Template, 2, 3, "option", 40, _forTrack02);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -826,158 +825,253 @@ function ConfigComponent_Conditional_41_Template(rf, ctx) {
     \u0275\u0275repeater(ctx_r2.allEncntrTypes());
   }
 }
-function ConfigComponent_For_50_Conditional_6_Template(rf, ctx) {
+function ConfigComponent_Conditional_51_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 46);
+    \u0275\u0275elementStart(0, "div", 6);
+    \u0275\u0275text(1, "No rules yet.");
+    \u0275\u0275elementEnd();
+  }
+}
+function ConfigComponent_Conditional_52_For_1_Conditional_6_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r11 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 34);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_div_click_0_listener($event) {
+      return $event.stopPropagation();
+    });
+    \u0275\u0275elementStart(1, "button", 35);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_button_click_1_listener() {
+      \u0275\u0275restoreView(_r11);
+      const rule_r10 = \u0275\u0275nextContext().$implicit;
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r2.confirmDeleteRule(rule_r10.id));
+    });
+    \u0275\u0275text(2, "Confirm");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "button", 14);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_button_click_3_listener() {
+      \u0275\u0275restoreView(_r11);
+      const ctx_r2 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r2.cancelDeleteRule());
+    });
+    \u0275\u0275text(4, "Cancel");
+    \u0275\u0275elementEnd()();
+  }
+}
+function ConfigComponent_Conditional_52_For_1_Conditional_7_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r12 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "button", 42);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_7_Template_button_click_0_listener($event) {
+      \u0275\u0275restoreView(_r12);
+      const rule_r10 = \u0275\u0275nextContext().$implicit;
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      $event.stopPropagation();
+      return \u0275\u0275resetView(ctx_r2.requestDeleteRule(rule_r10.id));
+    });
+    \u0275\u0275text(1, "\xD7");
+    \u0275\u0275elementEnd();
+  }
+}
+function ConfigComponent_Conditional_52_For_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r9 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 28);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Template_div_click_0_listener() {
+      const rule_r10 = \u0275\u0275restoreView(_r9).$implicit;
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r2.selectRule(rule_r10.id));
+    });
+    \u0275\u0275elementStart(1, "div", 29)(2, "div", 30);
+    \u0275\u0275text(3);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(4, "div", 31);
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_52_For_1_Conditional_6_Template, 5, 0, "div", 32)(7, ConfigComponent_Conditional_52_For_1_Conditional_7_Template, 2, 0, "button", 41);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const rule_r10 = ctx.$implicit;
+    const \u0275$index_140_r13 = ctx.$index;
+    const ctx_r2 = \u0275\u0275nextContext(2);
+    \u0275\u0275classProp("selected", ctx_r2.selectedRuleId() === rule_r10.id);
+    \u0275\u0275advance(3);
+    \u0275\u0275textInterpolate(ctx_r2.ruleDisplayLabel(rule_r10, \u0275$index_140_r13));
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(ctx_r2.ruleSummary(rule_r10));
+    \u0275\u0275advance();
+    \u0275\u0275conditional(ctx_r2.pendingDeleteRuleId() === rule_r10.id ? 6 : 7);
+  }
+}
+function ConfigComponent_Conditional_52_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_52_For_1_Template, 8, 5, "div", 27, _forTrack12);
+  }
+  if (rf & 2) {
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275repeater(ctx_r2.columnRoleDefaults());
+  }
+}
+function ConfigComponent_Conditional_56_Conditional_9_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 49);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const \u0275$index_131_r10 = \u0275\u0275nextContext().$index;
-    const ctx_r2 = \u0275\u0275nextContext();
+    const ctx_r2 = \u0275\u0275nextContext(2);
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate2(" ", ctx_r2.allPositions().length, " positions (", ctx_r2.filteredPositionsForRule(\u0275$index_131_r10).length, " shown) ");
+    \u0275\u0275textInterpolate2(" ", ctx_r2.allPositions().length, " positions (", ctx_r2.filteredPositions().length, " shown) ");
   }
 }
-function ConfigComponent_For_50_For_9_Template(rf, ctx) {
+function ConfigComponent_Conditional_56_For_12_Template(rf, ctx) {
   if (rf & 1) {
-    const _r11 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 47);
-    \u0275\u0275listener("change", function ConfigComponent_For_50_For_9_Template_input_change_1_listener() {
-      const p_r12 = \u0275\u0275restoreView(_r11).$implicit;
-      const \u0275$index_131_r10 = \u0275\u0275nextContext().$index;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.toggleRulePosition(\u0275$index_131_r10, p_r12.display));
+    const _r15 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "label")(1, "input", 50);
+    \u0275\u0275listener("change", function ConfigComponent_Conditional_56_For_12_Template_input_change_1_listener() {
+      const p_r16 = \u0275\u0275restoreView(_r15).$implicit;
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r2.toggleRulePosition(p_r16.display));
     });
     \u0275\u0275elementEnd();
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const p_r12 = ctx.$implicit;
-    const rule_r13 = \u0275\u0275nextContext().$implicit;
+    const p_r16 = ctx.$implicit;
+    const rule_r17 = \u0275\u0275nextContext();
     \u0275\u0275advance();
-    \u0275\u0275property("checked", rule_r13.positions.includes(p_r12.display));
+    \u0275\u0275property("checked", rule_r17.positions.includes(p_r16.display));
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate1(" ", p_r12.display, " ");
+    \u0275\u0275textInterpolate1(" ", p_r16.display, " ");
   }
 }
-function ConfigComponent_For_50_For_15_Template(rf, ctx) {
+function ConfigComponent_Conditional_56_For_18_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r18 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "label")(1, "input", 50);
+    \u0275\u0275listener("change", function ConfigComponent_Conditional_56_For_18_Template_input_change_1_listener() {
+      const col_r19 = \u0275\u0275restoreView(_r18).$implicit;
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r2.toggleRuleColumn(col_r19.key));
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(2);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const col_r19 = ctx.$implicit;
+    const rule_r17 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("checked", rule_r17.hidden_columns.includes(col_r19.key));
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate1(" ", col_r19.header, " ");
+  }
+}
+function ConfigComponent_Conditional_56_Template(rf, ctx) {
   if (rf & 1) {
     const _r14 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 47);
-    \u0275\u0275listener("change", function ConfigComponent_For_50_For_15_Template_input_change_1_listener() {
-      const col_r15 = \u0275\u0275restoreView(_r14).$implicit;
-      const \u0275$index_131_r10 = \u0275\u0275nextContext().$index;
+    \u0275\u0275elementStart(0, "div", 43)(1, "label", 44);
+    \u0275\u0275text(2, "Rule name");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "input", 45);
+    \u0275\u0275listener("input", function ConfigComponent_Conditional_56_Template_input_input_3_listener($event) {
+      \u0275\u0275restoreView(_r14);
       const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.toggleRuleColumn(\u0275$index_131_r10, col_r15.key));
+      return \u0275\u0275resetView(ctx_r2.onRuleLabelInput($event));
     });
-    \u0275\u0275elementEnd();
-    \u0275\u0275text(2);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const col_r15 = ctx.$implicit;
-    const rule_r13 = \u0275\u0275nextContext().$implicit;
-    \u0275\u0275advance();
-    \u0275\u0275property("checked", rule_r13.hidden_columns.includes(col_r15.key));
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate1(" ", col_r15.header, " ");
-  }
-}
-function ConfigComponent_For_50_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r9 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 19)(1, "div", 43)(2, "strong");
-    \u0275\u0275text(3, "Positions");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 44)(5, "input", 45);
-    \u0275\u0275listener("input", function ConfigComponent_For_50_Template_input_input_5_listener($event) {
-      const \u0275$index_131_r10 = \u0275\u0275restoreView(_r9).$index;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onRuleFilterInput(\u0275$index_131_r10, $event));
-    });
-    \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(6, ConfigComponent_For_50_Conditional_6_Template, 2, 2, "span", 46);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 21);
-    \u0275\u0275repeaterCreate(8, ConfigComponent_For_50_For_9_Template, 3, 2, "label", null, _forTrack2);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(10, "div", 43)(11, "strong");
-    \u0275\u0275text(12, "Hidden columns");
+    \u0275\u0275elementStart(4, "div", 46)(5, "strong");
+    \u0275\u0275text(6, "Positions");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "div", 21);
-    \u0275\u0275repeaterCreate(14, ConfigComponent_For_50_For_15_Template, 3, 2, "label", null, _forTrack3);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(16, "button", 37);
-    \u0275\u0275listener("click", function ConfigComponent_For_50_Template_button_click_16_listener() {
-      const \u0275$index_131_r10 = \u0275\u0275restoreView(_r9).$index;
+    \u0275\u0275elementStart(7, "div", 47)(8, "input", 48);
+    \u0275\u0275listener("input", function ConfigComponent_Conditional_56_Template_input_input_8_listener($event) {
+      \u0275\u0275restoreView(_r14);
       const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.removeColumnRule(\u0275$index_131_r10));
+      return \u0275\u0275resetView(ctx_r2.onRuleFilterInput($event));
     });
-    \u0275\u0275text(17, "Remove rule");
+    \u0275\u0275elementEnd();
+    \u0275\u0275conditionalCreate(9, ConfigComponent_Conditional_56_Conditional_9_Template, 2, 2, "span", 49);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(10, "div", 19);
+    \u0275\u0275repeaterCreate(11, ConfigComponent_Conditional_56_For_12_Template, 3, 2, "label", null, _forTrack2);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(13, "div", 46)(14, "strong");
+    \u0275\u0275text(15, "Hidden columns");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(16, "div", 19);
+    \u0275\u0275repeaterCreate(17, ConfigComponent_Conditional_56_For_18_Template, 3, 2, "label", null, _forTrack3);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const \u0275$index_131_r10 = ctx.$index;
     const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275advance(3);
+    \u0275\u0275property("value", ctx.label ?? "");
     \u0275\u0275advance(5);
-    \u0275\u0275property("value", ctx_r2.ruleFilters()[\u0275$index_131_r10] ?? "");
+    \u0275\u0275property("value", ctx_r2.ruleFilter());
     \u0275\u0275advance();
-    \u0275\u0275conditional(ctx_r2.ruleFilters()[\u0275$index_131_r10] ? 6 : -1);
+    \u0275\u0275conditional(ctx_r2.ruleFilter().trim() ? 9 : -1);
     \u0275\u0275advance(2);
-    \u0275\u0275repeater(ctx_r2.filteredPositionsForRule(\u0275$index_131_r10));
+    \u0275\u0275repeater(ctx_r2.filteredPositions());
     \u0275\u0275advance(6);
     \u0275\u0275repeater(ctx_r2.allColumnDefs);
   }
 }
-function ConfigComponent_For_62_Template(rf, ctx) {
+function ConfigComponent_Conditional_57_Template(rf, ctx) {
   if (rf & 1) {
-    const _r16 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 48);
-    \u0275\u0275listener("change", function ConfigComponent_For_62_Template_input_change_1_listener() {
-      const m_r17 = \u0275\u0275restoreView(_r16).$implicit;
+    \u0275\u0275elementStart(0, "div", 10);
+    \u0275\u0275text(1, "Select a rule to edit, or create a new one.");
+    \u0275\u0275elementEnd();
+  }
+}
+function ConfigComponent_For_67_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r20 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "label")(1, "input", 51);
+    \u0275\u0275listener("change", function ConfigComponent_For_67_Template_input_change_1_listener() {
+      const m_r21 = \u0275\u0275restoreView(_r20).$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.toggleStateMeaning(m_r17));
+      return \u0275\u0275resetView(ctx_r2.toggleStateMeaning(m_r21));
     });
     \u0275\u0275elementEnd();
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const m_r17 = ctx.$implicit;
+    const m_r21 = ctx.$implicit;
     const ctx_r2 = \u0275\u0275nextContext();
     \u0275\u0275advance();
-    \u0275\u0275property("checked", ctx_r2.apptStateMeanings().includes(m_r17))("disabled", ctx_r2.apptStateMeanings().length === 1 && ctx_r2.apptStateMeanings().includes(m_r17));
+    \u0275\u0275property("checked", ctx_r2.apptStateMeanings().includes(m_r21))("disabled", ctx_r2.apptStateMeanings().length === 1 && ctx_r2.apptStateMeanings().includes(m_r21));
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate1(" ", m_r17, " ");
+    \u0275\u0275textInterpolate1(" ", m_r21, " ");
   }
 }
-function ConfigComponent_For_80_Template(rf, ctx) {
+function ConfigComponent_For_85_Template(rf, ctx) {
   if (rf & 1) {
-    const _r18 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 47);
-    \u0275\u0275listener("change", function ConfigComponent_For_80_Template_input_change_1_listener() {
-      const t_r19 = \u0275\u0275restoreView(_r18).$implicit;
+    const _r22 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "label")(1, "input", 50);
+    \u0275\u0275listener("change", function ConfigComponent_For_85_Template_input_change_1_listener() {
+      const t_r23 = \u0275\u0275restoreView(_r22).$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.toggleActiveEncntrType(t_r19.codeValue));
+      return \u0275\u0275resetView(ctx_r2.toggleActiveEncntrType(t_r23.codeValue));
     });
     \u0275\u0275elementEnd();
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const t_r19 = ctx.$implicit;
+    const t_r23 = ctx.$implicit;
     const ctx_r2 = \u0275\u0275nextContext();
     \u0275\u0275advance();
-    \u0275\u0275property("checked", ctx_r2.activeEncntrTypeCds().includes(t_r19.codeValue));
+    \u0275\u0275property("checked", ctx_r2.activeEncntrTypeCds().includes(t_r23.codeValue));
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate1(" ", t_r19.display, " ");
+    \u0275\u0275textInterpolate1(" ", t_r23.display, " ");
   }
 }
-function ConfigComponent_Conditional_86_Template(rf, ctx) {
+function ConfigComponent_Conditional_91_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 26);
+    \u0275\u0275elementStart(0, "span", 24);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -987,9 +1081,9 @@ function ConfigComponent_Conditional_86_Template(rf, ctx) {
     \u0275\u0275textInterpolate(ctx_r2.statusMessage());
   }
 }
-function ConfigComponent_Conditional_87_Template(rf, ctx) {
+function ConfigComponent_Conditional_92_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 27);
+    \u0275\u0275elementStart(0, "span", 25);
     \u0275\u0275text(1, "One or more groups have errors. Fix them to save.");
     \u0275\u0275elementEnd();
   }
@@ -1072,7 +1166,15 @@ var ConfigComponent = class _ConfigComponent {
     []
   ));
   knownStateMeanings = KNOWN_APPT_STATE_MEANINGS;
-  ruleFilters = signal({}, ...ngDevMode ? [{ debugName: "ruleFilters" }] : (
+  selectedRuleId = signal(null, ...ngDevMode ? [{ debugName: "selectedRuleId" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  pendingDeleteRuleId = signal(null, ...ngDevMode ? [{ debugName: "pendingDeleteRuleId" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  ruleFilter = signal("", ...ngDevMode ? [{ debugName: "ruleFilter" }] : (
     /* istanbul ignore next */
     []
   ));
@@ -1093,10 +1195,15 @@ var ConfigComponent = class _ConfigComponent {
       const stored = config.REFRESH_INTERVAL_SECONDS;
       this.refreshIntervalSeconds.set(typeof stored === "number" && Number.isFinite(stored) ? stored : DEFAULT_REFRESH_INTERVAL_SECONDS);
       this.chartLinkEncntrTypeCd.set(config.CHART_LINK_ENCOUNTER_TYPE_CD ?? 0);
-      this.columnRoleDefaults.set((config.COLUMN_ROLE_DEFAULTS ?? []).map((r) => ({
-        positions: [...r.positions],
-        hidden_columns: [...r.hidden_columns]
-      })));
+      const rules = (config.COLUMN_ROLE_DEFAULTS ?? []).map((r) => this.cloneRule(r));
+      this.columnRoleDefaults.set(rules);
+      const ruleIds = rules.map((r) => r.id);
+      const currentRuleSelection = this.selectedRuleId();
+      if (currentRuleSelection === null && ruleIds.length > 0) {
+        this.selectedRuleId.set(ruleIds[0]);
+      } else if (currentRuleSelection && !ruleIds.includes(currentRuleSelection)) {
+        this.selectedRuleId.set(ruleIds[0] ?? null);
+      }
       this.apptStateMeanings.set(config.APPT_STATE_MEANINGS?.length ? [...config.APPT_STATE_MEANINGS] : [...DEFAULT_APPT_STATE_MEANINGS]);
       this.chairResourceNamePattern.set(config.CHAIR_RESOURCE_NAME_PATTERN ?? "");
       this.activeEncntrTypeCds.set([...config.ACTIVE_ENCNTR_TYPE_CDS ?? []]);
@@ -1118,6 +1225,25 @@ var ConfigComponent = class _ConfigComponent {
     const id = this.selectedGroupId();
     return this.groups().filter((g) => g.id !== id);
   }, ...ngDevMode ? [{ debugName: "otherGroups" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  selectedRule = computed(() => {
+    const id = this.selectedRuleId();
+    if (!id)
+      return null;
+    return this.columnRoleDefaults().find((r) => r.id === id) ?? null;
+  }, ...ngDevMode ? [{ debugName: "selectedRule" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  filteredPositions = computed(() => {
+    const filter = this.ruleFilter().trim().toLowerCase();
+    const positions = this.allPositions();
+    if (!filter)
+      return positions;
+    return positions.filter((p) => p.display.toLowerCase().includes(filter));
+  }, ...ngDevMode ? [{ debugName: "filteredPositions" }] : (
     /* istanbul ignore next */
     []
   ));
@@ -1244,7 +1370,7 @@ var ConfigComponent = class _ConfigComponent {
       })),
       REFRESH_INTERVAL_SECONDS: this.refreshIntervalSeconds(),
       CHART_LINK_ENCOUNTER_TYPE_CD: this.chartLinkEncntrTypeCd(),
-      COLUMN_ROLE_DEFAULTS: this.columnRoleDefaults(),
+      COLUMN_ROLE_DEFAULTS: this.columnRoleDefaults().map((r) => __spreadProps(__spreadValues({}, r), { label: (r.label ?? "").trim() })),
       APPT_STATE_MEANINGS: this.apptStateMeanings(),
       CHAIR_RESOURCE_NAME_PATTERN: this.chairResourceNamePattern().trim(),
       ACTIVE_ENCNTR_TYPE_CDS: this.activeEncntrTypeCds()
@@ -1262,14 +1388,15 @@ var ConfigComponent = class _ConfigComponent {
     const stored = config?.REFRESH_INTERVAL_SECONDS;
     this.refreshIntervalSeconds.set(typeof stored === "number" && Number.isFinite(stored) ? stored : DEFAULT_REFRESH_INTERVAL_SECONDS);
     this.chartLinkEncntrTypeCd.set(config?.CHART_LINK_ENCOUNTER_TYPE_CD ?? 0);
-    this.columnRoleDefaults.set((config?.COLUMN_ROLE_DEFAULTS ?? []).map((r) => ({
-      positions: [...r.positions],
-      hidden_columns: [...r.hidden_columns]
-    })));
+    this.columnRoleDefaults.set((config?.COLUMN_ROLE_DEFAULTS ?? []).map((r) => this.cloneRule(r)));
+    if (!this.columnRoleDefaults().find((r) => r.id === this.selectedRuleId())) {
+      this.selectedRuleId.set(this.columnRoleDefaults()[0]?.id ?? null);
+    }
     this.apptStateMeanings.set(config?.APPT_STATE_MEANINGS?.length ? [...config.APPT_STATE_MEANINGS] : [...DEFAULT_APPT_STATE_MEANINGS]);
     this.chairResourceNamePattern.set(config?.CHAIR_RESOURCE_NAME_PATTERN ?? "");
     this.activeEncntrTypeCds.set([...config?.ACTIVE_ENCNTR_TYPE_CDS ?? []]);
     this.pendingDeleteId.set(null);
+    this.pendingDeleteRuleId.set(null);
   }
   onRefreshIntervalInput(event) {
     const raw = event.target.value;
@@ -1286,39 +1413,75 @@ var ConfigComponent = class _ConfigComponent {
     const parsed = parseInt(raw, 10);
     this.chartLinkEncntrTypeCd.set(Number.isFinite(parsed) ? parsed : 0);
   }
-  addColumnRule() {
-    this.columnRoleDefaults.update((rules) => [...rules, { positions: [], hidden_columns: [] }]);
+  ruleDisplayLabel(rule, index) {
+    const label = (rule.label ?? "").trim();
+    if (label)
+      return label;
+    if (rule.positions.length > 0) {
+      const extra = rule.positions.length - 1;
+      return extra > 0 ? `${rule.positions[0]} (+${extra} more)` : rule.positions[0];
+    }
+    return `Rule ${index + 1}`;
   }
-  removeColumnRule(index) {
-    this.columnRoleDefaults.update((rules) => rules.filter((_, i) => i !== index));
-    this.ruleFilters.update((filters) => {
-      const next = {};
-      for (const [key, value] of Object.entries(filters)) {
-        const i = Number(key);
-        if (i < index)
-          next[i] = value;
-        else if (i > index)
-          next[i - 1] = value;
-      }
-      return next;
-    });
+  ruleSummary(rule) {
+    return `${rule.positions.length} position${rule.positions.length === 1 ? "" : "s"} \xB7 ${rule.hidden_columns.length} hidden column${rule.hidden_columns.length === 1 ? "" : "s"}`;
   }
-  filteredPositionsForRule(index) {
-    const filter = (this.ruleFilters()[index] ?? "").trim().toLowerCase();
-    const positions = this.allPositions();
-    if (!filter)
-      return positions;
-    return positions.filter((p) => p.display.toLowerCase().includes(filter));
+  selectRule(id) {
+    this.selectedRuleId.set(id);
+    this.pendingDeleteRuleId.set(null);
+    this.ruleFilter.set("");
   }
-  onRuleFilterInput(index, event) {
+  newRule() {
+    const baseLabel = "New rule";
+    const existing = new Set(this.columnRoleDefaults().map((r) => (r.label ?? "").trim().toLowerCase()));
+    let label = baseLabel;
+    let n = 2;
+    while (existing.has(label.toLowerCase())) {
+      label = `${baseLabel} (${n})`;
+      n += 1;
+    }
+    const id = this.makeId();
+    const rule = { id, label, positions: [], hidden_columns: [] };
+    this.columnRoleDefaults.update((rules) => [...rules, rule]);
+    this.selectedRuleId.set(id);
+    this.pendingDeleteRuleId.set(null);
+    this.ruleFilter.set("");
+  }
+  requestDeleteRule(id) {
+    this.pendingDeleteRuleId.set(id);
+  }
+  cancelDeleteRule() {
+    this.pendingDeleteRuleId.set(null);
+  }
+  confirmDeleteRule(id) {
+    this.columnRoleDefaults.update((rules) => rules.filter((r) => r.id !== id));
+    if (this.selectedRuleId() === id) {
+      this.selectedRuleId.set(this.columnRoleDefaults()[0]?.id ?? null);
+    }
+    this.pendingDeleteRuleId.set(null);
+  }
+  onRuleLabelInput(event) {
+    const id = this.selectedRuleId();
+    if (!id)
+      return;
     const value = event.target.value;
-    this.ruleFilters.update((filters) => __spreadProps(__spreadValues({}, filters), { [index]: value }));
+    this.columnRoleDefaults.update((rules) => rules.map((r) => r.id === id ? __spreadProps(__spreadValues({}, r), { label: value }) : r));
   }
-  toggleRulePosition(index, position) {
-    this.columnRoleDefaults.update((rules) => rules.map((r, i) => i === index ? __spreadProps(__spreadValues({}, r), { positions: r.positions.includes(position) ? r.positions.filter((p) => p !== position) : [...r.positions, position] }) : r));
+  onRuleFilterInput(event) {
+    const value = event.target.value;
+    this.ruleFilter.set(value);
   }
-  toggleRuleColumn(index, key) {
-    this.columnRoleDefaults.update((rules) => rules.map((r, i) => i === index ? __spreadProps(__spreadValues({}, r), { hidden_columns: r.hidden_columns.includes(key) ? r.hidden_columns.filter((c) => c !== key) : [...r.hidden_columns, key] }) : r));
+  toggleRulePosition(position) {
+    const id = this.selectedRuleId();
+    if (!id)
+      return;
+    this.columnRoleDefaults.update((rules) => rules.map((r) => r.id === id ? __spreadProps(__spreadValues({}, r), { positions: r.positions.includes(position) ? r.positions.filter((p) => p !== position) : [...r.positions, position] }) : r));
+  }
+  toggleRuleColumn(key) {
+    const id = this.selectedRuleId();
+    if (!id)
+      return;
+    this.columnRoleDefaults.update((rules) => rules.map((r) => r.id === id ? __spreadProps(__spreadValues({}, r), { hidden_columns: r.hidden_columns.includes(key) ? r.hidden_columns.filter((c) => c !== key) : [...r.hidden_columns, key] }) : r));
   }
   showStatus(message) {
     if (this.statusTimer)
@@ -1366,7 +1529,15 @@ var ConfigComponent = class _ConfigComponent {
   columnRuleDefaultsEqual(a, b) {
     if (a.length !== b.length)
       return false;
-    return a.every((rule, i) => this.arraysEqual(rule.positions, b[i].positions) && this.arraysEqual(rule.hidden_columns, b[i].hidden_columns));
+    return a.every((rule, i) => (rule.label ?? "").trim() === (b[i].label ?? "").trim() && this.arraysEqual(rule.positions, b[i].positions) && this.arraysEqual(rule.hidden_columns, b[i].hidden_columns));
+  }
+  cloneRule(r) {
+    return {
+      id: r.id ?? this.makeId(),
+      label: r.label ?? "",
+      positions: [...r.positions],
+      hidden_columns: [...r.hidden_columns]
+    };
   }
   arraysEqual(a, b) {
     if (a.length !== b.length)
@@ -1400,7 +1571,7 @@ var ConfigComponent = class _ConfigComponent {
   static \u0275fac = function ConfigComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ConfigComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 90, vars: 15, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], [1, "panel-help"], [1, "column-rule"], ["type", "button", 1, "fusion-button", "fusion-small", 3, "click"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"]], template: function ConfigComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 95, vars: 17, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], [1, "panel-help"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete", 3, "click"], [1, "rule-name-row"], ["for", "ruleLabelInput", 1, "rule-name-label"], ["id", "ruleLabelInput", "type", "text", 1, "fusion-input", "rule-name-input", 3, "input", "value"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"]], template: function ConfigComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h3");
       \u0275\u0275text(4, "Appointment Type Groups");
@@ -1455,65 +1626,70 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275text(45, "Default Hidden Columns by Position");
       \u0275\u0275elementEnd()();
       \u0275\u0275elementStart(46, "div", 3)(47, "p", 18);
-      \u0275\u0275text(48, " Columns listed in a rule start hidden for users whose position matches. Users can still show/hide columns themselves from the schedule's Columns menu; their own choice always wins. ");
+      \u0275\u0275text(48, " Columns listed in a rule start hidden for users whose position matches. Users can still show/hide columns themselves from the schedule's Columns menu; their own choice always wins. Select a rule on the left to edit it. ");
       \u0275\u0275elementEnd();
-      \u0275\u0275repeaterCreate(49, ConfigComponent_For_50_Template, 18, 2, "div", 19, \u0275\u0275repeaterTrackByIndex);
-      \u0275\u0275elementStart(51, "button", 20);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_51_listener() {
-        return ctx.addColumnRule();
+      \u0275\u0275elementStart(49, "div", 4)(50, "div", 5);
+      \u0275\u0275conditionalCreate(51, ConfigComponent_Conditional_51_Template, 2, 0, "div", 6)(52, ConfigComponent_Conditional_52_Template, 2, 0);
+      \u0275\u0275elementStart(53, "button", 7);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_53_listener() {
+        return ctx.newRule();
       });
-      \u0275\u0275text(52, "Add rule");
-      \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(53, "div", 1)(54, "div", 2)(55, "h3");
-      \u0275\u0275text(56, "Appointment States Shown");
+      \u0275\u0275text(54, "+ New rule");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(57, "div", 3)(58, "p", 18);
-      \u0275\u0275text(59, " Only appointments in these scheduling states appear on the list. The default (Confirmed, Checked In, Checked Out, Scheduled, Rescheduled) excludes canceled and no-show entries. At least one state must be selected. Each appointment is one row: with Rescheduled selected, a moved appointment shows in its most recent vacated slot with a Rescheduled badge; unselect Rescheduled to show the live booking instead. ");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(60, "div", 21);
-      \u0275\u0275repeaterCreate(61, ConfigComponent_For_62_Template, 3, 3, "label", null, \u0275\u0275repeaterTrackByIdentity);
-      \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(63, "div", 1)(64, "div", 2)(65, "h3");
-      \u0275\u0275text(66, "Chair Resource Name Pattern");
+      \u0275\u0275elementStart(55, "div", 8);
+      \u0275\u0275conditionalCreate(56, ConfigComponent_Conditional_56_Template, 19, 3)(57, ConfigComponent_Conditional_57_Template, 2, 0, "div", 10);
+      \u0275\u0275elementEnd()()()();
+      \u0275\u0275elementStart(58, "div", 1)(59, "div", 2)(60, "h3");
+      \u0275\u0275text(61, "Appointment States Shown");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(67, "div", 3)(68, "p", 18);
-      \u0275\u0275text(69, ' Resources whose name contains this text (case-insensitive, spaces ignored) are treated as chairs and shown beside the appointment type. Leave blank to use the default pattern "Chair". NYGH chairs have no resource typing, so matching is by name (see scripts/ccl/diagnostics). ');
+      \u0275\u0275elementStart(62, "div", 3)(63, "p", 18);
+      \u0275\u0275text(64, " Only appointments in these scheduling states appear on the list. The default (Confirmed, Checked In, Checked Out, Scheduled, Rescheduled) excludes canceled and no-show entries. At least one state must be selected. Each appointment is one row: with Rescheduled selected, a moved appointment shows in its most recent vacated slot with a Rescheduled badge; unselect Rescheduled to show the live booking instead. ");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(70, "input", 22);
-      \u0275\u0275listener("input", function ConfigComponent_Template_input_input_70_listener($event) {
+      \u0275\u0275elementStart(65, "div", 19);
+      \u0275\u0275repeaterCreate(66, ConfigComponent_For_67_Template, 3, 3, "label", null, \u0275\u0275repeaterTrackByIdentity);
+      \u0275\u0275elementEnd()()();
+      \u0275\u0275elementStart(68, "div", 1)(69, "div", 2)(70, "h3");
+      \u0275\u0275text(71, "Chair Resource Name Pattern");
+      \u0275\u0275elementEnd()();
+      \u0275\u0275elementStart(72, "div", 3)(73, "p", 18);
+      \u0275\u0275text(74, ' Resources whose name contains this text (case-insensitive, spaces ignored) are treated as chairs and shown beside the appointment type. Leave blank to use the default pattern "Chair". NYGH chairs have no resource typing, so matching is by name (see scripts/ccl/diagnostics). ');
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(75, "input", 20);
+      \u0275\u0275listener("input", function ConfigComponent_Template_input_input_75_listener($event) {
         return ctx.onChairPatternInput($event);
       });
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(71, "div", 1)(72, "div", 2)(73, "h3");
-      \u0275\u0275text(74, "Inpatient/ED Indicator Encounter Types");
+      \u0275\u0275elementStart(76, "div", 1)(77, "div", 2)(78, "h3");
+      \u0275\u0275text(79, "Inpatient/ED Indicator Encounter Types");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(75, "div", 3)(76, "p", 18);
-      \u0275\u0275text(77, " Patients with an active (not discharged) encounter of one of these types show an indicator beside their name. Leave all unchecked to use the Cerner defaults (Inpatient and Emergency). ");
+      \u0275\u0275elementStart(80, "div", 3)(81, "p", 18);
+      \u0275\u0275text(82, " Patients with an active (not discharged) encounter of one of these types show an indicator beside their name. Leave all unchecked to use the Cerner defaults (Inpatient and Emergency). ");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(78, "div", 21);
-      \u0275\u0275repeaterCreate(79, ConfigComponent_For_80_Template, 3, 2, "label", null, _forTrack02);
+      \u0275\u0275elementStart(83, "div", 19);
+      \u0275\u0275repeaterCreate(84, ConfigComponent_For_85_Template, 3, 2, "label", null, _forTrack02);
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(81, "div", 23)(82, "button", 24);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_82_listener() {
+      \u0275\u0275elementStart(86, "div", 21)(87, "button", 22);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_87_listener() {
         return ctx.save();
       });
-      \u0275\u0275text(83, "Save");
+      \u0275\u0275text(88, "Save");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(84, "button", 25);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_84_listener() {
+      \u0275\u0275elementStart(89, "button", 23);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_89_listener() {
         return ctx.discard();
       });
-      \u0275\u0275text(85, "Discard");
+      \u0275\u0275text(90, "Discard");
       \u0275\u0275elementEnd();
-      \u0275\u0275conditionalCreate(86, ConfigComponent_Conditional_86_Template, 2, 1, "span", 26);
-      \u0275\u0275conditionalCreate(87, ConfigComponent_Conditional_87_Template, 2, 0, "span", 27);
+      \u0275\u0275conditionalCreate(91, ConfigComponent_Conditional_91_Template, 2, 1, "span", 24);
+      \u0275\u0275conditionalCreate(92, ConfigComponent_Conditional_92_Template, 2, 0, "span", 25);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(88, "div", 28);
-      \u0275\u0275text(89);
+      \u0275\u0275elementStart(93, "div", 26);
+      \u0275\u0275text(94);
       \u0275\u0275elementEnd()();
     }
     if (rf & 2) {
       let tmp_1_0;
+      let tmp_10_0;
       \u0275\u0275advance(10);
       \u0275\u0275conditional(ctx.groups().length === 0 ? 10 : 11);
       \u0275\u0275advance(5);
@@ -1526,9 +1702,11 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275conditional(ctx.refreshIntervalSeconds() === 0 ? 31 : 32);
       \u0275\u0275advance(9);
       \u0275\u0275conditional(!ctx.encntrTypesLoaded() ? 40 : 41);
-      \u0275\u0275advance(9);
-      \u0275\u0275repeater(ctx.columnRoleDefaults());
-      \u0275\u0275advance(12);
+      \u0275\u0275advance(11);
+      \u0275\u0275conditional(ctx.columnRoleDefaults().length === 0 ? 51 : 52);
+      \u0275\u0275advance(5);
+      \u0275\u0275conditional((tmp_10_0 = ctx.selectedRule()) ? 56 : 57, tmp_10_0);
+      \u0275\u0275advance(10);
       \u0275\u0275repeater(ctx.knownStateMeanings);
       \u0275\u0275advance(9);
       \u0275\u0275property("value", ctx.chairResourceNamePattern());
@@ -1539,13 +1717,13 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275advance(2);
       \u0275\u0275property("disabled", !ctx.hasUnsavedChanges());
       \u0275\u0275advance(2);
-      \u0275\u0275conditional(ctx.statusMessage() ? 86 : -1);
+      \u0275\u0275conditional(ctx.statusMessage() ? 91 : -1);
       \u0275\u0275advance();
-      \u0275\u0275conditional(ctx.hasGroupErrors() ? 87 : -1);
+      \u0275\u0275conditional(ctx.hasGroupErrors() ? 92 : -1);
       \u0275\u0275advance(2);
       \u0275\u0275textInterpolate(ctx.buildVersion);
     }
-  }, dependencies: [ApptTypeGroupEditorComponent], styles: ["\n\n.config-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.groups-master-detail[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: minmax(220px, 280px) 1fr;\n  gap: 1rem;\n  align-items: stretch;\n}\n.groups-list[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 0.5rem;\n  background: var(--fusion-bg-header);\n  max-height: 540px;\n  overflow-y: auto;\n}\n.groups-list-empty[_ngcontent-%COMP%] {\n  padding: 0.75rem;\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n.group-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem 0.625rem;\n  border-radius: 4px;\n  cursor: pointer;\n  background: transparent;\n  border: 1px solid transparent;\n}\n.group-row[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-selected);\n}\n.group-row.selected[_ngcontent-%COMP%] {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-primary);\n}\n.group-row-main[_ngcontent-%COMP%] {\n  flex: 1;\n  min-width: 0;\n}\n.group-row-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n  font-weight: 500;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.group-row-meta[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.group-row-delete[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 1rem;\n  line-height: 1;\n  padding: 2px 6px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.group-row-delete[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-danger-text, #b00020);\n}\n.group-row-delete-confirm[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 4px;\n}\n.new-group-btn[_ngcontent-%COMP%] {\n  margin-top: 0.5rem;\n  align-self: stretch;\n}\n.group-editor[_ngcontent-%COMP%] {\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 1rem;\n  min-height: 200px;\n}\n.group-editor-empty[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n  min-height: 180px;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.status-error[_ngcontent-%COMP%] {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input[_ngcontent-%COMP%] {\n  flex: 1;\n}\n.selected-count[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list[_ngcontent-%COMP%] {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected[_ngcontent-%COMP%] {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item[_ngcontent-%COMP%]:last-child {\n  border-bottom: none;\n}\n.appt-type-item[_ngcontent-%COMP%]   input[type=checkbox][_ngcontent-%COMP%] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg[_ngcontent-%COMP%] {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input[_ngcontent-%COMP%] {\n  width: 6rem;\n}\n.refresh-interval-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select[_ngcontent-%COMP%] {\n  min-width: 18rem;\n}\n.column-rule[_ngcontent-%COMP%] {\n  border: 1px solid var(--fusion-border);\n  border-radius: 4px;\n  padding: 10px;\n  margin-bottom: 10px;\n}\n.column-rule-section[_ngcontent-%COMP%] {\n  margin-bottom: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help[_ngcontent-%COMP%] {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.config-version[_ngcontent-%COMP%] {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */"], changeDetection: 0 });
+  }, dependencies: [ApptTypeGroupEditorComponent], styles: ["\n\n.config-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.groups-master-detail[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: minmax(220px, 280px) 1fr;\n  gap: 1rem;\n  align-items: stretch;\n}\n.groups-list[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 0.5rem;\n  background: var(--fusion-bg-header);\n  max-height: 540px;\n  overflow-y: auto;\n}\n.groups-list-empty[_ngcontent-%COMP%] {\n  padding: 0.75rem;\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n.group-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem 0.625rem;\n  border-radius: 4px;\n  cursor: pointer;\n  background: transparent;\n  border: 1px solid transparent;\n}\n.group-row[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-selected);\n}\n.group-row.selected[_ngcontent-%COMP%] {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-primary);\n}\n.group-row-main[_ngcontent-%COMP%] {\n  flex: 1;\n  min-width: 0;\n}\n.group-row-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n  font-weight: 500;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.group-row-meta[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.group-row-delete[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 1rem;\n  line-height: 1;\n  padding: 2px 6px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.group-row-delete[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-danger-text, #b00020);\n}\n.group-row-delete-confirm[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 4px;\n}\n.new-group-btn[_ngcontent-%COMP%] {\n  margin-top: 0.5rem;\n  align-self: stretch;\n}\n.group-editor[_ngcontent-%COMP%] {\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 1rem;\n  min-height: 200px;\n}\n.group-editor-empty[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n  min-height: 180px;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.status-error[_ngcontent-%COMP%] {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input[_ngcontent-%COMP%] {\n  flex: 1;\n}\n.selected-count[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list[_ngcontent-%COMP%] {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected[_ngcontent-%COMP%] {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item[_ngcontent-%COMP%]:last-child {\n  border-bottom: none;\n}\n.appt-type-item[_ngcontent-%COMP%]   input[type=checkbox][_ngcontent-%COMP%] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg[_ngcontent-%COMP%] {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input[_ngcontent-%COMP%] {\n  width: 6rem;\n}\n.refresh-interval-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select[_ngcontent-%COMP%] {\n  min-width: 18rem;\n}\n.column-rule-section[_ngcontent-%COMP%] {\n  margin-bottom: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 320px;\n}\n.rule-name-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 10px;\n}\n.rule-name-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.rule-name-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help[_ngcontent-%COMP%] {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.config-version[_ngcontent-%COMP%] {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */"], changeDetection: 0 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ConfigComponent, [{
@@ -1679,48 +1857,87 @@ var ConfigComponent = class _ConfigComponent {
       <p class="panel-help">
         Columns listed in a rule start hidden for users whose position matches.
         Users can still show/hide columns themselves from the schedule's Columns menu;
-        their own choice always wins.
+        their own choice always wins. Select a rule on the left to edit it.
       </p>
-      @for (rule of columnRoleDefaults(); track $index; let ri = $index) {
-        <div class="column-rule">
-          <div class="column-rule-section">
-            <strong>Positions</strong>
-            <div class="rule-filter-row">
-              <input class="fusion-input rule-filter-input" type="text" placeholder="Filter positions..."
-                [value]="ruleFilters()[ri] ?? ''" (input)="onRuleFilterInput(ri, $event)" />
-              @if (ruleFilters()[ri]) {
-                <span class="selected-count">
-                  {{ allPositions().length }} positions ({{ filteredPositionsForRule(ri).length }} shown)
-                </span>
-              }
-            </div>
-            <div class="checkbox-grid">
-              @for (p of filteredPositionsForRule(ri); track p.display) {
-                <label>
-                  <input type="checkbox" [checked]="rule.positions.includes(p.display)"
-                    (change)="toggleRulePosition(ri, p.display)" />
-                  {{ p.display }}
-                </label>
-              }
-            </div>
-          </div>
-          <div class="column-rule-section">
-            <strong>Hidden columns</strong>
-            <div class="checkbox-grid">
-              @for (col of allColumnDefs; track col.key) {
-                <label>
-                  <input type="checkbox" [checked]="rule.hidden_columns.includes(col.key)"
-                    (change)="toggleRuleColumn(ri, col.key)" />
-                  {{ col.header }}
-                </label>
-              }
-            </div>
-          </div>
-          <button class="fusion-button fusion-danger fusion-small" type="button"
-            (click)="removeColumnRule(ri)">Remove rule</button>
+      <div class="groups-master-detail">
+        <div class="groups-list">
+          @if (columnRoleDefaults().length === 0) {
+            <div class="groups-list-empty">No rules yet.</div>
+          } @else {
+            @for (rule of columnRoleDefaults(); track rule.id; let ri = $index) {
+              <div
+                class="group-row"
+                [class.selected]="selectedRuleId() === rule.id"
+                (click)="selectRule(rule.id!)"
+              >
+                <div class="group-row-main">
+                  <div class="group-row-label">{{ ruleDisplayLabel(rule, ri) }}</div>
+                  <div class="group-row-meta">{{ ruleSummary(rule) }}</div>
+                </div>
+                @if (pendingDeleteRuleId() === rule.id) {
+                  <div class="group-row-delete-confirm" (click)="$event.stopPropagation()">
+                    <button class="fusion-button fusion-danger fusion-small" type="button" (click)="confirmDeleteRule(rule.id!)">Confirm</button>
+                    <button class="fusion-button fusion-outline fusion-small" type="button" (click)="cancelDeleteRule()">Cancel</button>
+                  </div>
+                } @else {
+                  <button
+                    class="group-row-delete"
+                    type="button"
+                    aria-label="Delete rule"
+                    title="Delete rule"
+                    (click)="$event.stopPropagation(); requestDeleteRule(rule.id!)"
+                  >&times;</button>
+                }
+              </div>
+            }
+          }
+          <button class="fusion-button fusion-outline new-group-btn" type="button" (click)="newRule()">+ New rule</button>
         </div>
-      }
-      <button class="fusion-button fusion-small" type="button" (click)="addColumnRule()">Add rule</button>
+        <div class="group-editor">
+          @if (selectedRule(); as rule) {
+            <div class="rule-name-row">
+              <label class="rule-name-label" for="ruleLabelInput">Rule name</label>
+              <input id="ruleLabelInput" class="fusion-input rule-name-input" type="text"
+                [value]="rule.label ?? ''" (input)="onRuleLabelInput($event)" />
+            </div>
+            <div class="column-rule-section">
+              <strong>Positions</strong>
+              <div class="rule-filter-row">
+                <input class="fusion-input rule-filter-input" type="text" placeholder="Filter positions..."
+                  [value]="ruleFilter()" (input)="onRuleFilterInput($event)" />
+                @if (ruleFilter().trim()) {
+                  <span class="selected-count">
+                    {{ allPositions().length }} positions ({{ filteredPositions().length }} shown)
+                  </span>
+                }
+              </div>
+              <div class="checkbox-grid">
+                @for (p of filteredPositions(); track p.display) {
+                  <label>
+                    <input type="checkbox" [checked]="rule.positions.includes(p.display)"
+                      (change)="toggleRulePosition(p.display)" />
+                    {{ p.display }}
+                  </label>
+                }
+              </div>
+            </div>
+            <div class="column-rule-section">
+              <strong>Hidden columns</strong>
+              <div class="checkbox-grid">
+                @for (col of allColumnDefs; track col.key) {
+                  <label>
+                    <input type="checkbox" [checked]="rule.hidden_columns.includes(col.key)"
+                      (change)="toggleRuleColumn(col.key)" />
+                    {{ col.header }}
+                  </label>
+                }
+              </div>
+            </div>
+          } @else {
+            <div class="group-editor-empty">Select a rule to edit, or create a new one.</div>
+          }
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1794,7 +2011,7 @@ var ConfigComponent = class _ConfigComponent {
 
   <div class="config-version">{{ buildVersion }}</div>
 </div>
-`, styles: ["/* src/app/components/config/config.scss */\n.config-container {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.groups-master-detail {\n  display: grid;\n  grid-template-columns: minmax(220px, 280px) 1fr;\n  gap: 1rem;\n  align-items: stretch;\n}\n.groups-list {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 0.5rem;\n  background: var(--fusion-bg-header);\n  max-height: 540px;\n  overflow-y: auto;\n}\n.groups-list-empty {\n  padding: 0.75rem;\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n.group-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem 0.625rem;\n  border-radius: 4px;\n  cursor: pointer;\n  background: transparent;\n  border: 1px solid transparent;\n}\n.group-row:hover {\n  background: var(--fusion-bg-selected);\n}\n.group-row.selected {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-primary);\n}\n.group-row-main {\n  flex: 1;\n  min-width: 0;\n}\n.group-row-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n  font-weight: 500;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.group-row-meta {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.group-row-delete {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 1rem;\n  line-height: 1;\n  padding: 2px 6px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.group-row-delete:hover {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-danger-text, #b00020);\n}\n.group-row-delete-confirm {\n  display: flex;\n  gap: 4px;\n}\n.new-group-btn {\n  margin-top: 0.5rem;\n  align-self: stretch;\n}\n.group-editor {\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 1rem;\n  min-height: 200px;\n}\n.group-editor-empty {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n  min-height: 180px;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.status-error {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input {\n  flex: 1;\n}\n.selected-count {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item:last-child {\n  border-bottom: none;\n}\n.appt-type-item input[type=checkbox] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input {\n  width: 6rem;\n}\n.refresh-interval-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select {\n  min-width: 18rem;\n}\n.column-rule {\n  border: 1px solid var(--fusion-border);\n  border-radius: 4px;\n  padding: 10px;\n  margin-bottom: 10px;\n}\n.column-rule-section {\n  margin-bottom: 8px;\n}\n.checkbox-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid label {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.config-version {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */\n"] }]
+`, styles: ["/* src/app/components/config/config.scss */\n.config-container {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.groups-master-detail {\n  display: grid;\n  grid-template-columns: minmax(220px, 280px) 1fr;\n  gap: 1rem;\n  align-items: stretch;\n}\n.groups-list {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 0.5rem;\n  background: var(--fusion-bg-header);\n  max-height: 540px;\n  overflow-y: auto;\n}\n.groups-list-empty {\n  padding: 0.75rem;\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n.group-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem 0.625rem;\n  border-radius: 4px;\n  cursor: pointer;\n  background: transparent;\n  border: 1px solid transparent;\n}\n.group-row:hover {\n  background: var(--fusion-bg-selected);\n}\n.group-row.selected {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-primary);\n}\n.group-row-main {\n  flex: 1;\n  min-width: 0;\n}\n.group-row-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n  font-weight: 500;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.group-row-meta {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.group-row-delete {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 1rem;\n  line-height: 1;\n  padding: 2px 6px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.group-row-delete:hover {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-danger-text, #b00020);\n}\n.group-row-delete-confirm {\n  display: flex;\n  gap: 4px;\n}\n.new-group-btn {\n  margin-top: 0.5rem;\n  align-self: stretch;\n}\n.group-editor {\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 1rem;\n  min-height: 200px;\n}\n.group-editor-empty {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n  min-height: 180px;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.status-error {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input {\n  flex: 1;\n}\n.selected-count {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item:last-child {\n  border-bottom: none;\n}\n.appt-type-item input[type=checkbox] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input {\n  width: 6rem;\n}\n.refresh-interval-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select {\n  min-width: 18rem;\n}\n.column-rule-section {\n  margin-bottom: 8px;\n}\n.checkbox-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid label {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input {\n  flex: 1;\n  max-width: 320px;\n}\n.rule-name-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 10px;\n}\n.rule-name-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.rule-name-input {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.config-version {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
@@ -1803,4 +2020,4 @@ var ConfigComponent = class _ConfigComponent {
 export {
   ConfigComponent
 };
-//# sourceMappingURL=chunk-BNQNHJID.js.map
+//# sourceMappingURL=chunk-MIK43KRV.js.map
