@@ -6,7 +6,7 @@ import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-5XJDXKM3.js";
+} from "./chunk-Y2UGJNP2.js";
 import {
   HelpContentService
 } from "./chunk-Z7DFK23Q.js";
@@ -6194,7 +6194,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-NZ65BO3Z.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-LQVFFR35.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6714,6 +6714,7 @@ var App = class _App {
     ReferenceService,
     AccessControlService,
     ConfigurationService,
+    HelpContentService,
     PreferencesService,
     ScheduleService
   ])], decls: 13, vars: 1, consts: [[1, "mpage-header"], [1, "nav-links"], ["routerLinkActive", "active", 1, "nav-link", 3, "routerLink"], ["type", "button", "title", "About this view", "aria-label", "About this view", 1, "help-icon", 3, "click"], ["viewBox", "0 0 16 16", "width", "16", "height", "16", "aria-hidden", "true"], ["fill", "currentColor", "d", "M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"], [1, "app-content"], [2, "position", "fixed", "bottom", "10px", "right", "10px"], [3, "close"]], template: function App_Template(rf, ctx) {
@@ -6767,6 +6768,7 @@ var App = class _App {
       ReferenceService,
       AccessControlService,
       ConfigurationService,
+      HelpContentService,
       PreferencesService,
       ScheduleService
     ], template: `<header class="mpage-header">
@@ -6803,7 +6805,7 @@ var App = class _App {
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App, { className: "App", filePath: "src/app/app.ts", lineNumber: 36 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App, { className: "App", filePath: "src/app/app.ts", lineNumber: 37 });
 })();
 
 // src/main.ts
