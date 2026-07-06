@@ -292,6 +292,9 @@ function hasUnsavedHelpChanges(loaded, current, baseline) {
 var DMINFO_DOMAIN = "ONC_SCHED";
 var CONTENT_NAME = "HELP_CONTENT";
 var IMAGE_NAME = "HELP_IMAGE";
+function readLongText(result) {
+  return result?.dmInfo?.[0]?.longText ?? result?.longText ?? result?.infoLongText;
+}
 var HelpContentService = class _HelpContentService {
   customService = inject(CustomService);
   mPage = inject(MPageService);
@@ -330,8 +333,9 @@ var HelpContentService = class _HelpContentService {
       }
       try {
         const result = this.customService.get("loadHelpContent");
-        if (result?.infoLongText) {
-          const parsed = JSON.parse(result.infoLongText);
+        const longText = readLongText(result);
+        if (longText) {
+          const parsed = JSON.parse(longText);
           if (Array.isArray(parsed.sections)) {
             this._storedSections.set(parsed.sections);
           }
@@ -393,8 +397,9 @@ var HelpContentService = class _HelpContentService {
     this.customService.executeDmInfoAction(`loadHelpImage${imageId}`, "r", [dmInfo], () => {
       try {
         const result = this.customService.get(`loadHelpImage${imageId}`);
-        if (result?.infoLongText) {
-          const img = JSON.parse(result.infoLongText);
+        const longText = readLongText(result);
+        if (longText) {
+          const img = JSON.parse(longText);
           this.images.set(imageId, img);
           cb(img);
           return;
@@ -437,4 +442,4 @@ export {
   hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-Z7DFK23Q.js.map
+//# sourceMappingURL=chunk-3IKKC6BG.js.map
