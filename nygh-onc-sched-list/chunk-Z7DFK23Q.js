@@ -304,6 +304,8 @@ var HelpContentService = class _HelpContentService {
     []
   ));
   loading = false;
+  /** Monotonic request token — bumped on each load and on save; stale read callbacks are discarded. */
+  loadToken = 0;
   images = /* @__PURE__ */ new Map();
   storedSections = this._storedSections.asReadonly();
   loaded = this._loaded.asReadonly();
@@ -316,11 +318,16 @@ var HelpContentService = class _HelpContentService {
     if (this._loaded() || this.loading)
       return;
     this.loading = true;
+    const token = ++this.loadToken;
     const dmInfo = this.customService.emptyDmInfo;
     dmInfo.infoDomain = DMINFO_DOMAIN;
     dmInfo.infoName = CONTENT_NAME;
     dmInfo.infoDomainId = 0;
     this.customService.executeDmInfoAction("loadHelpContent", "r", [dmInfo], () => {
+      if (token !== this.loadToken) {
+        this.mPage.putLog("Stale help content response ignored");
+        return;
+      }
       try {
         const result = this.customService.get("loadHelpContent");
         if (result?.infoLongText) {
@@ -347,6 +354,7 @@ var HelpContentService = class _HelpContentService {
     this.loadContent();
   }
   saveContent(sections) {
+    this.loadToken++;
     const payload = {
       UPDT_DT_TM: (/* @__PURE__ */ new Date()).toISOString(),
       sections
@@ -429,4 +437,4 @@ export {
   hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-QYEORAWY.js.map
+//# sourceMappingURL=chunk-Z7DFK23Q.js.map
