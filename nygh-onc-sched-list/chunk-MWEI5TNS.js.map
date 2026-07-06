@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/version.ts"],
-  "sourcesContent": ["// Auto-generated build version file\n// Generated on: 2026-07-03T23:48:36.729Z\n\nexport const buildVersion = 'v0.0.73-feature/help-content-editor';\nexport const packageVersion = '0.0.73';\nexport const gitBranch = 'feature/help-content-editor';\n"],
-  "mappings": ";AAGO,IAAM,eAAe;AACrB,IAAM,iBAAiB;AACvB,IAAM,YAAY;",
-  "names": []
-}

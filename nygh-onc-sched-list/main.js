@@ -6,10 +6,10 @@ import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-MWEI5TNS.js";
+} from "./chunk-RYPWJYJP.js";
 import {
   HelpContentService
-} from "./chunk-MSNOXRPG.js";
+} from "./chunk-QYEORAWY.js";
 import {
   AccessControlService
 } from "./chunk-5YTREYET.js";
@@ -6194,7 +6194,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-7SSDUWEN.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-JMWMDKCG.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6204,12 +6204,12 @@ var routes = [
   },
   {
     path: "help-editor",
-    loadComponent: () => import("./chunk-3RXJMO47.js").then((m) => m.HelpEditorComponent),
+    loadComponent: () => import("./chunk-LSPNUPTG.js").then((m) => m.HelpEditorComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "advanced",
-    loadComponent: () => import("./chunk-AY5N4I2K.js").then((m) => m.AdvancedComponent),
+    loadComponent: () => import("./chunk-G3DFXKZ4.js").then((m) => m.AdvancedComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },

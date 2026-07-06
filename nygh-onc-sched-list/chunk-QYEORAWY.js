@@ -277,6 +277,16 @@ function mergeHelpSections(stored, shipped) {
   const appended = shipped.filter((s) => !storedIds.has(s.id)).map(toEditableSection);
   return [...stored, ...appended];
 }
+function mergeEditableSections(local, effective) {
+  const localIds = new Set(local.map((s) => s.id));
+  const appended = effective.filter((s) => !localIds.has(s.id));
+  return [...local, ...appended];
+}
+function hasUnsavedHelpChanges(loaded, current, baseline) {
+  if (!loaded || current.length === 0)
+    return false;
+  return JSON.stringify(current) !== JSON.stringify(baseline);
+}
 
 // src/app/services/help-content.service.ts
 var DMINFO_DOMAIN = "ONC_SCHED";
@@ -325,6 +335,16 @@ var HelpContentService = class _HelpContentService {
       this.loading = false;
       this._loaded.set(true);
     });
+  }
+  /**
+   * Re-invoke loadContent() after a stalled attempt (e.g. the dm_info
+   * callback never fired). Resets the in-flight `loading` guard so
+   * loadContent() doesn't just no-op; `_loaded` is left as-is since a prior
+   * attempt may have already succeeded by the time retry is requested.
+   */
+  retryLoad() {
+    this.loading = false;
+    this.loadContent();
   }
   saveContent(sections) {
     const payload = {
@@ -405,6 +425,8 @@ var HelpContentService = class _HelpContentService {
 export {
   HELP_SECTIONS,
   mergeHelpSections,
+  mergeEditableSections,
+  hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-MSNOXRPG.js.map
+//# sourceMappingURL=chunk-QYEORAWY.js.map

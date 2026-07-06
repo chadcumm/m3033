@@ -1,13 +1,17 @@
 import {
   HELP_SECTIONS,
   HelpContentService,
+  hasUnsavedHelpChanges,
+  mergeEditableSections,
   mergeHelpSections
-} from "./chunk-MSNOXRPG.js";
+} from "./chunk-QYEORAWY.js";
 import {
   AccessControlService
 } from "./chunk-5YTREYET.js";
 import "./chunk-AQNK5JSS.js";
-import "./chunk-UOIJNSGV.js";
+import {
+  MPageService
+} from "./chunk-UOIJNSGV.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -28316,382 +28320,476 @@ var RteComponent = class _RteComponent {
 // src/app/components/help-editor/help-editor.ts
 var _forTrack0 = ($index, $item) => $item.id;
 var _forTrack1 = ($index, $item) => $item.imageId;
-function HelpEditorComponent_Conditional_10_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_8_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 6);
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "p");
+    \u0275\u0275text(1, "Help content is taking too long to load.");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(2, "button", 6);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_8_Conditional_1_Template_button_click_2_listener() {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.retryLoad());
+    });
+    \u0275\u0275text(3, "Retry");
+    \u0275\u0275elementEnd();
+  }
+}
+function HelpEditorComponent_Conditional_8_Conditional_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "p");
+    \u0275\u0275text(1, "Loading help content\u2026");
+    \u0275\u0275elementEnd();
+  }
+}
+function HelpEditorComponent_Conditional_8_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 4);
+    \u0275\u0275conditionalCreate(1, HelpEditorComponent_Conditional_8_Conditional_1_Template, 4, 0)(2, HelpEditorComponent_Conditional_8_Conditional_2_Template, 2, 0, "p");
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275conditional(ctx_r1.loadTimedOut() ? 1 : 2);
+  }
+}
+function HelpEditorComponent_Conditional_9_Conditional_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 8);
     \u0275\u0275text(1, "No sections yet.");
     \u0275\u0275elementEnd();
   }
 }
-function HelpEditorComponent_Conditional_11_For_1_Conditional_6_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0, " \xB7 built-in ");
   }
 }
-function HelpEditorComponent_Conditional_11_For_1_Conditional_13_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_13_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 24);
+    \u0275\u0275elementStart(0, "span", 26);
     \u0275\u0275text(1, "\u25CF");
     \u0275\u0275elementEnd();
   }
 }
-function HelpEditorComponent_Conditional_11_For_1_Conditional_14_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_14_Template(rf, ctx) {
   if (rf & 1) {
-    const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 27);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_11_For_1_Conditional_14_Template_div_click_0_listener($event) {
+    const _r6 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 29);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_14_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275elementStart(1, "button", 28);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_11_For_1_Conditional_14_Template_button_click_1_listener() {
-      \u0275\u0275restoreView(_r4);
-      const s_r2 = \u0275\u0275nextContext().$implicit;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.confirmDelete(s_r2.id));
+    \u0275\u0275elementStart(1, "button", 30);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_14_Template_button_click_1_listener() {
+      \u0275\u0275restoreView(_r6);
+      const s_r5 = \u0275\u0275nextContext().$implicit;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.confirmDelete(s_r5.id));
     });
     \u0275\u0275text(2, "Confirm");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "button", 29);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_11_For_1_Conditional_14_Template_button_click_3_listener() {
-      \u0275\u0275restoreView(_r4);
-      const ctx_r2 = \u0275\u0275nextContext(3);
-      return \u0275\u0275resetView(ctx_r2.cancelDelete());
+    \u0275\u0275elementStart(3, "button", 31);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_14_Template_button_click_3_listener() {
+      \u0275\u0275restoreView(_r6);
+      const ctx_r1 = \u0275\u0275nextContext(4);
+      return \u0275\u0275resetView(ctx_r1.cancelDelete());
     });
     \u0275\u0275text(4, "Cancel");
     \u0275\u0275elementEnd()();
   }
 }
-function HelpEditorComponent_Conditional_11_For_1_Conditional_15_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_15_Template(rf, ctx) {
   if (rf & 1) {
-    const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 30);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_11_For_1_Conditional_15_Template_button_click_0_listener($event) {
-      \u0275\u0275restoreView(_r5);
-      const s_r2 = \u0275\u0275nextContext().$implicit;
-      const ctx_r2 = \u0275\u0275nextContext(2);
+    const _r7 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "button", 32);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_15_Template_button_click_0_listener($event) {
+      \u0275\u0275restoreView(_r7);
+      const s_r5 = \u0275\u0275nextContext().$implicit;
+      const ctx_r1 = \u0275\u0275nextContext(3);
       $event.stopPropagation();
-      return \u0275\u0275resetView(ctx_r2.requestDelete(s_r2.id));
+      return \u0275\u0275resetView(ctx_r1.requestDelete(s_r5.id));
     });
     \u0275\u0275text(1, "\xD7");
     \u0275\u0275elementEnd();
   }
 }
-function HelpEditorComponent_Conditional_11_For_1_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Template(rf, ctx) {
   if (rf & 1) {
-    const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 16);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_11_For_1_Template_div_click_0_listener() {
-      const s_r2 = \u0275\u0275restoreView(_r1).$implicit;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.selectSection(s_r2.id));
+    const _r4 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 18);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Template_div_click_0_listener() {
+      const s_r5 = \u0275\u0275restoreView(_r4).$implicit;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.selectSection(s_r5.id));
     });
-    \u0275\u0275elementStart(1, "div", 17)(2, "div", 18);
+    \u0275\u0275elementStart(1, "div", 19)(2, "div", 20);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 19);
+    \u0275\u0275elementStart(4, "div", 21);
     \u0275\u0275text(5);
-    \u0275\u0275conditionalCreate(6, HelpEditorComponent_Conditional_11_For_1_Conditional_6_Template, 1, 0);
+    \u0275\u0275conditionalCreate(6, HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_6_Template, 1, 0);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(7, "div", 20)(8, "div", 21)(9, "button", 22);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_11_For_1_Template_button_click_9_listener($event) {
-      const s_r2 = \u0275\u0275restoreView(_r1).$implicit;
-      const ctx_r2 = \u0275\u0275nextContext(2);
+    \u0275\u0275elementStart(7, "div", 22)(8, "div", 23)(9, "button", 24);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Template_button_click_9_listener($event) {
+      const s_r5 = \u0275\u0275restoreView(_r4).$implicit;
+      const ctx_r1 = \u0275\u0275nextContext(3);
       $event.stopPropagation();
-      return \u0275\u0275resetView(ctx_r2.moveSection(s_r2.id, -1));
+      return \u0275\u0275resetView(ctx_r1.moveSection(s_r5.id, -1));
     });
     \u0275\u0275text(10, "\u2191");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(11, "button", 23);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_11_For_1_Template_button_click_11_listener($event) {
-      const s_r2 = \u0275\u0275restoreView(_r1).$implicit;
-      const ctx_r2 = \u0275\u0275nextContext(2);
+    \u0275\u0275elementStart(11, "button", 25);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_3_For_1_Template_button_click_11_listener($event) {
+      const s_r5 = \u0275\u0275restoreView(_r4).$implicit;
+      const ctx_r1 = \u0275\u0275nextContext(3);
       $event.stopPropagation();
-      return \u0275\u0275resetView(ctx_r2.moveSection(s_r2.id, 1));
+      return \u0275\u0275resetView(ctx_r1.moveSection(s_r5.id, 1));
     });
     \u0275\u0275text(12, "\u2193");
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(13, HelpEditorComponent_Conditional_11_For_1_Conditional_13_Template, 2, 0, "span", 24)(14, HelpEditorComponent_Conditional_11_For_1_Conditional_14_Template, 5, 0, "div", 25)(15, HelpEditorComponent_Conditional_11_For_1_Conditional_15_Template, 2, 0, "button", 26);
+    \u0275\u0275conditionalCreate(13, HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_13_Template, 2, 0, "span", 26)(14, HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_14_Template, 5, 0, "div", 27)(15, HelpEditorComponent_Conditional_9_Conditional_3_For_1_Conditional_15_Template, 2, 0, "button", 28);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const s_r2 = ctx.$implicit;
-    const \u0275$index_24_r6 = ctx.$index;
-    const ctx_r2 = \u0275\u0275nextContext(2);
-    \u0275\u0275classProp("selected", ctx_r2.selectedId() === s_r2.id);
+    const s_r5 = ctx.$implicit;
+    const \u0275$index_39_r8 = ctx.$index;
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275classProp("selected", ctx_r1.selectedId() === s_r5.id);
     \u0275\u0275advance(3);
-    \u0275\u0275textInterpolate(s_r2.title || "(untitled)");
+    \u0275\u0275textInterpolate(s_r5.title || "(untitled)");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate3(" ", s_r2.items.length, " item", s_r2.items.length === 1 ? "" : "s", " \xB7 ", s_r2.media.length, " media ");
+    \u0275\u0275textInterpolate3(" ", s_r5.items.length, " item", s_r5.items.length === 1 ? "" : "s", " \xB7 ", s_r5.media.length, " media ");
     \u0275\u0275advance();
-    \u0275\u0275conditional(ctx_r2.isShipped(s_r2.id) ? 6 : -1);
+    \u0275\u0275conditional(ctx_r1.isShipped(s_r5.id) ? 6 : -1);
     \u0275\u0275advance(3);
-    \u0275\u0275property("disabled", \u0275$index_24_r6 === 0);
+    \u0275\u0275property("disabled", \u0275$index_39_r8 === 0);
     \u0275\u0275advance(2);
-    \u0275\u0275property("disabled", \u0275$index_24_r6 === ctx_r2.sections().length - 1);
+    \u0275\u0275property("disabled", \u0275$index_39_r8 === ctx_r1.sections().length - 1);
     \u0275\u0275advance(2);
-    \u0275\u0275conditional(ctx_r2.isShipped(s_r2.id) ? 13 : ctx_r2.pendingDeleteId() === s_r2.id ? 14 : 15);
+    \u0275\u0275conditional(ctx_r1.isShipped(s_r5.id) ? 13 : ctx_r1.pendingDeleteId() === s_r5.id ? 14 : 15);
   }
 }
-function HelpEditorComponent_Conditional_11_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275repeaterCreate(0, HelpEditorComponent_Conditional_11_For_1_Template, 16, 10, "div", 15, _forTrack0);
+    \u0275\u0275repeaterCreate(0, HelpEditorComponent_Conditional_9_Conditional_3_For_1_Template, 16, 10, "div", 17, _forTrack0);
   }
   if (rf & 2) {
-    const ctx_r2 = \u0275\u0275nextContext();
-    \u0275\u0275repeater(ctx_r2.sections());
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275repeater(ctx_r1.sections());
   }
 }
-function HelpEditorComponent_Conditional_22_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_14_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 13);
+    \u0275\u0275elementStart(0, "span", 15);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r2 = \u0275\u0275nextContext();
+    const ctx_r1 = \u0275\u0275nextContext(2);
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r2.statusMessage());
+    \u0275\u0275textInterpolate(ctx_r1.statusMessage());
   }
 }
-function HelpEditorComponent_Conditional_23_Conditional_4_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_Conditional_4_Template(rf, ctx) {
   if (rf & 1) {
-    const _r8 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 29);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_23_Conditional_4_Template_button_click_0_listener() {
-      \u0275\u0275restoreView(_r8);
-      const section_r9 = \u0275\u0275nextContext();
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.restoreDefault(section_r9.id));
+    const _r10 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "button", 31);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_15_Conditional_4_Template_button_click_0_listener() {
+      \u0275\u0275restoreView(_r10);
+      const section_r11 = \u0275\u0275nextContext();
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.restoreDefault(section_r11.id));
     });
     \u0275\u0275text(1, " Restore default ");
     \u0275\u0275elementEnd();
   }
 }
-function HelpEditorComponent_Conditional_23_Conditional_19_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_Conditional_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 40);
+    \u0275\u0275elementStart(0, "span", 42);
     \u0275\u0275text(1, "(you can see this)");
     \u0275\u0275elementEnd();
   }
 }
-function HelpEditorComponent_Conditional_23_For_23_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template(rf, ctx) {
   if (rf & 1) {
-    const _r10 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "tr")(1, "td")(2, "input", 45);
-    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_23_For_23_Template_input_input_2_listener($event) {
-      const \u0275$index_128_r11 = \u0275\u0275restoreView(_r10).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.updateItem(\u0275$index_128_r11, "term", $event.target.value));
+    const _r12 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "tr")(1, "td")(2, "input", 47);
+    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template_input_input_2_listener($event) {
+      const \u0275$index_143_r13 = \u0275\u0275restoreView(_r12).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.updateItem(\u0275$index_143_r13, "term", $event.target.value));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(3, "td")(4, "input", 45);
-    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_23_For_23_Template_input_input_4_listener($event) {
-      const \u0275$index_128_r11 = \u0275\u0275restoreView(_r10).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.updateItem(\u0275$index_128_r11, "description", $event.target.value));
+    \u0275\u0275elementStart(3, "td")(4, "input", 47);
+    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template_input_input_4_listener($event) {
+      const \u0275$index_143_r13 = \u0275\u0275restoreView(_r12).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.updateItem(\u0275$index_143_r13, "description", $event.target.value));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(5, "td")(6, "input", 45);
-    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_23_For_23_Template_input_input_6_listener($event) {
-      const \u0275$index_128_r11 = \u0275\u0275restoreView(_r10).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.updateItem(\u0275$index_128_r11, "technical", $event.target.value));
+    \u0275\u0275elementStart(5, "td")(6, "input", 47);
+    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template_input_input_6_listener($event) {
+      const \u0275$index_143_r13 = \u0275\u0275restoreView(_r12).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.updateItem(\u0275$index_143_r13, "technical", $event.target.value));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(7, "td", 46)(8, "button", 47);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_23_For_23_Template_button_click_8_listener() {
-      const \u0275$index_128_r11 = \u0275\u0275restoreView(_r10).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.moveItem(\u0275$index_128_r11, -1));
+    \u0275\u0275elementStart(7, "td", 48)(8, "button", 49);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template_button_click_8_listener() {
+      const \u0275$index_143_r13 = \u0275\u0275restoreView(_r12).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.moveItem(\u0275$index_143_r13, -1));
     });
     \u0275\u0275text(9, "\u2191");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "button", 48);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_23_For_23_Template_button_click_10_listener() {
-      const \u0275$index_128_r11 = \u0275\u0275restoreView(_r10).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.moveItem(\u0275$index_128_r11, 1));
+    \u0275\u0275elementStart(10, "button", 50);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template_button_click_10_listener() {
+      const \u0275$index_143_r13 = \u0275\u0275restoreView(_r12).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.moveItem(\u0275$index_143_r13, 1));
     });
     \u0275\u0275text(11, "\u2193");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "button", 49);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_23_For_23_Template_button_click_12_listener() {
-      const \u0275$index_128_r11 = \u0275\u0275restoreView(_r10).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.removeItem(\u0275$index_128_r11));
+    \u0275\u0275elementStart(12, "button", 51);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template_button_click_12_listener() {
+      const \u0275$index_143_r13 = \u0275\u0275restoreView(_r12).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.removeItem(\u0275$index_143_r13));
     });
     \u0275\u0275text(13, "\xD7");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
-    const item_r12 = ctx.$implicit;
-    const \u0275$index_128_r11 = ctx.$index;
-    const section_r9 = \u0275\u0275nextContext();
+    const item_r14 = ctx.$implicit;
+    const \u0275$index_143_r13 = ctx.$index;
+    const section_r11 = \u0275\u0275nextContext();
     \u0275\u0275advance(2);
-    \u0275\u0275property("value", item_r12.term);
+    \u0275\u0275property("value", item_r14.term);
     \u0275\u0275advance(2);
-    \u0275\u0275property("value", item_r12.description);
+    \u0275\u0275property("value", item_r14.description);
     \u0275\u0275advance(2);
-    \u0275\u0275property("value", item_r12.technical ?? "");
+    \u0275\u0275property("value", item_r14.technical ?? "");
     \u0275\u0275advance(2);
-    \u0275\u0275property("disabled", \u0275$index_128_r11 === 0);
+    \u0275\u0275property("disabled", \u0275$index_143_r13 === 0);
     \u0275\u0275advance(2);
-    \u0275\u0275property("disabled", \u0275$index_128_r11 === section_r9.items.length - 1);
+    \u0275\u0275property("disabled", \u0275$index_143_r13 === section_r11.items.length - 1);
   }
 }
-function HelpEditorComponent_Conditional_23_For_31_Conditional_1_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_For_31_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 50);
+    \u0275\u0275element(0, "img", 52);
   }
   if (rf & 2) {
     \u0275\u0275property("src", ctx, \u0275\u0275sanitizeUrl);
   }
 }
-function HelpEditorComponent_Conditional_23_For_31_Conditional_2_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_For_31_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 51);
+    \u0275\u0275elementStart(0, "div", 53);
     \u0275\u0275text(1, "loading\u2026");
     \u0275\u0275elementEnd();
   }
 }
-function HelpEditorComponent_Conditional_23_For_31_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_For_31_Template(rf, ctx) {
   if (rf & 1) {
-    const _r13 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 42);
-    \u0275\u0275conditionalCreate(1, HelpEditorComponent_Conditional_23_For_31_Conditional_1_Template, 1, 1, "img", 50)(2, HelpEditorComponent_Conditional_23_For_31_Conditional_2_Template, 2, 0, "div", 51);
-    \u0275\u0275elementStart(3, "input", 52);
-    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_23_For_31_Template_input_input_3_listener($event) {
-      const \u0275$index_164_r14 = \u0275\u0275restoreView(_r13).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.updateCaption(\u0275$index_164_r14, $event.target.value));
+    const _r15 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 44);
+    \u0275\u0275conditionalCreate(1, HelpEditorComponent_Conditional_9_Conditional_15_For_31_Conditional_1_Template, 1, 1, "img", 52)(2, HelpEditorComponent_Conditional_9_Conditional_15_For_31_Conditional_2_Template, 2, 0, "div", 53);
+    \u0275\u0275elementStart(3, "input", 54);
+    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_9_Conditional_15_For_31_Template_input_input_3_listener($event) {
+      const \u0275$index_179_r16 = \u0275\u0275restoreView(_r15).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.updateCaption(\u0275$index_179_r16, $event.target.value));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "button", 29);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_23_For_31_Template_button_click_4_listener() {
-      const \u0275$index_164_r14 = \u0275\u0275restoreView(_r13).$index;
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.removeMedia(\u0275$index_164_r14));
+    \u0275\u0275elementStart(4, "button", 31);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_15_For_31_Template_button_click_4_listener() {
+      const \u0275$index_179_r16 = \u0275\u0275restoreView(_r15).$index;
+      const ctx_r1 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r1.removeMedia(\u0275$index_179_r16));
     });
     \u0275\u0275text(5, "Remove");
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    let tmp_13_0;
-    const m_r15 = ctx.$implicit;
-    const ctx_r2 = \u0275\u0275nextContext(2);
+    let tmp_14_0;
+    const m_r17 = ctx.$implicit;
+    const ctx_r1 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
-    \u0275\u0275conditional((tmp_13_0 = ctx_r2.imageUrl(m_r15.imageId)) ? 1 : 2, tmp_13_0);
+    \u0275\u0275conditional((tmp_14_0 = ctx_r1.imageUrl(m_r17.imageId)) ? 1 : 2, tmp_14_0);
     \u0275\u0275advance(2);
-    \u0275\u0275property("value", m_r15.caption ?? "");
+    \u0275\u0275property("value", m_r17.caption ?? "");
   }
 }
-function HelpEditorComponent_Conditional_23_Conditional_33_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_Conditional_33_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 44);
+    \u0275\u0275elementStart(0, "div", 46);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r2 = \u0275\u0275nextContext(2);
+    const ctx_r1 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r2.mediaMessage());
+    \u0275\u0275textInterpolate(ctx_r1.mediaMessage());
   }
 }
-function HelpEditorComponent_Conditional_23_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_15_Template(rf, ctx) {
   if (rf & 1) {
-    const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 31)(1, "label", 32);
+    const _r9 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 33)(1, "label", 34);
     \u0275\u0275text(2, "Title");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "input", 33);
-    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_23_Template_input_input_3_listener($event) {
-      \u0275\u0275restoreView(_r7);
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.updateTitle($event.target.value));
+    \u0275\u0275elementStart(3, "input", 35);
+    \u0275\u0275listener("input", function HelpEditorComponent_Conditional_9_Conditional_15_Template_input_input_3_listener($event) {
+      \u0275\u0275restoreView(_r9);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.updateTitle($event.target.value));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(4, HelpEditorComponent_Conditional_23_Conditional_4_Template, 2, 0, "button", 34);
+    \u0275\u0275conditionalCreate(4, HelpEditorComponent_Conditional_9_Conditional_15_Conditional_4_Template, 2, 0, "button", 36);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "div", 35)(6, "app-rte", 36);
-    \u0275\u0275twoWayListener("htmlChange", function HelpEditorComponent_Conditional_23_Template_app_rte_htmlChange_6_listener($event) {
-      \u0275\u0275restoreView(_r7);
-      const ctx_r2 = \u0275\u0275nextContext();
-      \u0275\u0275twoWayBindingSet(ctx_r2.bodyDraft, $event) || (ctx_r2.bodyDraft = $event);
+    \u0275\u0275elementStart(5, "div", 37)(6, "app-rte", 38);
+    \u0275\u0275twoWayListener("htmlChange", function HelpEditorComponent_Conditional_9_Conditional_15_Template_app_rte_htmlChange_6_listener($event) {
+      \u0275\u0275restoreView(_r9);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      \u0275\u0275twoWayBindingSet(ctx_r1.bodyDraft, $event) || (ctx_r1.bodyDraft = $event);
       return \u0275\u0275resetView($event);
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(7, "div", 37)(8, "strong");
+    \u0275\u0275elementStart(7, "div", 39)(8, "strong");
     \u0275\u0275text(9, "Items");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "table", 38)(11, "thead")(12, "tr")(13, "th");
+    \u0275\u0275elementStart(10, "table", 40)(11, "thead")(12, "tr")(13, "th");
     \u0275\u0275text(14, "Term");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(15, "th");
     \u0275\u0275text(16, "Description");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(17, "th", 39);
+    \u0275\u0275elementStart(17, "th", 41);
     \u0275\u0275text(18, " Technical ");
-    \u0275\u0275conditionalCreate(19, HelpEditorComponent_Conditional_23_Conditional_19_Template, 2, 0, "span", 40);
+    \u0275\u0275conditionalCreate(19, HelpEditorComponent_Conditional_9_Conditional_15_Conditional_19_Template, 2, 0, "span", 42);
     \u0275\u0275elementEnd();
     \u0275\u0275element(20, "th");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(21, "tbody");
-    \u0275\u0275repeaterCreate(22, HelpEditorComponent_Conditional_23_For_23_Template, 14, 5, "tr", null, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275repeaterCreate(22, HelpEditorComponent_Conditional_9_Conditional_15_For_23_Template, 14, 5, "tr", null, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(24, "button", 29);
-    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_23_Template_button_click_24_listener() {
-      \u0275\u0275restoreView(_r7);
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.addItem());
+    \u0275\u0275elementStart(24, "button", 31);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Conditional_15_Template_button_click_24_listener() {
+      \u0275\u0275restoreView(_r9);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.addItem());
     });
     \u0275\u0275text(25, "+ Add item");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(26, "div", 37)(27, "strong");
+    \u0275\u0275elementStart(26, "div", 39)(27, "strong");
     \u0275\u0275text(28, "Media");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(29, "div", 41);
-    \u0275\u0275repeaterCreate(30, HelpEditorComponent_Conditional_23_For_31_Template, 6, 2, "div", 42, _forTrack1);
+    \u0275\u0275elementStart(29, "div", 43);
+    \u0275\u0275repeaterCreate(30, HelpEditorComponent_Conditional_9_Conditional_15_For_31_Template, 6, 2, "div", 44, _forTrack1);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(32, "input", 43);
-    \u0275\u0275listener("change", function HelpEditorComponent_Conditional_23_Template_input_change_32_listener($event) {
-      \u0275\u0275restoreView(_r7);
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onFileSelected($event));
+    \u0275\u0275elementStart(32, "input", 45);
+    \u0275\u0275listener("change", function HelpEditorComponent_Conditional_9_Conditional_15_Template_input_change_32_listener($event) {
+      \u0275\u0275restoreView(_r9);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.onFileSelected($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(33, HelpEditorComponent_Conditional_23_Conditional_33_Template, 2, 1, "div", 44);
+    \u0275\u0275conditionalCreate(33, HelpEditorComponent_Conditional_9_Conditional_15_Conditional_33_Template, 2, 1, "div", 46);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const section_r9 = ctx;
-    const ctx_r2 = \u0275\u0275nextContext();
+    const section_r11 = ctx;
+    const ctx_r1 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(3);
-    \u0275\u0275property("value", section_r9.title);
+    \u0275\u0275property("value", section_r11.title);
     \u0275\u0275advance();
-    \u0275\u0275conditional(ctx_r2.isShipped(section_r9.id) ? 4 : -1);
+    \u0275\u0275conditional(ctx_r1.isShipped(section_r11.id) ? 4 : -1);
     \u0275\u0275advance(2);
-    \u0275\u0275twoWayProperty("html", ctx_r2.bodyDraft);
+    \u0275\u0275twoWayProperty("html", ctx_r1.bodyDraft);
     \u0275\u0275advance(13);
-    \u0275\u0275conditional(ctx_r2.accessControl.canSeeTechnicalHelp() ? 19 : -1);
+    \u0275\u0275conditional(ctx_r1.accessControl.canSeeTechnicalHelp() ? 19 : -1);
     \u0275\u0275advance(3);
-    \u0275\u0275repeater(section_r9.items);
+    \u0275\u0275repeater(section_r11.items);
     \u0275\u0275advance(8);
-    \u0275\u0275repeater(section_r9.media);
+    \u0275\u0275repeater(section_r11.media);
     \u0275\u0275advance(3);
-    \u0275\u0275conditional(ctx_r2.mediaMessage() ? 33 : -1);
+    \u0275\u0275conditional(ctx_r1.mediaMessage() ? 33 : -1);
   }
 }
-function HelpEditorComponent_Conditional_24_Template(rf, ctx) {
+function HelpEditorComponent_Conditional_9_Conditional_16_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 14);
+    \u0275\u0275elementStart(0, "div", 16);
     \u0275\u0275text(1, "Select a section to edit, or create a new one.");
     \u0275\u0275elementEnd();
   }
 }
+function HelpEditorComponent_Conditional_9_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r3 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 5)(1, "div", 7);
+    \u0275\u0275conditionalCreate(2, HelpEditorComponent_Conditional_9_Conditional_2_Template, 2, 0, "div", 8)(3, HelpEditorComponent_Conditional_9_Conditional_3_Template, 2, 0);
+    \u0275\u0275elementStart(4, "button", 9);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Template_button_click_4_listener() {
+      \u0275\u0275restoreView(_r3);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.newSection());
+    });
+    \u0275\u0275text(5, "+ New section");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(6, "div", 10)(7, "div", 11)(8, "button", 12);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Template_button_click_8_listener() {
+      \u0275\u0275restoreView(_r3);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.save());
+    });
+    \u0275\u0275text(9, "Save");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(10, "button", 13);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Template_button_click_10_listener() {
+      \u0275\u0275restoreView(_r3);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.discard());
+    });
+    \u0275\u0275text(11, "Discard");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(12, "button", 14);
+    \u0275\u0275listener("click", function HelpEditorComponent_Conditional_9_Template_button_click_12_listener() {
+      \u0275\u0275restoreView(_r3);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.restoreAllDefaults());
+    });
+    \u0275\u0275text(13, "Restore all defaults");
+    \u0275\u0275elementEnd();
+    \u0275\u0275conditionalCreate(14, HelpEditorComponent_Conditional_9_Conditional_14_Template, 2, 1, "span", 15);
+    \u0275\u0275elementEnd();
+    \u0275\u0275conditionalCreate(15, HelpEditorComponent_Conditional_9_Conditional_15_Template, 34, 5)(16, HelpEditorComponent_Conditional_9_Conditional_16_Template, 2, 0, "div", 16);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    let tmp_5_0;
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275advance(2);
+    \u0275\u0275conditional(ctx_r1.sections().length === 0 ? 2 : 3);
+    \u0275\u0275advance(6);
+    \u0275\u0275property("disabled", !ctx_r1.hasUnsavedChanges());
+    \u0275\u0275advance(2);
+    \u0275\u0275property("disabled", !ctx_r1.hasUnsavedChanges());
+    \u0275\u0275advance(4);
+    \u0275\u0275conditional(ctx_r1.statusMessage() ? 14 : -1);
+    \u0275\u0275advance();
+    \u0275\u0275conditional((tmp_5_0 = ctx_r1.selectedSection()) ? 15 : 16, tmp_5_0);
+  }
+}
+var LOAD_TIMEOUT_MS = 1e4;
 var ALLOWED_TAGS = ["p", "br", "strong", "b", "em", "i", "u", "h2", "h3", "ul", "ol", "li", "a"];
 var ALLOWED_ATTR = ["href", "target", "rel"];
 var HelpEditorComponent = class _HelpEditorComponent {
   helpService = inject(HelpContentService);
+  mPage = inject(MPageService);
   accessControl = inject(AccessControlService);
   rte = viewChild(RteComponent, ...ngDevMode ? [{ debugName: "rte" }] : (
     /* istanbul ignore next */
@@ -28722,19 +28820,22 @@ var HelpEditorComponent = class _HelpEditorComponent {
     []
   ));
   // RTE two-way target for the selected section
+  /** Exposes the service's loaded state to the template so it can gate the
+   * whole master/detail editor until built-in + stored sections are seeded. */
+  loaded = this.helpService.loaded;
+  loadTimedOut = signal(false, ...ngDevMode ? [{ debugName: "loadTimedOut" }] : (
+    /* istanbul ignore next */
+    []
+  ));
   seeded = false;
   statusTimer = null;
+  loadTimeoutTimer = null;
   pendingImageIds = /* @__PURE__ */ new Set();
   selectedSection = computed(() => this.sections().find((s) => s.id === this.selectedId()) ?? null, ...ngDevMode ? [{ debugName: "selectedSection" }] : (
     /* istanbul ignore next */
     []
   ));
-  hasUnsavedChanges = computed(() => {
-    if (!this.helpService.loaded() || this.sections().length === 0)
-      return false;
-    const baseline = this.helpService.effectiveSections();
-    return JSON.stringify(this.withDraftApplied()) !== JSON.stringify(baseline);
-  }, ...ngDevMode ? [{ debugName: "hasUnsavedChanges" }] : (
+  hasUnsavedChanges = computed(() => hasUnsavedHelpChanges(this.helpService.loaded(), this.withDraftApplied(), this.helpService.effectiveSections()), ...ngDevMode ? [{ debugName: "hasUnsavedChanges" }] : (
     /* istanbul ignore next */
     []
   ));
@@ -28745,10 +28846,14 @@ var HelpEditorComponent = class _HelpEditorComponent {
       return;
     untracked(() => {
       this.seeded = true;
-      this.sections.set(JSON.parse(JSON.stringify(effective)));
-      const first2 = effective[0]?.id ?? null;
-      this.selectedId.set(first2);
-      this.bodyDraft.set(effective[0]?.bodyHtml ?? "");
+      this.clearLoadTimeout();
+      const current = this.sections();
+      const seeded = current.length === 0 ? JSON.parse(JSON.stringify(effective)) : JSON.parse(JSON.stringify(mergeEditableSections(current, effective)));
+      this.sections.set(seeded);
+      const keepSelected = seeded.find((s) => s.id === this.selectedId());
+      const first2 = keepSelected ?? seeded[0] ?? null;
+      this.selectedId.set(first2?.id ?? null);
+      this.bodyDraft.set(first2?.bodyHtml ?? "");
     });
   }, ...ngDevMode ? [{ debugName: "seedEffect" }] : (
     /* istanbul ignore next */
@@ -28756,10 +28861,35 @@ var HelpEditorComponent = class _HelpEditorComponent {
   ));
   ngOnInit() {
     this.helpService.loadContent();
+    this.startLoadTimeout();
   }
   ngOnDestroy() {
     if (this.statusTimer)
       clearTimeout(this.statusTimer);
+    this.clearLoadTimeout();
+  }
+  /** Component-level watchdog: if the dm_info read never calls back, surface
+   * a retry affordance instead of leaving the editor stuck on "Loading…". */
+  startLoadTimeout() {
+    this.loadTimedOut.set(false);
+    this.clearLoadTimeout();
+    this.loadTimeoutTimer = setTimeout(() => {
+      if (!this.helpService.loaded()) {
+        this.mPage.putLog("Help content load timed out after 10s");
+        this.loadTimedOut.set(true);
+      }
+    }, LOAD_TIMEOUT_MS);
+  }
+  clearLoadTimeout() {
+    if (this.loadTimeoutTimer) {
+      clearTimeout(this.loadTimeoutTimer);
+      this.loadTimeoutTimer = null;
+    }
+  }
+  retryLoad() {
+    this.loadTimedOut.set(false);
+    this.helpService.retryLoad();
+    this.startLoadTimeout();
   }
   /** sections with the live RTE draft applied to the selected section */
   withDraftApplied() {
@@ -28973,7 +29103,7 @@ var HelpEditorComponent = class _HelpEditorComponent {
     if (rf & 2) {
       \u0275\u0275queryAdvance();
     }
-  }, decls: 25, vars: 5, consts: [[1, "help-editor-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail", "help-editor-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor", "help-editor-detail"], [1, "help-editor-actions-row"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-danger", 3, "click"], [1, "status-message"], [1, "group-editor-empty"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "help-editor-row-actions"], [1, "help-editor-row-move"], ["type", "button", "aria-label", "Move section up", "title", "Move up", 1, "help-editor-move-btn", 3, "click", "disabled"], ["type", "button", "aria-label", "Move section down", "title", "Move down", 1, "help-editor-move-btn", 3, "click", "disabled"], ["title", "Built-in section \u2014 can be edited or restored, not deleted", 1, "help-editor-builtin-mark"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete section", "title", "Delete section", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete section", "title", "Delete section", 1, "group-row-delete", 3, "click"], [1, "help-editor-title-row"], ["for", "sectionTitleInput", 1, "help-editor-title-label"], ["id", "sectionTitleInput", "type", "text", 1, "fusion-input", "help-editor-title-input", 3, "input", "value"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small"], [1, "help-editor-rte-wrap"], [3, "htmlChange", "html"], [1, "help-editor-section-block"], [1, "fusion-grid", "help-editor-items-table"], ["title", "Shown only to positions granted Technical Help on the Security tab"], [1, "help-editor-hint"], [1, "help-editor-media-grid"], [1, "help-editor-media-item"], ["type", "file", "accept", "image/png,image/jpeg,image/webp,image/gif", 1, "help-editor-file-input", 3, "change"], [1, "help-editor-media-message"], ["type", "text", 1, "fusion-input", 3, "input", "value"], [1, "help-editor-items-actions"], ["type", "button", "aria-label", "Move item up", "title", "Move up", 1, "help-editor-move-btn", 3, "click", "disabled"], ["type", "button", "aria-label", "Move item down", "title", "Move down", 1, "help-editor-move-btn", 3, "click", "disabled"], ["type", "button", "aria-label", "Remove item", "title", "Remove item", 1, "group-row-delete", 3, "click"], ["alt", "", 1, "help-editor-media-thumb", 3, "src"], [1, "help-editor-media-thumb", "help-editor-media-loading"], ["type", "text", "placeholder", "Caption", 1, "fusion-input", "help-editor-media-caption", 3, "input", "value"]], template: function HelpEditorComponent_Template(rf, ctx) {
+  }, decls: 10, vars: 1, consts: [[1, "help-editor-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "help-editor-loading"], [1, "groups-master-detail", "help-editor-master-detail"], ["type", "button", 1, "fusion-button", 3, "click"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor", "help-editor-detail"], [1, "help-editor-actions-row"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-danger", 3, "click"], [1, "status-message"], [1, "group-editor-empty"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "help-editor-row-actions"], [1, "help-editor-row-move"], ["type", "button", "aria-label", "Move section up", "title", "Move up", 1, "help-editor-move-btn", 3, "click", "disabled"], ["type", "button", "aria-label", "Move section down", "title", "Move down", 1, "help-editor-move-btn", 3, "click", "disabled"], ["title", "Built-in section \u2014 can be edited or restored, not deleted", 1, "help-editor-builtin-mark"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete section", "title", "Delete section", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete section", "title", "Delete section", 1, "group-row-delete", 3, "click"], [1, "help-editor-title-row"], ["for", "sectionTitleInput", 1, "help-editor-title-label"], ["id", "sectionTitleInput", "type", "text", 1, "fusion-input", "help-editor-title-input", 3, "input", "value"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small"], [1, "help-editor-rte-wrap"], [3, "htmlChange", "html"], [1, "help-editor-section-block"], [1, "fusion-grid", "help-editor-items-table"], ["title", "Shown only to positions granted Technical Help on the Security tab"], [1, "help-editor-hint"], [1, "help-editor-media-grid"], [1, "help-editor-media-item"], ["type", "file", "accept", "image/png,image/jpeg,image/webp,image/gif", 1, "help-editor-file-input", 3, "change"], [1, "help-editor-media-message"], ["type", "text", 1, "fusion-input", 3, "input", "value"], [1, "help-editor-items-actions"], ["type", "button", "aria-label", "Move item up", "title", "Move up", 1, "help-editor-move-btn", 3, "click", "disabled"], ["type", "button", "aria-label", "Move item down", "title", "Move down", 1, "help-editor-move-btn", 3, "click", "disabled"], ["type", "button", "aria-label", "Remove item", "title", "Remove item", 1, "group-row-delete", 3, "click"], ["alt", "", 1, "help-editor-media-thumb", 3, "src"], [1, "help-editor-media-thumb", "help-editor-media-loading"], ["type", "text", "placeholder", "Caption", 1, "fusion-input", "help-editor-media-caption", 3, "input", "value"]], template: function HelpEditorComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h3");
       \u0275\u0275text(4, "Help Content Editor");
@@ -28981,51 +29111,15 @@ var HelpEditorComponent = class _HelpEditorComponent {
       \u0275\u0275elementStart(5, "p");
       \u0275\u0275text(6, 'Edit the sections shown in the "About this view" help modal. Changes are saved for all users.');
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(7, "div", 3)(8, "div", 4)(9, "div", 5);
-      \u0275\u0275conditionalCreate(10, HelpEditorComponent_Conditional_10_Template, 2, 0, "div", 6)(11, HelpEditorComponent_Conditional_11_Template, 2, 0);
-      \u0275\u0275elementStart(12, "button", 7);
-      \u0275\u0275listener("click", function HelpEditorComponent_Template_button_click_12_listener() {
-        return ctx.newSection();
-      });
-      \u0275\u0275text(13, "+ New section");
-      \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(14, "div", 8)(15, "div", 9)(16, "button", 10);
-      \u0275\u0275listener("click", function HelpEditorComponent_Template_button_click_16_listener() {
-        return ctx.save();
-      });
-      \u0275\u0275text(17, "Save");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(18, "button", 11);
-      \u0275\u0275listener("click", function HelpEditorComponent_Template_button_click_18_listener() {
-        return ctx.discard();
-      });
-      \u0275\u0275text(19, "Discard");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(20, "button", 12);
-      \u0275\u0275listener("click", function HelpEditorComponent_Template_button_click_20_listener() {
-        return ctx.restoreAllDefaults();
-      });
-      \u0275\u0275text(21, "Restore all defaults");
-      \u0275\u0275elementEnd();
-      \u0275\u0275conditionalCreate(22, HelpEditorComponent_Conditional_22_Template, 2, 1, "span", 13);
-      \u0275\u0275elementEnd();
-      \u0275\u0275conditionalCreate(23, HelpEditorComponent_Conditional_23_Template, 34, 5)(24, HelpEditorComponent_Conditional_24_Template, 2, 0, "div", 14);
-      \u0275\u0275elementEnd()()()()();
+      \u0275\u0275elementStart(7, "div", 3);
+      \u0275\u0275conditionalCreate(8, HelpEditorComponent_Conditional_8_Template, 3, 1, "div", 4)(9, HelpEditorComponent_Conditional_9_Template, 17, 5, "div", 5);
+      \u0275\u0275elementEnd()()();
     }
     if (rf & 2) {
-      let tmp_4_0;
-      \u0275\u0275advance(10);
-      \u0275\u0275conditional(ctx.sections().length === 0 ? 10 : 11);
-      \u0275\u0275advance(6);
-      \u0275\u0275property("disabled", !ctx.hasUnsavedChanges());
-      \u0275\u0275advance(2);
-      \u0275\u0275property("disabled", !ctx.hasUnsavedChanges());
-      \u0275\u0275advance(4);
-      \u0275\u0275conditional(ctx.statusMessage() ? 22 : -1);
-      \u0275\u0275advance();
-      \u0275\u0275conditional((tmp_4_0 = ctx.selectedSection()) ? 23 : 24, tmp_4_0);
+      \u0275\u0275advance(8);
+      \u0275\u0275conditional(!ctx.loaded() ? 8 : 9);
     }
-  }, dependencies: [RteComponent], styles: ['@charset "UTF-8";\n\n\n\n.help-editor-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 1300px;\n}\n.help-editor-master-detail[_ngcontent-%COMP%] {\n  grid-template-columns: 300px 1fr;\n  align-items: start;\n}\n.help-editor-detail[_ngcontent-%COMP%] {\n  min-height: 0;\n}\n.help-editor-row-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  flex-shrink: 0;\n}\n.help-editor-row-move[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.help-editor-move-btn[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 0.7rem;\n  line-height: 1;\n  padding: 1px 4px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.help-editor-move-btn[_ngcontent-%COMP%]:hover:not(:disabled) {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-text);\n}\n.help-editor-move-btn[_ngcontent-%COMP%]:disabled {\n  opacity: 0.3;\n  cursor: default;\n}\n.help-editor-builtin-mark[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light);\n  font-size: 0.5rem;\n  padding: 2px 6px;\n  cursor: help;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.help-editor-actions-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-bottom: 0.75rem;\n  margin-bottom: 1rem;\n  border-bottom: 1px solid var(--fusion-border);\n}\n.help-editor-title-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-title-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-title-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 420px;\n}\n.help-editor-rte-wrap[_ngcontent-%COMP%] {\n  margin-bottom: 1rem;\n}\n.help-editor-section-block[_ngcontent-%COMP%] {\n  margin-bottom: 1.25rem;\n}\n.help-editor-section-block[_ngcontent-%COMP%]    > strong[_ngcontent-%COMP%] {\n  display: block;\n  margin-bottom: 0.375rem;\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-items-table[_ngcontent-%COMP%] {\n  margin-bottom: 0.5rem;\n}\n.help-editor-items-table[_ngcontent-%COMP%]   input.fusion-input[_ngcontent-%COMP%] {\n  width: 100%;\n}\n.help-editor-items-actions[_ngcontent-%COMP%] {\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n  gap: 2px;\n}\n.help-editor-hint[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n  margin-top: 2px;\n}\n.help-editor-media-grid[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-media-item[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n}\n.help-editor-media-thumb[_ngcontent-%COMP%] {\n  width: 120px;\n  height: 120px;\n  object-fit: cover;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n}\n.help-editor-media-loading[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--fusion-text-light);\n  font-size: 0.75rem;\n}\n.help-editor-media-caption[_ngcontent-%COMP%] {\n  width: 120px;\n}\n.help-editor-file-input[_ngcontent-%COMP%] {\n  display: block;\n  margin-bottom: 0.5rem;\n  font-size: 0.875rem;\n}\n.help-editor-media-message[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n}\n/*# sourceMappingURL=help-editor.css.map */'], changeDetection: 0 });
+  }, dependencies: [RteComponent], styles: ['@charset "UTF-8";\n\n\n\n.help-editor-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 1300px;\n}\n.help-editor-loading[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  gap: 0.75rem;\n  padding: 2rem 0;\n  color: var(--fusion-text-light);\n}\n.help-editor-master-detail[_ngcontent-%COMP%] {\n  grid-template-columns: 300px 1fr;\n  align-items: start;\n}\n.help-editor-detail[_ngcontent-%COMP%] {\n  min-height: 0;\n}\n.help-editor-row-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  flex-shrink: 0;\n}\n.help-editor-row-move[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.help-editor-move-btn[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 0.7rem;\n  line-height: 1;\n  padding: 1px 4px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.help-editor-move-btn[_ngcontent-%COMP%]:hover:not(:disabled) {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-text);\n}\n.help-editor-move-btn[_ngcontent-%COMP%]:disabled {\n  opacity: 0.3;\n  cursor: default;\n}\n.help-editor-builtin-mark[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light);\n  font-size: 0.5rem;\n  padding: 2px 6px;\n  cursor: help;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.help-editor-actions-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-bottom: 0.75rem;\n  margin-bottom: 1rem;\n  border-bottom: 1px solid var(--fusion-border);\n}\n.help-editor-title-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-title-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-title-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 420px;\n}\n.help-editor-rte-wrap[_ngcontent-%COMP%] {\n  margin-bottom: 1rem;\n}\n.help-editor-section-block[_ngcontent-%COMP%] {\n  margin-bottom: 1.25rem;\n}\n.help-editor-section-block[_ngcontent-%COMP%]    > strong[_ngcontent-%COMP%] {\n  display: block;\n  margin-bottom: 0.375rem;\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-items-table[_ngcontent-%COMP%] {\n  margin-bottom: 0.5rem;\n}\n.help-editor-items-table[_ngcontent-%COMP%]   input.fusion-input[_ngcontent-%COMP%] {\n  width: 100%;\n}\n.help-editor-items-actions[_ngcontent-%COMP%] {\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n  gap: 2px;\n}\n.help-editor-hint[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n  margin-top: 2px;\n}\n.help-editor-media-grid[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-media-item[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n}\n.help-editor-media-thumb[_ngcontent-%COMP%] {\n  width: 120px;\n  height: 120px;\n  object-fit: cover;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n}\n.help-editor-media-loading[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--fusion-text-light);\n  font-size: 0.75rem;\n}\n.help-editor-media-caption[_ngcontent-%COMP%] {\n  width: 120px;\n}\n.help-editor-file-input[_ngcontent-%COMP%] {\n  display: block;\n  margin-bottom: 0.5rem;\n  font-size: 0.875rem;\n}\n.help-editor-media-message[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n}\n/*# sourceMappingURL=help-editor.css.map */'], changeDetection: 0 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(HelpEditorComponent, [{
@@ -29037,6 +29131,16 @@ var HelpEditorComponent = class _HelpEditorComponent {
       <p>Edit the sections shown in the "About this view" help modal. Changes are saved for all users.</p>
     </div>
     <div class="fusion-panel-body">
+      @if (!loaded()) {
+        <div class="help-editor-loading">
+          @if (loadTimedOut()) {
+            <p>Help content is taking too long to load.</p>
+            <button class="fusion-button" type="button" (click)="retryLoad()">Retry</button>
+          } @else {
+            <p>Loading help content&hellip;</p>
+          }
+        </div>
+      } @else {
       <div class="groups-master-detail help-editor-master-detail">
         <div class="groups-list">
           @if (sections().length === 0) {
@@ -29204,14 +29308,15 @@ var HelpEditorComponent = class _HelpEditorComponent {
           }
         </div>
       </div>
+      }
     </div>
   </div>
 </div>
-`, styles: ['@charset "UTF-8";\n\n/* src/app/components/help-editor/help-editor.scss */\n.help-editor-container {\n  padding: 1.5rem;\n  max-width: 1300px;\n}\n.help-editor-master-detail {\n  grid-template-columns: 300px 1fr;\n  align-items: start;\n}\n.help-editor-detail {\n  min-height: 0;\n}\n.help-editor-row-actions {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  flex-shrink: 0;\n}\n.help-editor-row-move {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.help-editor-move-btn {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 0.7rem;\n  line-height: 1;\n  padding: 1px 4px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.help-editor-move-btn:hover:not(:disabled) {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-text);\n}\n.help-editor-move-btn:disabled {\n  opacity: 0.3;\n  cursor: default;\n}\n.help-editor-builtin-mark {\n  color: var(--fusion-text-light);\n  font-size: 0.5rem;\n  padding: 2px 6px;\n  cursor: help;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.help-editor-actions-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-bottom: 0.75rem;\n  margin-bottom: 1rem;\n  border-bottom: 1px solid var(--fusion-border);\n}\n.help-editor-title-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-title-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-title-input {\n  flex: 1;\n  max-width: 420px;\n}\n.help-editor-rte-wrap {\n  margin-bottom: 1rem;\n}\n.help-editor-section-block {\n  margin-bottom: 1.25rem;\n}\n.help-editor-section-block > strong {\n  display: block;\n  margin-bottom: 0.375rem;\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-items-table {\n  margin-bottom: 0.5rem;\n}\n.help-editor-items-table input.fusion-input {\n  width: 100%;\n}\n.help-editor-items-actions {\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n  gap: 2px;\n}\n.help-editor-hint {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n  margin-top: 2px;\n}\n.help-editor-media-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-media-item {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n}\n.help-editor-media-thumb {\n  width: 120px;\n  height: 120px;\n  object-fit: cover;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n}\n.help-editor-media-loading {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--fusion-text-light);\n  font-size: 0.75rem;\n}\n.help-editor-media-caption {\n  width: 120px;\n}\n.help-editor-file-input {\n  display: block;\n  margin-bottom: 0.5rem;\n  font-size: 0.875rem;\n}\n.help-editor-media-message {\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n}\n/*# sourceMappingURL=help-editor.css.map */\n'] }]
+`, styles: ['@charset "UTF-8";\n\n/* src/app/components/help-editor/help-editor.scss */\n.help-editor-container {\n  padding: 1.5rem;\n  max-width: 1300px;\n}\n.help-editor-loading {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  gap: 0.75rem;\n  padding: 2rem 0;\n  color: var(--fusion-text-light);\n}\n.help-editor-master-detail {\n  grid-template-columns: 300px 1fr;\n  align-items: start;\n}\n.help-editor-detail {\n  min-height: 0;\n}\n.help-editor-row-actions {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  flex-shrink: 0;\n}\n.help-editor-row-move {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.help-editor-move-btn {\n  background: transparent;\n  border: 1px solid transparent;\n  color: var(--fusion-text-light);\n  font-size: 0.7rem;\n  line-height: 1;\n  padding: 1px 4px;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.help-editor-move-btn:hover:not(:disabled) {\n  background: var(--fusion-bg-header);\n  color: var(--fusion-text);\n}\n.help-editor-move-btn:disabled {\n  opacity: 0.3;\n  cursor: default;\n}\n.help-editor-builtin-mark {\n  color: var(--fusion-text-light);\n  font-size: 0.5rem;\n  padding: 2px 6px;\n  cursor: help;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.help-editor-actions-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-bottom: 0.75rem;\n  margin-bottom: 1rem;\n  border-bottom: 1px solid var(--fusion-border);\n}\n.help-editor-title-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-title-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-title-input {\n  flex: 1;\n  max-width: 420px;\n}\n.help-editor-rte-wrap {\n  margin-bottom: 1rem;\n}\n.help-editor-section-block {\n  margin-bottom: 1.25rem;\n}\n.help-editor-section-block > strong {\n  display: block;\n  margin-bottom: 0.375rem;\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.help-editor-items-table {\n  margin-bottom: 0.5rem;\n}\n.help-editor-items-table input.fusion-input {\n  width: 100%;\n}\n.help-editor-items-actions {\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n  gap: 2px;\n}\n.help-editor-hint {\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n  margin-top: 2px;\n}\n.help-editor-media-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n.help-editor-media-item {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25rem;\n}\n.help-editor-media-thumb {\n  width: 120px;\n  height: 120px;\n  object-fit: cover;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  background: var(--fusion-bg-header);\n}\n.help-editor-media-loading {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--fusion-text-light);\n  font-size: 0.75rem;\n}\n.help-editor-media-caption {\n  width: 120px;\n}\n.help-editor-file-input {\n  display: block;\n  margin-bottom: 0.5rem;\n  font-size: 0.875rem;\n}\n.help-editor-media-message {\n  font-size: 0.8rem;\n  color: var(--fusion-text-light);\n}\n/*# sourceMappingURL=help-editor.css.map */\n'] }]
   }], null, { rte: [{ type: ViewChild, args: [forwardRef(() => RteComponent), { isSignal: true }] }] });
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(HelpEditorComponent, { className: "HelpEditorComponent", filePath: "src/app/components/help-editor/help-editor.ts", lineNumber: 21 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(HelpEditorComponent, { className: "HelpEditorComponent", filePath: "src/app/components/help-editor/help-editor.ts", lineNumber: 24 });
 })();
 export {
   HelpEditorComponent
@@ -29221,4 +29326,4 @@ export {
 dompurify/dist/purify.es.mjs:
   (*! @license DOMPurify 3.4.11 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.4.11/LICENSE *)
 */
-//# sourceMappingURL=chunk-3RXJMO47.js.map
+//# sourceMappingURL=chunk-LSPNUPTG.js.map

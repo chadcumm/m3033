@@ -1,6 +1,6 @@
 import {
   buildVersion
-} from "./chunk-MWEI5TNS.js";
+} from "./chunk-RYPWJYJP.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_APPT_STATE_MEANINGS,
@@ -2020,4 +2020,4 @@ var ConfigComponent = class _ConfigComponent {
 export {
   ConfigComponent
 };
-//# sourceMappingURL=chunk-7SSDUWEN.js.map
+//# sourceMappingURL=chunk-JMWMDKCG.js.map
