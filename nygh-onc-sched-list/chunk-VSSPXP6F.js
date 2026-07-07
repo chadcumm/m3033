@@ -1,6 +1,6 @@
 import {
   buildVersion
-} from "./chunk-3CB6UF3W.js";
+} from "./chunk-HZJE3PMA.js";
 import {
   EncntrIndicatorIconComponent
 } from "./chunk-B6Z4SSXC.js";
@@ -1060,13 +1060,15 @@ function ConfigComponent_For_82_Template(rf, ctx) {
 }
 function ConfigComponent_For_100_Conditional_4_For_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 61);
+    \u0275\u0275elementStart(0, "option", 47);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
     const def_r25 = ctx.$implicit;
-    \u0275\u0275property("value", def_r25.category);
+    const t_r23 = \u0275\u0275nextContext(2).$implicit;
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275property("value", def_r25.category)("selected", ctx_r2.categoryFor(t_r23.codeValue, t_r23.display) === def_r25.category);
     \u0275\u0275advance();
     \u0275\u0275textInterpolate(def_r25.label);
   }
@@ -1081,13 +1083,12 @@ function ConfigComponent_For_100_Conditional_4_Template(rf, ctx) {
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.setEncntrCategory(t_r23.codeValue, $event));
     });
-    \u0275\u0275repeaterCreate(1, ConfigComponent_For_100_Conditional_4_For_2_Template, 2, 2, "option", 61, _forTrack12);
+    \u0275\u0275repeaterCreate(1, ConfigComponent_For_100_Conditional_4_For_2_Template, 2, 3, "option", 47, _forTrack12);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
     const t_r23 = \u0275\u0275nextContext().$implicit;
     const ctx_r2 = \u0275\u0275nextContext();
-    \u0275\u0275property("value", ctx_r2.categoryFor(t_r23.codeValue, t_r23.display));
     \u0275\u0275attribute("aria-label", "Indicator icon category for " + t_r23.display);
     \u0275\u0275advance();
     \u0275\u0275repeater(ctx_r2.indicatorDefs);
@@ -1105,7 +1106,7 @@ function ConfigComponent_For_100_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(4, ConfigComponent_For_100_Conditional_4_Template, 3, 2, "select", 59);
+    \u0275\u0275conditionalCreate(4, ConfigComponent_For_100_Conditional_4_Template, 3, 1, "select", 59);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1121,10 +1122,10 @@ function ConfigComponent_For_100_Template(rf, ctx) {
 }
 function ConfigComponent_For_105_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 27)(1, "span", 62);
-    \u0275\u0275element(2, "app-encntr-indicator-icon", 63);
+    \u0275\u0275elementStart(0, "div", 27)(1, "span", 61);
+    \u0275\u0275element(2, "app-encntr-indicator-icon", 62);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "span", 64);
+    \u0275\u0275elementStart(3, "span", 63);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd()();
   }
@@ -1695,7 +1696,7 @@ var ConfigComponent = class _ConfigComponent {
   static \u0275fac = function ConfigComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ConfigComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 115, vars: 19, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], ["for", "apptViewActionSelect", 1, "encntr-type-label"], ["id", "apptViewActionSelect", 1, "fusion-input", "encntr-type-select", 3, "change"], ["value", "view", 3, "selected"], ["value", "history", 3, "selected"], [1, "panel-help"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "indicator-type-row"], [1, "encntr-legend"], [1, "encntr-legend-item"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete", 3, "click"], [1, "rule-name-row"], ["for", "ruleLabelInput", 1, "rule-name-label"], ["id", "ruleLabelInput", "type", "text", 1, "fusion-input", "rule-name-input", 3, "input", "value"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"], [1, "fusion-input", "category-select", 3, "value"], [1, "fusion-input", "category-select", 3, "change", "value"], [3, "value"], ["aria-hidden", "true"], [3, "category"], [1, "encntr-legend-label"]], template: function ConfigComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 115, vars: 19, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], ["for", "apptViewActionSelect", 1, "encntr-type-label"], ["id", "apptViewActionSelect", 1, "fusion-input", "encntr-type-select", 3, "change"], ["value", "view", 3, "selected"], ["value", "history", 3, "selected"], [1, "panel-help"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "indicator-type-row"], [1, "encntr-legend"], [1, "encntr-legend-item"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete", 3, "click"], [1, "rule-name-row"], ["for", "ruleLabelInput", 1, "rule-name-label"], ["id", "ruleLabelInput", "type", "text", 1, "fusion-input", "rule-name-input", 3, "input", "value"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"], [1, "fusion-input", "category-select"], [1, "fusion-input", "category-select", 3, "change"], ["aria-hidden", "true"], [3, "category"], [1, "encntr-legend-label"]], template: function ConfigComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h3");
       \u0275\u0275text(4, "Appointment Type Groups");
@@ -2170,12 +2171,15 @@ var ConfigComponent = class _ConfigComponent {
               {{ t.display }}
             </label>
             @if (activeEncntrTypeCds().includes(t.codeValue)) {
+              <!-- [selected] per option, not [value] on the select: the select's value
+                   binding applies before the @for options render, so it silently falls
+                   back to the first option (matches the page's other dropdowns). -->
               <select class="fusion-input category-select"
-                [value]="categoryFor(t.codeValue, t.display)"
                 (change)="setEncntrCategory(t.codeValue, $event)"
                 [attr.aria-label]="'Indicator icon category for ' + t.display">
                 @for (def of indicatorDefs; track def.category) {
-                  <option [value]="def.category">{{ def.label }}</option>
+                  <option [value]="def.category"
+                    [selected]="categoryFor(t.codeValue, t.display) === def.category">{{ def.label }}</option>
                 }
               </select>
             }
@@ -2220,4 +2224,4 @@ var ConfigComponent = class _ConfigComponent {
 export {
   ConfigComponent
 };
-//# sourceMappingURL=chunk-W36JHAUW.js.map
+//# sourceMappingURL=chunk-VSSPXP6F.js.map
