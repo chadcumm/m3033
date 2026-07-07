@@ -5,7 +5,7 @@
 **Environment:** M3033
 **Version:** v0.0.82
 **Branch:** feature/encntr-icons-mrn
-**Last Deployed:** 07/07/2026, 09:53:28
+**Last Deployed:** 07/07/2026, 09:53:31
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v0.0.82** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 09:53:31
 - **v0.0.82** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 09:53:28
 - **v0.0.81** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 09:43:33
 - **v0.0.81** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 09:43:31
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.79** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 08:36:27
 - **v0.0.78** | Branch: `master` | Deployed: 07/06/2026, 13:44:43
 - **v0.0.78** | Branch: `master` | Deployed: 07/06/2026, 13:44:41
-- **v0.0.77** | Branch: `feature/help-content-editor` | Deployed: 07/06/2026, 13:18:05
 
 ---
 
