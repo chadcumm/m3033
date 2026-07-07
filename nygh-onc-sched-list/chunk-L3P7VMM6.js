@@ -1,4 +1,10 @@
 // src/app/models/schedule.model.ts
+function resolveEncntrIndicatorCategory(typeCd, typeDisplay, categories) {
+  const mapped = categories?.[String(typeCd)];
+  if (mapped)
+    return mapped;
+  return /emerg/i.test(typeDisplay) ? "emergency" : "inpatient";
+}
 function cellDisplayValue(appt, key) {
   if (key === "attending_physician") {
     return appt.attending_physician || "\u2014";
@@ -70,6 +76,7 @@ var COLUMN_DEFINITIONS = [
 ];
 
 export {
+  resolveEncntrIndicatorCategory,
   cellDisplayValue,
   DEFAULT_PREFERENCES,
   DEFAULT_LAB_LOOKBACK_HOURS,
@@ -84,4 +91,4 @@ export {
   ALL_TABS,
   COLUMN_DEFINITIONS
 };
-//# sourceMappingURL=chunk-AQNK5JSS.js.map
+//# sourceMappingURL=chunk-L3P7VMM6.js.map

@@ -1,6 +1,6 @@
 import {
   buildVersion
-} from "./chunk-B4ETDALZ.js";
+} from "./chunk-K5SZSAOV.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_APPT_STATE_MEANINGS,
@@ -10,8 +10,9 @@ import {
   MAX_LAB_LOOKBACK_HOURS,
   MAX_REFRESH_INTERVAL_SECONDS,
   MIN_LAB_LOOKBACK_HOURS,
-  MIN_REFRESH_INTERVAL_SECONDS
-} from "./chunk-AQNK5JSS.js";
+  MIN_REFRESH_INTERVAL_SECONDS,
+  resolveEncntrIndicatorCategory
+} from "./chunk-L3P7VMM6.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -31,6 +32,7 @@ import {
   untracked,
   ɵsetClassDebugInfo,
   ɵɵadvance,
+  ɵɵattribute,
   ɵɵclassProp,
   ɵɵconditional,
   ɵɵconditionalCreate,
@@ -664,11 +666,11 @@ function ConfigComponent_Conditional_10_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 34);
+    \u0275\u0275elementStart(0, "div", 35);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_6_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275elementStart(1, "button", 35);
+    \u0275\u0275elementStart(1, "button", 36);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_6_Template_button_click_1_listener() {
       \u0275\u0275restoreView(_r4);
       const g_r2 = \u0275\u0275nextContext().$implicit;
@@ -690,7 +692,7 @@ function ConfigComponent_Conditional_11_For_1_Conditional_6_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 36);
+    \u0275\u0275elementStart(0, "button", 37);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_7_Template_button_click_0_listener($event) {
       \u0275\u0275restoreView(_r5);
       const g_r2 = \u0275\u0275nextContext().$implicit;
@@ -705,19 +707,19 @@ function ConfigComponent_Conditional_11_For_1_Conditional_7_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 28);
+    \u0275\u0275elementStart(0, "div", 29);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Template_div_click_0_listener() {
       const g_r2 = \u0275\u0275restoreView(_r1).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.selectGroup(g_r2.id));
     });
-    \u0275\u0275elementStart(1, "div", 29)(2, "div", 30);
+    \u0275\u0275elementStart(1, "div", 30)(2, "div", 31);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 31);
+    \u0275\u0275elementStart(4, "div", 32);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_11_For_1_Conditional_6_Template, 5, 0, "div", 32)(7, ConfigComponent_Conditional_11_For_1_Conditional_7_Template, 2, 0, "button", 33);
+    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_11_For_1_Conditional_6_Template, 5, 0, "div", 33)(7, ConfigComponent_Conditional_11_For_1_Conditional_7_Template, 2, 0, "button", 34);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -734,7 +736,7 @@ function ConfigComponent_Conditional_11_For_1_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_11_For_1_Template, 8, 8, "div", 27, _forTrack12);
+    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_11_For_1_Template, 8, 8, "div", 28, _forTrack12);
   }
   if (rf & 2) {
     const ctx_r2 = \u0275\u0275nextContext();
@@ -744,7 +746,7 @@ function ConfigComponent_Conditional_11_Template(rf, ctx) {
 function ConfigComponent_Conditional_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "app-appt-type-group-editor", 37);
+    \u0275\u0275elementStart(0, "app-appt-type-group-editor", 38);
     \u0275\u0275listener("groupChange", function ConfigComponent_Conditional_15_Template_app_appt_type_group_editor_groupChange_0_listener($event) {
       \u0275\u0275restoreView(_r6);
       const ctx_r2 = \u0275\u0275nextContext();
@@ -787,7 +789,7 @@ function ConfigComponent_Conditional_40_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_41_For_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 40);
+    \u0275\u0275elementStart(0, "option", 41);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -802,19 +804,19 @@ function ConfigComponent_Conditional_41_For_7_Template(rf, ctx) {
 function ConfigComponent_Conditional_41_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 17)(1, "label", 38);
+    \u0275\u0275elementStart(0, "div", 17)(1, "label", 39);
     \u0275\u0275text(2, "Encounter type");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "select", 39);
+    \u0275\u0275elementStart(3, "select", 40);
     \u0275\u0275listener("change", function ConfigComponent_Conditional_41_Template_select_change_3_listener($event) {
       \u0275\u0275restoreView(_r7);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.onChartLinkEncntrTypeChange($event));
     });
-    \u0275\u0275elementStart(4, "option", 40);
+    \u0275\u0275elementStart(4, "option", 41);
     \u0275\u0275text(5, "\u2014 No fallback (link uses person only) \u2014");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(6, ConfigComponent_Conditional_41_For_7_Template, 2, 3, "option", 40, _forTrack02);
+    \u0275\u0275repeaterCreate(6, ConfigComponent_Conditional_41_For_7_Template, 2, 3, "option", 41, _forTrack02);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -835,11 +837,11 @@ function ConfigComponent_Conditional_51_Template(rf, ctx) {
 function ConfigComponent_Conditional_52_For_1_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r11 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 34);
+    \u0275\u0275elementStart(0, "div", 35);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275elementStart(1, "button", 35);
+    \u0275\u0275elementStart(1, "button", 36);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_button_click_1_listener() {
       \u0275\u0275restoreView(_r11);
       const rule_r10 = \u0275\u0275nextContext().$implicit;
@@ -861,7 +863,7 @@ function ConfigComponent_Conditional_52_For_1_Conditional_6_Template(rf, ctx) {
 function ConfigComponent_Conditional_52_For_1_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 42);
+    \u0275\u0275elementStart(0, "button", 43);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_7_Template_button_click_0_listener($event) {
       \u0275\u0275restoreView(_r12);
       const rule_r10 = \u0275\u0275nextContext().$implicit;
@@ -876,19 +878,19 @@ function ConfigComponent_Conditional_52_For_1_Conditional_7_Template(rf, ctx) {
 function ConfigComponent_Conditional_52_For_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r9 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 28);
+    \u0275\u0275elementStart(0, "div", 29);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Template_div_click_0_listener() {
       const rule_r10 = \u0275\u0275restoreView(_r9).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.selectRule(rule_r10.id));
     });
-    \u0275\u0275elementStart(1, "div", 29)(2, "div", 30);
+    \u0275\u0275elementStart(1, "div", 30)(2, "div", 31);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 31);
+    \u0275\u0275elementStart(4, "div", 32);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_52_For_1_Conditional_6_Template, 5, 0, "div", 32)(7, ConfigComponent_Conditional_52_For_1_Conditional_7_Template, 2, 0, "button", 41);
+    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_52_For_1_Conditional_6_Template, 5, 0, "div", 33)(7, ConfigComponent_Conditional_52_For_1_Conditional_7_Template, 2, 0, "button", 42);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -906,7 +908,7 @@ function ConfigComponent_Conditional_52_For_1_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_52_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_52_For_1_Template, 8, 5, "div", 27, _forTrack12);
+    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_52_For_1_Template, 8, 5, "div", 28, _forTrack12);
   }
   if (rf & 2) {
     const ctx_r2 = \u0275\u0275nextContext();
@@ -915,7 +917,7 @@ function ConfigComponent_Conditional_52_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_56_Conditional_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 49);
+    \u0275\u0275elementStart(0, "span", 50);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -928,7 +930,7 @@ function ConfigComponent_Conditional_56_Conditional_9_Template(rf, ctx) {
 function ConfigComponent_Conditional_56_For_12_Template(rf, ctx) {
   if (rf & 1) {
     const _r15 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 50);
+    \u0275\u0275elementStart(0, "label")(1, "input", 51);
     \u0275\u0275listener("change", function ConfigComponent_Conditional_56_For_12_Template_input_change_1_listener() {
       const p_r16 = \u0275\u0275restoreView(_r15).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
@@ -950,7 +952,7 @@ function ConfigComponent_Conditional_56_For_12_Template(rf, ctx) {
 function ConfigComponent_Conditional_56_For_18_Template(rf, ctx) {
   if (rf & 1) {
     const _r18 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 50);
+    \u0275\u0275elementStart(0, "label")(1, "input", 51);
     \u0275\u0275listener("change", function ConfigComponent_Conditional_56_For_18_Template_input_change_1_listener() {
       const col_r19 = \u0275\u0275restoreView(_r18).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
@@ -972,32 +974,32 @@ function ConfigComponent_Conditional_56_For_18_Template(rf, ctx) {
 function ConfigComponent_Conditional_56_Template(rf, ctx) {
   if (rf & 1) {
     const _r14 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 43)(1, "label", 44);
+    \u0275\u0275elementStart(0, "div", 44)(1, "label", 45);
     \u0275\u0275text(2, "Rule name");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "input", 45);
+    \u0275\u0275elementStart(3, "input", 46);
     \u0275\u0275listener("input", function ConfigComponent_Conditional_56_Template_input_input_3_listener($event) {
       \u0275\u0275restoreView(_r14);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.onRuleLabelInput($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(4, "div", 46)(5, "strong");
+    \u0275\u0275elementStart(4, "div", 47)(5, "strong");
     \u0275\u0275text(6, "Positions");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 47)(8, "input", 48);
+    \u0275\u0275elementStart(7, "div", 48)(8, "input", 49);
     \u0275\u0275listener("input", function ConfigComponent_Conditional_56_Template_input_input_8_listener($event) {
       \u0275\u0275restoreView(_r14);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.onRuleFilterInput($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(9, ConfigComponent_Conditional_56_Conditional_9_Template, 2, 2, "span", 49);
+    \u0275\u0275conditionalCreate(9, ConfigComponent_Conditional_56_Conditional_9_Template, 2, 2, "span", 50);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(10, "div", 19);
     \u0275\u0275repeaterCreate(11, ConfigComponent_Conditional_56_For_12_Template, 3, 2, "label", null, _forTrack2);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(13, "div", 46)(14, "strong");
+    \u0275\u0275elementStart(13, "div", 47)(14, "strong");
     \u0275\u0275text(15, "Hidden columns");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(16, "div", 19);
@@ -1028,7 +1030,7 @@ function ConfigComponent_Conditional_57_Template(rf, ctx) {
 function ConfigComponent_For_67_Template(rf, ctx) {
   if (rf & 1) {
     const _r20 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 51);
+    \u0275\u0275elementStart(0, "label")(1, "input", 52);
     \u0275\u0275listener("change", function ConfigComponent_For_67_Template_input_change_1_listener() {
       const m_r21 = \u0275\u0275restoreView(_r20).$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
@@ -1047,31 +1049,62 @@ function ConfigComponent_For_67_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", m_r21, " ");
   }
 }
+function ConfigComponent_For_85_Conditional_4_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r24 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "select", 54);
+    \u0275\u0275listener("change", function ConfigComponent_For_85_Conditional_4_Template_select_change_0_listener($event) {
+      \u0275\u0275restoreView(_r24);
+      const t_r23 = \u0275\u0275nextContext().$implicit;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.setEncntrCategory(t_r23.codeValue, $event));
+    });
+    \u0275\u0275elementStart(1, "option", 55);
+    \u0275\u0275text(2, "Emergency");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "option", 56);
+    \u0275\u0275text(4, "Inpatient");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(5, "option", 57);
+    \u0275\u0275text(6, "Other");
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const t_r23 = \u0275\u0275nextContext().$implicit;
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275property("value", ctx_r2.categoryFor(t_r23.codeValue, t_r23.display));
+    \u0275\u0275attribute("aria-label", "Indicator icon category for " + t_r23.display);
+  }
+}
 function ConfigComponent_For_85_Template(rf, ctx) {
   if (rf & 1) {
     const _r22 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 50);
-    \u0275\u0275listener("change", function ConfigComponent_For_85_Template_input_change_1_listener() {
+    \u0275\u0275elementStart(0, "div", 21)(1, "label")(2, "input", 51);
+    \u0275\u0275listener("change", function ConfigComponent_For_85_Template_input_change_2_listener() {
       const t_r23 = \u0275\u0275restoreView(_r22).$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.toggleActiveEncntrType(t_r23.codeValue));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275text(2);
+    \u0275\u0275text(3);
+    \u0275\u0275elementEnd();
+    \u0275\u0275conditionalCreate(4, ConfigComponent_For_85_Conditional_4_Template, 7, 2, "select", 53);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
     const t_r23 = ctx.$implicit;
     const ctx_r2 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
+    \u0275\u0275advance(2);
     \u0275\u0275property("checked", ctx_r2.activeEncntrTypeCds().includes(t_r23.codeValue));
     \u0275\u0275advance();
     \u0275\u0275textInterpolate1(" ", t_r23.display, " ");
+    \u0275\u0275advance();
+    \u0275\u0275conditional(ctx_r2.activeEncntrTypeCds().includes(t_r23.codeValue) ? 4 : -1);
   }
 }
-function ConfigComponent_Conditional_91_Template(rf, ctx) {
+function ConfigComponent_Conditional_93_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 24);
+    \u0275\u0275elementStart(0, "span", 25);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -1081,9 +1114,9 @@ function ConfigComponent_Conditional_91_Template(rf, ctx) {
     \u0275\u0275textInterpolate(ctx_r2.statusMessage());
   }
 }
-function ConfigComponent_Conditional_92_Template(rf, ctx) {
+function ConfigComponent_Conditional_94_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 25);
+    \u0275\u0275elementStart(0, "span", 26);
     \u0275\u0275text(1, "One or more groups have errors. Fix them to save.");
     \u0275\u0275elementEnd();
   }
@@ -1165,6 +1198,10 @@ var ConfigComponent = class _ConfigComponent {
     /* istanbul ignore next */
     []
   ));
+  activeEncntrTypeCategories = signal({}, ...ngDevMode ? [{ debugName: "activeEncntrTypeCategories" }] : (
+    /* istanbul ignore next */
+    []
+  ));
   knownStateMeanings = KNOWN_APPT_STATE_MEANINGS;
   selectedRuleId = signal(null, ...ngDevMode ? [{ debugName: "selectedRuleId" }] : (
     /* istanbul ignore next */
@@ -1207,6 +1244,7 @@ var ConfigComponent = class _ConfigComponent {
       this.apptStateMeanings.set(config.APPT_STATE_MEANINGS?.length ? [...config.APPT_STATE_MEANINGS] : [...DEFAULT_APPT_STATE_MEANINGS]);
       this.chairResourceNamePattern.set(config.CHAIR_RESOURCE_NAME_PATTERN ?? "");
       this.activeEncntrTypeCds.set([...config.ACTIVE_ENCNTR_TYPE_CDS ?? []]);
+      this.activeEncntrTypeCategories.set(__spreadValues({}, config.ACTIVE_ENCNTR_TYPE_CATEGORIES ?? {}));
     });
   }, ...ngDevMode ? [{ debugName: "configEffect" }] : (
     /* istanbul ignore next */
@@ -1267,6 +1305,8 @@ var ConfigComponent = class _ConfigComponent {
     if ((config?.CHAIR_RESOURCE_NAME_PATTERN ?? "") !== this.chairResourceNamePattern().trim())
       return true;
     if (!this.numbersEqual(config?.ACTIVE_ENCNTR_TYPE_CDS ?? [], this.activeEncntrTypeCds()))
+      return true;
+    if (!this.categoriesEqual(this.prunedFrom(config?.ACTIVE_ENCNTR_TYPE_CDS ?? [], config?.ACTIVE_ENCNTR_TYPE_CATEGORIES ?? {}), this.prunedCategories()))
       return true;
     return false;
   }, ...ngDevMode ? [{ debugName: "hasUnsavedChanges" }] : (
@@ -1373,7 +1413,11 @@ var ConfigComponent = class _ConfigComponent {
       COLUMN_ROLE_DEFAULTS: this.columnRoleDefaults().map((r) => __spreadProps(__spreadValues({}, r), { label: (r.label ?? "").trim() })),
       APPT_STATE_MEANINGS: this.apptStateMeanings(),
       CHAIR_RESOURCE_NAME_PATTERN: this.chairResourceNamePattern().trim(),
-      ACTIVE_ENCNTR_TYPE_CDS: this.activeEncntrTypeCds()
+      ACTIVE_ENCNTR_TYPE_CDS: this.activeEncntrTypeCds(),
+      // Code set 71 displays are unavailable until encntrTypesLoaded() is true;
+      // pruning/materializing keyword defaults before then would misclassify
+      // categories, so persist the stored categories unchanged in that window.
+      ACTIVE_ENCNTR_TYPE_CATEGORIES: this.encntrTypesLoaded() ? this.prunedCategories() : config?.ACTIVE_ENCNTR_TYPE_CATEGORIES ?? {}
     });
     this.configService.saveConfiguration(updated);
     this.saving.set(false);
@@ -1395,6 +1439,7 @@ var ConfigComponent = class _ConfigComponent {
     this.apptStateMeanings.set(config?.APPT_STATE_MEANINGS?.length ? [...config.APPT_STATE_MEANINGS] : [...DEFAULT_APPT_STATE_MEANINGS]);
     this.chairResourceNamePattern.set(config?.CHAIR_RESOURCE_NAME_PATTERN ?? "");
     this.activeEncntrTypeCds.set([...config?.ACTIVE_ENCNTR_TYPE_CDS ?? []]);
+    this.activeEncntrTypeCategories.set(__spreadValues({}, config?.ACTIVE_ENCNTR_TYPE_CATEGORIES ?? {}));
     this.pendingDeleteId.set(null);
     this.pendingDeleteRuleId.set(null);
   }
@@ -1559,6 +1604,35 @@ var ConfigComponent = class _ConfigComponent {
   toggleActiveEncntrType(codeValue) {
     this.activeEncntrTypeCds.update((list) => list.includes(codeValue) ? list.filter((c) => c !== codeValue) : [...list, codeValue]);
   }
+  categoryFor(codeValue, display) {
+    return this.activeEncntrTypeCategories()[String(codeValue)] ?? resolveEncntrIndicatorCategory(codeValue, display, void 0);
+  }
+  setEncntrCategory(codeValue, event) {
+    const value = event.target.value;
+    this.activeEncntrTypeCategories.update((cats) => __spreadProps(__spreadValues({}, cats), { [String(codeValue)]: value }));
+  }
+  /**
+   * Normalize a (cds, categories) pair to an explicit category per cd —
+   * keyword default materialized, unchecked cds pruned. Used for both the
+   * save payload and BOTH SIDES of the dirty check, so a stored config
+   * without categories (pre-upgrade) compares clean against the defaults.
+   */
+  prunedFrom(cds, cats) {
+    const result = {};
+    for (const cd of cds) {
+      const display = this.allEncntrTypes().find((t) => t.codeValue === cd)?.display ?? "";
+      result[String(cd)] = cats[String(cd)] ?? resolveEncntrIndicatorCategory(cd, display, void 0);
+    }
+    return result;
+  }
+  prunedCategories() {
+    return this.prunedFrom(this.activeEncntrTypeCds(), this.activeEncntrTypeCategories());
+  }
+  categoriesEqual(a, b) {
+    const ka = Object.keys(a).sort();
+    const kb = Object.keys(b).sort();
+    return ka.length === kb.length && ka.every((k, i) => k === kb[i] && a[k] === b[kb[i]]);
+  }
   onChairPatternInput(event) {
     this.chairResourceNamePattern.set(event.target.value);
   }
@@ -1571,7 +1645,7 @@ var ConfigComponent = class _ConfigComponent {
   static \u0275fac = function ConfigComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ConfigComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 95, vars: 17, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], [1, "panel-help"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete", 3, "click"], [1, "rule-name-row"], ["for", "ruleLabelInput", 1, "rule-name-label"], ["id", "ruleLabelInput", "type", "text", 1, "fusion-input", "rule-name-input", 3, "input", "value"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"]], template: function ConfigComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 97, vars: 17, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], [1, "panel-help"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "indicator-type-row"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete", 3, "click"], [1, "rule-name-row"], ["for", "ruleLabelInput", 1, "rule-name-label"], ["id", "ruleLabelInput", "type", "text", 1, "fusion-input", "rule-name-input", 3, "input", "value"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"], [1, "fusion-input", "category-select", 3, "value"], [1, "fusion-input", "category-select", 3, "change", "value"], ["value", "emergency"], ["value", "inpatient"], ["value", "other"]], template: function ConfigComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h3");
       \u0275\u0275text(4, "Appointment Type Groups");
@@ -1666,25 +1740,28 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275text(82, " Patients with an active (not discharged) encounter of one of these types show an indicator beside their name. Leave all unchecked to use the Cerner defaults (Inpatient and Emergency). ");
       \u0275\u0275elementEnd();
       \u0275\u0275elementStart(83, "div", 19);
-      \u0275\u0275repeaterCreate(84, ConfigComponent_For_85_Template, 3, 2, "label", null, _forTrack02);
+      \u0275\u0275repeaterCreate(84, ConfigComponent_For_85_Template, 5, 3, "div", 21, _forTrack02);
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(86, "p", 18);
+      \u0275\u0275text(87, " The category picks the indicator icon: Emergency shows a red cross badge, Inpatient the bed icon, Other a neutral pulse line. ");
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(86, "div", 21)(87, "button", 22);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_87_listener() {
+      \u0275\u0275elementStart(88, "div", 22)(89, "button", 23);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_89_listener() {
         return ctx.save();
       });
-      \u0275\u0275text(88, "Save");
+      \u0275\u0275text(90, "Save");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(89, "button", 23);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_89_listener() {
+      \u0275\u0275elementStart(91, "button", 24);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_91_listener() {
         return ctx.discard();
       });
-      \u0275\u0275text(90, "Discard");
+      \u0275\u0275text(92, "Discard");
       \u0275\u0275elementEnd();
-      \u0275\u0275conditionalCreate(91, ConfigComponent_Conditional_91_Template, 2, 1, "span", 24);
-      \u0275\u0275conditionalCreate(92, ConfigComponent_Conditional_92_Template, 2, 0, "span", 25);
+      \u0275\u0275conditionalCreate(93, ConfigComponent_Conditional_93_Template, 2, 1, "span", 25);
+      \u0275\u0275conditionalCreate(94, ConfigComponent_Conditional_94_Template, 2, 0, "span", 26);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(93, "div", 26);
-      \u0275\u0275text(94);
+      \u0275\u0275elementStart(95, "div", 27);
+      \u0275\u0275text(96);
       \u0275\u0275elementEnd()();
     }
     if (rf & 2) {
@@ -1712,18 +1789,18 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275property("value", ctx.chairResourceNamePattern());
       \u0275\u0275advance(9);
       \u0275\u0275repeater(ctx.allEncntrTypes());
-      \u0275\u0275advance(3);
+      \u0275\u0275advance(5);
       \u0275\u0275property("disabled", !ctx.hasUnsavedChanges() || ctx.saving() || ctx.hasGroupErrors());
       \u0275\u0275advance(2);
       \u0275\u0275property("disabled", !ctx.hasUnsavedChanges());
       \u0275\u0275advance(2);
-      \u0275\u0275conditional(ctx.statusMessage() ? 91 : -1);
+      \u0275\u0275conditional(ctx.statusMessage() ? 93 : -1);
       \u0275\u0275advance();
-      \u0275\u0275conditional(ctx.hasGroupErrors() ? 92 : -1);
+      \u0275\u0275conditional(ctx.hasGroupErrors() ? 94 : -1);
       \u0275\u0275advance(2);
       \u0275\u0275textInterpolate(ctx.buildVersion);
     }
-  }, dependencies: [ApptTypeGroupEditorComponent], styles: ["\n\n.config-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.status-error[_ngcontent-%COMP%] {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input[_ngcontent-%COMP%] {\n  flex: 1;\n}\n.selected-count[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list[_ngcontent-%COMP%] {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected[_ngcontent-%COMP%] {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item[_ngcontent-%COMP%]:last-child {\n  border-bottom: none;\n}\n.appt-type-item[_ngcontent-%COMP%]   input[type=checkbox][_ngcontent-%COMP%] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg[_ngcontent-%COMP%] {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input[_ngcontent-%COMP%] {\n  width: 6rem;\n}\n.refresh-interval-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select[_ngcontent-%COMP%] {\n  min-width: 18rem;\n}\n.column-rule-section[_ngcontent-%COMP%] {\n  margin-bottom: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 320px;\n}\n.rule-name-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 10px;\n}\n.rule-name-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.rule-name-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help[_ngcontent-%COMP%] {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.config-version[_ngcontent-%COMP%] {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */"], changeDetection: 0 });
+  }, dependencies: [ApptTypeGroupEditorComponent], styles: ["\n\n.config-container[_ngcontent-%COMP%] {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.status-error[_ngcontent-%COMP%] {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input[_ngcontent-%COMP%] {\n  flex: 1;\n}\n.selected-count[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list[_ngcontent-%COMP%] {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected[_ngcontent-%COMP%] {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item[_ngcontent-%COMP%]:last-child {\n  border-bottom: none;\n}\n.appt-type-item[_ngcontent-%COMP%]   input[type=checkbox][_ngcontent-%COMP%] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg[_ngcontent-%COMP%] {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input[_ngcontent-%COMP%] {\n  width: 6rem;\n}\n.refresh-interval-hint[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select[_ngcontent-%COMP%] {\n  min-width: 18rem;\n}\n.column-rule-section[_ngcontent-%COMP%] {\n  margin-bottom: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 320px;\n}\n.rule-name-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 10px;\n}\n.rule-name-label[_ngcontent-%COMP%] {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.rule-name-input[_ngcontent-%COMP%] {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help[_ngcontent-%COMP%] {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.indicator-type-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n.indicator-type-row[_ngcontent-%COMP%]   .category-select[_ngcontent-%COMP%] {\n  max-width: 140px;\n  padding: 2px 6px;\n}\n.config-version[_ngcontent-%COMP%] {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */"], changeDetection: 0 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ConfigComponent, [{
@@ -1988,13 +2065,29 @@ var ConfigComponent = class _ConfigComponent {
       </p>
       <div class="checkbox-grid">
         @for (t of allEncntrTypes(); track t.codeValue) {
-          <label>
-            <input type="checkbox" [checked]="activeEncntrTypeCds().includes(t.codeValue)"
-              (change)="toggleActiveEncntrType(t.codeValue)" />
-            {{ t.display }}
-          </label>
+          <div class="indicator-type-row">
+            <label>
+              <input type="checkbox" [checked]="activeEncntrTypeCds().includes(t.codeValue)"
+                (change)="toggleActiveEncntrType(t.codeValue)" />
+              {{ t.display }}
+            </label>
+            @if (activeEncntrTypeCds().includes(t.codeValue)) {
+              <select class="fusion-input category-select"
+                [value]="categoryFor(t.codeValue, t.display)"
+                (change)="setEncntrCategory(t.codeValue, $event)"
+                [attr.aria-label]="'Indicator icon category for ' + t.display">
+                <option value="emergency">Emergency</option>
+                <option value="inpatient">Inpatient</option>
+                <option value="other">Other</option>
+              </select>
+            }
+          </div>
         }
       </div>
+      <p class="panel-help">
+        The category picks the indicator icon: Emergency shows a red cross badge,
+        Inpatient the bed icon, Other a neutral pulse line.
+      </p>
     </div>
   </div>
 
@@ -2011,13 +2104,13 @@ var ConfigComponent = class _ConfigComponent {
 
   <div class="config-version">{{ buildVersion }}</div>
 </div>
-`, styles: ["/* src/app/components/config/config.scss */\n.config-container {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.status-error {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input {\n  flex: 1;\n}\n.selected-count {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item:last-child {\n  border-bottom: none;\n}\n.appt-type-item input[type=checkbox] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input {\n  width: 6rem;\n}\n.refresh-interval-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select {\n  min-width: 18rem;\n}\n.column-rule-section {\n  margin-bottom: 8px;\n}\n.checkbox-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid label {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input {\n  flex: 1;\n  max-width: 320px;\n}\n.rule-name-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 10px;\n}\n.rule-name-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.rule-name-input {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.config-version {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */\n"] }]
+`, styles: ["/* src/app/components/config/config.scss */\n.config-container {\n  padding: 1.5rem;\n  max-width: 1100px;\n}\n.status-error {\n  color: var(--fusion-danger-text, #b00020);\n}\n.appt-type-controls {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n.search-input {\n  flex: 1;\n}\n.selected-count {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  white-space: nowrap;\n}\n.bulk-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.bulk-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.appt-type-list {\n  max-height: 400px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n}\n.appt-type-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.375rem 0.75rem;\n  cursor: pointer;\n  font-size: 0.875rem;\n  border-bottom: 1px solid #f0f0f0;\n  color: var(--fusion-text);\n}\n.appt-type-item:hover {\n  background: var(--fusion-bg-header);\n}\n.appt-type-item.selected {\n  background: var(--fusion-bg-selected);\n}\n.appt-type-item:last-child {\n  border-bottom: none;\n}\n.appt-type-item input[type=checkbox] {\n  cursor: pointer;\n  accent-color: var(--fusion-primary);\n}\n.config-actions {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-top: 0.75rem;\n  border-top: 1px solid var(--fusion-border);\n}\n.status-message {\n  font-size: 0.875rem;\n  color: var(--fusion-text-muted);\n  margin-left: 0.5rem;\n}\n.loading-msg {\n  padding: 1.25rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.refresh-interval-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.refresh-interval-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.refresh-interval-input {\n  width: 6rem;\n}\n.refresh-interval-hint {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.encntr-type-row {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  flex-wrap: wrap;\n}\n.encntr-type-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.encntr-type-select {\n  min-width: 18rem;\n}\n.column-rule-section {\n  margin-bottom: 8px;\n}\n.checkbox-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));\n  gap: 4px 12px;\n  margin-top: 4px;\n  max-height: 280px;\n  overflow-y: auto;\n  border: 1px solid var(--fusion-border);\n  border-radius: var(--fusion-radius);\n  padding: 8px;\n}\n.checkbox-grid label {\n  display: flex;\n  align-items: flex-start;\n  gap: 6px;\n  min-width: 0;\n  overflow-wrap: break-word;\n}\n.rule-filter-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-top: 4px;\n}\n.rule-filter-input {\n  flex: 1;\n  max-width: 320px;\n}\n.rule-name-row {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  margin-bottom: 10px;\n}\n.rule-name-label {\n  font-size: 0.875rem;\n  color: var(--fusion-text);\n}\n.rule-name-input {\n  flex: 1;\n  max-width: 320px;\n}\n.panel-help {\n  margin: 0 0 10px;\n  color: var(--fusion-text-light);\n  font-size: 0.9em;\n}\n.indicator-type-row {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n.indicator-type-row .category-select {\n  max-width: 140px;\n  padding: 2px 6px;\n}\n.config-version {\n  margin-top: 1rem;\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  text-align: center;\n}\n/*# sourceMappingURL=config.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ConfigComponent, { className: "ConfigComponent", filePath: "src/app/components/config/config.ts", lineNumber: 26 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ConfigComponent, { className: "ConfigComponent", filePath: "src/app/components/config/config.ts", lineNumber: 28 });
 })();
 export {
   ConfigComponent
 };
-//# sourceMappingURL=chunk-72EHMMKH.js.map
+//# sourceMappingURL=chunk-5KIY6HXM.js.map

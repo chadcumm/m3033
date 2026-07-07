@@ -1,13 +1,13 @@
 import {
   AccessControlService
-} from "./chunk-5YTREYET.js";
+} from "./chunk-PA646MSR.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_PREFERENCES,
   DEFAULT_REFRESH_INTERVAL_SECONDS,
   MAX_REFRESH_INTERVAL_SECONDS,
   MIN_REFRESH_INTERVAL_SECONDS
-} from "./chunk-AQNK5JSS.js";
+} from "./chunk-L3P7VMM6.js";
 import {
   ConfigurationService,
   CustomService,
@@ -336,6 +336,8 @@ var ScheduleService = class _ScheduleService {
             chart_link_encntr_id: a.chartLinkEncntrId ?? a.chart_link_encntr_id ?? 0,
             active_encntr_ind: (a.activeEncntrInd ?? a.active_encntr_ind ?? 0) > 0,
             active_encntr_type: a.activeEncntrType ?? a.active_encntr_type ?? "",
+            active_encntr_type_cd: a.activeEncntrTypeCd ?? a.active_encntr_type_cd ?? 0,
+            mrn: a.mrn ?? "",
             instance_dt: a.InstanceDt ?? a.instanceDt ?? a.instance_dt ?? a._instance_dt ?? "",
             labs: (a.labs ?? []).map((l) => ({
               event_id: l.eventId ?? l.event_id ?? 0,
@@ -528,4 +530,4 @@ export {
   PreferencesService,
   ScheduleService
 };
-//# sourceMappingURL=chunk-5HFNPTRR.js.map
+//# sourceMappingURL=chunk-MBODG2A6.js.map

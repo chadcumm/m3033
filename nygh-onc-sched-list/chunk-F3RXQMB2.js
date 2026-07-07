@@ -1,16 +1,17 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-5HFNPTRR.js";
+} from "./chunk-MBODG2A6.js";
 import {
   AccessControlService
-} from "./chunk-5YTREYET.js";
+} from "./chunk-PA646MSR.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_APPT_STATE_MEANINGS,
   SUPERUSER_OVERRIDE_ALL,
-  cellDisplayValue
-} from "./chunk-AQNK5JSS.js";
+  cellDisplayValue,
+  resolveEncntrIndicatorCategory
+} from "./chunk-L3P7VMM6.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -938,24 +939,74 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
     \u0275\u0275textInterpolate(ctx_r1.getCellValue(appt_r14, col_r16.key));
   }
 }
-function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Template(rf, ctx) {
+function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Case_0_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 56);
+    \u0275\u0275elementStart(0, "span", 57);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(1, "svg", 57);
-    \u0275\u0275element(2, "path", 58);
+    \u0275\u0275elementStart(1, "svg", 60);
+    \u0275\u0275element(2, "circle", 61)(3, "path", 62);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
+    const appt_r14 = \u0275\u0275nextContext(4).$implicit;
+    \u0275\u0275property("title", "Active " + (appt_r14.active_encntr_type || "emergency") + " encounter");
+  }
+}
+function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Case_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 58);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(1, "svg", 60);
+    \u0275\u0275element(2, "path", 63);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const appt_r14 = \u0275\u0275nextContext(4).$implicit;
+    \u0275\u0275property("title", appt_r14.active_encntr_type ? "Active " + appt_r14.active_encntr_type + " encounter" : "Active encounter");
+  }
+}
+function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Case_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 59);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(1, "svg", 60);
+    \u0275\u0275element(2, "path", 64);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const appt_r14 = \u0275\u0275nextContext(4).$implicit;
+    \u0275\u0275property("title", "Active " + (appt_r14.active_encntr_type || "inpatient") + " encounter");
+  }
+}
+function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275conditionalCreate(0, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Case_0_Template, 4, 1, "span", 57)(1, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Case_1_Template, 3, 1, "span", 58)(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Case_2_Template, 3, 1, "span", 59);
+  }
+  if (rf & 2) {
+    let tmp_24_0;
     const appt_r14 = \u0275\u0275nextContext(3).$implicit;
-    \u0275\u0275property("title", "Active " + (appt_r14.active_encntr_type || "inpatient/ED") + " encounter");
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275conditional((tmp_24_0 = ctx_r1.indicatorCategory(appt_r14)) === "emergency" ? 0 : tmp_24_0 === "other" ? 1 : 2);
+  }
+}
+function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 56);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const appt_r14 = \u0275\u0275nextContext(3).$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(appt_r14.mrn);
   }
 }
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "td", 55);
     \u0275\u0275text(1);
-    \u0275\u0275conditionalCreate(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Template, 3, 1, "span", 56);
+    \u0275\u0275conditionalCreate(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_2_Template, 3, 1);
+    \u0275\u0275conditionalCreate(3, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Conditional_3_Template, 2, 1, "div", 56);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -967,11 +1018,13 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
     \u0275\u0275textInterpolate1(" ", ctx_r1.getCellValue(appt_r14, col_r16.key), " ");
     \u0275\u0275advance();
     \u0275\u0275conditional(appt_r14.active_encntr_ind ? 2 : -1);
+    \u0275\u0275advance();
+    \u0275\u0275conditional(appt_r14.mrn ? 3 : -1);
   }
 }
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_1_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 63);
+    \u0275\u0275elementStart(0, "span", 69);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -984,7 +1037,7 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r17 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 61);
+    \u0275\u0275elementStart(0, "button", 67);
     \u0275\u0275listener("click", function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_1_Template_button_click_0_listener() {
       \u0275\u0275restoreView(_r17);
       const appt_r14 = \u0275\u0275nextContext(3).$implicit;
@@ -993,9 +1046,9 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
     });
     \u0275\u0275namespaceSVG();
     \u0275\u0275elementStart(1, "svg", 47);
-    \u0275\u0275element(2, "path", 62);
+    \u0275\u0275element(2, "path", 68);
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(3, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_1_Conditional_3_Template, 2, 1, "span", 63);
+    \u0275\u0275conditionalCreate(3, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_1_Conditional_3_Template, 2, 1, "span", 69);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1008,7 +1061,7 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
 }
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 60);
+    \u0275\u0275elementStart(0, "span", 66);
     \u0275\u0275text(1, "\u2014");
     \u0275\u0275elementEnd();
   }
@@ -1016,7 +1069,7 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "td", 44);
-    \u0275\u0275conditionalCreate(1, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_1_Template, 4, 4, "button", 59)(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_2_Template, 2, 0, "span", 60);
+    \u0275\u0275conditionalCreate(1, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_1_Template, 4, 4, "button", 65)(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Conditional_2_Template, 2, 0, "span", 66);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1028,7 +1081,7 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
 }
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_5_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 64);
+    \u0275\u0275elementStart(0, "span", 70);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -1043,7 +1096,7 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
   if (rf & 1) {
     \u0275\u0275elementStart(0, "td");
     \u0275\u0275text(1);
-    \u0275\u0275conditionalCreate(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_5_Conditional_2_Template, 2, 2, "span", 64);
+    \u0275\u0275conditionalCreate(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_5_Conditional_2_Template, 2, 2, "span", 70);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1070,7 +1123,7 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
 }
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275conditionalCreate(0, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_0_Template, 6, 2, "td", 41)(1, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_1_Template, 3, 3, "td")(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_2_Template, 2, 2, "td", 42)(3, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Template, 3, 4, "td", 43)(4, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Template, 3, 1, "td", 44)(5, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_5_Template, 3, 2, "td")(6, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_6_Template, 2, 1, "td");
+    \u0275\u0275conditionalCreate(0, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_0_Template, 6, 2, "td", 41)(1, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_1_Template, 3, 3, "td")(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_2_Template, 2, 2, "td", 42)(3, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Template, 4, 5, "td", 43)(4, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Template, 3, 1, "td", 44)(5, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_5_Template, 3, 2, "td")(6, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_6_Template, 2, 1, "td");
   }
   if (rf & 2) {
     const col_r16 = ctx.$implicit;
@@ -1169,7 +1222,7 @@ function ScheduleListComponent_Conditional_2_Conditional_46_For_6_Template(rf, c
 }
 function ScheduleListComponent_Conditional_2_Conditional_46_Conditional_22_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 65)(1, "strong");
+    \u0275\u0275elementStart(0, "div", 71)(1, "strong");
     \u0275\u0275text(2, "Physician filter");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "div");
@@ -1184,31 +1237,31 @@ function ScheduleListComponent_Conditional_2_Conditional_46_Conditional_22_Templ
 }
 function ScheduleListComponent_Conditional_2_Conditional_46_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 31)(1, "div", 65)(2, "strong");
+    \u0275\u0275elementStart(0, "div", 31)(1, "div", 71)(2, "strong");
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(4, "ul");
     \u0275\u0275repeaterCreate(5, ScheduleListComponent_Conditional_2_Conditional_46_For_6_Template, 2, 1, "li", null, \u0275\u0275repeaterTrackByIdentity);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(7, "div", 65)(8, "strong");
+    \u0275\u0275elementStart(7, "div", 71)(8, "strong");
     \u0275\u0275text(9, "States shown");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(10, "div");
     \u0275\u0275text(11);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(12, "div", 65)(13, "strong");
+    \u0275\u0275elementStart(12, "div", 71)(13, "strong");
     \u0275\u0275text(14, "Inpatient/ED indicator types");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(15, "div");
     \u0275\u0275text(16);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(17, "div", 65)(18, "strong");
+    \u0275\u0275elementStart(17, "div", 71)(18, "strong");
     \u0275\u0275text(19, "Chair pattern");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(20, "div");
     \u0275\u0275text(21);
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(22, ScheduleListComponent_Conditional_2_Conditional_46_Conditional_22_Template, 5, 1, "div", 65);
+    \u0275\u0275conditionalCreate(22, ScheduleListComponent_Conditional_2_Conditional_46_Conditional_22_Template, 5, 1, "div", 71);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1385,7 +1438,7 @@ function ScheduleListComponent_Conditional_2_Template(rf, ctx) {
 function ScheduleListComponent_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r19 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "app-labs-modal", 66);
+    \u0275\u0275elementStart(0, "app-labs-modal", 72);
     \u0275\u0275listener("close", function ScheduleListComponent_Conditional_3_Template_app_labs_modal_close_0_listener() {
       \u0275\u0275restoreView(_r19);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -1519,6 +1572,9 @@ var ScheduleListComponent = class _ScheduleListComponent {
     /* istanbul ignore next */
     []
   ));
+  indicatorCategory(appt) {
+    return resolveEncntrIndicatorCategory(appt.active_encntr_type_cd, appt.active_encntr_type, this.configService.configuration()?.ACTIVE_ENCNTR_TYPE_CATEGORIES);
+  }
   physicianFilterName = computed(() => {
     const id = this.preferencesService.selectedPhysicianId();
     if (id === null)
@@ -1771,7 +1827,7 @@ var ScheduleListComponent = class _ScheduleListComponent {
   static \u0275fac = function ScheduleListComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ScheduleListComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ScheduleListComponent, selectors: [["app-schedule-list"]], decls: 4, vars: 2, consts: [[1, "schedule-container"], [1, "schedule-blocked"], [3, "patientName", "labs", "labOrders", "lookbackHours"], [1, "schedule-header"], [1, "date-nav"], [1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], ["type", "date", 1, "fusion-input", "date-input", 3, "change", "value"], [1, "date-separator"], [1, "fusion-button", "fusion-small", 3, "click", "disabled"], [1, "header-controls"], [1, "group-filter"], [1, "group-badge"], [1, "physician-filter"], [1, "fusion-input", 3, "change"], ["value", ""], [3, "value", "selected"], [1, "appt-count"], [1, "columns-menu-wrap"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "columns-menu"], ["title", "Refresh", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "error-banner"], [1, "loading-overlay"], [1, "table-container"], [1, "empty-state"], [1, "fusion-grid"], [1, "schedule-footer"], [1, "footer-left"], [1, "footer-sep"], [1, "params-menu-wrap"], ["type", "button", 1, "footer-params-toggle", 3, "click"], [1, "params-menu"], ["value", "__ALL__", 3, "selected"], [1, "columns-menu-item"], ["type", "button", 1, "fusion-button", "fusion-small", "columns-menu-reset", 3, "click"], ["type", "checkbox", 3, "change", "checked"], [1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], [1, "spinner"], ["draggable", "true", 3, "drag-over", "dragging", "sortable", "actions-col", "width", "min-width"], ["draggable", "true", 3, "dragstart", "dragover", "dragleave", "drop", "dragend", "click"], ["aria-hidden", "true", 1, "col-resize", 3, "mousedown", "click"], [1, "actions-col"], [1, "truncate", 3, "title"], [1, "patient-name", 3, "has-encounter"], [1, "labs-cell"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "row-action-muted", "title"], ["type", "button", "title", "Open appointment view", "aria-label", "Open appointment view", 1, "row-action", 3, "click"], ["viewBox", "0 0 16 16", "width", "14", "height", "14", "aria-hidden", "true"], ["fill", "currentColor", "d", "M4.5 1a.5.5 0 0 1 .5.5V2h6v-.5a.5.5 0 0 1 1 0V2h1.5A1.5 1.5 0 0 1 15 3.5v10A1.5 1.5 0 0 1 13.5 15h-11A1.5 1.5 0 0 1 1 13.5v-10A1.5 1.5 0 0 1 2.5 2H4v-.5a.5.5 0 0 1 .5-.5zM2 6v7.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V6H2zm2 2h2v2H4V8zm3 0h2v2H7V8zm3 0h2v2h-2V8zM4 11h2v2H4v-2zm3 0h2v2H7v-2zm3 0h2v2h-2v-2z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1c-2.7 0-8 1.34-8 4v2h16v-2c0-2.66-5.3-4-8-4z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action", 3, "click"], ["fill", "currentColor", "d", "M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5V2h2.5A1.5 1.5 0 0 1 15 3.5v11A1.5 1.5 0 0 1 13.5 16h-11A1.5 1.5 0 0 1 1 14.5v-11A1.5 1.5 0 0 1 2.5 2H5v-.5zm1 0V3h4V1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5zM4 6h8v1H4V6zm0 3h8v1H4V9zm0 3h5v1H4v-1z"], [1, "fusion-badge"], [1, "patient-name"], ["aria-label", "Active inpatient or emergency encounter", "role", "img", 1, "encntr-indicator", 3, "title"], ["viewBox", "0 0 16 16", "width", "13", "height", "13", "aria-hidden", "true"], ["fill", "currentColor", "d", "M1 4a.5.5 0 0 1 1 0v5h6V6.5A1.5 1.5 0 0 1 9.5 5H13a3 3 0 0 1 3 3v4a.5.5 0 0 1-1 0v-1.5H2V12a.5.5 0 0 1-1 0V4zm3.5 3.5A1.5 1.5 0 1 0 4.5 4a1.5 1.5 0 0 0 0 3.5z"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "row-action-muted", "title"], [1, "labs-empty"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M6 0a.5.5 0 0 0 0 1H7v4.04L3.06 12.18A1.5 1.5 0 0 0 4.36 14.5h7.28a1.5 1.5 0 0 0 1.3-2.32L9 5.04V1h1a.5.5 0 0 0 0-1H6zm2 1.5V5.2a.5.5 0 0 0 .08.27L10.4 9H5.6l2.32-3.53A.5.5 0 0 0 8 5.2V1.5z"], [1, "labs-count"], [1, "chair-chip", 3, "title"], [1, "params-menu-section"], [3, "close", "patientName", "labs", "labOrders", "lookbackHours"]], template: function ScheduleListComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ScheduleListComponent, selectors: [["app-schedule-list"]], decls: 4, vars: 2, consts: [[1, "schedule-container"], [1, "schedule-blocked"], [3, "patientName", "labs", "labOrders", "lookbackHours"], [1, "schedule-header"], [1, "date-nav"], [1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], ["type", "date", 1, "fusion-input", "date-input", 3, "change", "value"], [1, "date-separator"], [1, "fusion-button", "fusion-small", 3, "click", "disabled"], [1, "header-controls"], [1, "group-filter"], [1, "group-badge"], [1, "physician-filter"], [1, "fusion-input", 3, "change"], ["value", ""], [3, "value", "selected"], [1, "appt-count"], [1, "columns-menu-wrap"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "columns-menu"], ["title", "Refresh", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "error-banner"], [1, "loading-overlay"], [1, "table-container"], [1, "empty-state"], [1, "fusion-grid"], [1, "schedule-footer"], [1, "footer-left"], [1, "footer-sep"], [1, "params-menu-wrap"], ["type", "button", 1, "footer-params-toggle", 3, "click"], [1, "params-menu"], ["value", "__ALL__", 3, "selected"], [1, "columns-menu-item"], ["type", "button", 1, "fusion-button", "fusion-small", "columns-menu-reset", 3, "click"], ["type", "checkbox", 3, "change", "checked"], [1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], [1, "spinner"], ["draggable", "true", 3, "drag-over", "dragging", "sortable", "actions-col", "width", "min-width"], ["draggable", "true", 3, "dragstart", "dragover", "dragleave", "drop", "dragend", "click"], ["aria-hidden", "true", 1, "col-resize", 3, "mousedown", "click"], [1, "actions-col"], [1, "truncate", 3, "title"], [1, "patient-name", 3, "has-encounter"], [1, "labs-cell"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "row-action-muted", "title"], ["type", "button", "title", "Open appointment view", "aria-label", "Open appointment view", 1, "row-action", 3, "click"], ["viewBox", "0 0 16 16", "width", "14", "height", "14", "aria-hidden", "true"], ["fill", "currentColor", "d", "M4.5 1a.5.5 0 0 1 .5.5V2h6v-.5a.5.5 0 0 1 1 0V2h1.5A1.5 1.5 0 0 1 15 3.5v10A1.5 1.5 0 0 1 13.5 15h-11A1.5 1.5 0 0 1 1 13.5v-10A1.5 1.5 0 0 1 2.5 2H4v-.5a.5.5 0 0 1 .5-.5zM2 6v7.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V6H2zm2 2h2v2H4V8zm3 0h2v2H7V8zm3 0h2v2h-2V8zM4 11h2v2H4v-2zm3 0h2v2H7v-2zm3 0h2v2h-2v-2z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1c-2.7 0-8 1.34-8 4v2h16v-2c0-2.66-5.3-4-8-4z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action", 3, "click"], ["fill", "currentColor", "d", "M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5V2h2.5A1.5 1.5 0 0 1 15 3.5v11A1.5 1.5 0 0 1 13.5 16h-11A1.5 1.5 0 0 1 1 14.5v-11A1.5 1.5 0 0 1 2.5 2H5v-.5zm1 0V3h4V1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5zM4 6h8v1H4V6zm0 3h8v1H4V9zm0 3h5v1H4v-1z"], [1, "fusion-badge"], [1, "patient-name"], [1, "patient-mrn"], ["aria-label", "Active emergency encounter", "role", "img", 1, "encntr-indicator", "encntr-emergency", 3, "title"], ["aria-label", "Active encounter", "role", "img", 1, "encntr-indicator", "encntr-other", 3, "title"], ["aria-label", "Active inpatient encounter", "role", "img", 1, "encntr-indicator", 3, "title"], ["viewBox", "0 0 16 16", "width", "13", "height", "13", "aria-hidden", "true"], ["cx", "8", "cy", "8", "r", "8", "fill", "currentColor"], ["fill", "#fff", "d", "M7 3h2v4h4v2H9v4H7V9H3V7h4z"], ["fill", "none", "stroke", "currentColor", "stroke-width", "1.8", "stroke-linecap", "round", "stroke-linejoin", "round", "d", "M.8 8h3.4L6 3.2 9.5 12.8 11.8 8h3.4"], ["fill", "currentColor", "d", "M1 4a.5.5 0 0 1 1 0v5h6V6.5A1.5 1.5 0 0 1 9.5 5H13a3 3 0 0 1 3 3v4a.5.5 0 0 1-1 0v-1.5H2V12a.5.5 0 0 1-1 0V4zm3.5 3.5A1.5 1.5 0 1 0 4.5 4a1.5 1.5 0 0 0 0 3.5z"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "row-action-muted", "title"], [1, "labs-empty"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M6 0a.5.5 0 0 0 0 1H7v4.04L3.06 12.18A1.5 1.5 0 0 0 4.36 14.5h7.28a1.5 1.5 0 0 0 1.3-2.32L9 5.04V1h1a.5.5 0 0 0 0-1H6zm2 1.5V5.2a.5.5 0 0 0 .08.27L10.4 9H5.6l2.32-3.53A.5.5 0 0 0 8 5.2V1.5z"], [1, "labs-count"], [1, "chair-chip", 3, "title"], [1, "params-menu-section"], [3, "close", "patientName", "labs", "labOrders", "lookbackHours"]], template: function ScheduleListComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0);
       \u0275\u0275conditionalCreate(1, ScheduleListComponent_Conditional_1_Template, 5, 0, "div", 1)(2, ScheduleListComponent_Conditional_2_Template, 48, 17);
@@ -1785,7 +1841,7 @@ var ScheduleListComponent = class _ScheduleListComponent {
       \u0275\u0275advance(2);
       \u0275\u0275conditional((tmp_1_0 = ctx.labsModalAppt()) ? 3 : -1, tmp_1_0);
     }
-  }, dependencies: [LabsModalComponent], styles: ["\n\n.schedule-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n}\n.schedule-header[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 0.625rem 1rem;\n  background: var(--fusion-bg-header);\n  border-bottom: 1px solid var(--fusion-border);\n  flex-shrink: 0;\n}\n.date-nav[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.date-input[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  cursor: pointer;\n}\n.date-separator[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.header-controls[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n.physician-filter[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.physician-filter[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  margin-left: 4px;\n}\n.appt-count[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.spinning[_ngcontent-%COMP%] {\n  animation: _ngcontent-%COMP%_spin 1s linear infinite;\n}\n@keyframes _ngcontent-%COMP%_spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.error-banner[_ngcontent-%COMP%] {\n  background: var(--fusion-danger-bg);\n  color: var(--fusion-danger-text);\n  padding: 0.5rem 1rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 0.8rem;\n}\n.loading-overlay[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n}\n.spinner[_ngcontent-%COMP%] {\n  width: 32px;\n  height: 32px;\n  border: 3px solid var(--fusion-border);\n  border-top-color: var(--fusion-primary);\n  border-radius: 50%;\n  animation: _ngcontent-%COMP%_spin 0.8s linear infinite;\n}\n.table-container[_ngcontent-%COMP%] {\n  flex: 1;\n  overflow: auto;\n  min-height: 0;\n}\n.fusion-grid[_ngcontent-%COMP%]   th[_ngcontent-%COMP%] {\n  cursor: pointer;\n  position: relative;\n}\n.fusion-grid[_ngcontent-%COMP%]   th.sortable[_ngcontent-%COMP%]:hover {\n  background: #edf0f3;\n}\n.fusion-grid[_ngcontent-%COMP%]   th.dragging[_ngcontent-%COMP%] {\n  opacity: 0.4;\n}\n.fusion-grid[_ngcontent-%COMP%]   th.drag-over[_ngcontent-%COMP%] {\n  border-left: 2px solid var(--fusion-primary);\n}\n.col-resize[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 0;\n  right: -3px;\n  width: 7px;\n  height: 100%;\n  cursor: col-resize;\n  z-index: 5;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.patient-name[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n.patient-name.has-encounter[_ngcontent-%COMP%] {\n  color: var(--fusion-primary);\n}\n.encntr-indicator[_ngcontent-%COMP%] {\n  display: inline-flex;\n  align-items: center;\n  margin-left: 6px;\n  color: var(--fusion-danger, #c0392b);\n  vertical-align: text-bottom;\n  cursor: help;\n}\ntd[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: var(--fusion-primary);\n  text-decoration: none;\n}\ntd[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.actions-col[_ngcontent-%COMP%] {\n  width: 1%;\n  white-space: nowrap;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.row-action[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid transparent;\n  padding: 2px 4px;\n  margin-right: 2px;\n  border-radius: 3px;\n  color: var(--fusion-primary);\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  vertical-align: middle;\n}\n.row-action[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-border);\n}\n.row-action[_ngcontent-%COMP%]:focus-visible {\n  outline: 2px solid var(--fusion-primary);\n  outline-offset: 1px;\n}\n.row-action.row-action-muted[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light);\n}\n.truncate[_ngcontent-%COMP%] {\n  max-width: 200px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.empty-state[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.schedule-footer[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: space-between;\n  padding: 0.5rem 1rem;\n  background: var(--fusion-bg-header);\n  border-top: 1px solid var(--fusion-border);\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  flex-shrink: 0;\n}\n.footer-left[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  min-width: 0;\n  flex-wrap: wrap;\n}\n.footer-sep[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light, #8a949e);\n}\n.footer-params-toggle[_ngcontent-%COMP%] {\n  background: none;\n  border: none;\n  padding: 0;\n  margin: 0;\n  font-size: inherit;\n  color: inherit;\n  cursor: pointer;\n}\n.footer-params-toggle[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.params-menu-wrap[_ngcontent-%COMP%] {\n  position: relative;\n}\n.params-menu[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 0;\n  bottom: calc(100% + 4px);\n  z-index: 30;\n  min-width: 260px;\n  max-width: 380px;\n  max-height: 50vh;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.params-menu-section[_ngcontent-%COMP%] {\n  margin-bottom: 8px;\n}\n.params-menu-section[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  margin: 4px 0 0;\n  padding-left: 18px;\n}\n.schedule-blocked[_ngcontent-%COMP%] {\n  padding: 3rem 1.5rem;\n  text-align: center;\n  color: var(--fusion-text);\n}\n.schedule-blocked[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  margin: 0 0 0.5rem 0;\n  font-size: 1.1rem;\n}\n.schedule-blocked[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin: 0;\n  color: var(--fusion-text-light);\n  font-size: 0.9rem;\n}\n.group-filter[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.group-filter[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  margin-left: 4px;\n}\n.labs-cell[_ngcontent-%COMP%] {\n  text-align: center;\n}\n.labs-count[_ngcontent-%COMP%] {\n  margin-left: 4px;\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.chair-chip[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin-left: 6px;\n  padding: 1px 6px;\n  border-radius: 8px;\n  font-size: 0.85em;\n  background: var(--fusion-surface-alt, #eef2f6);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  white-space: nowrap;\n}\n.labs-empty[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light);\n  font-size: 0.8rem;\n}\n.group-badge[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  padding: 2px 8px;\n  border: 1px solid var(--fusion-border);\n  border-radius: 999px;\n  color: var(--fusion-text-muted);\n  background: var(--fusion-bg-header);\n}\n.columns-menu-wrap[_ngcontent-%COMP%] {\n  position: relative;\n}\n.columns-menu[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  top: calc(100% + 4px);\n  z-index: 30;\n  min-width: 200px;\n  max-height: 320px;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.columns-menu-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 3px 2px;\n  cursor: pointer;\n  white-space: nowrap;\n}\n.columns-menu-reset[_ngcontent-%COMP%] {\n  margin-top: 6px;\n  width: 100%;\n}\n/*# sourceMappingURL=schedule-list.css.map */"], changeDetection: 0 });
+  }, dependencies: [LabsModalComponent], styles: ["\n\n.schedule-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n}\n.schedule-header[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 0.625rem 1rem;\n  background: var(--fusion-bg-header);\n  border-bottom: 1px solid var(--fusion-border);\n  flex-shrink: 0;\n}\n.date-nav[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.date-input[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  cursor: pointer;\n}\n.date-separator[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.header-controls[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n.physician-filter[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.physician-filter[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  margin-left: 4px;\n}\n.appt-count[_ngcontent-%COMP%] {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.spinning[_ngcontent-%COMP%] {\n  animation: _ngcontent-%COMP%_spin 1s linear infinite;\n}\n@keyframes _ngcontent-%COMP%_spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.error-banner[_ngcontent-%COMP%] {\n  background: var(--fusion-danger-bg);\n  color: var(--fusion-danger-text);\n  padding: 0.5rem 1rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 0.8rem;\n}\n.loading-overlay[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n}\n.spinner[_ngcontent-%COMP%] {\n  width: 32px;\n  height: 32px;\n  border: 3px solid var(--fusion-border);\n  border-top-color: var(--fusion-primary);\n  border-radius: 50%;\n  animation: _ngcontent-%COMP%_spin 0.8s linear infinite;\n}\n.table-container[_ngcontent-%COMP%] {\n  flex: 1;\n  overflow: auto;\n  min-height: 0;\n}\n.fusion-grid[_ngcontent-%COMP%]   th[_ngcontent-%COMP%] {\n  cursor: pointer;\n  position: relative;\n}\n.fusion-grid[_ngcontent-%COMP%]   th.sortable[_ngcontent-%COMP%]:hover {\n  background: #edf0f3;\n}\n.fusion-grid[_ngcontent-%COMP%]   th.dragging[_ngcontent-%COMP%] {\n  opacity: 0.4;\n}\n.fusion-grid[_ngcontent-%COMP%]   th.drag-over[_ngcontent-%COMP%] {\n  border-left: 2px solid var(--fusion-primary);\n}\n.col-resize[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 0;\n  right: -3px;\n  width: 7px;\n  height: 100%;\n  cursor: col-resize;\n  z-index: 5;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.patient-name[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n.patient-name.has-encounter[_ngcontent-%COMP%] {\n  color: var(--fusion-primary);\n}\n.encntr-indicator[_ngcontent-%COMP%] {\n  display: inline-flex;\n  align-items: center;\n  margin-left: 6px;\n  color: var(--fusion-danger, #c0392b);\n  vertical-align: text-bottom;\n  cursor: help;\n}\n.encntr-emergency[_ngcontent-%COMP%] {\n  color: var(--fusion-danger, #c0392b);\n}\n.encntr-other[_ngcontent-%COMP%] {\n  color: var(--fusion-muted, #7f8c8d);\n}\n.patient-mrn[_ngcontent-%COMP%] {\n  font-size: 11px;\n  line-height: 1.2;\n  color: var(--fusion-muted, #6b7280);\n}\ntd[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: var(--fusion-primary);\n  text-decoration: none;\n}\ntd[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.actions-col[_ngcontent-%COMP%] {\n  width: 1%;\n  white-space: nowrap;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.row-action[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid transparent;\n  padding: 2px 4px;\n  margin-right: 2px;\n  border-radius: 3px;\n  color: var(--fusion-primary);\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  vertical-align: middle;\n}\n.row-action[_ngcontent-%COMP%]:hover {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-border);\n}\n.row-action[_ngcontent-%COMP%]:focus-visible {\n  outline: 2px solid var(--fusion-primary);\n  outline-offset: 1px;\n}\n.row-action.row-action-muted[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light);\n}\n.truncate[_ngcontent-%COMP%] {\n  max-width: 200px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.empty-state[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.schedule-footer[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: space-between;\n  padding: 0.5rem 1rem;\n  background: var(--fusion-bg-header);\n  border-top: 1px solid var(--fusion-border);\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  flex-shrink: 0;\n}\n.footer-left[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  min-width: 0;\n  flex-wrap: wrap;\n}\n.footer-sep[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light, #8a949e);\n}\n.footer-params-toggle[_ngcontent-%COMP%] {\n  background: none;\n  border: none;\n  padding: 0;\n  margin: 0;\n  font-size: inherit;\n  color: inherit;\n  cursor: pointer;\n}\n.footer-params-toggle[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.params-menu-wrap[_ngcontent-%COMP%] {\n  position: relative;\n}\n.params-menu[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 0;\n  bottom: calc(100% + 4px);\n  z-index: 30;\n  min-width: 260px;\n  max-width: 380px;\n  max-height: 50vh;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.params-menu-section[_ngcontent-%COMP%] {\n  margin-bottom: 8px;\n}\n.params-menu-section[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  margin: 4px 0 0;\n  padding-left: 18px;\n}\n.schedule-blocked[_ngcontent-%COMP%] {\n  padding: 3rem 1.5rem;\n  text-align: center;\n  color: var(--fusion-text);\n}\n.schedule-blocked[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  margin: 0 0 0.5rem 0;\n  font-size: 1.1rem;\n}\n.schedule-blocked[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin: 0;\n  color: var(--fusion-text-light);\n  font-size: 0.9rem;\n}\n.group-filter[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.group-filter[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  margin-left: 4px;\n}\n.labs-cell[_ngcontent-%COMP%] {\n  text-align: center;\n}\n.labs-count[_ngcontent-%COMP%] {\n  margin-left: 4px;\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.chair-chip[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin-left: 6px;\n  padding: 1px 6px;\n  border-radius: 8px;\n  font-size: 0.85em;\n  background: var(--fusion-surface-alt, #eef2f6);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  white-space: nowrap;\n}\n.labs-empty[_ngcontent-%COMP%] {\n  color: var(--fusion-text-light);\n  font-size: 0.8rem;\n}\n.group-badge[_ngcontent-%COMP%] {\n  font-size: 0.7rem;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  padding: 2px 8px;\n  border: 1px solid var(--fusion-border);\n  border-radius: 999px;\n  color: var(--fusion-text-muted);\n  background: var(--fusion-bg-header);\n}\n.columns-menu-wrap[_ngcontent-%COMP%] {\n  position: relative;\n}\n.columns-menu[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  top: calc(100% + 4px);\n  z-index: 30;\n  min-width: 200px;\n  max-height: 320px;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.columns-menu-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 3px 2px;\n  cursor: pointer;\n  white-space: nowrap;\n}\n.columns-menu-reset[_ngcontent-%COMP%] {\n  margin-top: 6px;\n  width: 100%;\n}\n/*# sourceMappingURL=schedule-list.css.map */"], changeDetection: 0 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ScheduleListComponent, [{
@@ -1952,16 +2008,50 @@ var ScheduleListComponent = class _ScheduleListComponent {
                   <td class="patient-name" [class.has-encounter]="!!appt.encntr_id">
                     {{ getCellValue(appt, col.key) }}
                     @if (appt.active_encntr_ind) {
-                      <span
-                        class="encntr-indicator"
-                        [title]="'Active ' + (appt.active_encntr_type || 'inpatient/ED') + ' encounter'"
-                        aria-label="Active inpatient or emergency encounter"
-                        role="img"
-                      >
-                        <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
-                          <path fill="currentColor" d="M1 4a.5.5 0 0 1 1 0v5h6V6.5A1.5 1.5 0 0 1 9.5 5H13a3 3 0 0 1 3 3v4a.5.5 0 0 1-1 0v-1.5H2V12a.5.5 0 0 1-1 0V4zm3.5 3.5A1.5 1.5 0 1 0 4.5 4a1.5 1.5 0 0 0 0 3.5z"/>
-                        </svg>
-                      </span>
+                      @switch (indicatorCategory(appt)) {
+                        @case ('emergency') {
+                          <span
+                            class="encntr-indicator encntr-emergency"
+                            [title]="'Active ' + (appt.active_encntr_type || 'emergency') + ' encounter'"
+                            aria-label="Active emergency encounter"
+                            role="img"
+                          >
+                            <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+                              <circle cx="8" cy="8" r="8" fill="currentColor"/>
+                              <path fill="#fff" d="M7 3h2v4h4v2H9v4H7V9H3V7h4z"/>
+                            </svg>
+                          </span>
+                        }
+                        @case ('other') {
+                          <span
+                            class="encntr-indicator encntr-other"
+                            [title]="appt.active_encntr_type ? 'Active ' + appt.active_encntr_type + ' encounter' : 'Active encounter'"
+                            aria-label="Active encounter"
+                            role="img"
+                          >
+                            <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+                              <path fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                d="M.8 8h3.4L6 3.2 9.5 12.8 11.8 8h3.4"/>
+                            </svg>
+                          </span>
+                        }
+                        @default {
+                          <span
+                            class="encntr-indicator"
+                            [title]="'Active ' + (appt.active_encntr_type || 'inpatient') + ' encounter'"
+                            aria-label="Active inpatient encounter"
+                            role="img"
+                          >
+                            <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+                              <path fill="currentColor" d="M1 4a.5.5 0 0 1 1 0v5h6V6.5A1.5 1.5 0 0 1 9.5 5H13a3 3 0 0 1 3 3v4a.5.5 0 0 1-1 0v-1.5H2V12a.5.5 0 0 1-1 0V4zm3.5 3.5A1.5 1.5 0 1 0 4.5 4a1.5 1.5 0 0 0 0 3.5z"/>
+                            </svg>
+                          </span>
+                        }
+                      }
+                    }
+                    @if (appt.mrn) {
+                      <div class="patient-mrn">{{ appt.mrn }}</div>
                     }
                   </td>
                 } @else if (col.key === 'labs') {
@@ -2076,13 +2166,13 @@ var ScheduleListComponent = class _ScheduleListComponent {
     ></app-labs-modal>
   }
 </div>
-`, styles: ["/* src/app/components/schedule-list/schedule-list.scss */\n.schedule-container {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n}\n.schedule-header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 0.625rem 1rem;\n  background: var(--fusion-bg-header);\n  border-bottom: 1px solid var(--fusion-border);\n  flex-shrink: 0;\n}\n.date-nav {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.date-input {\n  font-size: 0.8rem;\n  cursor: pointer;\n}\n.date-separator {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.header-controls {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n.physician-filter {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.physician-filter select {\n  margin-left: 4px;\n}\n.appt-count {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.spinning {\n  animation: spin 1s linear infinite;\n}\n@keyframes spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.error-banner {\n  background: var(--fusion-danger-bg);\n  color: var(--fusion-danger-text);\n  padding: 0.5rem 1rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 0.8rem;\n}\n.loading-overlay {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n}\n.spinner {\n  width: 32px;\n  height: 32px;\n  border: 3px solid var(--fusion-border);\n  border-top-color: var(--fusion-primary);\n  border-radius: 50%;\n  animation: spin 0.8s linear infinite;\n}\n.table-container {\n  flex: 1;\n  overflow: auto;\n  min-height: 0;\n}\n.fusion-grid th {\n  cursor: pointer;\n  position: relative;\n}\n.fusion-grid th.sortable:hover {\n  background: #edf0f3;\n}\n.fusion-grid th.dragging {\n  opacity: 0.4;\n}\n.fusion-grid th.drag-over {\n  border-left: 2px solid var(--fusion-primary);\n}\n.col-resize {\n  position: absolute;\n  top: 0;\n  right: -3px;\n  width: 7px;\n  height: 100%;\n  cursor: col-resize;\n  z-index: 5;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.patient-name {\n  font-weight: 600;\n}\n.patient-name.has-encounter {\n  color: var(--fusion-primary);\n}\n.encntr-indicator {\n  display: inline-flex;\n  align-items: center;\n  margin-left: 6px;\n  color: var(--fusion-danger, #c0392b);\n  vertical-align: text-bottom;\n  cursor: help;\n}\ntd a {\n  color: var(--fusion-primary);\n  text-decoration: none;\n}\ntd a:hover {\n  text-decoration: underline;\n}\n.actions-col {\n  width: 1%;\n  white-space: nowrap;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.row-action {\n  background: transparent;\n  border: 1px solid transparent;\n  padding: 2px 4px;\n  margin-right: 2px;\n  border-radius: 3px;\n  color: var(--fusion-primary);\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  vertical-align: middle;\n}\n.row-action:hover {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-border);\n}\n.row-action:focus-visible {\n  outline: 2px solid var(--fusion-primary);\n  outline-offset: 1px;\n}\n.row-action.row-action-muted {\n  color: var(--fusion-text-light);\n}\n.truncate {\n  max-width: 200px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.empty-state {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.schedule-footer {\n  display: flex;\n  justify-content: space-between;\n  padding: 0.5rem 1rem;\n  background: var(--fusion-bg-header);\n  border-top: 1px solid var(--fusion-border);\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  flex-shrink: 0;\n}\n.footer-left {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  min-width: 0;\n  flex-wrap: wrap;\n}\n.footer-sep {\n  color: var(--fusion-text-light, #8a949e);\n}\n.footer-params-toggle {\n  background: none;\n  border: none;\n  padding: 0;\n  margin: 0;\n  font-size: inherit;\n  color: inherit;\n  cursor: pointer;\n}\n.footer-params-toggle:hover {\n  text-decoration: underline;\n}\n.params-menu-wrap {\n  position: relative;\n}\n.params-menu {\n  position: absolute;\n  left: 0;\n  bottom: calc(100% + 4px);\n  z-index: 30;\n  min-width: 260px;\n  max-width: 380px;\n  max-height: 50vh;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.params-menu-section {\n  margin-bottom: 8px;\n}\n.params-menu-section ul {\n  margin: 4px 0 0;\n  padding-left: 18px;\n}\n.schedule-blocked {\n  padding: 3rem 1.5rem;\n  text-align: center;\n  color: var(--fusion-text);\n}\n.schedule-blocked h3 {\n  margin: 0 0 0.5rem 0;\n  font-size: 1.1rem;\n}\n.schedule-blocked p {\n  margin: 0;\n  color: var(--fusion-text-light);\n  font-size: 0.9rem;\n}\n.group-filter {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.group-filter select {\n  margin-left: 4px;\n}\n.labs-cell {\n  text-align: center;\n}\n.labs-count {\n  margin-left: 4px;\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.chair-chip {\n  display: inline-block;\n  margin-left: 6px;\n  padding: 1px 6px;\n  border-radius: 8px;\n  font-size: 0.85em;\n  background: var(--fusion-surface-alt, #eef2f6);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  white-space: nowrap;\n}\n.labs-empty {\n  color: var(--fusion-text-light);\n  font-size: 0.8rem;\n}\n.group-badge {\n  font-size: 0.7rem;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  padding: 2px 8px;\n  border: 1px solid var(--fusion-border);\n  border-radius: 999px;\n  color: var(--fusion-text-muted);\n  background: var(--fusion-bg-header);\n}\n.columns-menu-wrap {\n  position: relative;\n}\n.columns-menu {\n  position: absolute;\n  right: 0;\n  top: calc(100% + 4px);\n  z-index: 30;\n  min-width: 200px;\n  max-height: 320px;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.columns-menu-item {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 3px 2px;\n  cursor: pointer;\n  white-space: nowrap;\n}\n.columns-menu-reset {\n  margin-top: 6px;\n  width: 100%;\n}\n/*# sourceMappingURL=schedule-list.css.map */\n"] }]
+`, styles: ["/* src/app/components/schedule-list/schedule-list.scss */\n.schedule-container {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n}\n.schedule-header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 0.625rem 1rem;\n  background: var(--fusion-bg-header);\n  border-bottom: 1px solid var(--fusion-border);\n  flex-shrink: 0;\n}\n.date-nav {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.date-input {\n  font-size: 0.8rem;\n  cursor: pointer;\n}\n.date-separator {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.header-controls {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n.physician-filter {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.physician-filter select {\n  margin-left: 4px;\n}\n.appt-count {\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n}\n.spinning {\n  animation: spin 1s linear infinite;\n}\n@keyframes spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.error-banner {\n  background: var(--fusion-danger-bg);\n  color: var(--fusion-danger-text);\n  padding: 0.5rem 1rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 0.8rem;\n}\n.loading-overlay {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n}\n.spinner {\n  width: 32px;\n  height: 32px;\n  border: 3px solid var(--fusion-border);\n  border-top-color: var(--fusion-primary);\n  border-radius: 50%;\n  animation: spin 0.8s linear infinite;\n}\n.table-container {\n  flex: 1;\n  overflow: auto;\n  min-height: 0;\n}\n.fusion-grid th {\n  cursor: pointer;\n  position: relative;\n}\n.fusion-grid th.sortable:hover {\n  background: #edf0f3;\n}\n.fusion-grid th.dragging {\n  opacity: 0.4;\n}\n.fusion-grid th.drag-over {\n  border-left: 2px solid var(--fusion-primary);\n}\n.col-resize {\n  position: absolute;\n  top: 0;\n  right: -3px;\n  width: 7px;\n  height: 100%;\n  cursor: col-resize;\n  z-index: 5;\n  -webkit-user-select: none;\n  user-select: none;\n}\n.patient-name {\n  font-weight: 600;\n}\n.patient-name.has-encounter {\n  color: var(--fusion-primary);\n}\n.encntr-indicator {\n  display: inline-flex;\n  align-items: center;\n  margin-left: 6px;\n  color: var(--fusion-danger, #c0392b);\n  vertical-align: text-bottom;\n  cursor: help;\n}\n.encntr-emergency {\n  color: var(--fusion-danger, #c0392b);\n}\n.encntr-other {\n  color: var(--fusion-muted, #7f8c8d);\n}\n.patient-mrn {\n  font-size: 11px;\n  line-height: 1.2;\n  color: var(--fusion-muted, #6b7280);\n}\ntd a {\n  color: var(--fusion-primary);\n  text-decoration: none;\n}\ntd a:hover {\n  text-decoration: underline;\n}\n.actions-col {\n  width: 1%;\n  white-space: nowrap;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.row-action {\n  background: transparent;\n  border: 1px solid transparent;\n  padding: 2px 4px;\n  margin-right: 2px;\n  border-radius: 3px;\n  color: var(--fusion-primary);\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  vertical-align: middle;\n}\n.row-action:hover {\n  background: var(--fusion-bg-selected);\n  border-color: var(--fusion-border);\n}\n.row-action:focus-visible {\n  outline: 2px solid var(--fusion-primary);\n  outline-offset: 1px;\n}\n.row-action.row-action-muted {\n  color: var(--fusion-text-light);\n}\n.truncate {\n  max-width: 200px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.empty-state {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 3.75rem;\n  color: var(--fusion-text-light);\n  font-size: 0.875rem;\n}\n.schedule-footer {\n  display: flex;\n  justify-content: space-between;\n  padding: 0.5rem 1rem;\n  background: var(--fusion-bg-header);\n  border-top: 1px solid var(--fusion-border);\n  font-size: 0.75rem;\n  color: var(--fusion-text-light);\n  flex-shrink: 0;\n}\n.footer-left {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  min-width: 0;\n  flex-wrap: wrap;\n}\n.footer-sep {\n  color: var(--fusion-text-light, #8a949e);\n}\n.footer-params-toggle {\n  background: none;\n  border: none;\n  padding: 0;\n  margin: 0;\n  font-size: inherit;\n  color: inherit;\n  cursor: pointer;\n}\n.footer-params-toggle:hover {\n  text-decoration: underline;\n}\n.params-menu-wrap {\n  position: relative;\n}\n.params-menu {\n  position: absolute;\n  left: 0;\n  bottom: calc(100% + 4px);\n  z-index: 30;\n  min-width: 260px;\n  max-width: 380px;\n  max-height: 50vh;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.params-menu-section {\n  margin-bottom: 8px;\n}\n.params-menu-section ul {\n  margin: 4px 0 0;\n  padding-left: 18px;\n}\n.schedule-blocked {\n  padding: 3rem 1.5rem;\n  text-align: center;\n  color: var(--fusion-text);\n}\n.schedule-blocked h3 {\n  margin: 0 0 0.5rem 0;\n  font-size: 1.1rem;\n}\n.schedule-blocked p {\n  margin: 0;\n  color: var(--fusion-text-light);\n  font-size: 0.9rem;\n}\n.group-filter {\n  font-size: 0.8rem;\n  color: var(--fusion-text-muted);\n}\n.group-filter select {\n  margin-left: 4px;\n}\n.labs-cell {\n  text-align: center;\n}\n.labs-count {\n  margin-left: 4px;\n  font-size: 0.7rem;\n  color: var(--fusion-text-light);\n}\n.chair-chip {\n  display: inline-block;\n  margin-left: 6px;\n  padding: 1px 6px;\n  border-radius: 8px;\n  font-size: 0.85em;\n  background: var(--fusion-surface-alt, #eef2f6);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  white-space: nowrap;\n}\n.labs-empty {\n  color: var(--fusion-text-light);\n  font-size: 0.8rem;\n}\n.group-badge {\n  font-size: 0.7rem;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  padding: 2px 8px;\n  border: 1px solid var(--fusion-border);\n  border-radius: 999px;\n  color: var(--fusion-text-muted);\n  background: var(--fusion-bg-header);\n}\n.columns-menu-wrap {\n  position: relative;\n}\n.columns-menu {\n  position: absolute;\n  right: 0;\n  top: calc(100% + 4px);\n  z-index: 30;\n  min-width: 200px;\n  max-height: 320px;\n  overflow-y: auto;\n  padding: 8px;\n  background: var(--fusion-surface, #fff);\n  border: 1px solid var(--fusion-border, #cfd8e0);\n  border-radius: 4px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.columns-menu-item {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 3px 2px;\n  cursor: pointer;\n  white-space: nowrap;\n}\n.columns-menu-reset {\n  margin-top: 6px;\n  width: 100%;\n}\n/*# sourceMappingURL=schedule-list.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ScheduleListComponent, { className: "ScheduleListComponent", filePath: "src/app/components/schedule-list/schedule-list.ts", lineNumber: 26 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ScheduleListComponent, { className: "ScheduleListComponent", filePath: "src/app/components/schedule-list/schedule-list.ts", lineNumber: 28 });
 })();
 export {
   ScheduleListComponent
 };
-//# sourceMappingURL=chunk-HK4F5ACV.js.map
+//# sourceMappingURL=chunk-F3RXQMB2.js.map
