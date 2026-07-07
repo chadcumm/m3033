@@ -2,11 +2,11 @@ import {
   ALL_TABS,
   DEFAULT_LAB_LOOKBACK_HOURS,
   SUPERUSER_OVERRIDE_ALL
-} from "./chunk-OWW6YCFQ.js";
+} from "./chunk-C627BRJC.js";
 import {
   ConfigurationService,
   MPageService
-} from "./chunk-UOIJNSGV.js";
+} from "./chunk-CEFVAZ3E.js";
 import {
   Injectable,
   computed,
@@ -14,7 +14,7 @@ import {
   setClassMetadata,
   signal,
   ɵɵdefineInjectable
-} from "./chunk-VK25UXFS.js";
+} from "./chunk-XZZHFFQA.js";
 
 // src/app/services/access-control.service.ts
 var AccessControlService = class _AccessControlService {
@@ -228,4 +228,4 @@ var AccessControlService = class _AccessControlService {
 export {
   AccessControlService
 };
-//# sourceMappingURL=chunk-ENSC6ZKD.js.map
+//# sourceMappingURL=chunk-P2EANT7S.js.map

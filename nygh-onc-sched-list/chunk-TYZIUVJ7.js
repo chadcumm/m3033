@@ -1,7 +1,7 @@
 import {
   CustomService,
   MPageService
-} from "./chunk-UOIJNSGV.js";
+} from "./chunk-CEFVAZ3E.js";
 import {
   Injectable,
   computed,
@@ -9,7 +9,7 @@ import {
   setClassMetadata,
   signal,
   ɵɵdefineInjectable
-} from "./chunk-VK25UXFS.js";
+} from "./chunk-XZZHFFQA.js";
 import {
   __spreadValues
 } from "./chunk-7WUTQBRG.js";
@@ -113,9 +113,9 @@ var HELP_SECTIONS = [
         technical: '"Reason for Exam" order-entry field from SCH_EVENT_DETAIL (Q4), falling back to the attached order\u2019s ORDER_DETAIL (Q4c).'
       },
       {
-        term: "Requested Date",
-        description: "The requested start date for the visit.",
-        technical: '"Requested Start Date/Time" OE field from SCH_EVENT_DETAIL (Q4), falling back to ORDER_DETAIL (Q4c), then the order\u2019s current_start_dt_tm (Q4b).'
+        term: "Appt Date",
+        description: "The date the appointment is booked for. A rescheduled appointment shows its current (moved-to) date.",
+        technical: 'SCH_APPT.beg_dt_tm of the winning instance (Q1, Mod 033). The legacy requested_date ("Requested Start Date/Time" OE field, Q4/Q4b/Q4c) is still in the payload but no longer displayed \u2014 it does not update when an appointment is rescheduled.'
       },
       {
         term: "Day of Tx",
@@ -442,4 +442,4 @@ export {
   hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-4D6DCODC.js.map
+//# sourceMappingURL=chunk-TYZIUVJ7.js.map

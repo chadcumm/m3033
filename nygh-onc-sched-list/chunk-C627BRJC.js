@@ -5,6 +5,18 @@ function resolveEncntrIndicatorCategory(typeCd, typeDisplay, categories) {
     return mapped;
   return /emerg/i.test(typeDisplay) ? "emergency" : "inpatient";
 }
+var ENCNTR_INDICATOR_DEFS = [
+  { category: "emergency", label: "Emergency", cssClass: "encntr-emergency" },
+  { category: "inpatient", label: "Inpatient", cssClass: "" },
+  { category: "other", label: "Other / Unspecified", cssClass: "encntr-other" },
+  { category: "observation", label: "Observation", cssClass: "encntr-observation" },
+  { category: "day-surgery", label: "Day Surgery", cssClass: "encntr-day-surgery" },
+  { category: "recurring", label: "Recurring / Series", cssClass: "encntr-recurring" },
+  { category: "outpatient", label: "Outpatient Clinic", cssClass: "encntr-outpatient" },
+  { category: "long-term-care", label: "Long-Term Care", cssClass: "encntr-long-term-care" },
+  { category: "palliative-hospice", label: "Palliative / Hospice", cssClass: "encntr-palliative" },
+  { category: "virtual-telehealth", label: "Virtual / Telehealth", cssClass: "encntr-virtual" }
+];
 function cellDisplayValue(appt, key) {
   if (key === "attending_physician") {
     return appt.attending_physician || "\u2014";
@@ -25,7 +37,7 @@ var DEFAULT_PREFERENCES = {
     "appt_type",
     "appt_status",
     "reason_for_visit",
-    "requested_date",
+    "appt_date",
     "day_of_treatment",
     "ordered_treatment",
     "special_instructions",
@@ -69,7 +81,7 @@ var COLUMN_DEFINITIONS = [
   { key: "appt_type", header: "Appt Type" },
   { key: "appt_status", header: "Status" },
   { key: "reason_for_visit", header: "Reason" },
-  { key: "requested_date", header: "Requested Date" },
+  { key: "appt_date", header: "Appt Date" },
   { key: "day_of_treatment", header: "Day of Tx" },
   { key: "ordered_treatment", header: "Ordered Treatment" },
   { key: "special_instructions", header: "Special Instructions" },
@@ -78,6 +90,7 @@ var COLUMN_DEFINITIONS = [
 
 export {
   resolveEncntrIndicatorCategory,
+  ENCNTR_INDICATOR_DEFS,
   cellDisplayValue,
   DEFAULT_PREFERENCES,
   DEFAULT_LAB_LOOKBACK_HOURS,
@@ -93,4 +106,4 @@ export {
   ALL_TABS,
   COLUMN_DEFINITIONS
 };
-//# sourceMappingURL=chunk-OWW6YCFQ.js.map
+//# sourceMappingURL=chunk-C627BRJC.js.map

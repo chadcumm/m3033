@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined";
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
@@ -126,6 +127,10 @@
   --fusion-rescheduled: #9a5b00;
   --fusion-rescheduled-bg: #fdf0e0;
   --fusion-rescheduled-text: #9a5b00;
+  --fusion-teal: #0f8b8d;
+  --fusion-slate: #546e7a;
+  --fusion-purple: #8e44ad;
+  --fusion-indigo: #5b5fc7;
   --fusion-text: #1c1f21;
   --fusion-text-muted: #4c5259;
   --fusion-text-light: #6f777d;
@@ -190,6 +195,33 @@
 }
 .fusion-panel-body {
   padding: var(--fusion-space-base) var(--fusion-space-md);
+}
+.encntr-emergency {
+  color: var(--fusion-danger, #c0392b);
+}
+.encntr-other {
+  color: var(--fusion-muted, #7f8c8d);
+}
+.encntr-observation {
+  color: var(--fusion-warning, #c36d15);
+}
+.encntr-day-surgery {
+  color: var(--fusion-info, #0079be);
+}
+.encntr-recurring {
+  color: var(--fusion-success, #1a7742);
+}
+.encntr-outpatient {
+  color: var(--fusion-teal, #0f8b8d);
+}
+.encntr-long-term-care {
+  color: var(--fusion-slate, #546e7a);
+}
+.encntr-palliative {
+  color: var(--fusion-purple, #8e44ad);
+}
+.encntr-virtual {
+  color: var(--fusion-indigo, #5b5fc7);
 }
 .fusion-grid {
   width: 100%;

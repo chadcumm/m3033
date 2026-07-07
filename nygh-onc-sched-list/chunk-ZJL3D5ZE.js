@@ -1,9 +1,9 @@
 import {
   AccessControlService
-} from "./chunk-ENSC6ZKD.js";
+} from "./chunk-P2EANT7S.js";
 import {
   ALL_TABS
-} from "./chunk-OWW6YCFQ.js";
+} from "./chunk-C627BRJC.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -15,7 +15,7 @@ import {
   NgSelectOption,
   PrsnlService,
   ɵNgSelectMultipleOption
-} from "./chunk-UOIJNSGV.js";
+} from "./chunk-CEFVAZ3E.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -47,7 +47,7 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-VK25UXFS.js";
+} from "./chunk-XZZHFFQA.js";
 import {
   __spreadProps,
   __spreadValues
@@ -634,4 +634,4 @@ var SecurityComponent = class _SecurityComponent {
 export {
   SecurityComponent
 };
-//# sourceMappingURL=chunk-FPXQBXT7.js.map
+//# sourceMappingURL=chunk-ZJL3D5ZE.js.map

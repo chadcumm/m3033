@@ -1,19 +1,19 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-UJWBBFVZ.js";
+} from "./chunk-U63YWRII.js";
 import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-5S6374AC.js";
+} from "./chunk-LYSWS4TR.js";
 import {
   HelpContentService
-} from "./chunk-4D6DCODC.js";
+} from "./chunk-TYZIUVJ7.js";
 import {
   AccessControlService
-} from "./chunk-ENSC6ZKD.js";
-import "./chunk-OWW6YCFQ.js";
+} from "./chunk-P2EANT7S.js";
+import "./chunk-C627BRJC.js";
 import {
   AddressService,
   AllergyService,
@@ -46,7 +46,7 @@ import {
   bootstrapApplication,
   provideHttpClient,
   withFetch
-} from "./chunk-UOIJNSGV.js";
+} from "./chunk-CEFVAZ3E.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -182,7 +182,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-VK25UXFS.js";
+} from "./chunk-XZZHFFQA.js";
 import {
   __spreadProps,
   __spreadValues
@@ -5909,7 +5909,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
     this._engine?.flush();
   }
   loadImpl() {
-    const loadFn = () => this.moduleImpl ?? import("./chunk-VUX3UOOJ.js").then((m) => m);
+    const loadFn = () => this.moduleImpl ?? import("./chunk-CIHBOIEW.js").then((m) => m);
     let moduleImplPromise;
     if (this.loadingSchedulerFn) {
       moduleImplPromise = this.loadingSchedulerFn(loadFn);
@@ -6189,27 +6189,27 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-RN5GKK6Y.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-UZT5FJAV.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-IOGUHFPJ.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-WBZ5H4PZ.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-FPXQBXT7.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-ZJL3D5ZE.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "help-editor",
-    loadComponent: () => import("./chunk-OK6R4MQP.js").then((m) => m.HelpEditorComponent),
+    loadComponent: () => import("./chunk-X5QSIRBA.js").then((m) => m.HelpEditorComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "advanced",
-    loadComponent: () => import("./chunk-XBRKKYZI.js").then((m) => m.AdvancedComponent),
+    loadComponent: () => import("./chunk-Q7YCX62Q.js").then((m) => m.AdvancedComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },

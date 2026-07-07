@@ -1,18 +1,18 @@
 import {
   AccessControlService
-} from "./chunk-ENSC6ZKD.js";
+} from "./chunk-P2EANT7S.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_PREFERENCES,
   DEFAULT_REFRESH_INTERVAL_SECONDS,
   MAX_REFRESH_INTERVAL_SECONDS,
   MIN_REFRESH_INTERVAL_SECONDS
-} from "./chunk-OWW6YCFQ.js";
+} from "./chunk-C627BRJC.js";
 import {
   ConfigurationService,
   CustomService,
   MPageService
-} from "./chunk-UOIJNSGV.js";
+} from "./chunk-CEFVAZ3E.js";
 import {
   Injectable,
   computed,
@@ -21,7 +21,7 @@ import {
   setClassMetadata,
   signal,
   ɵɵdefineInjectable
-} from "./chunk-VK25UXFS.js";
+} from "./chunk-XZZHFFQA.js";
 import {
   __spreadProps,
   __spreadValues
@@ -329,6 +329,7 @@ var ScheduleService = class _ScheduleService {
             appt_type: a.apptType ?? a.appt_type ?? "",
             appt_status: a.apptStatus ?? a.appt_status ?? "",
             reason_for_visit: a.reasonForVisit ?? a.reason_for_visit ?? "",
+            appt_date: a.apptDate ?? a.appt_date ?? "",
             requested_date: a.requestedDate ?? a.requested_date ?? "",
             day_of_treatment: a.dayOfTreatment ?? a.day_of_treatment ?? "",
             ordered_treatment: a.orderedTreatment ?? a.ordered_treatment ?? "",
@@ -531,4 +532,4 @@ export {
   PreferencesService,
   ScheduleService
 };
-//# sourceMappingURL=chunk-UJWBBFVZ.js.map
+//# sourceMappingURL=chunk-U63YWRII.js.map
