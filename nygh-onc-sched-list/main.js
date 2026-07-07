@@ -1,15 +1,16 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-MATONQ3U.js";
+} from "./chunk-M37PCHHV.js";
 import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-ADJYIHJ7.js";
+} from "./chunk-SQB2EDHY.js";
 import {
   HelpContentService
-} from "./chunk-RBWUPWVC.js";
+} from "./chunk-DBYMUFWG.js";
+import "./chunk-2ZCKW5AH.js";
 import {
   AccessControlService
 } from "./chunk-TGKA35YZ.js";
@@ -6189,12 +6190,12 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-E64OZJYC.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-UNDRETWT.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-B6YIERLN.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-S32VWVP3.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
@@ -6204,12 +6205,12 @@ var routes = [
   },
   {
     path: "help-editor",
-    loadComponent: () => import("./chunk-ATZ33LJL.js").then((m) => m.HelpEditorComponent),
+    loadComponent: () => import("./chunk-5AYSTH3W.js").then((m) => m.HelpEditorComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "advanced",
-    loadComponent: () => import("./chunk-SKKJOKCW.js").then((m) => m.AdvancedComponent),
+    loadComponent: () => import("./chunk-NIVOPRIS.js").then((m) => m.AdvancedComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },

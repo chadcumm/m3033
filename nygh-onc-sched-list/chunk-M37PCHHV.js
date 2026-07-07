@@ -1,4 +1,7 @@
 import {
+  readLongText
+} from "./chunk-2ZCKW5AH.js";
+import {
   AccessControlService
 } from "./chunk-TGKA35YZ.js";
 import {
@@ -86,8 +89,9 @@ var PreferencesService = class _PreferencesService {
     this.customService.executeDmInfoAction("loadUserPrefs", "r", [dmInfo], () => {
       try {
         const result = this.customService.get("loadUserPrefs");
-        if (result?.infoLongText) {
-          const prefs = JSON.parse(result.infoLongText);
+        const longText = readLongText(result);
+        if (longText) {
+          const prefs = JSON.parse(longText);
           this._preferences.set(this.reconcile(__spreadValues(__spreadValues({}, DEFAULT_PREFERENCES), prefs)));
           this.updateLocalStorage();
         }
@@ -532,4 +536,4 @@ export {
   PreferencesService,
   ScheduleService
 };
-//# sourceMappingURL=chunk-MATONQ3U.js.map
+//# sourceMappingURL=chunk-M37PCHHV.js.map

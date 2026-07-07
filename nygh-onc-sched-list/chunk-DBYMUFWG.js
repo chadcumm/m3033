@@ -1,4 +1,7 @@
 import {
+  readLongText
+} from "./chunk-2ZCKW5AH.js";
+import {
   CustomService,
   MPageService
 } from "./chunk-CEFVAZ3E.js";
@@ -292,9 +295,6 @@ function hasUnsavedHelpChanges(loaded, current, baseline) {
 var DMINFO_DOMAIN = "ONC_SCHED";
 var CONTENT_NAME = "HELP_CONTENT";
 var IMAGE_NAME = "HELP_IMAGE";
-function readLongText(result) {
-  return result?.dmInfo?.[0]?.longText ?? result?.longText ?? result?.infoLongText;
-}
 var HelpContentService = class _HelpContentService {
   customService = inject(CustomService);
   mPage = inject(MPageService);
@@ -442,4 +442,4 @@ export {
   hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-RBWUPWVC.js.map
+//# sourceMappingURL=chunk-DBYMUFWG.js.map

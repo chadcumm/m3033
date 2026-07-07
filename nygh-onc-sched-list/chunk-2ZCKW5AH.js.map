@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/models/dm-info.model.ts"],
+  "sourcesContent": ["// src/app/models/dm-info.model.ts\n\n/** dm_info read result shape varies: PowerChart returns { dmInfo: [{ longText }] },\n * other paths return longText/infoLongText at the top level (same chain as ConfigurationService). */\nexport interface DmInfoReadResult {\n  dmInfo?: { longText?: string }[];\n  longText?: string;\n  infoLongText?: string;\n}\n\nexport function readLongText(result: DmInfoReadResult | undefined): string | undefined {\n  return result?.dmInfo?.[0]?.longText ?? result?.longText ?? result?.infoLongText;\n}\n"],
+  "mappings": ";AAUM,SAAU,aAAa,QAAoC;AAC/D,SAAO,QAAQ,SAAS,CAAC,GAAG,YAAY,QAAQ,YAAY,QAAQ;AACtE;",
+  "names": []
+}

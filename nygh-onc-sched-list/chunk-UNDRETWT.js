@@ -1,10 +1,11 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-MATONQ3U.js";
+} from "./chunk-M37PCHHV.js";
 import {
   EncntrIndicatorIconComponent
 } from "./chunk-B6Z4SSXC.js";
+import "./chunk-2ZCKW5AH.js";
 import {
   AccessControlService
 } from "./chunk-TGKA35YZ.js";
@@ -2157,4 +2158,4 @@ var ScheduleListComponent = class _ScheduleListComponent {
 export {
   ScheduleListComponent
 };
-//# sourceMappingURL=chunk-E64OZJYC.js.map
+//# sourceMappingURL=chunk-UNDRETWT.js.map
