@@ -21,13 +21,13 @@ var HELP_SECTIONS = [
     title: "Overview \u2014 how the list is built",
     body: [
       "This view lists the oncology appointments for the selected date range. It refreshes automatically, and each row is one scheduled patient visit. What you can see is governed by your position (job role) and the appointment-type group(s) it belongs to.",
-      'The list includes every patient appointment whose type is in your group and whose status is one of the configured "states shown". Cancelled and deleted appointments are always excluded. Each appointment appears as exactly one row: when the Rescheduled state is enabled (it is by default), a moved appointment shows in its most recent vacated slot with a Rescheduled badge; removing Rescheduled from the states shown displays the live booking instead.'
+      'The list includes every patient appointment whose type is in your group and whose status is one of the configured "states shown". Cancelled and deleted appointments are always excluded. Each appointment appears as exactly one row: the live booking shows whenever its date falls inside the selected range. When a moved appointment\u2019s new date is outside the range and the Rescheduled state is enabled (it is by default), its most recent vacated slot shows with a Rescheduled badge instead.'
     ],
     items: [
       {
         term: "Data source",
         description: "Appointments come directly from the Cerner scheduling system.",
-        technical: "CCL nygh_onc_sched_service Q1: SCH_APPT (role PATIENT, active, current version) joined to SCH_EVENT (canceled/deleted excluded) and PERSON, filtered by beg_dt_tm range, appt_type_cd group membership, and the state_meaning whitelist. Q1b keeps one row per sch_event_id \u2014 the latest vacated (RESCHEDULED) instance wins when the Rescheduled state is enabled, otherwise the live instance."
+        technical: "CCL nygh_onc_sched_service Q1: SCH_APPT (role PATIENT, active, current version) joined to SCH_EVENT (canceled/deleted excluded) and PERSON, filtered by beg_dt_tm range, appt_type_cd group membership, and the state_meaning whitelist. One row per sch_event_id \u2014 the live (non-RESCHEDULED) instance wins when in range; otherwise the latest vacated instance shows with its Rescheduled state (Mod 029)."
       }
     ]
   },
@@ -442,4 +442,4 @@ export {
   hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-3IKKC6BG.js.map
+//# sourceMappingURL=chunk-7BOPBRD7.js.map
