@@ -1,13 +1,13 @@
 import {
   AccessControlService
-} from "./chunk-PA646MSR.js";
+} from "./chunk-ENSC6ZKD.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_PREFERENCES,
   DEFAULT_REFRESH_INTERVAL_SECONDS,
   MAX_REFRESH_INTERVAL_SECONDS,
   MIN_REFRESH_INTERVAL_SECONDS
-} from "./chunk-L3P7VMM6.js";
+} from "./chunk-OWW6YCFQ.js";
 import {
   ConfigurationService,
   CustomService,
@@ -314,6 +314,7 @@ var ScheduleService = class _ScheduleService {
             person_id: a.personId ?? a.person_id ?? 0,
             encntr_id: a.encntrId ?? a.encntr_id ?? 0,
             sch_event_id: a.schEventId ?? a.sch_event_id ?? 0,
+            schedule_id: a.scheduleId ?? a.schedule_id ?? 0,
             appt_time: a.apptTime ?? a.appt_time ?? "",
             patient_name: a.patientName ?? a.patient_name ?? "",
             patient_location: a.patientLocation ?? a.patient_location ?? "",
@@ -530,4 +531,4 @@ export {
   PreferencesService,
   ScheduleService
 };
-//# sourceMappingURL=chunk-MBODG2A6.js.map
+//# sourceMappingURL=chunk-UJWBBFVZ.js.map

@@ -1,17 +1,18 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-MBODG2A6.js";
+} from "./chunk-UJWBBFVZ.js";
 import {
   AccessControlService
-} from "./chunk-PA646MSR.js";
+} from "./chunk-ENSC6ZKD.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_APPT_STATE_MEANINGS,
+  DEFAULT_APPT_VIEW_ACTION,
   SUPERUSER_OVERRIDE_ALL,
   cellDisplayValue,
   resolveEncntrIndicatorCategory
-} from "./chunk-L3P7VMM6.js";
+} from "./chunk-OWW6YCFQ.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -903,9 +904,13 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
   }
   if (rf & 2) {
     const appt_r14 = \u0275\u0275nextContext(2).$implicit;
+    const ctx_r1 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
     \u0275\u0275conditional(appt_r14.person_id ? 1 : -1);
-    \u0275\u0275advance(4);
+    \u0275\u0275advance();
+    \u0275\u0275property("title", ctx_r1.apptViewActionTitle());
+    \u0275\u0275attribute("aria-label", ctx_r1.apptViewActionTitle());
+    \u0275\u0275advance(3);
     \u0275\u0275conditional(appt_r14.order_id ? 5 : -1);
   }
 }
@@ -1123,7 +1128,7 @@ function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditio
 }
 function ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275conditionalCreate(0, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_0_Template, 6, 2, "td", 41)(1, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_1_Template, 3, 3, "td")(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_2_Template, 2, 2, "td", 42)(3, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Template, 4, 5, "td", 43)(4, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Template, 3, 1, "td", 44)(5, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_5_Template, 3, 2, "td")(6, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_6_Template, 2, 1, "td");
+    \u0275\u0275conditionalCreate(0, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_0_Template, 6, 4, "td", 41)(1, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_1_Template, 3, 3, "td")(2, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_2_Template, 2, 2, "td", 42)(3, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_3_Template, 4, 5, "td", 43)(4, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_4_Template, 3, 1, "td", 44)(5, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_5_Template, 3, 2, "td")(6, ScheduleListComponent_Conditional_2_Conditional_34_For_7_For_2_Conditional_6_Template, 2, 1, "td");
   }
   if (rf & 2) {
     const col_r16 = ctx.$implicit;
@@ -1762,13 +1767,27 @@ var ScheduleListComponent = class _ScheduleListComponent {
       }
     }
   }
+  /** Global config setting: which PEXSCHEDULINGACTIONS dialog the calendar action opens. */
+  apptViewAction = computed(() => this.configService.configuration()?.APPT_VIEW_ACTION ?? DEFAULT_APPT_VIEW_ACTION, ...ngDevMode ? [{ debugName: "apptViewAction" }] : (
+    /* istanbul ignore next */
+    []
+  ));
+  apptViewActionTitle = computed(() => this.apptViewAction() === "history" ? "Open appointment history" : "Open appointment view", ...ngDevMode ? [{ debugName: "apptViewActionTitle" }] : (
+    /* istanbul ignore next */
+    []
+  ));
   async onOpenApptView(appt) {
     if (!appt.sch_event_id)
       return;
-    this.mPage.putLog("Opening appointment view for sch_event_id: " + appt.sch_event_id);
+    const action = this.apptViewAction();
+    this.mPage.putLog("Opening appointment " + action + " for sch_event_id: " + appt.sch_event_id + " schedule_id: " + appt.schedule_id);
     try {
       const schedulingActions = await window.external.DiscernObjectFactory("PEXSCHEDULINGACTIONS");
-      schedulingActions.ShowView(appt.sch_event_id, 0);
+      if (action === "history") {
+        schedulingActions.ShowHistoryView(appt.sch_event_id, appt.schedule_id);
+      } else {
+        schedulingActions.ShowView(appt.sch_event_id, appt.schedule_id);
+      }
     } catch (e) {
       this.mPage.putLog("Appointment view not available (outside Cerner context)");
     }
@@ -1827,7 +1846,7 @@ var ScheduleListComponent = class _ScheduleListComponent {
   static \u0275fac = function ScheduleListComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ScheduleListComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ScheduleListComponent, selectors: [["app-schedule-list"]], decls: 4, vars: 2, consts: [[1, "schedule-container"], [1, "schedule-blocked"], [3, "patientName", "labs", "labOrders", "lookbackHours"], [1, "schedule-header"], [1, "date-nav"], [1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], ["type", "date", 1, "fusion-input", "date-input", 3, "change", "value"], [1, "date-separator"], [1, "fusion-button", "fusion-small", 3, "click", "disabled"], [1, "header-controls"], [1, "group-filter"], [1, "group-badge"], [1, "physician-filter"], [1, "fusion-input", 3, "change"], ["value", ""], [3, "value", "selected"], [1, "appt-count"], [1, "columns-menu-wrap"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "columns-menu"], ["title", "Refresh", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "error-banner"], [1, "loading-overlay"], [1, "table-container"], [1, "empty-state"], [1, "fusion-grid"], [1, "schedule-footer"], [1, "footer-left"], [1, "footer-sep"], [1, "params-menu-wrap"], ["type", "button", 1, "footer-params-toggle", 3, "click"], [1, "params-menu"], ["value", "__ALL__", 3, "selected"], [1, "columns-menu-item"], ["type", "button", 1, "fusion-button", "fusion-small", "columns-menu-reset", 3, "click"], ["type", "checkbox", 3, "change", "checked"], [1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], [1, "spinner"], ["draggable", "true", 3, "drag-over", "dragging", "sortable", "actions-col", "width", "min-width"], ["draggable", "true", 3, "dragstart", "dragover", "dragleave", "drop", "dragend", "click"], ["aria-hidden", "true", 1, "col-resize", 3, "mousedown", "click"], [1, "actions-col"], [1, "truncate", 3, "title"], [1, "patient-name", 3, "has-encounter"], [1, "labs-cell"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "row-action-muted", "title"], ["type", "button", "title", "Open appointment view", "aria-label", "Open appointment view", 1, "row-action", 3, "click"], ["viewBox", "0 0 16 16", "width", "14", "height", "14", "aria-hidden", "true"], ["fill", "currentColor", "d", "M4.5 1a.5.5 0 0 1 .5.5V2h6v-.5a.5.5 0 0 1 1 0V2h1.5A1.5 1.5 0 0 1 15 3.5v10A1.5 1.5 0 0 1 13.5 15h-11A1.5 1.5 0 0 1 1 13.5v-10A1.5 1.5 0 0 1 2.5 2H4v-.5a.5.5 0 0 1 .5-.5zM2 6v7.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V6H2zm2 2h2v2H4V8zm3 0h2v2H7V8zm3 0h2v2h-2V8zM4 11h2v2H4v-2zm3 0h2v2H7v-2zm3 0h2v2h-2v-2z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1c-2.7 0-8 1.34-8 4v2h16v-2c0-2.66-5.3-4-8-4z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action", 3, "click"], ["fill", "currentColor", "d", "M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5V2h2.5A1.5 1.5 0 0 1 15 3.5v11A1.5 1.5 0 0 1 13.5 16h-11A1.5 1.5 0 0 1 1 14.5v-11A1.5 1.5 0 0 1 2.5 2H5v-.5zm1 0V3h4V1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5zM4 6h8v1H4V6zm0 3h8v1H4V9zm0 3h5v1H4v-1z"], [1, "fusion-badge"], [1, "patient-name"], [1, "patient-mrn"], ["aria-label", "Active emergency encounter", "role", "img", 1, "encntr-indicator", "encntr-emergency", 3, "title"], ["aria-label", "Active encounter", "role", "img", 1, "encntr-indicator", "encntr-other", 3, "title"], ["aria-label", "Active inpatient encounter", "role", "img", 1, "encntr-indicator", 3, "title"], ["viewBox", "0 0 16 16", "width", "13", "height", "13", "aria-hidden", "true"], ["cx", "8", "cy", "8", "r", "8", "fill", "currentColor"], ["fill", "#fff", "d", "M7 3h2v4h4v2H9v4H7V9H3V7h4z"], ["fill", "none", "stroke", "currentColor", "stroke-width", "1.8", "stroke-linecap", "round", "stroke-linejoin", "round", "d", "M.8 8h3.4L6 3.2 9.5 12.8 11.8 8h3.4"], ["fill", "currentColor", "d", "M1 4a.5.5 0 0 1 1 0v5h6V6.5A1.5 1.5 0 0 1 9.5 5H13a3 3 0 0 1 3 3v4a.5.5 0 0 1-1 0v-1.5H2V12a.5.5 0 0 1-1 0V4zm3.5 3.5A1.5 1.5 0 1 0 4.5 4a1.5 1.5 0 0 0 0 3.5z"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "row-action-muted", "title"], [1, "labs-empty"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M6 0a.5.5 0 0 0 0 1H7v4.04L3.06 12.18A1.5 1.5 0 0 0 4.36 14.5h7.28a1.5 1.5 0 0 0 1.3-2.32L9 5.04V1h1a.5.5 0 0 0 0-1H6zm2 1.5V5.2a.5.5 0 0 0 .08.27L10.4 9H5.6l2.32-3.53A.5.5 0 0 0 8 5.2V1.5z"], [1, "labs-count"], [1, "chair-chip", 3, "title"], [1, "params-menu-section"], [3, "close", "patientName", "labs", "labOrders", "lookbackHours"]], template: function ScheduleListComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ScheduleListComponent, selectors: [["app-schedule-list"]], decls: 4, vars: 2, consts: [[1, "schedule-container"], [1, "schedule-blocked"], [3, "patientName", "labs", "labOrders", "lookbackHours"], [1, "schedule-header"], [1, "date-nav"], [1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], ["type", "date", 1, "fusion-input", "date-input", 3, "change", "value"], [1, "date-separator"], [1, "fusion-button", "fusion-small", 3, "click", "disabled"], [1, "header-controls"], [1, "group-filter"], [1, "group-badge"], [1, "physician-filter"], [1, "fusion-input", 3, "change"], ["value", ""], [3, "value", "selected"], [1, "appt-count"], [1, "columns-menu-wrap"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "columns-menu"], ["title", "Refresh", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "error-banner"], [1, "loading-overlay"], [1, "table-container"], [1, "empty-state"], [1, "fusion-grid"], [1, "schedule-footer"], [1, "footer-left"], [1, "footer-sep"], [1, "params-menu-wrap"], ["type", "button", 1, "footer-params-toggle", 3, "click"], [1, "params-menu"], ["value", "__ALL__", 3, "selected"], [1, "columns-menu-item"], ["type", "button", 1, "fusion-button", "fusion-small", "columns-menu-reset", 3, "click"], ["type", "checkbox", 3, "change", "checked"], [1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], [1, "spinner"], ["draggable", "true", 3, "drag-over", "dragging", "sortable", "actions-col", "width", "min-width"], ["draggable", "true", 3, "dragstart", "dragover", "dragleave", "drop", "dragend", "click"], ["aria-hidden", "true", 1, "col-resize", 3, "mousedown", "click"], [1, "actions-col"], [1, "truncate", 3, "title"], [1, "patient-name", 3, "has-encounter"], [1, "labs-cell"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "row-action-muted", "title"], ["type", "button", 1, "row-action", 3, "click", "title"], ["viewBox", "0 0 16 16", "width", "14", "height", "14", "aria-hidden", "true"], ["fill", "currentColor", "d", "M4.5 1a.5.5 0 0 1 .5.5V2h6v-.5a.5.5 0 0 1 1 0V2h1.5A1.5 1.5 0 0 1 15 3.5v10A1.5 1.5 0 0 1 13.5 15h-11A1.5 1.5 0 0 1 1 13.5v-10A1.5 1.5 0 0 1 2.5 2H4v-.5a.5.5 0 0 1 .5-.5zM2 6v7.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V6H2zm2 2h2v2H4V8zm3 0h2v2H7V8zm3 0h2v2h-2V8zM4 11h2v2H4v-2zm3 0h2v2H7v-2zm3 0h2v2h-2v-2z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action"], ["type", "button", "aria-label", "Open patient chart", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1c-2.7 0-8 1.34-8 4v2h16v-2c0-2.66-5.3-4-8-4z"], ["type", "button", "title", "Open order details", "aria-label", "Open order details", 1, "row-action", 3, "click"], ["fill", "currentColor", "d", "M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5V2h2.5A1.5 1.5 0 0 1 15 3.5v11A1.5 1.5 0 0 1 13.5 16h-11A1.5 1.5 0 0 1 1 14.5v-11A1.5 1.5 0 0 1 2.5 2H5v-.5zm1 0V3h4V1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5zM4 6h8v1H4V6zm0 3h8v1H4V9zm0 3h5v1H4v-1z"], [1, "fusion-badge"], [1, "patient-name"], [1, "patient-mrn"], ["aria-label", "Active emergency encounter", "role", "img", 1, "encntr-indicator", "encntr-emergency", 3, "title"], ["aria-label", "Active encounter", "role", "img", 1, "encntr-indicator", "encntr-other", 3, "title"], ["aria-label", "Active inpatient encounter", "role", "img", 1, "encntr-indicator", 3, "title"], ["viewBox", "0 0 16 16", "width", "13", "height", "13", "aria-hidden", "true"], ["cx", "8", "cy", "8", "r", "8", "fill", "currentColor"], ["fill", "#fff", "d", "M7 3h2v4h4v2H9v4H7V9H3V7h4z"], ["fill", "none", "stroke", "currentColor", "stroke-width", "1.8", "stroke-linecap", "round", "stroke-linejoin", "round", "d", "M.8 8h3.4L6 3.2 9.5 12.8 11.8 8h3.4"], ["fill", "currentColor", "d", "M1 4a.5.5 0 0 1 1 0v5h6V6.5A1.5 1.5 0 0 1 9.5 5H13a3 3 0 0 1 3 3v4a.5.5 0 0 1-1 0v-1.5H2V12a.5.5 0 0 1-1 0V4zm3.5 3.5A1.5 1.5 0 1 0 4.5 4a1.5 1.5 0 0 0 0 3.5z"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "row-action-muted", "title"], [1, "labs-empty"], ["type", "button", "aria-label", "View labs", 1, "row-action", 3, "click", "title"], ["fill", "currentColor", "d", "M6 0a.5.5 0 0 0 0 1H7v4.04L3.06 12.18A1.5 1.5 0 0 0 4.36 14.5h7.28a1.5 1.5 0 0 0 1.3-2.32L9 5.04V1h1a.5.5 0 0 0 0-1H6zm2 1.5V5.2a.5.5 0 0 0 .08.27L10.4 9H5.6l2.32-3.53A.5.5 0 0 0 8 5.2V1.5z"], [1, "labs-count"], [1, "chair-chip", 3, "title"], [1, "params-menu-section"], [3, "close", "patientName", "labs", "labOrders", "lookbackHours"]], template: function ScheduleListComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0);
       \u0275\u0275conditionalCreate(1, ScheduleListComponent_Conditional_1_Template, 5, 0, "div", 1)(2, ScheduleListComponent_Conditional_2_Template, 48, 17);
@@ -1978,8 +1997,8 @@ var ScheduleListComponent = class _ScheduleListComponent {
                     <button
                       class="row-action"
                       type="button"
-                      title="Open appointment view"
-                      aria-label="Open appointment view"
+                      [title]="apptViewActionTitle()"
+                      [attr.aria-label]="apptViewActionTitle()"
                       (click)="onOpenApptView(appt)"
                     >
                       <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
@@ -2170,9 +2189,9 @@ var ScheduleListComponent = class _ScheduleListComponent {
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ScheduleListComponent, { className: "ScheduleListComponent", filePath: "src/app/components/schedule-list/schedule-list.ts", lineNumber: 28 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ScheduleListComponent, { className: "ScheduleListComponent", filePath: "src/app/components/schedule-list/schedule-list.ts", lineNumber: 30 });
 })();
 export {
   ScheduleListComponent
 };
-//# sourceMappingURL=chunk-F3RXQMB2.js.map
+//# sourceMappingURL=chunk-RN5GKK6Y.js.map

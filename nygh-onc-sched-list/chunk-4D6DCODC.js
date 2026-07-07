@@ -157,8 +157,8 @@ var HELP_SECTIONS = [
       },
       {
         term: "Open appointment view (calendar icon)",
-        description: "Opens the Cerner scheduling appointment view for the visit, including its booking and action history.",
-        technical: 'DiscernObjectFactory("PEXSCHEDULINGACTIONS").ShowView(sch_event_id).'
+        description: 'Opens the Cerner scheduling dialog for the visit. Depending on the "Appointment View Action" setting on the Configuration tab, this is either the Appointment View (current details) or the Appointment History View (all booking, reschedule, and cancel actions).',
+        technical: 'DiscernObjectFactory("PEXSCHEDULINGACTIONS").ShowView(sch_event_id, schedule_id) or .ShowHistoryView(sch_event_id, schedule_id) per APPT_VIEW_ACTION config.'
       },
       {
         term: "Open order details (clipboard icon)",
@@ -442,4 +442,4 @@ export {
   hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-7BOPBRD7.js.map
+//# sourceMappingURL=chunk-4D6DCODC.js.map

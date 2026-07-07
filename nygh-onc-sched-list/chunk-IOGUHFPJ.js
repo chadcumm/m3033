@@ -1,9 +1,10 @@
 import {
   buildVersion
-} from "./chunk-MJFATPMF.js";
+} from "./chunk-5S6374AC.js";
 import {
   COLUMN_DEFINITIONS,
   DEFAULT_APPT_STATE_MEANINGS,
+  DEFAULT_APPT_VIEW_ACTION,
   DEFAULT_LAB_LOOKBACK_HOURS,
   DEFAULT_REFRESH_INTERVAL_SECONDS,
   KNOWN_APPT_STATE_MEANINGS,
@@ -12,7 +13,7 @@ import {
   MIN_LAB_LOOKBACK_HOURS,
   MIN_REFRESH_INTERVAL_SECONDS,
   resolveEncntrIndicatorCategory
-} from "./chunk-L3P7VMM6.js";
+} from "./chunk-OWW6YCFQ.js";
 import {
   CodeValueService,
   ConfigurationService,
@@ -666,11 +667,11 @@ function ConfigComponent_Conditional_10_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 35);
+    \u0275\u0275elementStart(0, "div", 39);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_6_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275elementStart(1, "button", 36);
+    \u0275\u0275elementStart(1, "button", 40);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_6_Template_button_click_1_listener() {
       \u0275\u0275restoreView(_r4);
       const g_r2 = \u0275\u0275nextContext().$implicit;
@@ -692,7 +693,7 @@ function ConfigComponent_Conditional_11_For_1_Conditional_6_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 37);
+    \u0275\u0275elementStart(0, "button", 41);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Conditional_7_Template_button_click_0_listener($event) {
       \u0275\u0275restoreView(_r5);
       const g_r2 = \u0275\u0275nextContext().$implicit;
@@ -707,19 +708,19 @@ function ConfigComponent_Conditional_11_For_1_Conditional_7_Template(rf, ctx) {
 function ConfigComponent_Conditional_11_For_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 29);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275listener("click", function ConfigComponent_Conditional_11_For_1_Template_div_click_0_listener() {
       const g_r2 = \u0275\u0275restoreView(_r1).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.selectGroup(g_r2.id));
     });
-    \u0275\u0275elementStart(1, "div", 30)(2, "div", 31);
+    \u0275\u0275elementStart(1, "div", 34)(2, "div", 35);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 32);
+    \u0275\u0275elementStart(4, "div", 36);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_11_For_1_Conditional_6_Template, 5, 0, "div", 33)(7, ConfigComponent_Conditional_11_For_1_Conditional_7_Template, 2, 0, "button", 34);
+    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_11_For_1_Conditional_6_Template, 5, 0, "div", 37)(7, ConfigComponent_Conditional_11_For_1_Conditional_7_Template, 2, 0, "button", 38);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -736,7 +737,7 @@ function ConfigComponent_Conditional_11_For_1_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_11_For_1_Template, 8, 8, "div", 28, _forTrack12);
+    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_11_For_1_Template, 8, 8, "div", 32, _forTrack12);
   }
   if (rf & 2) {
     const ctx_r2 = \u0275\u0275nextContext();
@@ -746,7 +747,7 @@ function ConfigComponent_Conditional_11_Template(rf, ctx) {
 function ConfigComponent_Conditional_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "app-appt-type-group-editor", 38);
+    \u0275\u0275elementStart(0, "app-appt-type-group-editor", 42);
     \u0275\u0275listener("groupChange", function ConfigComponent_Conditional_15_Template_app_appt_type_group_editor_groupChange_0_listener($event) {
       \u0275\u0275restoreView(_r6);
       const ctx_r2 = \u0275\u0275nextContext();
@@ -789,7 +790,7 @@ function ConfigComponent_Conditional_40_Template(rf, ctx) {
 }
 function ConfigComponent_Conditional_41_For_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 41);
+    \u0275\u0275elementStart(0, "option", 45);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -804,19 +805,19 @@ function ConfigComponent_Conditional_41_For_7_Template(rf, ctx) {
 function ConfigComponent_Conditional_41_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 17)(1, "label", 39);
+    \u0275\u0275elementStart(0, "div", 17)(1, "label", 43);
     \u0275\u0275text(2, "Encounter type");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "select", 40);
+    \u0275\u0275elementStart(3, "select", 44);
     \u0275\u0275listener("change", function ConfigComponent_Conditional_41_Template_select_change_3_listener($event) {
       \u0275\u0275restoreView(_r7);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.onChartLinkEncntrTypeChange($event));
     });
-    \u0275\u0275elementStart(4, "option", 41);
+    \u0275\u0275elementStart(4, "option", 45);
     \u0275\u0275text(5, "\u2014 No fallback (link uses person only) \u2014");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(6, ConfigComponent_Conditional_41_For_7_Template, 2, 3, "option", 41, _forTrack02);
+    \u0275\u0275repeaterCreate(6, ConfigComponent_Conditional_41_For_7_Template, 2, 3, "option", 45, _forTrack02);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -827,22 +828,22 @@ function ConfigComponent_Conditional_41_Template(rf, ctx) {
     \u0275\u0275repeater(ctx_r2.allEncntrTypes());
   }
 }
-function ConfigComponent_Conditional_51_Template(rf, ctx) {
+function ConfigComponent_Conditional_66_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 6);
     \u0275\u0275text(1, "No rules yet.");
     \u0275\u0275elementEnd();
   }
 }
-function ConfigComponent_Conditional_52_For_1_Conditional_6_Template(rf, ctx) {
+function ConfigComponent_Conditional_67_For_1_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r11 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 35);
-    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_div_click_0_listener($event) {
+    \u0275\u0275elementStart(0, "div", 39);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_67_For_1_Conditional_6_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275elementStart(1, "button", 36);
-    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_button_click_1_listener() {
+    \u0275\u0275elementStart(1, "button", 40);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_67_For_1_Conditional_6_Template_button_click_1_listener() {
       \u0275\u0275restoreView(_r11);
       const rule_r10 = \u0275\u0275nextContext().$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
@@ -851,7 +852,7 @@ function ConfigComponent_Conditional_52_For_1_Conditional_6_Template(rf, ctx) {
     \u0275\u0275text(2, "Confirm");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "button", 14);
-    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_6_Template_button_click_3_listener() {
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_67_For_1_Conditional_6_Template_button_click_3_listener() {
       \u0275\u0275restoreView(_r11);
       const ctx_r2 = \u0275\u0275nextContext(3);
       return \u0275\u0275resetView(ctx_r2.cancelDeleteRule());
@@ -860,11 +861,11 @@ function ConfigComponent_Conditional_52_For_1_Conditional_6_Template(rf, ctx) {
     \u0275\u0275elementEnd()();
   }
 }
-function ConfigComponent_Conditional_52_For_1_Conditional_7_Template(rf, ctx) {
+function ConfigComponent_Conditional_67_For_1_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 43);
-    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Conditional_7_Template_button_click_0_listener($event) {
+    \u0275\u0275elementStart(0, "button", 47);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_67_For_1_Conditional_7_Template_button_click_0_listener($event) {
       \u0275\u0275restoreView(_r12);
       const rule_r10 = \u0275\u0275nextContext().$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
@@ -875,49 +876,49 @@ function ConfigComponent_Conditional_52_For_1_Conditional_7_Template(rf, ctx) {
     \u0275\u0275elementEnd();
   }
 }
-function ConfigComponent_Conditional_52_For_1_Template(rf, ctx) {
+function ConfigComponent_Conditional_67_For_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r9 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 29);
-    \u0275\u0275listener("click", function ConfigComponent_Conditional_52_For_1_Template_div_click_0_listener() {
+    \u0275\u0275elementStart(0, "div", 33);
+    \u0275\u0275listener("click", function ConfigComponent_Conditional_67_For_1_Template_div_click_0_listener() {
       const rule_r10 = \u0275\u0275restoreView(_r9).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.selectRule(rule_r10.id));
     });
-    \u0275\u0275elementStart(1, "div", 30)(2, "div", 31);
+    \u0275\u0275elementStart(1, "div", 34)(2, "div", 35);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 32);
+    \u0275\u0275elementStart(4, "div", 36);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
-    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_52_For_1_Conditional_6_Template, 5, 0, "div", 33)(7, ConfigComponent_Conditional_52_For_1_Conditional_7_Template, 2, 0, "button", 42);
+    \u0275\u0275conditionalCreate(6, ConfigComponent_Conditional_67_For_1_Conditional_6_Template, 5, 0, "div", 37)(7, ConfigComponent_Conditional_67_For_1_Conditional_7_Template, 2, 0, "button", 46);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
     const rule_r10 = ctx.$implicit;
-    const \u0275$index_140_r13 = ctx.$index;
+    const \u0275$index_165_r13 = ctx.$index;
     const ctx_r2 = \u0275\u0275nextContext(2);
     \u0275\u0275classProp("selected", ctx_r2.selectedRuleId() === rule_r10.id);
     \u0275\u0275advance(3);
-    \u0275\u0275textInterpolate(ctx_r2.ruleDisplayLabel(rule_r10, \u0275$index_140_r13));
+    \u0275\u0275textInterpolate(ctx_r2.ruleDisplayLabel(rule_r10, \u0275$index_165_r13));
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(ctx_r2.ruleSummary(rule_r10));
     \u0275\u0275advance();
     \u0275\u0275conditional(ctx_r2.pendingDeleteRuleId() === rule_r10.id ? 6 : 7);
   }
 }
-function ConfigComponent_Conditional_52_Template(rf, ctx) {
+function ConfigComponent_Conditional_67_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_52_For_1_Template, 8, 5, "div", 28, _forTrack12);
+    \u0275\u0275repeaterCreate(0, ConfigComponent_Conditional_67_For_1_Template, 8, 5, "div", 32, _forTrack12);
   }
   if (rf & 2) {
     const ctx_r2 = \u0275\u0275nextContext();
     \u0275\u0275repeater(ctx_r2.columnRoleDefaults());
   }
 }
-function ConfigComponent_Conditional_56_Conditional_9_Template(rf, ctx) {
+function ConfigComponent_Conditional_71_Conditional_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 50);
+    \u0275\u0275elementStart(0, "span", 54);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -927,11 +928,11 @@ function ConfigComponent_Conditional_56_Conditional_9_Template(rf, ctx) {
     \u0275\u0275textInterpolate2(" ", ctx_r2.allPositions().length, " positions (", ctx_r2.filteredPositions().length, " shown) ");
   }
 }
-function ConfigComponent_Conditional_56_For_12_Template(rf, ctx) {
+function ConfigComponent_Conditional_71_For_12_Template(rf, ctx) {
   if (rf & 1) {
     const _r15 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 51);
-    \u0275\u0275listener("change", function ConfigComponent_Conditional_56_For_12_Template_input_change_1_listener() {
+    \u0275\u0275elementStart(0, "label")(1, "input", 55);
+    \u0275\u0275listener("change", function ConfigComponent_Conditional_71_For_12_Template_input_change_1_listener() {
       const p_r16 = \u0275\u0275restoreView(_r15).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.toggleRulePosition(p_r16.display));
@@ -949,11 +950,11 @@ function ConfigComponent_Conditional_56_For_12_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", p_r16.display, " ");
   }
 }
-function ConfigComponent_Conditional_56_For_18_Template(rf, ctx) {
+function ConfigComponent_Conditional_71_For_18_Template(rf, ctx) {
   if (rf & 1) {
     const _r18 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 51);
-    \u0275\u0275listener("change", function ConfigComponent_Conditional_56_For_18_Template_input_change_1_listener() {
+    \u0275\u0275elementStart(0, "label")(1, "input", 55);
+    \u0275\u0275listener("change", function ConfigComponent_Conditional_71_For_18_Template_input_change_1_listener() {
       const col_r19 = \u0275\u0275restoreView(_r18).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.toggleRuleColumn(col_r19.key));
@@ -971,39 +972,39 @@ function ConfigComponent_Conditional_56_For_18_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", col_r19.header, " ");
   }
 }
-function ConfigComponent_Conditional_56_Template(rf, ctx) {
+function ConfigComponent_Conditional_71_Template(rf, ctx) {
   if (rf & 1) {
     const _r14 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 44)(1, "label", 45);
+    \u0275\u0275elementStart(0, "div", 48)(1, "label", 49);
     \u0275\u0275text(2, "Rule name");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "input", 46);
-    \u0275\u0275listener("input", function ConfigComponent_Conditional_56_Template_input_input_3_listener($event) {
+    \u0275\u0275elementStart(3, "input", 50);
+    \u0275\u0275listener("input", function ConfigComponent_Conditional_71_Template_input_input_3_listener($event) {
       \u0275\u0275restoreView(_r14);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.onRuleLabelInput($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(4, "div", 47)(5, "strong");
+    \u0275\u0275elementStart(4, "div", 51)(5, "strong");
     \u0275\u0275text(6, "Positions");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 48)(8, "input", 49);
-    \u0275\u0275listener("input", function ConfigComponent_Conditional_56_Template_input_input_8_listener($event) {
+    \u0275\u0275elementStart(7, "div", 52)(8, "input", 53);
+    \u0275\u0275listener("input", function ConfigComponent_Conditional_71_Template_input_input_8_listener($event) {
       \u0275\u0275restoreView(_r14);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.onRuleFilterInput($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(9, ConfigComponent_Conditional_56_Conditional_9_Template, 2, 2, "span", 50);
+    \u0275\u0275conditionalCreate(9, ConfigComponent_Conditional_71_Conditional_9_Template, 2, 2, "span", 54);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "div", 19);
-    \u0275\u0275repeaterCreate(11, ConfigComponent_Conditional_56_For_12_Template, 3, 2, "label", null, _forTrack2);
+    \u0275\u0275elementStart(10, "div", 23);
+    \u0275\u0275repeaterCreate(11, ConfigComponent_Conditional_71_For_12_Template, 3, 2, "label", null, _forTrack2);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(13, "div", 47)(14, "strong");
+    \u0275\u0275elementStart(13, "div", 51)(14, "strong");
     \u0275\u0275text(15, "Hidden columns");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(16, "div", 19);
-    \u0275\u0275repeaterCreate(17, ConfigComponent_Conditional_56_For_18_Template, 3, 2, "label", null, _forTrack3);
+    \u0275\u0275elementStart(16, "div", 23);
+    \u0275\u0275repeaterCreate(17, ConfigComponent_Conditional_71_For_18_Template, 3, 2, "label", null, _forTrack3);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -1020,18 +1021,18 @@ function ConfigComponent_Conditional_56_Template(rf, ctx) {
     \u0275\u0275repeater(ctx_r2.allColumnDefs);
   }
 }
-function ConfigComponent_Conditional_57_Template(rf, ctx) {
+function ConfigComponent_Conditional_72_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 10);
     \u0275\u0275text(1, "Select a rule to edit, or create a new one.");
     \u0275\u0275elementEnd();
   }
 }
-function ConfigComponent_For_67_Template(rf, ctx) {
+function ConfigComponent_For_82_Template(rf, ctx) {
   if (rf & 1) {
     const _r20 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "label")(1, "input", 52);
-    \u0275\u0275listener("change", function ConfigComponent_For_67_Template_input_change_1_listener() {
+    \u0275\u0275elementStart(0, "label")(1, "input", 56);
+    \u0275\u0275listener("change", function ConfigComponent_For_82_Template_input_change_1_listener() {
       const m_r21 = \u0275\u0275restoreView(_r20).$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.toggleStateMeaning(m_r21));
@@ -1049,23 +1050,23 @@ function ConfigComponent_For_67_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", m_r21, " ");
   }
 }
-function ConfigComponent_For_85_Conditional_4_Template(rf, ctx) {
+function ConfigComponent_For_100_Conditional_4_Template(rf, ctx) {
   if (rf & 1) {
     const _r24 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "select", 54);
-    \u0275\u0275listener("change", function ConfigComponent_For_85_Conditional_4_Template_select_change_0_listener($event) {
+    \u0275\u0275elementStart(0, "select", 58);
+    \u0275\u0275listener("change", function ConfigComponent_For_100_Conditional_4_Template_select_change_0_listener($event) {
       \u0275\u0275restoreView(_r24);
       const t_r23 = \u0275\u0275nextContext().$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.setEncntrCategory(t_r23.codeValue, $event));
     });
-    \u0275\u0275elementStart(1, "option", 55);
+    \u0275\u0275elementStart(1, "option", 59);
     \u0275\u0275text(2, "Emergency");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "option", 56);
+    \u0275\u0275elementStart(3, "option", 60);
     \u0275\u0275text(4, "Inpatient");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "option", 57);
+    \u0275\u0275elementStart(5, "option", 61);
     \u0275\u0275text(6, "Other");
     \u0275\u0275elementEnd()();
   }
@@ -1076,11 +1077,11 @@ function ConfigComponent_For_85_Conditional_4_Template(rf, ctx) {
     \u0275\u0275attribute("aria-label", "Indicator icon category for " + t_r23.display);
   }
 }
-function ConfigComponent_For_85_Template(rf, ctx) {
+function ConfigComponent_For_100_Template(rf, ctx) {
   if (rf & 1) {
     const _r22 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 21)(1, "label")(2, "input", 51);
-    \u0275\u0275listener("change", function ConfigComponent_For_85_Template_input_change_2_listener() {
+    \u0275\u0275elementStart(0, "div", 25)(1, "label")(2, "input", 55);
+    \u0275\u0275listener("change", function ConfigComponent_For_100_Template_input_change_2_listener() {
       const t_r23 = \u0275\u0275restoreView(_r22).$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.toggleActiveEncntrType(t_r23.codeValue));
@@ -1088,7 +1089,7 @@ function ConfigComponent_For_85_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275conditionalCreate(4, ConfigComponent_For_85_Conditional_4_Template, 7, 2, "select", 53);
+    \u0275\u0275conditionalCreate(4, ConfigComponent_For_100_Conditional_4_Template, 7, 2, "select", 57);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1102,9 +1103,9 @@ function ConfigComponent_For_85_Template(rf, ctx) {
     \u0275\u0275conditional(ctx_r2.activeEncntrTypeCds().includes(t_r23.codeValue) ? 4 : -1);
   }
 }
-function ConfigComponent_Conditional_93_Template(rf, ctx) {
+function ConfigComponent_Conditional_108_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 25);
+    \u0275\u0275elementStart(0, "span", 29);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -1114,9 +1115,9 @@ function ConfigComponent_Conditional_93_Template(rf, ctx) {
     \u0275\u0275textInterpolate(ctx_r2.statusMessage());
   }
 }
-function ConfigComponent_Conditional_94_Template(rf, ctx) {
+function ConfigComponent_Conditional_109_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 26);
+    \u0275\u0275elementStart(0, "span", 30);
     \u0275\u0275text(1, "One or more groups have errors. Fix them to save.");
     \u0275\u0275elementEnd();
   }
@@ -1194,6 +1195,10 @@ var ConfigComponent = class _ConfigComponent {
     /* istanbul ignore next */
     []
   ));
+  apptViewAction = signal(DEFAULT_APPT_VIEW_ACTION, ...ngDevMode ? [{ debugName: "apptViewAction" }] : (
+    /* istanbul ignore next */
+    []
+  ));
   activeEncntrTypeCds = signal([], ...ngDevMode ? [{ debugName: "activeEncntrTypeCds" }] : (
     /* istanbul ignore next */
     []
@@ -1245,6 +1250,7 @@ var ConfigComponent = class _ConfigComponent {
       this.chairResourceNamePattern.set(config.CHAIR_RESOURCE_NAME_PATTERN ?? "");
       this.activeEncntrTypeCds.set([...config.ACTIVE_ENCNTR_TYPE_CDS ?? []]);
       this.activeEncntrTypeCategories.set(__spreadValues({}, config.ACTIVE_ENCNTR_TYPE_CATEGORIES ?? {}));
+      this.apptViewAction.set(config.APPT_VIEW_ACTION ?? DEFAULT_APPT_VIEW_ACTION);
     });
   }, ...ngDevMode ? [{ debugName: "configEffect" }] : (
     /* istanbul ignore next */
@@ -1303,6 +1309,8 @@ var ConfigComponent = class _ConfigComponent {
     if (!this.arraysEqual(storedStates, this.apptStateMeanings()))
       return true;
     if ((config?.CHAIR_RESOURCE_NAME_PATTERN ?? "") !== this.chairResourceNamePattern().trim())
+      return true;
+    if ((config?.APPT_VIEW_ACTION ?? DEFAULT_APPT_VIEW_ACTION) !== this.apptViewAction())
       return true;
     if (!this.numbersEqual(config?.ACTIVE_ENCNTR_TYPE_CDS ?? [], this.activeEncntrTypeCds()))
       return true;
@@ -1413,6 +1421,7 @@ var ConfigComponent = class _ConfigComponent {
       COLUMN_ROLE_DEFAULTS: this.columnRoleDefaults().map((r) => __spreadProps(__spreadValues({}, r), { label: (r.label ?? "").trim() })),
       APPT_STATE_MEANINGS: this.apptStateMeanings(),
       CHAIR_RESOURCE_NAME_PATTERN: this.chairResourceNamePattern().trim(),
+      APPT_VIEW_ACTION: this.apptViewAction(),
       ACTIVE_ENCNTR_TYPE_CDS: this.activeEncntrTypeCds(),
       // Code set 71 displays are unavailable until encntrTypesLoaded() is true;
       // pruning/materializing keyword defaults before then would misclassify
@@ -1440,8 +1449,13 @@ var ConfigComponent = class _ConfigComponent {
     this.chairResourceNamePattern.set(config?.CHAIR_RESOURCE_NAME_PATTERN ?? "");
     this.activeEncntrTypeCds.set([...config?.ACTIVE_ENCNTR_TYPE_CDS ?? []]);
     this.activeEncntrTypeCategories.set(__spreadValues({}, config?.ACTIVE_ENCNTR_TYPE_CATEGORIES ?? {}));
+    this.apptViewAction.set(config?.APPT_VIEW_ACTION ?? DEFAULT_APPT_VIEW_ACTION);
     this.pendingDeleteId.set(null);
     this.pendingDeleteRuleId.set(null);
+  }
+  onApptViewActionChange(event) {
+    const value = event.target.value;
+    this.apptViewAction.set(value === "history" ? "history" : "view");
   }
   onRefreshIntervalInput(event) {
     const raw = event.target.value;
@@ -1645,7 +1659,7 @@ var ConfigComponent = class _ConfigComponent {
   static \u0275fac = function ConfigComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ConfigComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 97, vars: 17, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], [1, "panel-help"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "indicator-type-row"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete", 3, "click"], [1, "rule-name-row"], ["for", "ruleLabelInput", 1, "rule-name-label"], ["id", "ruleLabelInput", "type", "text", 1, "fusion-input", "rule-name-input", 3, "input", "value"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"], [1, "fusion-input", "category-select", 3, "value"], [1, "fusion-input", "category-select", 3, "change", "value"], ["value", "emergency"], ["value", "inpatient"], ["value", "other"]], template: function ConfigComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ConfigComponent, selectors: [["app-config"]], decls: 112, vars: 19, consts: [[1, "config-container"], [1, "fusion-panel"], [1, "fusion-panel-header"], [1, "fusion-panel-body"], [1, "groups-master-detail"], [1, "groups-list"], [1, "groups-list-empty"], ["type", "button", 1, "fusion-button", "fusion-outline", "new-group-btn", 3, "click"], [1, "group-editor"], [3, "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], [1, "group-editor-empty"], [1, "refresh-interval-row"], ["for", "refreshIntervalInput", 1, "refresh-interval-label"], ["id", "refreshIntervalInput", "type", "number", "step", "1", 1, "fusion-input", "refresh-interval-input", 3, "input", "min", "max", "value", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", "fusion-small", 3, "click"], [1, "refresh-interval-hint"], [1, "loading-msg"], [1, "encntr-type-row"], ["for", "apptViewActionSelect", 1, "encntr-type-label"], ["id", "apptViewActionSelect", 1, "fusion-input", "encntr-type-select", 3, "change"], ["value", "view", 3, "selected"], ["value", "history", 3, "selected"], [1, "panel-help"], [1, "checkbox-grid"], ["type", "text", "placeholder", "Chair", 1, "fusion-input", 3, "input", "value"], [1, "indicator-type-row"], [1, "config-actions"], ["type", "button", 1, "fusion-button", 3, "click", "disabled"], ["type", "button", 1, "fusion-button", "fusion-outline", 3, "click", "disabled"], [1, "status-message"], [1, "status-message", "status-error"], [1, "config-version"], [1, "group-row", 3, "selected"], [1, "group-row", 3, "click"], [1, "group-row-main"], [1, "group-row-label"], [1, "group-row-meta"], [1, "group-row-delete-confirm"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete"], [1, "group-row-delete-confirm", 3, "click"], ["type", "button", 1, "fusion-button", "fusion-danger", "fusion-small", 3, "click"], ["type", "button", "aria-label", "Delete group", "title", "Delete group", 1, "group-row-delete", 3, "click"], [3, "groupChange", "group", "otherGroups", "allPositions", "allApptTypes", "apptTypesLoaded", "positionsLoaded"], ["for", "chartLinkEncntrType", 1, "encntr-type-label"], ["id", "chartLinkEncntrType", 1, "fusion-input", "encntr-type-select", 3, "change"], [3, "value", "selected"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete"], ["type", "button", "aria-label", "Delete rule", "title", "Delete rule", 1, "group-row-delete", 3, "click"], [1, "rule-name-row"], ["for", "ruleLabelInput", 1, "rule-name-label"], ["id", "ruleLabelInput", "type", "text", 1, "fusion-input", "rule-name-input", 3, "input", "value"], [1, "column-rule-section"], [1, "rule-filter-row"], ["type", "text", "placeholder", "Filter positions...", 1, "fusion-input", "rule-filter-input", 3, "input", "value"], [1, "selected-count"], ["type", "checkbox", 3, "change", "checked"], ["type", "checkbox", 3, "change", "checked", "disabled"], [1, "fusion-input", "category-select", 3, "value"], [1, "fusion-input", "category-select", 3, "change", "value"], ["value", "emergency"], ["value", "inpatient"], ["value", "other"]], template: function ConfigComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h3");
       \u0275\u0275text(4, "Appointment Type Groups");
@@ -1697,76 +1711,95 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275conditionalCreate(40, ConfigComponent_Conditional_40_Template, 2, 0, "div", 16)(41, ConfigComponent_Conditional_41_Template, 8, 2, "div", 17);
       \u0275\u0275elementEnd()();
       \u0275\u0275elementStart(42, "div", 1)(43, "div", 2)(44, "h3");
-      \u0275\u0275text(45, "Default Hidden Columns by Position");
-      \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(46, "div", 3)(47, "p", 18);
-      \u0275\u0275text(48, " Columns listed in a rule start hidden for users whose position matches. Users can still show/hide columns themselves from the schedule's Columns menu; their own choice always wins. Select a rule on the left to edit it. ");
+      \u0275\u0275text(45, "Appointment View Action");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(49, "div", 4)(50, "div", 5);
-      \u0275\u0275conditionalCreate(51, ConfigComponent_Conditional_51_Template, 2, 0, "div", 6)(52, ConfigComponent_Conditional_52_Template, 2, 0);
-      \u0275\u0275elementStart(53, "button", 7);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_53_listener() {
+      \u0275\u0275elementStart(46, "p");
+      \u0275\u0275text(47, "Which Cerner scheduling dialog the calendar row action opens, for all users.");
+      \u0275\u0275elementEnd()();
+      \u0275\u0275elementStart(48, "div", 3)(49, "div", 17)(50, "label", 18);
+      \u0275\u0275text(51, "Calendar icon opens");
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(52, "select", 19);
+      \u0275\u0275listener("change", function ConfigComponent_Template_select_change_52_listener($event) {
+        return ctx.onApptViewActionChange($event);
+      });
+      \u0275\u0275elementStart(53, "option", 20);
+      \u0275\u0275text(54, "Appointment View (current details)");
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(55, "option", 21);
+      \u0275\u0275text(56, "Appointment History View (all booking/reschedule actions)");
+      \u0275\u0275elementEnd()()()()();
+      \u0275\u0275elementStart(57, "div", 1)(58, "div", 2)(59, "h3");
+      \u0275\u0275text(60, "Default Hidden Columns by Position");
+      \u0275\u0275elementEnd()();
+      \u0275\u0275elementStart(61, "div", 3)(62, "p", 22);
+      \u0275\u0275text(63, " Columns listed in a rule start hidden for users whose position matches. Users can still show/hide columns themselves from the schedule's Columns menu; their own choice always wins. Select a rule on the left to edit it. ");
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(64, "div", 4)(65, "div", 5);
+      \u0275\u0275conditionalCreate(66, ConfigComponent_Conditional_66_Template, 2, 0, "div", 6)(67, ConfigComponent_Conditional_67_Template, 2, 0);
+      \u0275\u0275elementStart(68, "button", 7);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_68_listener() {
         return ctx.newRule();
       });
-      \u0275\u0275text(54, "+ New rule");
+      \u0275\u0275text(69, "+ New rule");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(55, "div", 8);
-      \u0275\u0275conditionalCreate(56, ConfigComponent_Conditional_56_Template, 19, 3)(57, ConfigComponent_Conditional_57_Template, 2, 0, "div", 10);
+      \u0275\u0275elementStart(70, "div", 8);
+      \u0275\u0275conditionalCreate(71, ConfigComponent_Conditional_71_Template, 19, 3)(72, ConfigComponent_Conditional_72_Template, 2, 0, "div", 10);
       \u0275\u0275elementEnd()()()();
-      \u0275\u0275elementStart(58, "div", 1)(59, "div", 2)(60, "h3");
-      \u0275\u0275text(61, "Appointment States Shown");
+      \u0275\u0275elementStart(73, "div", 1)(74, "div", 2)(75, "h3");
+      \u0275\u0275text(76, "Appointment States Shown");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(62, "div", 3)(63, "p", 18);
-      \u0275\u0275text(64, " Only appointments in these scheduling states appear on the list. The default (Confirmed, Checked In, Checked Out, Scheduled, Rescheduled) excludes canceled and no-show entries. At least one state must be selected. Each appointment is one row: with Rescheduled selected, a moved appointment shows in its most recent vacated slot with a Rescheduled badge; unselect Rescheduled to show the live booking instead. ");
+      \u0275\u0275elementStart(77, "div", 3)(78, "p", 22);
+      \u0275\u0275text(79, " Only appointments in these scheduling states appear on the list. The default (Confirmed, Checked In, Checked Out, Scheduled, Rescheduled) excludes canceled and no-show entries. At least one state must be selected. Each appointment is one row: with Rescheduled selected, a moved appointment shows in its most recent vacated slot with a Rescheduled badge; unselect Rescheduled to show the live booking instead. ");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(65, "div", 19);
-      \u0275\u0275repeaterCreate(66, ConfigComponent_For_67_Template, 3, 3, "label", null, \u0275\u0275repeaterTrackByIdentity);
+      \u0275\u0275elementStart(80, "div", 23);
+      \u0275\u0275repeaterCreate(81, ConfigComponent_For_82_Template, 3, 3, "label", null, \u0275\u0275repeaterTrackByIdentity);
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(68, "div", 1)(69, "div", 2)(70, "h3");
-      \u0275\u0275text(71, "Chair Resource Name Pattern");
+      \u0275\u0275elementStart(83, "div", 1)(84, "div", 2)(85, "h3");
+      \u0275\u0275text(86, "Chair Resource Name Pattern");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(72, "div", 3)(73, "p", 18);
-      \u0275\u0275text(74, ' Resources whose name contains this text (case-insensitive, spaces ignored) are treated as chairs and shown beside the appointment type. Leave blank to use the default pattern "Chair". NYGH chairs have no resource typing, so matching is by name (see scripts/ccl/diagnostics). ');
+      \u0275\u0275elementStart(87, "div", 3)(88, "p", 22);
+      \u0275\u0275text(89, ' Resources whose name contains this text (case-insensitive, spaces ignored) are treated as chairs and shown beside the appointment type. Leave blank to use the default pattern "Chair". NYGH chairs have no resource typing, so matching is by name (see scripts/ccl/diagnostics). ');
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(75, "input", 20);
-      \u0275\u0275listener("input", function ConfigComponent_Template_input_input_75_listener($event) {
+      \u0275\u0275elementStart(90, "input", 24);
+      \u0275\u0275listener("input", function ConfigComponent_Template_input_input_90_listener($event) {
         return ctx.onChairPatternInput($event);
       });
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(76, "div", 1)(77, "div", 2)(78, "h3");
-      \u0275\u0275text(79, "Inpatient/ED Indicator Encounter Types");
+      \u0275\u0275elementStart(91, "div", 1)(92, "div", 2)(93, "h3");
+      \u0275\u0275text(94, "Inpatient/ED Indicator Encounter Types");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(80, "div", 3)(81, "p", 18);
-      \u0275\u0275text(82, " Patients with an active (not discharged) encounter of one of these types show an indicator beside their name. Leave all unchecked to use the Cerner defaults (Inpatient and Emergency). ");
+      \u0275\u0275elementStart(95, "div", 3)(96, "p", 22);
+      \u0275\u0275text(97, " Patients with an active (not discharged) encounter of one of these types show an indicator beside their name. Leave all unchecked to use the Cerner defaults (Inpatient and Emergency). ");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(83, "div", 19);
-      \u0275\u0275repeaterCreate(84, ConfigComponent_For_85_Template, 5, 3, "div", 21, _forTrack02);
+      \u0275\u0275elementStart(98, "div", 23);
+      \u0275\u0275repeaterCreate(99, ConfigComponent_For_100_Template, 5, 3, "div", 25, _forTrack02);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(86, "p", 18);
-      \u0275\u0275text(87, " The category picks the indicator icon: Emergency shows a red cross badge, Inpatient the bed icon, Other a neutral pulse line. ");
+      \u0275\u0275elementStart(101, "p", 22);
+      \u0275\u0275text(102, " The category picks the indicator icon: Emergency shows a red cross badge, Inpatient the bed icon, Other a neutral pulse line. ");
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(88, "div", 22)(89, "button", 23);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_89_listener() {
+      \u0275\u0275elementStart(103, "div", 26)(104, "button", 27);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_104_listener() {
         return ctx.save();
       });
-      \u0275\u0275text(90, "Save");
+      \u0275\u0275text(105, "Save");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(91, "button", 24);
-      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_91_listener() {
+      \u0275\u0275elementStart(106, "button", 28);
+      \u0275\u0275listener("click", function ConfigComponent_Template_button_click_106_listener() {
         return ctx.discard();
       });
-      \u0275\u0275text(92, "Discard");
+      \u0275\u0275text(107, "Discard");
       \u0275\u0275elementEnd();
-      \u0275\u0275conditionalCreate(93, ConfigComponent_Conditional_93_Template, 2, 1, "span", 25);
-      \u0275\u0275conditionalCreate(94, ConfigComponent_Conditional_94_Template, 2, 0, "span", 26);
+      \u0275\u0275conditionalCreate(108, ConfigComponent_Conditional_108_Template, 2, 1, "span", 29);
+      \u0275\u0275conditionalCreate(109, ConfigComponent_Conditional_109_Template, 2, 0, "span", 30);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(95, "div", 27);
-      \u0275\u0275text(96);
+      \u0275\u0275elementStart(110, "div", 31);
+      \u0275\u0275text(111);
       \u0275\u0275elementEnd()();
     }
     if (rf & 2) {
       let tmp_1_0;
-      let tmp_10_0;
+      let tmp_12_0;
       \u0275\u0275advance(10);
       \u0275\u0275conditional(ctx.groups().length === 0 ? 10 : 11);
       \u0275\u0275advance(5);
@@ -1779,10 +1812,14 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275conditional(ctx.refreshIntervalSeconds() === 0 ? 31 : 32);
       \u0275\u0275advance(9);
       \u0275\u0275conditional(!ctx.encntrTypesLoaded() ? 40 : 41);
+      \u0275\u0275advance(13);
+      \u0275\u0275property("selected", ctx.apptViewAction() === "view");
+      \u0275\u0275advance(2);
+      \u0275\u0275property("selected", ctx.apptViewAction() === "history");
       \u0275\u0275advance(11);
-      \u0275\u0275conditional(ctx.columnRoleDefaults().length === 0 ? 51 : 52);
+      \u0275\u0275conditional(ctx.columnRoleDefaults().length === 0 ? 66 : 67);
       \u0275\u0275advance(5);
-      \u0275\u0275conditional((tmp_10_0 = ctx.selectedRule()) ? 56 : 57, tmp_10_0);
+      \u0275\u0275conditional((tmp_12_0 = ctx.selectedRule()) ? 71 : 72, tmp_12_0);
       \u0275\u0275advance(10);
       \u0275\u0275repeater(ctx.knownStateMeanings);
       \u0275\u0275advance(9);
@@ -1794,9 +1831,9 @@ var ConfigComponent = class _ConfigComponent {
       \u0275\u0275advance(2);
       \u0275\u0275property("disabled", !ctx.hasUnsavedChanges());
       \u0275\u0275advance(2);
-      \u0275\u0275conditional(ctx.statusMessage() ? 93 : -1);
+      \u0275\u0275conditional(ctx.statusMessage() ? 108 : -1);
       \u0275\u0275advance();
-      \u0275\u0275conditional(ctx.hasGroupErrors() ? 94 : -1);
+      \u0275\u0275conditional(ctx.hasGroupErrors() ? 109 : -1);
       \u0275\u0275advance(2);
       \u0275\u0275textInterpolate(ctx.buildVersion);
     }
@@ -1923,6 +1960,26 @@ var ConfigComponent = class _ConfigComponent {
           </select>
         </div>
       }
+    </div>
+  </div>
+
+  <div class="fusion-panel">
+    <div class="fusion-panel-header">
+      <h3>Appointment View Action</h3>
+      <p>Which Cerner scheduling dialog the calendar row action opens, for all users.</p>
+    </div>
+    <div class="fusion-panel-body">
+      <div class="encntr-type-row">
+        <label class="encntr-type-label" for="apptViewActionSelect">Calendar icon opens</label>
+        <select
+          id="apptViewActionSelect"
+          class="fusion-input encntr-type-select"
+          (change)="onApptViewActionChange($event)"
+        >
+          <option value="view" [selected]="apptViewAction() === 'view'">Appointment View (current details)</option>
+          <option value="history" [selected]="apptViewAction() === 'history'">Appointment History View (all booking/reschedule actions)</option>
+        </select>
+      </div>
     </div>
   </div>
 
@@ -2108,9 +2165,9 @@ var ConfigComponent = class _ConfigComponent {
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ConfigComponent, { className: "ConfigComponent", filePath: "src/app/components/config/config.ts", lineNumber: 28 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ConfigComponent, { className: "ConfigComponent", filePath: "src/app/components/config/config.ts", lineNumber: 30 });
 })();
 export {
   ConfigComponent
 };
-//# sourceMappingURL=chunk-LG4P3VST.js.map
+//# sourceMappingURL=chunk-IOGUHFPJ.js.map
