@@ -1,19 +1,19 @@
 import {
   PreferencesService,
   ScheduleService
-} from "./chunk-U63YWRII.js";
+} from "./chunk-MATONQ3U.js";
 import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-LYSWS4TR.js";
+} from "./chunk-3CB6UF3W.js";
 import {
   HelpContentService
-} from "./chunk-TYZIUVJ7.js";
+} from "./chunk-RBWUPWVC.js";
 import {
   AccessControlService
-} from "./chunk-P2EANT7S.js";
-import "./chunk-C627BRJC.js";
+} from "./chunk-TGKA35YZ.js";
+import "./chunk-3V3ENALG.js";
 import {
   AddressService,
   AllergyService,
@@ -6189,27 +6189,27 @@ var routes = [
   { path: "", component: DefaultRedirectComponent },
   {
     path: "schedule",
-    loadComponent: () => import("./chunk-UZT5FJAV.js").then((m) => m.ScheduleListComponent),
+    loadComponent: () => import("./chunk-E64OZJYC.js").then((m) => m.ScheduleListComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-WBZ5H4PZ.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-W36JHAUW.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "security",
-    loadComponent: () => import("./chunk-ZJL3D5ZE.js").then((m) => m.SecurityComponent),
+    loadComponent: () => import("./chunk-5IVD3VTU.js").then((m) => m.SecurityComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "help-editor",
-    loadComponent: () => import("./chunk-X5QSIRBA.js").then((m) => m.HelpEditorComponent),
+    loadComponent: () => import("./chunk-ATZ33LJL.js").then((m) => m.HelpEditorComponent),
     canActivate: [tabAccessGuard]
   },
   {
     path: "advanced",
-    loadComponent: () => import("./chunk-Q7YCX62Q.js").then((m) => m.AdvancedComponent),
+    loadComponent: () => import("./chunk-SKKJOKCW.js").then((m) => m.AdvancedComponent),
     canActivate: [tabAccessGuard]
   },
   { path: "no-access", component: NoAccessComponent },

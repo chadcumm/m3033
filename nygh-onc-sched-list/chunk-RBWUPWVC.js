@@ -21,7 +21,7 @@ var HELP_SECTIONS = [
     title: "Overview \u2014 how the list is built",
     body: [
       "This view lists the oncology appointments for the selected date range. It refreshes automatically, and each row is one scheduled patient visit. What you can see is governed by your position (job role) and the appointment-type group(s) it belongs to.",
-      'The list includes every patient appointment whose type is in your group and whose status is one of the configured "states shown". Cancelled and deleted appointments are always excluded. Each appointment appears as exactly one row: the live booking shows whenever its date falls inside the selected range. When a moved appointment\u2019s new date is outside the range and the Rescheduled state is enabled (it is by default), its most recent vacated slot shows with a Rescheduled badge instead.'
+      'The list includes every patient appointment whose type is in your group and whose status is one of the configured "states shown". Cancelled and deleted appointments are always excluded. Each appointment appears as exactly one row: only the live booking shows, on its current date. A rescheduled appointment never appears on its original date unless an administrator enables the Rescheduled state on the Configuration tab (off by default), in which case the vacated slot shows with a Rescheduled badge when the new date is outside the selected range.'
     ],
     items: [
       {
@@ -442,4 +442,4 @@ export {
   hasUnsavedHelpChanges,
   HelpContentService
 };
-//# sourceMappingURL=chunk-TYZIUVJ7.js.map
+//# sourceMappingURL=chunk-RBWUPWVC.js.map

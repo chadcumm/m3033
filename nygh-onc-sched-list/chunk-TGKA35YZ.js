@@ -2,7 +2,7 @@ import {
   ALL_TABS,
   DEFAULT_LAB_LOOKBACK_HOURS,
   SUPERUSER_OVERRIDE_ALL
-} from "./chunk-C627BRJC.js";
+} from "./chunk-3V3ENALG.js";
 import {
   ConfigurationService,
   MPageService
@@ -228,4 +228,4 @@ var AccessControlService = class _AccessControlService {
 export {
   AccessControlService
 };
-//# sourceMappingURL=chunk-P2EANT7S.js.map
+//# sourceMappingURL=chunk-TGKA35YZ.js.map
