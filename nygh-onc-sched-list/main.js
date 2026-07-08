@@ -6,7 +6,7 @@ import {
   buildVersion,
   gitBranch,
   packageVersion
-} from "./chunk-SQB2EDHY.js";
+} from "./chunk-4ZXNHOWU.js";
 import {
   HelpContentService
 } from "./chunk-DBYMUFWG.js";
@@ -6195,7 +6195,7 @@ var routes = [
   },
   {
     path: "config",
-    loadComponent: () => import("./chunk-S32VWVP3.js").then((m) => m.ConfigComponent),
+    loadComponent: () => import("./chunk-3BPF22UB.js").then((m) => m.ConfigComponent),
     canActivate: [tabAccessGuard]
   },
   {
