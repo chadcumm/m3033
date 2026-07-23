@@ -3,9 +3,9 @@
 ## Current Deployment
 
 **Environment:** M3033
-**Version:** v0.0.87
+**Version:** v1.0.0
 **Branch:** master
-**Last Deployed:** 07/08/2026, 15:02:00
+**Last Deployed:** 07/23/2026, 07:12:18
 
 ## About
 
@@ -13,6 +13,7 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 
 ## Deployment History
 
+- **v1.0.0** | Branch: `master` | Deployed: 07/23/2026, 07:12:18
 - **v0.0.87** | Branch: `master` | Deployed: 07/08/2026, 15:02:00
 - **v0.0.87** | Branch: `master` | Deployed: 07/08/2026, 15:01:57
 - **v0.0.86** | Branch: `fix/prefs-readback` | Deployed: 07/07/2026, 15:32:06
@@ -22,7 +23,6 @@ This directory contains the deployed build artifacts for the nygh-onc-sched-list
 - **v0.0.84** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 10:54:08
 - **v0.0.84** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 10:54:06
 - **v0.0.83** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 10:22:37
-- **v0.0.83** | Branch: `feature/encntr-icons-mrn` | Deployed: 07/07/2026, 10:22:34
 
 ---
 

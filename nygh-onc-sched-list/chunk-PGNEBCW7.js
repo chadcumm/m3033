@@ -1,6 +1,6 @@
 import {
   buildVersion
-} from "./chunk-4ZXNHOWU.js";
+} from "./chunk-SSW3WYXH.js";
 import {
   EncntrIndicatorIconComponent
 } from "./chunk-B6Z4SSXC.js";
@@ -2224,4 +2224,4 @@ var ConfigComponent = class _ConfigComponent {
 export {
   ConfigComponent
 };
-//# sourceMappingURL=chunk-3BPF22UB.js.map
+//# sourceMappingURL=chunk-PGNEBCW7.js.map
